@@ -1,0 +1,1 @@
+<?php header('Location: oscybershop/index.html'); ?>
