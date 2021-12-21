@@ -1,1 +1,1 @@
-<?php header('Location: oscybershop/index.html'); ?>
+<?php header('Location: main/index.html'); ?>
