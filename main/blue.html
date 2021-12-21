@@ -526,6 +526,14 @@
                 </a>
             </div>
         </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px">
+                <h6>SANS DFIR</h6><br>
+                <a href="https://www.sans.org/digital-forensics-incident-response/" target="_blank">
+                    <i class="fa fa-list-alt w3-margin-bottom w3-text-theme" style="font-size:40px"></i>
+                </a>
+            </div>
+        </div>
     </div>
     <br>
     <div class="w3-container">
@@ -535,8 +543,8 @@
     </div>
     <br>
     <h5>&nbsp;&nbsp;&nbsp;&nbsp;Scripting</h5>
-    <div class="w3-row-padding w3-center w3-margin-top">
-        <div class="w3-col l2">
+    <div class="w3-row-padding w3-center w3-margin-top" id="scripts">
+        <div class="w3-col l2" id="cli">
             <div class="w3-card w3-container w3-blue" style="min-height:150px">
                 <h6>PowerShell Core</h6><br>
                 <a href="https://github.com/powershell/powershell" target="_blank">
@@ -554,7 +562,7 @@
         </div>
         <div class="w3-col l2">
             <div class="w3-card w3-container w3-blue" style="min-height:150px">
-                <h6>Blue Team PowerShell</h6><br>
+                <h6>Cyber Defence (Blue Team) PowerShell</h6><br>
                 <a href="https://blueteampowershell.com/" target="_blank">
                     <i class="fa fa-terminal w3-margin-bottom w3-text-theme" style="font-size:40px"></i>
                 </a>
@@ -644,7 +652,7 @@
     </div>
     <br>
     <h5>&nbsp;&nbsp;&nbsp;&nbsp;Vulnerability Assessment</h5>
-    <div class="w3-row-padding w3-center w3-margin-top">
+    <div class="w3-row-padding w3-center w3-margin-top" id="vulns">
         <div class="w3-col l2">
             <div class="w3-card w3-container w3-blue" style="min-height:150px">
                 <h6>Nessus</h6><br>
@@ -688,7 +696,7 @@
     </div>
     <br>
     <h5>&nbsp;&nbsp;&nbsp;&nbsp;Network Forensics</h5>
-    <div class="w3-row-padding w3-center w3-margin-top">
+    <div class="w3-row-padding w3-center w3-margin-top" id="logs">
         <div class="w3-col l2">
             <div class="w3-card w3-container w3-blue" style="min-height:150px">
                 <h6>Splunk</h6><br>
@@ -773,7 +781,7 @@
     </div>
     <br>
     <h5>&nbsp;&nbsp;&nbsp;&nbsp;DFIR & Threat Hunting</h5>
-    <div class="w3-row-padding w3-center w3-margin-top">
+    <div class="w3-row-padding w3-center w3-margin-top" id="dfir">
         <div class="w3-col l2">
             <div class="w3-card w3-container w3-blue" style="min-height:150px">
                 <h6>Eric Zimmerman Tools</h6><br>
@@ -1024,6 +1032,14 @@
         </div>
         <div class="w3-col l2">
             <div class="w3-card w3-container w3-blue" style="min-height:150px">
+                <h6>linpmem</h6><br>
+                <a href="https://github.com/google/rekall/releases/tag/v1.5.1" target="_blank">
+                    <i class="fab fa-github w3-margin-bottom w3-text-theme" style="font-size:40px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px">
                 <h6>AVML</h6><br>
                 <a href="https://github.com/microsoft/avml" target="_blank">
                     <i class="fab fa-github w3-margin-bottom w3-text-theme" style="font-size:40px"></i>
@@ -1055,7 +1071,7 @@
     </div>
     <br>
     <h4>&nbsp;&nbsp;&nbsp;&nbsp;Malware Analysis</h4>
-    <div class="w3-row-padding w3-center w3-margin-top">
+    <div class="w3-row-padding w3-center w3-margin-top" id="malware">
         <div class="w3-col l2">
             <div class="w3-card w3-container w3-blue" style="min-height:150px">
                 <h6>SysInternals Suite</h6><br>
@@ -1237,7 +1253,7 @@
     </div>
     <br>
     <h5>&nbsp;&nbsp;&nbsp;&nbsp;Disassemblers/Debuggers</h5>
-    <div class="w3-row-padding w3-center w3-margin-top">
+    <div class="w3-row-padding w3-center w3-margin-top" id="static">
         <div class="w3-col l2">
             <div class="w3-card w3-container w3-blue" style="min-height:150px">
                 <h6>IDA Pro</h6><br>
@@ -1373,7 +1389,7 @@
     </div>
     <br>
     <h5>&nbsp;&nbsp;&nbsp;&nbsp;Sandboxes</h5>
-    <div class="w3-row-padding w3-center w3-margin-top">
+    <div class="w3-row-padding w3-center w3-margin-top" id="sandbox">
         <div class="w3-col l2">
             <div class="w3-card w3-container w3-blue" style="min-height:150px">
                 <h6>Cuckoo</h6><br>
@@ -1424,7 +1440,7 @@
         </div>
     </div>
     <br>
-    <div class="w3-row-padding w3-center w3-margin-top">
+    <div class="w3-row-padding w3-center w3-margin-top" id="steg">
         <div class="w3-col l2">
             <div class="w3-card w3-container w3-blue" style="min-height:150px">
                 <h6>Malware Jail</h6><br>
@@ -1450,7 +1466,7 @@
     </div>
     <br>
     <h5>&nbsp;&nbsp;&nbsp;&nbsp;Steganography</h5>
-    <div class="w3-row-padding w3-center w3-margin-top">
+    <div class="w3-row-padding w3-center w3-margin-top" id="steg">
         <div class="w3-col l2">
             <div class="w3-card w3-container w3-blue" style="min-height:150px">
                 <h6>Xiao Steganography</h6><br>
