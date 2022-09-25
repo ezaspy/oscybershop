@@ -4,33 +4,46 @@
 <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" /> <!-- https://gauger.io/fonticon/ -->
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+
 <script src="https://kit.fontawesome.com/fb0ae32c1e.js" crossorigin="anonymous"></script>
+<script src="./scripts.js"></script>
 
 <body>
     <!-- Side Navigation -->
     <nav class="w3-sidebar w3-bar-block w3-card w3-animate-left w3-center" style="display:none" id="mySidebar">
         <button class="w3-bar-item w3-button" onclick="w3_close()">Close <i class="fa fa-remove"></i></button>
-        <a href="index.html" class="w3-bar-item w3-button">Home</a>
-        <a href="posters.html" class="w3-bar-item w3-button">Posters</a>
-        <a href="cheatsheets.html" class="w3-bar-item w3-button">Cheat Sheets</a>
-        <a href="publications.html" class="w3-bar-item w3-button">Publications</a>
-        <a href="media.html" class="w3-bar-item w3-button">Media & Socials</a>
-        <a href="training.html" class="w3-bar-item w3-button">Training, CTFs & Challenges</a>
-        <a href="tools.html" class="w3-bar-item w3-button">Tooling</a>
-        <a href="projects.html" class="w3-bar-item w3-button">Frameworks & Projects</a>
-        <a href="vms.html" class="w3-bar-item w3-button">Virtual Machines</a>
-        <a href="blue.html" class="w3-bar-item w3-button">Cyber Defence (Blue Team)</a>
-        <a href="red.html" class="w3-bar-item w3-button">Offensive Cyber (Red Team)</a>
-        <a href="int.html" class="w3-bar-item w3-button">Threat Intelligence</a>
+        <a href="../index.html" class="w3-bar-item w3-button">Home</a>
+        <a href="./pages/posters.html" class="w3-bar-item w3-button">Posters</a>
+        <a href="./pages/cheatsheets.html" class="w3-bar-item w3-button">Cheat Sheets</a>
+        <a href="./pages/publications.html" class="w3-bar-item w3-button">Publications</a>
+        <a href="./pages/media.html" class="w3-bar-item w3-button">Media & Socials</a>
+        <a href="./pages/training.html" class="w3-bar-item w3-button">Training, CTFs & Challenges</a>
+        <a href="./pages/tooling.html" class="w3-bar-item w3-button">Tooling</a>
+        <a href="./pages/projects.html" class="w3-bar-item w3-button">Frameworks & Projects</a>
+        <a href="./pages/vms.html" class="w3-bar-item w3-button">Virtual Machines</a>
+        <a href="./pages/blue.html" class="w3-bar-item w3-button">Cyber Defence (Blue Team)</a>
+        <a href="./pages/red.html" class="w3-bar-item w3-button">Offensive Cyber (Red Team)</a>
+        <a href="./pages/int.html" class="w3-bar-item w3-button">Threat Intelligence</a>
     </nav>
     <!-- Header -->
-    <header class="w3-container w3-theme w3-padding" id="myHeader">
-        <i onclick="w3_open()" class="fa fa-bars w3-xlarge w3-button w3-theme"></i>
-        <div class="w3-center">
-            <h2><img src="logo.png" alt="logo" width="40" height="40">&nbsp;&nbsp;ONESTOPCYBERSHOP</h2>
+    <header class="w3-container w3-theme w3-padding" id="osHeader">
+        <div class="w3-third">
+            <i onclick="w3_open()" class="fa fa-bars w3-xxlarge w3-button w3-theme"></i>
+        </div>
+        <div class="w3-third">
+            <div class="w3-center">
+                <h2><img src="./content/logo.png" alt="logo" width="40" height="40">&nbsp;&nbsp;ONESTOPCYBERSHOP</h2>
+            </div>
+        </div>
+        <div class="w3-third">
+            <div class="w3-right">
+                <a href="./pages/search.html" target="_blank"><i class="fa fa-search w3-xxlarge w3-button w3-theme"></i>
+                </a>
+            </div>
         </div>
     </header>
     <div class="w3-row-padding w3-center w3-margin-top">
@@ -40,7 +53,7 @@
         <div class="w3-quarter">
             <div class="w3-card w3-container w3-light-grey" style="min-height:150px">
                 <h4>Posters</h4><br>
-                <a href="posters.html" target="_blank">
+                <a href="./pages/posters.html" target="_blank">
                     <i class="fa fa-file-pdf-o w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
                 </a>
             </div>
@@ -48,7 +61,7 @@
         <div class="w3-quarter">
             <div class="w3-card w3-container w3-light-grey" style="min-height:150px">
                 <h4>Cheat Sheets</h4><br>
-                <a href="cheatsheets.html" target="_blank">
+                <a href="./pages/cheatsheets.html" target="_blank">
                     <i class="fa fa-file-code-o w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
                 </a>
             </div>
@@ -56,7 +69,7 @@
         <div class="w3-quarter">
             <div class="w3-card w3-container w3-light-grey" style="min-height:150px">
                 <h4>Publications</h4><br>
-                <a href="publications.html" target="_blank">
+                <a href="./pages/publications.html" target="_blank">
                     <i class="fa fa-book w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
                 </a>
             </div>
@@ -64,7 +77,7 @@
         <div class="w3-quarter">
             <div class="w3-card w3-container w3-light-grey" style="min-height:150px">
                 <h4>Media & Socials</h4><br>
-                <a href="media.html" target="_blank">
+                <a href="./pages/media.html" target="_blank">
                     <i class="fa fa-play w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
                 </a>
             </div>
@@ -74,7 +87,7 @@
         <div class="w3-quarter">
             <div class="w3-card w3-container w3-light-grey" style="min-height:150px">
                 <h4>Tooling</h4><br>
-                <a href="tools.html" target="_blank">
+                <a href="./pages/tooling.html" target="_blank">
                     <i class="fas fa-toolbox w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
                 </a>
             </div>
@@ -82,7 +95,7 @@
         <div class="w3-quarter">
             <div class="w3-card w3-container w3-light-grey" style="min-height:150px">
                 <h4>Training, CTF & Challenges</h4><br>
-                <a href="training.html" target="_blank">
+                <a href="./pages/training.html" target="_blank">
                     <i class="fa fa-university w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
                 </a>
             </div>
@@ -90,7 +103,7 @@
         <div class="w3-quarter">
             <div class="w3-card w3-container w3-light-grey" style="min-height:150px">
                 <h4>Frameworks & Projects</h4><br>
-                <a href="projects.html" target="_blank">
+                <a href="./pages/projects.html" target="_blank">
                     <i class="fa fa-flask w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
                 </a>
             </div>
@@ -98,7 +111,7 @@
         <div class="w3-quarter">
             <div class="w3-card w3-container w3-light-grey" style="min-height:150px">
                 <h4>Virtual Machines</h4><br>
-                <a href="vms.html" target="_blank">
+                <a href="./pages/vms.html" target="_blank">
                     <i class="fa fa-desktop w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
                 </a>
             </div>
@@ -108,7 +121,7 @@
         <div class="w3-third">
             <div class="w3-card w3-container w3-blue" style="min-height:150px">
                 <h4>Blue Team</h4><br>
-                <a href="blue.html" target="_blank">
+                <a href="./pages/blue.html" target="_blank">
                     <i class="fa fa-shield w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
                 </a>
             </div>
@@ -116,7 +129,7 @@
         <div class="w3-third">
             <div class="w3-card w3-container w3-red" style="min-height:150px">
                 <h4>Red Team</h4><br>
-                <a href="red.html" target="_blank">
+                <a href="./pages/red.html" target="_blank">
                     <i class="fa fa-terminal w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
                 </a>
             </div>
@@ -124,7 +137,7 @@
         <div class="w3-third">
             <div class="w3-card w3-container w3-yellow" style="min-height:150px">
                 <h4>Intelligence</h4><br>
-                <a href="int.html" target="_blank">
+                <a href="./pages/int.html" target="_blank">
                     <i class="fa fa-eye w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
                 </a>
             </div>
@@ -136,90 +149,27 @@
         </div>
     </div>
     <div style="color:maroon;font-size:12px;">
-        <p>&nbsp;&nbsp;&nbsp;&nbsp;With great power, comes great responsibility; this material has been collated to encourage learning and development, and not to be leveraged for unethical and/or illegal behaviour.</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;With great power, comes great responsibility; this material has been collated to
+            encourage learning and development, and not to be leveraged for unethical and/or illegal behaviour.</p>
     </div>
     <div style="color:black;font-size:12px;">
-        <p>&nbsp;&nbsp;&nbsp;&nbsp;I would like to thank all of the authors, instructors, publishers, developers (and others) - both individuals and teams - for the content collated on this site. I must stress that none of the content referenced/linked on this site is my own.</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;I would like to thank all of the authors, instructors, publishers, developers (and
+            others) - both individuals and teams - for the content collated on this site. I must stress that none of the
+            content referenced/linked on this site is my own.</p>
         <p>&nbsp;&nbsp;&nbsp;&nbsp;By visiting any of these sites, you are doing so at your own risk.</p>
-        <p>&nbsp;&nbsp;&nbsp;&nbsp;If you have any suggestions and/or content you feel is missing or would like included, please email me at oscybershop [at] gmail.com.</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;If you have any suggestions and/or content you feel is missing or would like
+            included, please email me at oscybershop [at] gmail.com.</p>
     </div>
     <!-- Footer -->
     <footer class="w3-container w3-theme-dark w3-padding-16">
-        <p>Created by <a href="https://github.com/ezaspy/oscybershop" target="_blank">ezaspy</a>; powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+        <p>Created by <a href="https://github.com/ezaspy/oscybershop" target="_blank">ezaspy</a>; powered by <a
+                href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
         <div style="position:relative;bottom:55px;" class="w3-tooltip w3-right">
             <span class="w3-text w3-theme-light w3-padding">Go To Top</span> 
-            <a class="w3-text-white" href="#myHeader"><span class="w3-xlarge">
+            <a class="w3-text-white" href="#osHeader"><span class="w3-xlarge">
                     <i class="fa fa-chevron-circle-up"></i></span></a>
         </div>
     </footer>
-    <!-- Script for Sidebar, Tabs, Accordions, Progress bars and slideshows -->
-    <script>
-        // Side navigation
-        function w3_open() {
-            var x = document.getElementById("mySidebar");
-            x.style.width = "100%";
-            x.style.fontSize = "20px";
-            x.style.display = "block";
-        }
-        function w3_close() {
-            document.getElementById("mySidebar").style.display = "none";
-        }
-        // Tabs
-        function openCity(evt, cityName) {
-            var i;
-            var x = document.getElementsByClassName("city");
-            for (i = 0; i < x.length; i++) {
-                x[i].style.display = "none";
-            }
-            var activebtn = document.getElementsByClassName("testbtn");
-            for (i = 0; i < x.length; i++) {
-                activebtn[i].className = activebtn[i].className.replace(" w3-light-grey", "");
-            }
-            document.getElementById(cityName).style.display = "block";
-            evt.currentTarget.className += " w3-light-grey";
-        }
-        var mybtn = document.getElementsByClassName("testbtn")[0];
-        mybtn.click();
-        // Accordions
-        function myAccFunc(id) {
-            var x = document.getElementById(id);
-            if (x.className.indexOf("w3-show") == -1) {
-                x.className += " w3-show";
-            } else {
-                x.className = x.className.replace(" w3-show", "");
-            }
-        }
-        // Slideshows
-        var slideIndex = 1;
-        function plusDivs(n) {
-            slideIndex = slideIndex + n;
-            showDivs(slideIndex);
-        }
-        function showDivs(n) {
-            var x = document.getElementsByClassName("mySlides");
-            if (n > x.length) { slideIndex = 1 }
-            if (n < 1) { slideIndex = x.length };
-            for (i = 0; i < x.length; i++) {
-                x[i].style.display = "none";
-            }
-            x[slideIndex - 1].style.display = "block";
-        }
-        showDivs(1);
-        // Progress Bars
-        function move() {
-            var elem = document.getElementById("myBar");
-            var width = 5;
-            var id = setInterval(frame, 10);
-            function frame() {
-                if (width == 100) {
-                    clearInterval(id);
-                } else {
-                    width++;
-                    elem.style.width = width + '%';
-                    elem.innerHTML = width * 1 + '%';
-                }
-            }
-        }
-    </script>
 </body>
+
 </html>

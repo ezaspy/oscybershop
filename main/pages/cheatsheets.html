@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html>
+<title>onestopcybershop</title>
+<link rel="shortcut icon" type="image/x-icon" href="../favicon.ico" /> <!-- https://gauger.io/fonticon/ -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+<script src="https://kit.fontawesome.com/fb0ae32c1e.js" crossorigin="anonymous"></script>
+<script src="../scripts.js"></script>
+
+<body>
+    <!-- Side Navigation -->
+    <nav class="w3-sidebar w3-bar-block w3-card w3-animate-left w3-center" style="display:none" id="mySidebar">
+        <button class="w3-bar-item w3-button" onclick="w3_close()">Close <i class="fa fa-remove"></i></button>
+        <a href="../index.html" class="w3-bar-item w3-button">Home</a>
+        <a href="./posters.html" class="w3-bar-item w3-button">Posters</a>
+        <a href="./cheatsheets.html" class="w3-bar-item w3-button">Cheat Sheets</a>
+        <a href="./publications.html" class="w3-bar-item w3-button">Publications</a>
+        <a href="./media.html" class="w3-bar-item w3-button">Media & Socials</a>
+        <a href="./training.html" class="w3-bar-item w3-button">Training, CTFs & Challenges</a>
+        <a href="./tooling.html" class="w3-bar-item w3-button">Tooling</a>
+        <a href="./projects.html" class="w3-bar-item w3-button">Frameworks & Projects</a>
+        <a href="./vms.html" class="w3-bar-item w3-button">Virtual Machines</a>
+        <a href="./blue.html" class="w3-bar-item w3-button">Cyber Defence (Blue Team)</a>
+        <a href="./red.html" class="w3-bar-item w3-button">Offensive Cyber (Red Team)</a>
+        <a href="./int.html" class="w3-bar-item w3-button">Threat Intelligence</a>
+    </nav>
+    <!-- Header -->
+    <header class="w3-container w3-theme w3-padding" id="myHeader">
+        <div class="w3-third">
+            <i onclick="w3_open()" class="fa fa-bars w3-xxlarge w3-button w3-theme"></i>
+        </div>
+        <div class="w3-third">
+            <div class="w3-center">
+                <a href="https://oscybershop.herokuapp.com/index.html" class="w3-button">
+                    <h4><img src="../content/logo.png" alt="logo" width="24" height="24">&nbsp;&nbsp;ONESTOPCYBERSHOP
+                    </h4>
+                </a>
+                <h2 class="w3-xxlarge w3-animate-bottom"><i class="fa fa-file-code-o"></i>&nbsp;&nbsp;Cheat Sheets</h2>
+            </div>
+        </div>
+        <div class="w3-third">
+            <div class="w3-right">
+                <a href="./search.html" target="_blank"><i class="fa fa-search w3-xxlarge w3-button w3-theme"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+    <div class="w3-container w3-blue">
+        <a href="#prep" class="w3-bar-item w3-button">Incident Preperation</a>
+        <a href="#ids" class="w3-bar-item w3-button">Intrusion Detection</a>&nbsp;|
+        <a href="#logs" class="w3-bar-item w3-button">Network Forensics</a>&nbsp;|
+        <a href="#dfir" class="w3-bar-item w3-button">DFIR & Threat Hunting</a>&nbsp;|
+        <a href="#rem" class="w3-bar-item w3-button">Malware Analysis</a>&nbsp;|
+        <a href="#steg" class="w3-bar-item w3-button">Steganography</a>
+    </div>
+    <div class="w3-container w3-red">
+        <a href="#recon" class="w3-bar-item w3-button">Reconnaissance</a>&nbsp;|
+        <a href="#delivery" class="w3-bar-item w3-button">Delivery</a>&nbsp;|
+        <a href="#enum" class="w3-bar-item w3-button">Network Enumeration</a>&nbsp;|
+        <a href="#post" class="w3-bar-item w3-button">Post Exploitation</a>&nbsp;|
+        <a href="#creds" class="w3-bar-item w3-button">Credential Harvesting</a>&nbsp;|
+        <a href="#c2" class="w3-bar-item w3-button">Command & Control</a>
+    </div>
+    <div class="w3-container w3-yellow">
+        <a href="#osint" class="w3-bar-item w3-button">OSINT</a>&nbsp;|
+        <a href="#dark" class="w3-bar-item w3-button">Dark Web</a>
+    </div>
+    <br><br>
+    <h4>&nbsp;&nbsp;&nbsp;&nbsp;Command Lines</h4>
+    <h5>&nbsp;&nbsp;&nbsp;&nbsp;Operating System CLI</h5>
+    <div class="w3-row-padding w3-center w3-margin-top">
+        <div class="w3-col l2">
+            <h6>Windows & Linux CLI</h6>
+            <iframe src="../content/cheatsheets/Windows_and_LinuxCLI.pdf" width="100%"></iframe>
+            <a href="../content/cheatsheets/Windows_and_LinuxCLI.pdf" target="_blank"
+                class="w3-button w3-theme">Download&nbsp;<i class="fa fa-external-link"></i></a>
+        </div>
+        <div class="w3-col l2">
+            <h6>Linux Commands</h6>
+            <iframe src="../content/cheatsheets/LinuxCommands.pdf" width="100%"></iframe>
+            <a href="../content/cheatsheets/LinuxCommands.pdf" target="_blank"
+                class="w3-button w3-theme">Download&nbsp;<i class="fa fa-external-link"></i></a>
+        </div>
+        <div class="w3-col l2">
+            <h6>Linux CLI Fundamentals</h6>
+            <iframe src="../content/cheatsheets/Linux101CLI.pdf" width="100%"></iframe>
+            <a href="../content/cheatsheets/Linux101CLI.pdf" target="_blank" class="w3-button w3-theme">Download&nbsp;<i
+                    class="fa fa-external-link"></i></a>
+        </div>
+        <div class="w3-col l2">
+            <h6>Linux CLI</h6>
+            <iframe src="../content/cheatsheets/LinuxCLI.pdf" width="100%"></iframe>
+            <a href="../content/cheatsheets/LinuxCLI.pdf" target="_blank" class="w3-button w3-theme">Download&nbsp;<i
+                    class="fa fa-external-link"></i></a>
+        </div>
+        <div class="w3-col l2">
+            <h6>Linux Shell</h6>
+            <iframe src="../content/cheatsheets/LinuxShell.pdf" width="100%"></iframe>
+            <a href="../content/cheatsheets/LinuxShell.pdf" target="_blank" class="w3-button w3-theme">Download&nbsp;<i
+                    class="fa fa-external-link"></i></a>
+        </div>
+        <div class="w3-col l2">
+            <h6>Common Attacks/Defences</h6>
+            <iframe src="../content/media/LinuxCommands.jpeg" width="100%"></iframe>
+            <a href="../content/media/LinuxCommands.jpeg" target="_blank" class="w3-button w3-theme">Download&nbsp;<i
+                    class="fa fa-external-link"></i></a>
+        </div>
+    </div>
+    <div class="w3-row-padding w3-center w3-margin-top">
+        <div class="w3-col l2">
+            <h6>Windows CLI</h6>
+            <iframe src="../content/cheatsheets/WindowsCLI.pdf" width="100%"></iframe>
+            <a href="../content/cheatsheets/WindowsCLI.pdf" target="_blank" class="w3-button w3-theme">Download&nbsp;<i
+                    class="fa fa-external-link"></i></a>
+        </div>
+        <div class="w3-col l2">
+            <h6>Vim</h6>
+            <iframe src="../content/cheatsheets/Vim.JPG" width="100%"></iframe>
+            <a href="../content/cheatsheets/Vim.JPG" target="_blank" class="w3-button w3-theme">Download&nbsp;<i
+                    class="fa fa-external-link"></i></a>
+        </div>
+        <div class="w3-col l2">
+            <h6>Vi</h6>
+            <iframe src="../content/cheatsheets/Vi.pdf" width="100%"></iframe>
+            <a href="../content/cheatsheets/Vi.pdf" target="_blank" class="w3-button w3-theme">Download&nbsp;<i
+                    class="fa fa-external-link"></i></a>
+        </div>
+        <div class="w3-col l2">
+            <h6>Nano</h6>
+            <iframe src="../content/cheatsheets/Nano.pdf" width="100%"></iframe>
+            <a href="../content/cheatsheets/Nano.pdf" target="_blank" class="w3-button w3-theme">Download&nbsp;<i
+                    class="fa fa-external-link"></i></a>
+        </div>
+    </div>
+    <br><br>
+    <h5>&nbsp;&nbsp;&nbsp;&nbsp;Cloud CLI</h5>
+    <div class="w3-row-padding w3-center w3-margin-top">
+        <div class="w3-col l2">
+            <h6>AWS</h6>
+            <iframe src="../content/cheatsheets/awscli.pdf" width="100%"></iframe>
+            <a href="../content/cheatsheets/awscli.pdf" target="_blank" class="w3-button w3-theme">Download&nbsp;<i
+                    class="fa fa-external-link"></i></a>
+        </div>
+        <div class="w3-col l2">
+            <h6>GCP</h6>
+            <iframe src="../content/cheatsheets/gcloud.pdf" width="100%"></iframe>
+            <a href="../content/cheatsheets/gcloud.pdf" target="_blank" class="w3-button w3-theme">Download&nbsp;<i
+                    class="fa fa-external-link"></i></a>
+        </div>
+        <div class="w3-col l2">
+            <h6>Multi-Cloud CLI</h6>
+            <iframe src="../content/cheatsheets/Multi-CloudCLI.pdf" width="100%"></iframe>
+            <a href="../content/cheatsheets/Multi-CloudCLI.pdf" target="_blank"
+                class="w3-button w3-theme">Download&nbsp;<i class="fa fa-external-link"></i></a>
+        </div>
+        <div class="w3-col l2">
+            <h6>Cloud Security DevOps</h6>
+            <iframe src="../content/cheatsheets/CloudSecurity_DevOps.pdf" width="100%"></iframe>
+            <a href="../content/cheatsheets/CloudSecurity_DevOps.pdf" target="_blank"
+                class="w3-button w3-theme">Download&nbsp;<i class="fa fa-external-link"></i></a>
+        </div>
+    </div>
+    <div class="w3-container">
+        <hr>
+        <div class="w3-center">
+        </div>
+    </div>
+    <br><br>
+    <h5>&nbsp;&nbsp;&nbsp;&nbsp;PowerShell & WMIC</h5>
+    <div class="w3-row-padding w3-center w3-margin-top">
+        <div class="w3-col l2">
+            <iframe src="../content/cheatsheets/PowerShell_v4.0.pdf" width="100%"></iframe>
+            <a href="../content/cheatsheets/PowerShell_v4.0.pdf" target="_blank"
+                class="w3-button w3-theme">Download&nbsp;<i class="fa fa-external-link"></i></a>
+        </div>
+        <div class="w3-col l2">
+            <iframe src="../content/cheatsheets/PowerShell.pdf" width="100%"></iframe>
+            <a href="../content/cheatsheets/PowerShell.pdf" target="_blank" class="w3-button w3-theme">Download&nbsp;<i
+                    class="fa fa-external-link"></i></a>
+        </div>
+        <div class="w3-col l2">
+            <iframe src="../content/cheatsheets/Get-WinEvent.pdf" width="100%"></iframe>
+            <a href="../content/cheatsheets/Get-WinEvent.pdf" target="_blank"
+                class="w3-button w3-theme">Download&nbsp;<i class="fa fa-external-link"></i></a>
+        </div>
+        <div class="w3-col l2">
+            <iframe src="../content/cheatsheets/WMI.pdf" width="100%"></iframe>
+            <a href="../content/cheatsheets/WMI.pdf" target="_blank" class="w3-button w3-theme">Download&nbsp;<i
+                    class="fa fa-external-link"></i></a>
+        </div>
+        <div class="w3-col l2">
+            <iframe src="../content/cheatsheets/WMIC.pdf" width="100%"></iframe>
+            <a href="../content/cheatsheets/WMIC.pdf" target="_blank" class="w3-button w3-theme">Download&nbsp;<i
+                    class="fa fa-external-link"></i></a>
+        </div>
+    </div>
+    <br><br>
+    <h5>&nbsp;&nbsp;&nbsp;&nbsp;Python</h5>
+    <div class="w3-row-padding w3-center w3-margin-top">
+        <div class="w3-col l2">
+            <iframe src="../content/cheatsheets/Python_v3.pdf" width="100%"></iframe>
+            <a href="../content/cheatsheets/Python_v3.pdf" target="_blank" class="w3-button w3-theme">Download&nbsp;<i
+                    class="fa fa-external-link"></i></a>
+        </div>
+        <div class="w3-col l2">
+            <iframe src="../content/cheatsheets/Python_v2.pdf" width="100%"></iframe>
+            <a href="../content/cheatsheets/Python_v2.pdf" target="_blank" class="w3-button w3-theme">Download&nbsp;<i
+                    class="fa fa-external-link"></i></a>
+        </div>
+    </div>
+    <div class="w3-container">
+        <hr>
+        <div class="w3-center">
+        </div>
+    </div>
+    <br><br>
+    <h5>&nbsp;&nbsp;&nbsp;&nbsp;Structures & Schemas</h5>
+    <div class="w3-row-padding w3-center w3-margin-top">
+        <div class="w3-col l2">
+            <h6>HEX & Regex</h6>
+            <iframe src="../content/cheatsheets/Hex_and_Regex.pdf" width="100%"></iframe>
+            <a href="../content/cheatsheets/Hex_and_Regex.pdf" target="_blank"
+                class="w3-button w3-theme">Download&nbsp;<i class="fa fa-external-link"></i></a>
+        </div>
+        <div class="w3-col l2">
+            <h6>RegEx</h6>
+            <iframe src="../content/cheatsheets/RegEx.pdf" width="100%"></iframe>
+            <a href="../content/cheatsheets/RegEx.pdf" target="_blank" class="w3-button w3-theme">Download&nbsp;<i
+                    class="fa fa-external-link"></i></a>
+        </div>
+        <div class="w3-col l2">
+            <h6>sort & uniq</h6>
+            <iframe src="../content/cheatsheets/SortUniq.JPG" width="100%"></iframe>
+            <a href="../content/cheatsheets/SortUniq.JPG" target="_blank" class="w3-button w3-theme">Download&nbsp;<i
+                    class="fa fa-external-link"></i></a>
+        </div>
+        <div class="w3-col l2">
+            <h6>JSON & jq</h6>
+            <iframe src="../content/cheatsheets/JSON_jq.pdf" width="100%"></iframe>
+            <a href="../content/cheatsheets/JSON_jq.pdf" target="_blank" class="w3-button w3-theme">Download&nbsp;<i
+                    class="fa fa-external-link"></i></a>
+        </div>
+    </div>
+    <div class="w3-container">
+        <hr>
+        <div class="w3-center">
+        </div>
+    </div>
+    <br><br>
+    <h5>&nbsp;&nbsp;&nbsp;&nbsp;Query Languages</h5>
+    <div class="w3-row-padding w3-center w3-margin-top">
+        <div class="w3-col l2">
+            <h6>Log Parsing</h6>
+            <iframe src="../content/cheatsheets/LogParsing.JPG" width="100%"></iframe>
+            <a href="../content/cheatsheets/LogParsing.JPG" target="_blank" class="w3-button w3-theme">Download&nbsp;<i
+                    class="fa fa-external-link"></i></a>
+        </div>
+        <div class="w3-col l2">
+            <h6>SQLite</h6>
+            <iframe src="../content/cheatsheets/SQLite.pdf" width="100%"></iframe>
+            <a href="../content/cheatsheets/SQLite.pdf" target="_blank" class="w3-button w3-theme">Download&nbsp;<i
+                    class="fa fa-external-link"></i></a>
+        </div>
+        <div class="w3-col l2">
+            <h6>SQL</h6>
+            <iframe src="../content/cheatsheets/sql.pdf" width="100%"></iframe>
+            <a href="../content/cheatsheets/sql.pdf" target="_blank" class="w3-button w3-theme">Download&nbsp;<i
+                    class="fa fa-external-link"></i></a>
+        </div>
+        <div class="w3-col l2">
+            <h6>KQL</h6>
+            <iframe src="../content/cheatsheets/KQL_light.pdf" width="100%"></iframe>
+            <a href="../content/cheatsheets/KQL_light.pdf" target="_blank" class="w3-button w3-theme">Download&nbsp;<i
+                    class="fa fa-external-link"></i></a>
+        </div>
+        <div class="w3-col l2">
+            <h6>SPL (Splunk)</h6>
+            <iframe src="../content/cheatsheets/splunk.pdf" width="100%"></iframe>
+            <a href="../content/cheatsheets/splunk.pdf" target="_blank" class="w3-button w3-theme">Download&nbsp;<i
+                    class="fa fa-external-link"></i></a>
+        </div>
+        <div class="w3-col l2">
+            <h6>VT File Search Modifiers</h6>
+            <div class="w3-card w3-container w3-blue" style="min-height:150px">
+                <a href="https://support.virustotal.com/hc/en-us/articles/360001385897-File-search-modifiers"
+                    target="_blank">
+                    <br><br>
+                    <i class="fa fa-file-code-o w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="w3-container">
+        <hr>
+        <div class="w3-center">
+        </div>
+    </div>
+    <br><br>
+    <h5>&nbsp;&nbsp;&nbsp;&nbsp;Preperation</h5>
+    <div class="w3-row-padding w3-center w3-margin-top" id="prep">
+        <div class="w3-col l2">
+            <h6>IR Lifecycle</h6>
+            <iframe src="../content/cheatsheets/IRLC.pdf" width="100%"></iframe>
+            <a href="../content/cheatsheets/IRLC.pdf" target="_blank" class="w3-button w3-theme">Download&nbsp;<i
+                    class="fa fa-external-link"></i></a>
+        </div>
+        <div class="w3-col l2">
+            <h6>Critical Log Review</h6>
+            <iframe src="../content/cheatsheets/CriticalLogReview.pdf" width="100%"></iframe>
+            <a href="../content/cheatsheets/CriticalLogReview.pdf" target="_blank"
+                class="w3-button w3-theme">Download&nbsp;<i class="fa fa-external-link"></i></a>
+        </div>
+        <div class="w3-col l2">
+            <h6>DDoS Incident Response</h6>
+            <iframe src="../content/cheatsheets/DDoS_IR.pdf" width="100%"></iframe>
+            <a href="../content/cheatsheets/DDoS_IR.pdf" target="_blank" class="w3-button w3-theme">Download&nbsp;<i
+                    class="fa fa-external-link"></i></a>
+        </div>
+        <div class="w3-col l2">
+            <h6>Security Architecture</h6>
+            <iframe src="../content/cheatsheets/SecurityArchitecture.pdf" width="100%"></iframe>
+            <a href="../content/cheatsheets/SecurityArchitecture.pdf" target="_blank"
+                class="w3-button w3-theme">Download&nbsp;<i class="fa fa-external-link"></i></a>
+        </div>
+        <div class="w3-col l2">
+            <h6>Writing Tips</h6>
+            <iframe src="../content/cheatsheets/WritingTipsForITProfessionals.pdf" width="100%"></iframe>
+            <a href="../content/cheatsheets/WritingTipsForITProfessionals.pdf" target="_blank"
+                class="w3-button w3-theme">Download&nbsp;<i class="fa fa-external-link"></i></a>
+        </div>
+    </div>
+    <div class="w3-container">
+        <hr>
+        <div class="w3-center">
+        </div>
+    </div>
+    <br><br>
+    <h5>&nbsp;&nbsp;&nbsp;&nbsp;Intrusion Detection</h5>
+    <div class="w3-row-padding w3-center w3-margin-top" id="ids">
+        <div class="w3-col l2">
+            <h6>Windows</h6>
+            <iframe src="../content/cheatsheets/IntrusionDiscoveryWindows.pdf" width="100%"></iframe>
+            <a href="../content/cheatsheets/IntrusionDiscoveryWindows.pdf" target="_blank"
+                class="w3-button w3-theme">Download&nbsp;<i class="fa fa-external-link"></i></a>
+        </div>
+        <div class="w3-col l2">
+            <h6>Windows 2K</h6>
+            <iframe src="../content/cheatsheets/IntrusionDetectionWin2K.pdf" width="100%"></iframe>
+            <a href="../content/cheatsheets/IntrusionDetectionWin2K.pdf" target="_blank"
+                class="w3-button w3-theme">Download&nbsp;<i class="fa fa-external-link"></i></a>
+        </div>
+        <div class="w3-col l2">
+            <h6>Linux</h6>
+            <iframe src="../content/cheatsheets/IntrusionDiscoveryLinux.pdf" width="100%"></iframe>
+            <a href="../content/cheatsheets/IntrusionDiscoveryLinux.pdf" target="_blank"
+                class="w3-button w3-theme">Download&nbsp;<i class="fa fa-external-link"></i></a>
+        </div>
+        <div class="w3-col l2">
+            <h6>Evidence Collection</h6>
+            <iframe src="../content/cheatsheets/EvidenceCollection.pdf" width="100%"></iframe>
+            <a href="../content/cheatsheets/EvidenceCollection.pdf" target="_blank"
+                class="w3-button w3-theme">Download&nbsp;<i class="fa fa-external-link"></i></a>
+        </div>
+    </div>
+    <div class="w3-container">
+        <hr>
+        <div class="w3-center">
+        </div>
+    </div>
+    <br><br>
+    <h5>&nbsp;&nbsp;&nbsp;&nbsp;DFIR & Threat Hunting</h5>
+    <div class="w3-row-padding w3-center w3-margin-top" id="dfir">
+        <div class="w3-col l2">
+            <h6>Windows Processes</h6>
+            <iframe src="../content/cheatsheets/DefaultWindowsProcesses.pdf" width="100%"></iframe>
+            <a href="../content/cheatsheets/DefaultWindowsProcesses.pdf" target="_blank"
+                class="w3-button w3-theme">Download&nbsp;<i class="fa fa-external-link"></i></a>
+        </div>
+        <div class="w3-col l2">
+            <h6>Event Log Analysis</h6>
+            <iframe src="../content/cheatsheets/EventLogAnalysis.pdf" width="100%"></iframe>
+            <a href="../content/cheatsheets/EventLogAnalysis.pdf" target="_blank"
+                class="w3-button w3-theme">Download&nbsp;<i class="fa fa-external-link"></i></a>
+        </div>
+        <div class="w3-col l2">
+            <h6>Awesome Event IDs</h6>
+            <div class="w3-card w3-container w3-blue" style="min-height:150px">
+                <a href="https://github.com/stuhli/awesome-event-ids" target="_blank">
+                    <br><br>
+                    <i class="fa fa-file-code-o w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <h6>macOS Forensics</h6>
+            <iframe src="../content/cheatsheets/macOS_Forensics.pdf" width="100%"></iframe>
+            <a href="../content/cheatsheets/macOS_Forensics.pdf" target="_blank"
+                class="w3-button w3-theme">Download&nbsp;<i class="fa fa-external-link"></i></a>
+        </div>
+        <div class="w3-col l2">
+            <h6>SIFT</h6>
+            <iframe src="../content/cheatsheets/SIFTWorkstation.pdf" width="100%"></iframe>
+            <a href="../content/cheatsheets/SIFTWorkstation.pdf" target="_blank"
+                class="w3-button w3-theme">Download&nbsp;<i class="fa fa-external-link"></i></a>
+        </div>
+        <div class="w3-col l2">
+            <h6>REMnux</h6>
+            <iframe src="../content/cheatsheets/REMnux.pdf" width="100%"></iframe>
+            <a href="../content/cheatsheets/REMnux.pdf" target="_blank" class="w3-button w3-theme">Download&nbsp;<i
+                    class="fa fa-external-link"></i></a>
+        </div>
+    </div>
+    <div class="w3-row-padding w3-center w3-margin-top">
+        <div class="w3-col l2">
+            <h6>Eric Zimmerman Tools</h6>
+            <iframe src="../content/cheatsheets/EricZimmermanTools.pdf" width="100%"></iframe>
+            <a href="../content/cheatsheets/EricZimmermanTools.pdf" target="_blank"
+                class="w3-button w3-theme">Download&nbsp;<i class="fa fa-external-link"></i></a>
+        </div>
+        <div class="w3-col l2">
+            <h6>TZWorks</h6>
+            <iframe src="../content/cheatsheets/TZworks.pdf" width="100%"></iframe>
+            <a href="../content/cheatsheets/TZworks.pdf" target="_blank" class="w3-button w3-theme">Download&nbsp;<i
+                    class="fa fa-external-link"></i></a>
+        </div>
+        <div class="w3-col l2">
+            <h6>oledump</h6>
+            <iframe src="../content/cheatsheets/oledump.pdf" width="100%"></iframe>
+            <a href="../content/cheatsheets/oledump.pdf" target="_blank" class="w3-button w3-theme">Download&nbsp;<i
+                    class="fa fa-external-link"></i></a>
+        </div>
+        <div class="w3-col l2">
+            <h6>Memory Forensics</h6>
+            <iframe src="../content/cheatsheets/MemoryForensics.pdf" width="100%"></iframe>
+            <a href="../content/cheatsheets/MemoryForensics.pdf" target="_blank"
+                class="w3-button w3-theme">Download&nbsp;<i class="fa fa-external-link"></i></a>
+        </div>
+        <div class="w3-col l2">
+            <h6>plaso</h6>
+            <iframe src="../content/cheatsheets/plaso.pdf" width="100%"></iframe>
+            <a href="../content/cheatsheets/plaso.pdf" target="_blank" class="w3-button w3-theme">Download&nbsp;<i
+                    class="fa fa-external-link"></i></a>
+        </div>
+        <div class="w3-col l2">
+            <h6>Sysmon</h6>
+            <iframe src="../content/cheatsheets/Sysmon.pdf" width="100%"></iframe>
+            <a href="../content/cheatsheets/Sysmon.pdf" target="_blank" class="w3-button w3-theme">Download&nbsp;<i
+                    class="fa fa-external-link"></i></a>
+        </div>
+    </div>
+    <br><br>
+    <h5>&nbsp;&nbsp;&nbsp;&nbsp;Network Forensics</h5>
+    <div class="w3-row-padding w3-center w3-margin-top" id="logs">
+        <div class="w3-col l2">
+            <h6>Lateral Movement Analysis</h6>
+            <iframe src="../content/cheatsheets/LateralMovementAnalysis.pdf" width="100%"></iframe>
+            <a href="../content/cheatsheets/LateralMovementAnalysis.pdf" target="_blank"
+                class="w3-button w3-theme">Download&nbsp;<i class="fa fa-external-link"></i></a>
+        </div>
+        <div class="w3-col l2">
+            <h6>Common Ports</h6>
+            <iframe src="../content/cheatsheets/PacketLife.pdf" width="100%"></iframe>
+            <a href="../content/cheatsheets/PacketLife.pdf" target="_blank" class="w3-button w3-theme">Download&nbsp;<i
+                    class="fa fa-external-link"></i></a>
+        </div>
+        <div class="w3-col l2">
+            <h6>Web Proxy Event Analysis</h6>
+            <iframe src="../content/cheatsheets/WebProxyEventAnalysis.pdf" width="100%"></iframe>
+            <a href="../content/cheatsheets/WebProxyEventAnalysis.pdf" target="_blank"
+                class="w3-button w3-theme">Download&nbsp;<i class="fa fa-external-link"></i></a>
+        </div>
+        <div class="w3-col l2">
+            <h6>TCP/IP & tcpdump</h6>
+            <iframe src="../content/cheatsheets/TCPIP_tcpdump.pdf" width="100%"></iframe>
+            <a href="../content/cheatsheets/TCPIP_tcpdump.pdf" target="_blank"
+                class="w3-button w3-theme">Download&nbsp;<i class="fa fa-external-link"></i></a>
+        </div>
+        <div class="w3-col l2">
+            <h6>SMB Access from Linux</h6>
+            <iframe src="../content/cheatsheets/SMB_AccessFromLinux.pdf" width="100%"></iframe>
+            <a href="../content/cheatsheets/SMB_AccessFromLinux.pdf" target="_blank"
+                class="w3-button w3-theme">Download&nbsp;<i class="fa fa-external-link"></i></a>
+        </div>
+    </div>
+    <div class="w3-container">
+        <hr>
+        <div class="w3-center">
+        </div>
+    </div>
+    <br><br>
+    <h5>&nbsp;&nbsp;&nbsp;&nbsp;Malware Analysis & Reverse Engineering</h5>
+    <div class="w3-row-padding w3-center w3-margin-top" id="rem">
+        <div class="w3-col l2">
+            <h6>Malware Analysis</h6>
+            <iframe src="../content/cheatsheets/MalwareAnalysis.pdf" width="100%"></iframe>
+            <a href="../content/cheatsheets/MalwareAnalysis.pdf" target="_blank"
+                class="w3-button w3-theme">Download&nbsp;<i class="fa fa-external-link"></i></a>
+        </div>
+        <div class="w3-col l2">
+            <h6>Malicious Documents</h6>
+            <iframe src="../content/cheatsheets/MaliciousDocumentAnalysis.pdf" width="100%"></iframe>
+            <a href="../content/cheatsheets/MaliciousDocumentAnalysis.pdf" target="_blank"
+                class="w3-button w3-theme">Download&nbsp;<i class="fa fa-external-link"></i></a>
+        </div>
+        <div class="w3-col l2">
+            <h6>Reverse Engineering</h6>
+            <iframe src="../content/cheatsheets/MaliciousCode_ReverseEngineering.pdf" width="100%"></iframe>
+            <a href="../content/cheatsheets/MaliciousCode_ReverseEngineering.pdf" target="_blank"
+                class="w3-button w3-theme">Download&nbsp;<i class="fa fa-external-link"></i></a>
+        </div>
+        <div class="w3-col l2">
+            <h6>Reverse Engineering</h6>
+            <iframe src="../content/cheatsheets/rem.png" width="100%"></iframe>
+            <a href="../content/cheatsheets/rem.png" target="_blank" class="w3-button w3-theme">Download&nbsp;<i
+                    class="fa fa-external-link"></i></a>
+        </div>
+        <div class="w3-col l2">
+            <h6>Anti-virus Event Analysis</h6>
+            <iframe src="../content/cheatsheets/AVEvents.jpeg" width="100%"></iframe>
+            <a href="../content/cheatsheets/AVEvents.jpeg" target="_blank" class="w3-button w3-theme">Download&nbsp;<i
+                    class="fa fa-external-link"></i></a>
+        </div>
+        <div class="w3-col l2">
+            <h6>IDA Pro</h6>
+            <iframe src="../content/cheatsheets/IDAPro.pdf" width="100%"></iframe>
+            <a href="../content/cheatsheets/IDAPro.pdf" target="_blank" class="w3-button w3-theme">Download&nbsp;<i
+                    class="fa fa-external-link"></i></a>
+        </div>
+    </div>
+    <div class="w3-container">
+        <hr>
+        <div class="w3-center">
+        </div>
+    </div>
+    <br><br>
+    <h5>&nbsp;&nbsp;&nbsp;&nbsp;Steganography</h5>
+    <div class="w3-row-padding w3-center w3-margin-top" id="steg">
+    </div>
+    <div class="w3-container">
+        <hr>
+        <div class="w3-center">
+        </div>
+    </div>
+    <br><br>
+    <h4>&nbsp;&nbsp;&nbsp;&nbsp;Red Team</h4>
+    <div class="w3-row-padding w3-center w3-margin-top" id="red">
+        <div class="w3-col l2">
+            <h6>
+                <h6>Payloads All The Things</h6>
+            </h6>
+            <div class="w3-card w3-container w3-red" style="min-height:150px">
+                <a href="https://github.com/swisskyrepo/PayloadsAllTheThings" target="_blank">
+                    <br><br>
+                    <i class="fa fa-file-code-o w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <h5>&nbsp;&nbsp;&nbsp;&nbsp;Reconnaissance</h5>
+    <div class="w3-row-padding w3-center w3-margin-top" id="recon">
+        <div class="w3-col l2">
+            <h6>Kali</h6>
+            <iframe src="../content/cheatsheets/Kali.pdf" width="100%"></iframe>
+            <a href="../content/cheatsheets/Kali.pdf" target="_blank" class="w3-button w3-theme">Download&nbsp;<i
+                    class="fa fa-external-link"></i></a>
+        </div>
+        <div class="w3-col l2">
+            <h6>NMAP</h6>
+            <iframe src="../content/cheatsheets/NMAPv1.1.pdf" width="100%"></iframe>
+            <a href="../content/cheatsheets/NMAPv1.1.pdf" target="_blank" class="w3-button w3-theme">Download&nbsp;<i
+                    class="fa fa-external-link"></i></a>
+        </div>
+        <div class="w3-col l2">
+            <h6>Google Hacking</h6>
+            <iframe src="../content/cheatsheets/GoogleHacking.pdf" width="100%"></iframe>
+            <a href="../content/cheatsheets/GoogleHacking.pdf" target="_blank"
+                class="w3-button w3-theme">Download&nbsp;<i class="fa fa-external-link"></i></a>
+        </div>
+    </div>
+    <div class="w3-container">
+        <hr>
+        <div class="w3-center">
+        </div>
+    </div>
+    <br><br>
+    <h5>&nbsp;&nbsp;&nbsp;&nbsp;Network Interception/Enumeration</h5>
+    <div class="w3-row-padding w3-center w3-margin-top" id="enum">
+        <div class="w3-col l2">
+            <h6>hping</h6>
+            <iframe src="../content/cheatsheets/hping3.pdf" width="100%"></iframe>
+            <a href="../content/cheatsheets/hping3.pdf" target="_blank" class="w3-button w3-theme">Download&nbsp;<i
+                    class="fa fa-external-link"></i></a>
+        </div>
+        <div class="w3-col l2">
+            <h6>Scapy</h6>
+            <iframe src="../content/cheatsheets/Scapy_v0.2.pdf" width="100%"></iframe>
+            <a href="../content/cheatsheets/Scapy_v0.2.pdf" target="_blank" class="w3-button w3-theme">Download&nbsp;<i
+                    class="fa fa-external-link"></i></a>
+        </div>
+        <div class="w3-col l2">
+            <h6>tcpdump</h6>
+            <iframe src="../content/cheatsheets/TCPIP_tcpdump.pdf" width="100%"></iframe>
+            <a href="../content/cheatsheets/TCPIP_tcpdump.pdf" target="_blank"
+                class="w3-button w3-theme">Download&nbsp;<i class="fa fa-external-link"></i></a>
+        </div>
+        <div class="w3-col l2">
+            <h6>Netcat</h6>
+            <iframe src="../content/cheatsheets/Netcat.pdf" width="100%"></iframe>
+            <a href="../content/cheatsheets/Netcat.pdf" target="_blank" class="w3-button w3-theme">Download&nbsp;<i
+                    class="fa fa-external-link"></i></a>
+        </div>
+        <div class="w3-col l2">
+            <h6>Burp Suite</h6>
+            <iframe src="../content/cheatsheets/BurpSuite.pdf" width="100%"></iframe>
+            <a href="../content/cheatsheets/BurpSuite.pdf" target="_blank" class="w3-button w3-theme">Download&nbsp;<i
+                    class="fa fa-external-link"></i></a>
+        </div>
+    </div>
+    <div class="w3-container">
+        <hr>
+        <div class="w3-center">
+        </div>
+    </div>
+    <br><br>
+    <h5>&nbsp;&nbsp;&nbsp;&nbsp;Post Exploitation</h5>
+    <div class="w3-row-padding w3-center w3-margin-top" id="post">
+        <div class="w3-col l2">
+            <h6>Bloodhound</h6>
+            <iframe src="../content/cheatsheets/Bloodhound.pdf" width="100%"></iframe>
+            <a href="../content/cheatsheets/Bloodhound.pdf" target="_blank" class="w3-button w3-theme">Download&nbsp;<i
+                    class="fa fa-external-link"></i></a>
+        </div>
+        <div class="w3-col l2">
+            <h6>Sharphound</h6>
+            <iframe src="../content/cheatsheets/Sharphound.pdf" width="100%"></iframe>
+            <a href="../content/cheatsheets/Sharphound.pdf" target="_blank" class="w3-button w3-theme">Download&nbsp;<i
+                    class="fa fa-external-link"></i></a>
+        </div>
+        <div class="w3-col l2">
+            <h6>Metasploit</h6>
+            <iframe src="../content/cheatsheets/Metasploit.pdf" width="100%"></iframe>
+            <a href="../content/cheatsheets/Metasploit.pdf" target="_blank" class="w3-button w3-theme">Download&nbsp;<i
+                    class="fa fa-external-link"></i></a>
+        </div>
+        <div class="w3-col l2">
+            <h6>Empire</h6>
+            <iframe src="../content/cheatsheets/Empire.pdf" width="100%"></iframe>
+            <a href="../content/cheatsheets/Empire.pdf" target="_blank" class="w3-button w3-theme">Download&nbsp;<i
+                    class="fa fa-external-link"></i></a>
+        </div>
+        <div class="w3-col l2">
+            <h6>Pivoting</h6>
+            <iframe src="../content/cheatsheets/Pivoting.pdf" width="100%"></iframe>
+            <a href="../content/cheatsheets/Pivoting.pdf" target="_blank" class="w3-button w3-theme">Download&nbsp;<i
+                    class="fa fa-external-link"></i></a>
+        </div>
+        <div class="w3-col l2">
+            <h6>SMB Access from Linux</h6>
+            <iframe src="../content/cheatsheets/SMB_AccessFromLinux.pdf" width="100%"></iframe>
+            <a href="../content/cheatsheets/SMB_AccessFromLinux.pdf" target="_blank"
+                class="w3-button w3-theme">Download&nbsp;<i class="fa fa-external-link"></i></a>
+        </div>
+    </div>
+    <div class="w3-container">
+        <hr>
+        <div class="w3-center">
+        </div>
+    </div>
+    <br><br>
+    <h5>&nbsp;&nbsp;&nbsp;&nbsp;Credential Harvesting</h5>
+    <div class="w3-row-padding w3-center w3-margin-top" id="creds">
+        <div class="w3-col l2">
+        </div>
+    </div>
+    <div class="w3-container">
+        <hr>
+        <div class="w3-center">
+        </div>
+    </div>
+    <br><br>
+    <h5>&nbsp;&nbsp;&nbsp;&nbsp;Command & Control</h5>
+    <div class="w3-row-padding w3-center w3-margin-top" id="c2">
+        <div class="w3-col l2">
+        </div>
+    </div>
+    <div class="w3-container">
+        <hr>
+        <div class="w3-center">
+        </div>
+    </div>
+    <br><br>
+    <h4>&nbsp;&nbsp;&nbsp;&nbsp;Intelligence</h4>
+    <div class="w3-row-padding w3-center w3-margin-top" id="int">
+        <div class="w3-col l2">
+            <h6>NMAP</h6>
+            <iframe src="../content/cheatsheets/NMAPv1.1.pdf" width="100%"></iframe>
+            <a href="../content/cheatsheets/NMAPv1.1.pdf" target="_blank" class="w3-button w3-theme">Download&nbsp;<i
+                    class="fa fa-external-link"></i></a>
+        </div>
+        <div class="w3-col l2">
+            <h6>Google Hacking</h6>
+            <iframe src="../content/cheatsheets/GoogleHacking.pdf" width="100%"></iframe>
+            <a href="../content/cheatsheets/GoogleHacking.pdf" target="_blank"
+                class="w3-button w3-theme">Download&nbsp;<i class="fa fa-external-link"></i></a>
+        </div>
+        <div class="w3-col l2">
+            <h6>Miscellaneous</h6>
+            <iframe src="../content/cheatsheets/MiscTools.pdf" width="100%"></iframe>
+            <a href="../content/cheatsheets/MiscTools.pdf" target="_blank" class="w3-button w3-theme">Download&nbsp;<i
+                    class="fa fa-external-link"></i></a>
+        </div>
+        <div class="w3-col l2">
+            <h6>RITA</h6>
+            <iframe src="../content/cheatsheets/RITA.pdf" width="100%"></iframe>
+            <a href="../content/cheatsheets/RITA.pdf" target="_blank" class="w3-button w3-theme">Download&nbsp;<i
+                    class="fa fa-external-link"></i></a>
+        </div>
+        <div class="w3-col l2">
+            <h6>Search Operators</h6>
+            <iframe src="../content/cheatsheets/search_operators.pdf" width="100%"></iframe>
+            <a href="../content/cheatsheets/search_operators.pdf" target="_blank"
+                class="w3-button w3-theme">Download&nbsp;<i class="fa fa-external-link"></i></a>
+        </div>
+        <div class="w3-col l2">
+            <h6>Shodan Dorks</h6>
+            <div class="w3-card w3-container w3-yellow" style="min-height:150px">
+                <a href="https://github.com/thedarksource/shodan-dorks" target="_blank">
+                    <br><br>
+                    <i class="fa fa-file-code-o w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="w3-container">
+        <hr>
+        <div class="w3-center">
+        </div>
+    </div>
+    <div style="color:black;font-size:12px;">
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;Additional cheat sheets:</p>
+        <div class="w3-rest">
+            <ul>
+                <li><a href="https://thedarksource.com/cheat-sheets/"
+                        target="_blank">https://thedarksource.com/cheat-sheets/</a></li>
+                <li><a href="https://www.malwarearchaeology.com/cheat-sheets"
+                        target="_blank">https://www.malwarearchaeology.com/cheat-sheets</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="w3-container">
+        <hr>
+        <div class="w3-center">
+        </div>
+    </div>
+    <div style="color:maroon;font-size:12px;">
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;With great power, comes great responsibility; this material has been collated to
+            encourage learning and development, and not to be leveraged for unethical and/or illegal behaviour.</p>
+    </div>
+    <div style="color:black;font-size:12px;">
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;I would like to thank all of the authors, instructors, publishers, developers (and
+            others) - both individuals and teams - for the content collated on this site. I must stress that none of the
+            content referenced/linked on this site is my own.</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;By visiting any of these sites, you are doing so at your own risk.</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;If you have any suggestions and/or content you feel is missing or would like
+            included, please email me at oscybershop [at] gmail.com.</p>
+    </div>
+    <!-- Footer -->
+    <footer class="w3-container w3-theme-dark w3-padding-16">
+        <p>Created by <a href="https://github.com/ezaspy/oscybershop" target="_blank">ezaspy</a>; powered by <a
+                href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+        <div style="position:relative;bottom:55px;" class="w3-tooltip w3-right">
+            <span class="w3-text w3-theme-light w3-padding">Go To Top</span> 
+            <a class="w3-text-white" href="#myHeader"><span class="w3-xlarge">
+                    <i class="fa fa-chevron-circle-up"></i></span></a>
+        </div>
+    </footer>
+</body>
+
+</html>

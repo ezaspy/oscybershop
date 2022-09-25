@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html>
+<title>onestopcybershop</title>
+<link rel="shortcut icon" type="image/x-icon" href="../favicon.ico" /> <!-- https://gauger.io/fonticon/ -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+<script src="https://kit.fontawesome.com/fb0ae32c1e.js" crossorigin="anonymous"></script>
+<script src="../scripts.js"></script>
+
+<body>
+    <!-- Side Navigation -->
+    <nav class="w3-sidebar w3-bar-block w3-card w3-animate-left w3-center" style="display:none" id="mySidebar">
+        <button class="w3-bar-item w3-button" onclick="w3_close()">Close <i class="fa fa-remove"></i></button>
+        <a href="../index.html" class="w3-bar-item w3-button">Home</a>
+        <a href="./posters.html" class="w3-bar-item w3-button">Posters</a>
+        <a href="./cheatsheets.html" class="w3-bar-item w3-button">Cheat Sheets</a>
+        <a href="./publications.html" class="w3-bar-item w3-button">Publications</a>
+        <a href="./media.html" class="w3-bar-item w3-button">Media & Socials</a>
+        <a href="./training.html" class="w3-bar-item w3-button">Formal Training</a>
+        <a href="./tooling.html" class="w3-bar-item w3-button">Tooling</a>
+        <a href="./projects.html" class="w3-bar-item w3-button">Frameworks & Projects</a>
+        <a href="./vms.html" class="w3-bar-item w3-button">Virtual Machines</a>
+        <a href="./ctfs.html" class="w3-bar-item w3-button">CTF & Challenges</a>
+        <a href="./blue.html" class="w3-bar-item w3-button">Cyber Defence (Blue Team)</a>
+        <a href="./red.html" class="w3-bar-item w3-button">Offensive Cyber (Red Team)</a>
+        <a href="./int.html" class="w3-bar-item w3-button">Threat Intelligence</a>
+    </nav>
+    <!-- Header -->
+    <header class="w3-container w3-theme w3-padding" id="myHeader">
+        <div class="w3-third">
+            <i onclick="w3_open()" class="fa fa-bars w3-xxlarge w3-button w3-theme"></i>
+        </div>
+        <div class="w3-third">
+            <div class="w3-center">
+                <a href="https://oscybershop.herokuapp.com/index.html" class="w3-button">
+                    <h4><img src="../content/logo.png" alt="logo" width="24" height="24">&nbsp;&nbsp;ONESTOPCYBERSHOP
+                    </h4>
+                </a>
+                <h2 class="w3-xxlarge w3-animate-bottom"><i class="fa fa-file-pdf-o"></i>&nbsp;&nbsp;Posters</h2>
+            </div>
+        </div>
+        <div class="w3-third">
+            <div class="w3-right">
+                <a href="./search.html" target="_blank"><i class="fa fa-search w3-xxlarge w3-button w3-theme"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+    <div class="w3-container">
+        <a href="#blue" class="w3-bar-item w3-button">Cyber Defence</a>&nbsp;|
+        <a href="#red" class="w3-bar-item w3-button">Offensive Cyber</a>&nbsp;|
+        <a href="#int" class="w3-bar-item w3-button">Threat Intelligence</a>&nbsp;|
+        <a href="#code" class="w3-bar-item w3-button">Secure Coding</a>&nbsp;|
+        <a href="#ics" class="w3-bar-item w3-button">ICS/SCADA</a>&nbsp;|
+        <a href="#mgmt" class="w3-bar-item w3-button">Cyber Security Management</a>
+    </div>
+    <br><br>
+    <div class="w3-row-padding w3-center w3-margin-top">
+        <div class="w3-col l2">
+            <h6>
+                <h6>SecurityZines</h6>
+            </h6>
+            <div class="w3-card w3-container w3-red" style="min-height:150px">
+                <a href="https://securityzines.com/" target="_blank">
+                    <br><br>
+                    <i class="fa fa-file-pdf-o w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <br><br>
+    <h4>&nbsp;&nbsp;&nbsp;&nbsp;Cyber Defence (Blue Team)</h4>
+    <div class="w3-row-padding w3-center w3-margin-top" id="blue">
+        <div class="w3-col l2">
+            <h6>Know Normal; Hunt Evil</h6>
+            <iframe src="../content/posters/KnowNormalHuntEvil.pdf" width="100%"></iframe>
+            <a href="../content/posters/KnowNormalHuntEvil.pdf" target="_blank"
+                class="w3-button w3-theme">Download&nbsp;<i class="fa fa-external-link"></i></a>
+        </div>
+        <div class="w3-col l2">
+            <h6>Know Abnormal; Find Evil</h6>
+            <iframe src="../content/posters/KnowAbnormalFindEvil.pdf" width="100%"></iframe>
+            <a href="../content/posters/KnowAbnormalFindEvil.pdf" target="_blank"
+                class="w3-button w3-theme">Download&nbsp;<i class="fa fa-external-link"></i></a>
+        </div>
+        <div class="w3-col l2">
+            <h6>DFIR Command Line</h6>
+            <iframe src="../content/posters/DFIR_CLI.pdf" width="100%"></iframe>
+            <a href="../content/posters/DFIR_CLI.pdf" target="_blank" class="w3-button w3-theme">Download&nbsp;<i
+                    class="fa fa-external-link"></i></a>
+        </div>
+        <div class="w3-col l2">
+            <h6>SIFT & REMnux</h6>
+            <iframe src="../content/posters/SIFT_REMnux.pdf" width="100%"></iframe>
+            <a href="../content/posters/SIFT_REMnux.pdf" target="_blank" class="w3-button w3-theme">Download&nbsp;<i
+                    class="fa fa-external-link"></i></a>
+        </div>
+        <div class="w3-col l2">
+            <h6>Windows Forensics</h6>
+            <iframe src="../content/posters/WindowsForensics.pdf" width="100%"></iframe>
+            <a href="../content/posters/WindowsForensics.pdf" target="_blank"
+                class="w3-button w3-theme">Download&nbsp;<i class="fa fa-external-link"></i></a>
+        </div>
+        <div class="w3-col l2">
+            <h6>Windows Third Party Apps</h6>
+            <iframe src="../content/posters/WindowsThirdPartyForensics.pdf" width="100%"></iframe>
+            <a href="../content/posters/WindowsThirdPartyForensics.pdf" target="_blank"
+                class="w3-button w3-theme">Download&nbsp;<i class="fa fa-external-link"></i></a>
+        </div>
+    </div>
+    <div class="w3-row-padding w3-center w3-margin-top">
+        <div class="w3-col l2">
+            <h6>Memory Forensics</h6>
+            <iframe src="../content/posters/MemoryForensics.pdf" width="100%"></iframe>
+            <a href="../content/posters/MemoryForensics.pdf" target="_blank" class="w3-button w3-theme">Download&nbsp;<i
+                    class="fa fa-external-link"></i></a>
+        </div>
+        <div class="w3-col l2">
+            <h6>Network Forensics</h6>
+            <iframe src="../content/posters/NetworkForensics.pdf" width="100%"></iframe>
+            <a href="../content/posters/NetworkForensics.pdf" target="_blank"
+                class="w3-button w3-theme">Download&nbsp;<i class="fa fa-external-link"></i></a>
+        </div>
+        <div class="w3-col l2">
+            <h6>Log Lifecycle</h6>
+            <iframe src="../content/posters/LogLifecycle.pdf" width="100%"></iframe>
+            <a href="../content/posters/LogLifecycle.pdf" target="_blank" class="w3-button w3-theme">Download&nbsp;<i
+                    class="fa fa-external-link"></i></a>
+        </div>
+        <div class="w3-col l2">
+            <h6>Smartphone Forensics</h6>
+            <iframe src="../content/posters/SmartphoneForensics.pdf" width="100%"></iframe>
+            <a href="../content/posters/SmartphoneForensics.pdf" target="_blank"
+                class="w3-button w3-theme">Download&nbsp;<i class="fa fa-external-link"></i></a>
+        </div>
+        <div class="w3-col l2">
+            <h6>Smartphone Forensics</h6>
+            <iframe src="../content/posters/Smartphones.pdf" width="100%"></iframe>
+            <a href="../content/posters/Smartphones.pdf" target="_blank" class="w3-button w3-theme">Download&nbsp;<i
+                    class="fa fa-external-link"></i></a>
+        </div>
+    </div>
+    <div class="w3-container">
+        <hr>
+        <div class="w3-center">
+        </div>
+    </div>
+    <br><br>
+    <h4>&nbsp;&nbsp;&nbsp;&nbsp;Offensive Cyber (Red Team)</h4>
+    <div class="w3-row-padding w3-center w3-margin-top" id="red">
+        <div class="w3-col l2">
+            <h6>CMD Line KungFu</h6>
+            <iframe src="../content/posters/CMDLineKungFu.pdf" width="100%"></iframe>
+            <a href="../content/posters/CMDLineKungFu.pdf" target="_blank" class="w3-button w3-theme">Download&nbsp;<i
+                    class="fa fa-external-link"></i></a>
+        </div>
+        <div class="w3-col l2">
+            <h6>Penetration Testing</h6>
+            <iframe src="../content/posters/PenTest.pdf" width="100%"></iframe>
+            <a href="../content/posters/PenTest.pdf" target="_blank" class="w3-button w3-theme">Download&nbsp;<i
+                    class="fa fa-external-link"></i></a>
+        </div>
+        <div class="w3-col l2">
+            <h6>Pen Testing Blueprints</h6>
+            <iframe src="../content/posters/PenTestBlueprint.pdf" width="100%"></iframe>
+            <a href="../content/posters/PenTestBlueprint.pdf" target="_blank"
+                class="w3-button w3-theme">Download&nbsp;<i class="fa fa-external-link"></i></a>
+        </div>
+        <div class="w3-col l2">
+            <h6>Pivots & Payloads</h6>
+            <iframe src="../content/posters/PivotsPayloads.pdf" width="100%"></iframe>
+            <a href="../content/posters/PivotsPayloads.pdf" target="_blank" class="w3-button w3-theme">Download&nbsp;<i
+                    class="fa fa-external-link"></i></a>
+        </div>
+    </div>
+    <div class="w3-container">
+        <hr>
+        <div class="w3-center">
+        </div>
+    </div>
+    <br><br>
+    <h4>&nbsp;&nbsp;&nbsp;&nbsp;Intelligence</h4>
+    <div class="w3-row-padding w3-center w3-margin-top" id="int">
+        <div class="w3-col l2">
+            <h6>Threat Intelligence</h6>
+            <iframe src="../content/posters/ThreatIntelligence.pdf" width="100%"></iframe>
+            <a href="../content/posters/ThreatIntelligence.pdf" target="_blank"
+                class="w3-button w3-theme">Download&nbsp;<i class="fa fa-external-link"></i></a>
+        </div>
+    </div>
+    <div class="w3-container">
+        <hr>
+        <div class="w3-center">
+        </div>
+    </div>
+    <br><br>
+    <h4>&nbsp;&nbsp;&nbsp;&nbsp;Secure Coding</h4>
+    <div class="w3-row-padding w3-center w3-margin-top" id="code">
+        <div class="w3-col l2">
+            <h6>Secure DevOps</h6>
+            <iframe src="../content/posters/SecureDevOps.pdf" width="100%"></iframe>
+            <a href="../content/posters/SecureDevOps.pdf" target="_blank" class="w3-button w3-theme">Download&nbsp;<i
+                    class="fa fa-external-link"></i></a>
+        </div>
+        <div class="w3-col l2">
+            <h6>Secure Web App Testing</h6>
+            <iframe src="../content/posters/SWATChecklist.pdf" width="100%"></iframe>
+            <a href="../content/posters/SWATChecklist.pdf" target="_blank" class="w3-button w3-theme">Download&nbsp;<i
+                    class="fa fa-external-link"></i></a>
+        </div>
+    </div>
+    <div class="w3-container">
+        <hr>
+        <div class="w3-center">
+        </div>
+    </div>
+    <br><br>
+    <h4>&nbsp;&nbsp;&nbsp;&nbsp;ICS/SCADA</h4>
+    <div class="w3-row-padding w3-center w3-margin-top" id="ics">
+        <div class="w3-col l2">
+            <h6>Industrial Control Systems</h6>
+            <iframe src="../content/posters/ICS.pdf" width="100%"></iframe>
+            <a href="../content/posters/ICS.pdf" target="_blank" class="w3-button w3-theme">Download&nbsp;<i
+                    class="fa fa-external-link"></i></a>
+        </div>
+        <div class="w3-col l2">
+            <h6>ICS Resources</h6>
+            <iframe src="../content/posters/ICSResources.pdf" width="100%"></iframe>
+            <a href="../content/posters/ICSResources.pdf" target="_blank" class="w3-button w3-theme">Download&nbsp;<i
+                    class="fa fa-external-link"></i></a>
+        </div>
+        <div class="w3-col l2">
+            <h6>ICS Security</h6>
+            <iframe src="../content/posters/ICSSecurity.pdf" width="100%"></iframe>
+            <a href="../content/posters/ICSSecurity.pdf" target="_blank" class="w3-button w3-theme">Download&nbsp;<i
+                    class="fa fa-external-link"></i></a>
+        </div>
+        <div class="w3-col l2">
+            <h6>ICS Attacks</h6>
+            <iframe src="../content/posters/ICSAttacks.pdf" width="100%"></iframe>
+            <a href="../content/posters/ICSAttacks.pdf" target="_blank" class="w3-button w3-theme">Download&nbsp;<i
+                    class="fa fa-external-link"></i></a>
+        </div>
+        <div class="w3-col l2">
+            <h6>ICS Attacks</h6>
+            <iframe src="../content/posters/AttackLookLike.pdf" width="100%"></iframe>
+            <a href="../content/posters/AttackLookLike.pdf" target="_blank" class="w3-button w3-theme">Download&nbsp;<i
+                    class="fa fa-external-link"></i></a>
+        </div>
+    </div>
+    <div class="w3-container">
+        <hr>
+        <div class="w3-center">
+        </div>
+    </div>
+    <br><br>
+    <h4>&nbsp;&nbsp;&nbsp;&nbsp;Cyber Security Management</h4>
+    <div class="w3-row-padding w3-center w3-margin-top" id="mgmt">
+        <div class="w3-col l2">
+            <h6>Security Awareness</h6>
+            <iframe src="../content/posters/SecurityAwareness.pdf" width="100%"></iframe>
+            <a href="../content/posters/SecurityAwareness.pdf" target="_blank"
+                class="w3-button w3-theme">Download&nbsp;<i class="fa fa-external-link"></i></a>
+        </div>
+        <div class="w3-col l2">
+            <h6>CISO Mind Map</h6>
+            <iframe src="../content/posters/CISOMindMap.pdf" width="100%"></iframe>
+            <a href="../content/posters/CISOMindMap.pdf" target="_blank" class="w3-button w3-theme">Download&nbsp;<i
+                    class="fa fa-external-link"></i></a>
+        </div>
+        <div class="w3-col l2">
+            <h6>CIS Controls</h6>
+            <iframe src="../content/posters/CISControls.pdf" width="100%"></iframe>
+            <a href="../content/posters/CISControls.pdf" target="_blank" class="w3-button w3-theme">Download&nbsp;<i
+                    class="fa fa-external-link"></i></a>
+        </div>
+        <div class="w3-col l2">
+            <h6>Phishing</h6>
+            <iframe src="../content/posters/Phishing.pdf" width="100%"></iframe>
+            <a href="../content/posters/Phishing.pdf" target="_blank" class="w3-button w3-theme">Download&nbsp;<i
+                    class="fa fa-external-link"></i></a>
+        </div>
+        <div class="w3-col l2">
+            <h6>Home</h6>
+            <iframe src="../content/posters/Home.pdf" width="100%"></iframe>
+            <a href="../content/posters/Home.pdf" target="_blank" class="w3-button w3-theme">Download&nbsp;<i
+                    class="fa fa-external-link"></i></a>
+        </div>
+        <div class="w3-col l2">
+            <h6>Healthcare</h6>
+            <iframe src="../content/posters/Healthcare.pdf" width="100%"></iframe>
+            <a href="../content/posters/Healthcare.pdf" target="_blank" class="w3-button w3-theme">Download&nbsp;<i
+                    class="fa fa-external-link"></i></a>
+        </div>
+    </div>
+    <div class="w3-row-padding w3-center w3-margin-top">
+        <div class="w3-col l2">
+            <h6>Training Roadmap</h6>
+            <iframe src="../content/posters/TrainingRoadmap.JPG" width="100%"></iframe>
+            <a href="../content/posters/TrainingRoadmap.JPG" target="_blank" class="w3-button w3-theme">Download&nbsp;<i
+                    class="fa fa-external-link"></i></a>
+        </div>
+        <div class="w3-col l2">
+            <h6>Types of Cyber Attacks</h6>
+            <iframe src="../content/posters/TypeOfCyberAttack.JPG" width="100%"></iframe>
+            <a href="../content/posters/TypeOfCyberAttack.JPG" target="_blank"
+                class="w3-button w3-theme">Download&nbsp;<i class="fa fa-external-link"></i></a>
+        </div>
+    </div>
+    <div class="w3-container">
+        <hr>
+        <div class="w3-center">
+        </div>
+    </div>
+    <div style="color:maroon;font-size:12px;">
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;With great power, comes great responsibility; this material has been collated to
+            encourage learning and development, and not to be leveraged for unethical and/or illegal behaviour.</p>
+    </div>
+    <div style="color:black;font-size:12px;">
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;I would like to thank all of the authors, instructors, publishers, developers (and
+            others) - both individuals and teams - for the content collated on this site. I must stress that none of the
+            content referenced/linked on this site is my own.</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;By visiting any of these sites, you are doing so at your own risk.</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;If you have any suggestions and/or content you feel is missing or would like
+            included, please email me at oscybershop [at] gmail.com.</p>
+    </div>
+    <!-- Footer -->
+    <footer class="w3-container w3-theme-dark w3-padding-16">
+        <p>Created by <a href="https://github.com/ezaspy/oscybershop" target="_blank">ezaspy</a>; powered by <a
+                href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+        <div style="position:relative;bottom:55px;" class="w3-tooltip w3-right">
+            <span class="w3-text w3-theme-light w3-padding">Go To Top</span> 
+            <a class="w3-text-white" href="#myHeader"><span class="w3-xlarge">
+                    <i class="fa fa-chevron-circle-up"></i></span></a>
+        </div>
+    </footer>
+</body>
+
+</html>
