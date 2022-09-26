@@ -12,7 +12,7 @@
 
 <body>
     <!-- Side Navigation -->
-    <nav class="w3-sidebar w3-bar-block w3-card w3-animate-left w3-center" style="display:none" id="mySidebar">
+    <nav class="w3-sidebar w3-bar-block w3-card w3-animate-left w3-center" style="display:none" id="mysidebar">
         <button class="w3-bar-item w3-button" onclick="w3_close()">Close <i class="fa fa-remove"></i></button>
         <a href="../index.html" class="w3-bar-item w3-button">Home</a>
         <a href="./posters.html" class="w3-bar-item w3-button">Posters</a>
@@ -28,7 +28,7 @@
         <a href="./int.html" class="w3-bar-item w3-button">Threat Intelligence</a>
     </nav>
     <!-- Header -->
-    <header class="w3-container w3-theme w3-padding" id="myHeader">
+    <header class="w3-container w3-theme w3-padding" id="myheader">
         <div class="w3-third">
             <i onclick="w3_open()" class="fa fa-bars w3-xxlarge w3-button w3-theme"></i>
         </div>
@@ -61,7 +61,7 @@
     <h4>&nbsp;&nbsp;&nbsp;&nbsp;Books</h4>
     <div class="w3-row-padding w3-center w3-margin-top" id="books">
         <div class="w3-col l2" id="story">
-            <div class="w3-card w3-container" style="min-height:150px">
+            <div class="w3-card w3-container" style="min-height:150px" id="the_cuckoos_egg">
                 <h6>The Cuckoos Egg</h6><br>
                 <a href="https://www.amazon.co.uk/Cuckoos-Egg-Tracking-Computer-Espionage/dp/1416507787/ref=pd_sbs_1/261-8971944-6511956?pd_rd_w=sj0rC&pf_rd_p=b3232d54-1e37-435b-b370-81046eef630a&pf_rd_r=3A742NT5CHHZ6XBJBMYP&pd_rd_r=ece3fa45-1945-4f3e-95cc-fc3ea977c93e&pd_rd_wg=DpPtx&pd_rd_i=1416507787&psc=1"
                     target="_blank">
@@ -70,7 +70,7 @@
             </div>
         </div>
         <div class="w3-col l2">
-            <div class="w3-card w3-container" style="min-height:150px">
+            <div class="w3-card w3-container" style="min-height:150px" id="ghost_in_the_wires">
                 <h6>Ghost in the Wires</h6><br>
                 <a href="https://www.amazon.co.uk/Ghost-Wires-Adventures-Worlds-Wanted/dp/0316212180/ref=pd_sbs_2/261-8971944-6511956?pd_rd_w=vlYql&pf_rd_p=b3232d54-1e37-435b-b370-81046eef630a&pf_rd_r=4C6AJSAVV356RDVVB1JW&pd_rd_r=91ccdf2c-8e5a-4dea-ba09-94760cd1c188&pd_rd_wg=IQBbC&pd_rd_i=0316212180&psc=1"
                     target="_blank">
@@ -79,7 +79,7 @@
             </div>
         </div>
         <div class="w3-col l2">
-            <div class="w3-card w3-container" style="min-height:150px">
+            <div class="w3-card w3-container" style="min-height:150px" id="countdown_to_zero_day">
                 <h6>Countdown to Zero Day</h6><br>
                 <a href="https://www.amazon.co.uk/Countdown-Zero-Day-Stuxnet-Digital/dp/0770436196/ref=pd_sbs_3/261-8971944-6511956?pd_rd_w=vlYql&pf_rd_p=b3232d54-1e37-435b-b370-81046eef630a&pf_rd_r=4C6AJSAVV356RDVVB1JW&pd_rd_r=91ccdf2c-8e5a-4dea-ba09-94760cd1c188&pd_rd_wg=IQBbC&pd_rd_i=0770436196&psc=1"
                     target="_blank">
@@ -88,7 +88,7 @@
             </div>
         </div>
         <div class="w3-col l2">
-            <div class="w3-card w3-container" style="min-height:150px">
+            <div class="w3-card w3-container" style="min-height:150px" id="sandworm">
                 <h6>Sandworm</h6><br>
                 <a href="https://www.amazon.co.uk/Sandworm-Cyberwar-Kremlins-Dangerous-Hackers/dp/0525564632/ref=pd_sbs_1/261-8971944-6511956?pd_rd_w=vlYql&pf_rd_p=b3232d54-1e37-435b-b370-81046eef630a&pf_rd_r=4C6AJSAVV356RDVVB1JW&pd_rd_r=91ccdf2c-8e5a-4dea-ba09-94760cd1c188&pd_rd_wg=IQBbC&pd_rd_i=0525564632&psc=1"
                     target="_blank">
@@ -97,7 +97,7 @@
             </div>
         </div>
         <div class="w3-col l2">
-            <div class="w3-card w3-container" style="min-height:150px">
+            <div class="w3-card w3-container" style="min-height:150px" id="cyber_war">
                 <h6>Cyber War</h6><br>
                 <a href="https://www.amazon.co.uk/Cyber-War-Threat-National-Security/dp/0061962244" target="_blank">
                     <i class="fa fa-book w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
@@ -105,7 +105,7 @@
             </div>
         </div>
         <div class="w3-col l2">
-            <div class="w3-card w3-container" style="min-height:150px">
+            <div class="w3-card w3-container" style="min-height:150px" id="the_dark_net">
                 <h6>The Dark Net</h6><br>
                 <a href="https://www.amazon.co.uk/Dark-Net-Jamie-Bartlett/dp/0099592029" target="_blank">
                     <i class="fa fa-book w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
@@ -120,222 +120,233 @@
     </div>
     <div class="w3-row-padding w3-center w3-margin-top">
         <div class="w3-col l2" id="text">
-            <div class="w3-card w3-container" style="min-height:150px">
-                <h6>PowerShell Cookbook:<br>Your Complete Guide</h6><br>
-                <a href="https://www.amazon.co.uk/PowerShell-Cookbook-Scripting-Ubiquitous-Object-Based-dp-109810160X/dp/109810160X/ref=dp_ob_title_bk"
-                    target="_blank">
-                    <i class="fa fa-book w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
-                </a>
+            <div class="w3-card w3-container" style="min-height:150px" id="powershell_cookbook_your_complete_guide">
+                <h6>PowerShell Cookbook:<br>Your Complete Guide<br>
+                    <a href="https://www.amazon.co.uk/PowerShell-Cookbook-Scripting-Ubiquitous-Object-Based-dp-109810160X/dp/109810160X/ref=dp_ob_title_bk"
+                        target="_blank">
+                        <i class="fa fa-book w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                    </a>
             </div>
         </div>
         <div class="w3-col l2">
-            <div class="w3-card w3-container" style="min-height:150px">
-                <h6>Windows PowerShell<br>in Action</h6><br>
-                <a href="https://www.amazon.co.uk/Windows-PowerShell-Action-Bruce-Payette/dp/1935182137"
-                    target="_blank">
-                    <i class="fa fa-book w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
-                </a>
+            <div class="w3-card w3-container" style="min-height:150px" id="windows_powershell_in_action">
+                <h6>Windows PowerShell<br>in Action<br>
+                    <a href="https://www.amazon.co.uk/Windows-PowerShell-Action-Bruce-Payette/dp/1935182137"
+                        target="_blank">
+                        <i class="fa fa-book w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                    </a>
             </div>
         </div>
         <div class="w3-col l2">
-            <div class="w3-card w3-container" style="min-height:150px">
-                <h6>PowerShell in a Month<br>of Lunches</h6><br>
-                <a href="https://www.manning.com/books/learn-powershell-scripting-in-a-month-of-lunches"
-                    target="_blank">
-                    <i class="fa fa-book w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
-                </a>
+            <div class="w3-card w3-container" style="min-height:150px" id="powershell_in_a_month_of_lunches">
+                <h6>PowerShell in a Month<br>of Lunches<br>
+                    <a href="https://www.manning.com/books/learn-powershell-scripting-in-a-month-of-lunches"
+                        target="_blank">
+                        <i class="fa fa-book w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                    </a>
             </div>
         </div>
         <div class="w3-col l2">
-            <div class="w3-card w3-container" style="min-height:150px">
-                <h6>Violent Python:<br>A Cookbook for...</h6><br>
-                <a href="https://www.amazon.co.uk/Violent-Python-Cookbook-Penetration-Engineers/dp/1597499579"
-                    target="_blank">
-                    <i class="fa fa-book w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
-                </a>
-            </div>
-        </div>
-    </div>
-    <div class="w3-row-padding w3-center w3-margin-top">
-        <div class="w3-col l2">
-            <div class="w3-card w3-container w3-blue" style="min-height:150px">
-                <h6>Cybersecurity Blue<br>Team Toolkit</h6><br>
-                <a href="https://www.amazon.co.uk/Cybersecurity-Blue-Toolkit-Nadean-Tanner/dp/1119552931"
-                    target="_blank">
-                    <i class="fa fa-book w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
-                </a>
-            </div>
-        </div>
-        <div class="w3-col l2">
-            <div class="w3-card w3-container w3-blue" style="min-height:150px">
-                <h6>Blue Team<br>Field Manual</h6><br>
-                <a href="https://www.amazon.co.uk/Blue-Team-Field-Manual-BTFM/dp/154101636X" target="_blank">
-                    <i class="fa fa-book w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
-                </a>
-            </div>
-        </div>
-        <div class="w3-col l2">
-            <div class="w3-card w3-container w3-blue" style="min-height:150px">
-                <h6>Incident Response<br>Computer Forensics</h6><br>
-                <a href="https://www.amazon.co.uk/Incident-Response-Computer-Forensics-Third/dp/0071798684"
-                    target="_blank">
-                    <i class="fa fa-book w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
-                </a>
-            </div>
-        </div>
-        <div class="w3-col l2">
-            <div class="w3-card w3-container w3-blue" style="min-height:150px">
-                <h6>Malware Analysts<br>Cookbook</h6><br>
-                <a href="https://www.amazon.co.uk/Malware-Analysts-Cookbook-DVD-Techniques/dp/0470613033"
-                    target="_blank">
-                    <i class="fa fa-book w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
-                </a>
-            </div>
-        </div>
-        <div class="w3-col l2">
-            <div class="w3-card w3-container w3-blue" style="min-height:150px">
-                <h6>Practical Malware<br>Analysis</h6><br>
-                <a href="https://www.amazon.co.uk/Practical-Malware-Analysis-Hands-Dissecting/dp/1593272901"
-                    target="_blank">
-                    <i class="fa fa-book w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
-                </a>
-            </div>
-        </div>
-        <div class="w3-col l2">
-            <div class="w3-card w3-container w3-blue" style="min-height:150px">
-                <h6>Malware Forensics<br>Field Guide</h6><br>
-                <a href="https://www.amazon.co.uk/Malware-Forensics-Field-Windows-Systems/dp/1597494720"
-                    target="_blank">
-                    <i class="fa fa-book w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
-                </a>
+            <div class="w3-card w3-container" style="min-height:150px" id="violent_python_a_cookbook">
+                <h6>Violent Python:<br>A Cookbook for...<br>
+                    <a href="https://www.amazon.co.uk/Violent-Python-Cookbook-Penetration-Engineers/dp/1597499579"
+                        target="_blank">
+                        <i class="fa fa-book w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                    </a>
             </div>
         </div>
     </div>
     <div class="w3-row-padding w3-center w3-margin-top">
         <div class="w3-col l2">
-            <div class="w3-card w3-container w3-blue" style="min-height:150px">
-                <h6>Hacking Exposed<br>Malware and Rootkits</h6><br>
-                <a href="https://www.amazon.co.uk/HACKING-EXPOSED-MALWARE-ROOTKITS-Solutions/dp/0071591184"
-                    target="_blank">
-                    <i class="fa fa-book w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
-                </a>
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="cybersecurity_blue_team_toolkit">
+                <h6>Cybersecurity Blue<br>Team Toolkit<br>
+                    <a href="https://www.amazon.co.uk/Cybersecurity-Blue-Toolkit-Nadean-Tanner/dp/1119552931"
+                        target="_blank">
+                        <i class="fa fa-book w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                    </a>
             </div>
         </div>
         <div class="w3-col l2">
-            <div class="w3-card w3-container w3-blue" style="min-height:150px">
-                <h6>File System<br>Forensic Analysis</h6><br>
-                <a href="https://www.amazon.co.uk/System-Forensic-Analysis-Brian-Carrier/dp/0321268172" target="_blank">
-                    <i class="fa fa-book w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
-                </a>
-            </div>
-        </div>
-    </div>
-    <div class="w3-row-padding w3-center w3-margin-top">
-        <div class="w3-col l2">
-            <div class="w3-card w3-container w3-red" style="min-height:150px">
-                <h6>Red Team<br>Field Manual</h6><br>
-                <a href="https://www.amazon.co.uk/Rtfm-Red-Team-Field-Manual/dp/1494295504" target="_blank">
-                    <i class="fa fa-book w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
-                </a>
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="blue_team_field_manual">
+                <h6>Blue Team<br>Field Manual<br>
+                    <a href="https://www.amazon.co.uk/Blue-Team-Field-Manual-BTFM/dp/154101636X" target="_blank">
+                        <i class="fa fa-book w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                    </a>
             </div>
         </div>
         <div class="w3-col l2">
-            <div class="w3-card w3-container w3-red" style="min-height:150px">
-                <h6>Hacking with Kali:<br>Practical Pen Testing</h6><br>
-                <a href="https://www.amazon.co.uk/Hacking-Kali-Practical-Penetration-Techniques/dp/0124077498"
-                    target="_blank">
-                    <i class="fa fa-book w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
-                </a>
+            <div class="w3-card w3-container w3-blue" style="min-height:150px"
+                id="incident_response_computer_forensics">
+                <h6>Incident Response<br>Computer Forensics<br>
+                    <a href="https://www.amazon.co.uk/Incident-Response-Computer-Forensics-Third/dp/0071798684"
+                        target="_blank">
+                        <i class="fa fa-book w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                    </a>
             </div>
         </div>
         <div class="w3-col l2">
-            <div class="w3-card w3-container w3-red" style="min-height:150px">
-                <h6>Metasploit: The Pen<br>Tester's Guide</h6><br>
-                <a href="https://www.amazon.co.uk/Metasploit-Penetration-Testers-David-Kennedy/dp/159327288X"
-                    target="_blank">
-                    <i class="fa fa-book w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
-                </a>
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="malware_analysts_cookbook">
+                <h6>Malware Analysts<br>Cookbook<br>
+                    <a href="https://www.amazon.co.uk/Malware-Analysts-Cookbook-DVD-Techniques/dp/0470613033"
+                        target="_blank">
+                        <i class="fa fa-book w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                    </a>
             </div>
         </div>
         <div class="w3-col l2">
-            <div class="w3-card w3-container w3-red" style="min-height:150px">
-                <h6>The Hacker Playbook:<br>Practical Pen Testing</h6><br>
-                <a href="https://www.amazon.co.uk/Hacker-Playbook-Practical-Penetration-Testing/dp/1494932636"
-                    target="_blank">
-                    <i class="fa fa-book w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
-                </a>
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="practical_malware_analysis">
+                <h6>Practical Malware<br>Analysis<br>
+                    <a href="https://www.amazon.co.uk/Practical-Malware-Analysis-Hands-Dissecting/dp/1593272901"
+                        target="_blank">
+                        <i class="fa fa-book w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                    </a>
             </div>
         </div>
         <div class="w3-col l2">
-            <div class="w3-card w3-container w3-red" style="min-height:150px">
-                <h6>Hacking: The Art<br>of Exploitation</h6><br>
-                <a href="https://www.amazon.co.uk/Hacking-Art-Exploitation-Jon-Erickson/dp/1593271441" target="_blank">
-                    <i class="fa fa-book w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
-                </a>
-            </div>
-        </div>
-        <div class="w3-col l2">
-            <div class="w3-card w3-container w3-red" style="min-height:150px">
-                <h6>7 Deadliest Web<br>Application Attacks</h6><br>
-                <a href="https://www.amazon.co.uk/Seven-Deadliest-Web-Application-Attacks/dp/1597495433"
-                    target="_blank">
-                    <i class="fa fa-book w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
-                </a>
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="malware_forensics_field_guide">
+                <h6>Malware Forensics<br>Field Guide<br>
+                    <a href="https://www.amazon.co.uk/Malware-Forensics-Field-Windows-Systems/dp/1597494720"
+                        target="_blank">
+                        <i class="fa fa-book w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                    </a>
             </div>
         </div>
     </div>
     <div class="w3-row-padding w3-center w3-margin-top">
         <div class="w3-col l2">
-            <div class="w3-card w3-container w3-red" style="min-height:150px">
-                <h6>Social Engineering: The<br>Art of Human Hacking</h6><br>
-                <a href="https://www.amazon.co.uk/Social-Engineering-Art-Human-Hacking/dp/0470639539" target="_blank">
-                    <i class="fa fa-book w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
-                </a>
+            <div class="w3-card w3-container w3-blue" style="min-height:150px"
+                id="hacking_exposed_malware_and_rootkits">
+                <h6>Hacking Exposed<br>Malware and Rootkits<br>
+                    <a href="https://www.amazon.co.uk/HACKING-EXPOSED-MALWARE-ROOTKITS-Solutions/dp/0071591184"
+                        target="_blank">
+                        <i class="fa fa-book w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                    </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="file_system_forensic_analysis">
+                <h6>File System<br>Forensic Analysis<br>
+                    <a href="https://www.amazon.co.uk/System-Forensic-Analysis-Brian-Carrier/dp/0321268172"
+                        target="_blank">
+                        <i class="fa fa-book w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                    </a>
             </div>
         </div>
     </div>
     <div class="w3-row-padding w3-center w3-margin-top">
         <div class="w3-col l2">
-            <div class="w3-card w3-container w3-yellow" style="min-height:150px">
-                <h6>Open Source Intelligence<br>Techniques</h6><br>
-                <a href="https://www.amazon.co.uk/Open-Source-Intelligence-Techniques-Information/dp/1984201573"
-                    target="_blank">
-                    <i class="fa fa-book w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
-                </a>
+            <div class="w3-card w3-container w3-red" style="min-height:150px" id="red_team_field_manual">
+                <h6>Red Team<br>Field Manual<br>
+                    <a href="https://www.amazon.co.uk/Rtfm-Red-Team-Field-Manual/dp/1494295504" target="_blank">
+                        <i class="fa fa-book w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                    </a>
             </div>
         </div>
         <div class="w3-col l2">
-            <div class="w3-card w3-container w3-yellow" style="min-height:150px">
-                <h6>Nowhere to Hide<br>OSINT Gathering</h6><br>
-                <a href="https://www.amazon.co.uk/NOWHERE-HIDE-Intelligence-Gathering-Identified-ebook/dp/B09255Z48K"
-                    target="_blank">
-                    <i class="fa fa-book w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
-                </a>
+            <div class="w3-card w3-container w3-red" style="min-height:150px"
+                id="hacking_with_kali_practical_pen_testing">
+                <h6>Hacking with Kali:<br>Practical Pen Testing<br>
+                    <a href="https://www.amazon.co.uk/Hacking-Kali-Practical-Penetration-Techniques/dp/0124077498"
+                        target="_blank">
+                        <i class="fa fa-book w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                    </a>
             </div>
         </div>
         <div class="w3-col l2">
-            <div class="w3-card w3-container w3-yellow" style="min-height:150px">
-                <h6>OSINT for the<br>Staffing World!</h6><br>
-                <a href="https://www.amazon.co.uk/OSINT-Staffing-World-Search-Authority/dp/108101380X" target="_blank">
-                    <i class="fa fa-book w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
-                </a>
+            <div class="w3-card w3-container w3-red" style="min-height:150px" id="metasploit__the_pen_tester's_guide">
+                <h6>Metasploit: The Pen<br>Tester's Guide<br>
+                    <a href="https://www.amazon.co.uk/Metasploit-Penetration-Testers-David-Kennedy/dp/159327288X"
+                        target="_blank">
+                        <i class="fa fa-book w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                    </a>
             </div>
         </div>
         <div class="w3-col l2">
-            <div class="w3-card w3-container w3-yellow" style="min-height:150px">
-                <h6>Operator Handbook<br>Red+OSINT+Blue</h6><br>
-                <a href="https://www.amazon.co.uk/Operator-Handbook-Team-OSINT-Reference/dp/B085RR67H5" target="_blank">
-                    <i class="fa fa-book w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
-                </a>
+            <div class="w3-card w3-container w3-red" style="min-height:150px"
+                id="the_hacker_playbook_practical_pen_testing">
+                <h6>The Hacker Playbook:<br>Practical Pen Testing<br>
+                    <a href="https://www.amazon.co.uk/Hacker-Playbook-Practical-Penetration-Testing/dp/1494932636"
+                        target="_blank">
+                        <i class="fa fa-book w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                    </a>
             </div>
         </div>
         <div class="w3-col l2">
-            <div class="w3-card w3-container w3-yellow" style="min-height:150px">
-                <h6>Practical Cyber<br>Intelligence</h6><br>
-                <a href="https://www.amazon.co.uk/Practical-Cyber-Intelligence-action-based-intelligence/dp/1788625560"
-                    target="_blank">
-                    <i class="fa fa-book w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
-                </a>
+            <div class="w3-card w3-container w3-red" style="min-height:150px" id="hacking__the_art_of_exploitation">
+                <h6>Hacking: The Art<br>of Exploitation<br>
+                    <a href="https://www.amazon.co.uk/Hacking-Art-Exploitation-Jon-Erickson/dp/1593271441"
+                        target="_blank">
+                        <i class="fa fa-book w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                    </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-red" style="min-height:150px" id="7_deadliest_web_application_attacks">
+                <h6>7 Deadliest Web<br>Application Attacks<br>
+                    <a href="https://www.amazon.co.uk/Seven-Deadliest-Web-Application-Attacks/dp/1597495433"
+                        target="_blank">
+                        <i class="fa fa-book w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                    </a>
+            </div>
+        </div>
+    </div>
+    <div class="w3-row-padding w3-center w3-margin-top">
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-red" style="min-height:150px"
+                id="social_engineering__the_art_of_human_hacking">
+                <h6>Social Engineering: The<br>Art of Human Hacking<br>
+                    <a href="https://www.amazon.co.uk/Social-Engineering-Art-Human-Hacking/dp/0470639539"
+                        target="_blank">
+                        <i class="fa fa-book w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                    </a>
+            </div>
+        </div>
+    </div>
+    <div class="w3-row-padding w3-center w3-margin-top">
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-yellow" style="min-height:150px"
+                id="open_source_intelligence_techniques">
+                <h6>Open Source Intelligence<br>Techniques<br>
+                    <a href="https://www.amazon.co.uk/Open-Source-Intelligence-Techniques-Information/dp/1984201573"
+                        target="_blank">
+                        <i class="fa fa-book w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                    </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-yellow" style="min-height:150px" id="nowhere_to_hide_osint_gathering">
+                <h6>Nowhere to Hide<br>OSINT Gathering<br>
+                    <a href="https://www.amazon.co.uk/NOWHERE-HIDE-Intelligence-Gathering-Identified-ebook/dp/B09255Z48K"
+                        target="_blank">
+                        <i class="fa fa-book w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                    </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-yellow" style="min-height:150px" id="osint_for_the_staffing_world!">
+                <h6>OSINT for the<br>Staffing World!<br>
+                    <a href="https://www.amazon.co.uk/OSINT-Staffing-World-Search-Authority/dp/108101380X"
+                        target="_blank">
+                        <i class="fa fa-book w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                    </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-yellow" style="min-height:150px" id="operator_handbook_red+osint+blue">
+                <h6>Operator Handbook<br>Red+OSINT+Blue<br>
+                    <a href="https://www.amazon.co.uk/Operator-Handbook-Team-OSINT-Reference/dp/B085RR67H5"
+                        target="_blank">
+                        <i class="fa fa-book w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                    </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-yellow" style="min-height:150px" id="practical_cyber_intelligence">
+                <h6>Practical Cyber<br>Intelligence<br>
+                    <a href="https://www.amazon.co.uk/Practical-Cyber-Intelligence-action-based-intelligence/dp/1788625560"
+                        target="_blank">
+                        <i class="fa fa-book w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                    </a>
             </div>
         </div>
     </div>
@@ -348,7 +359,7 @@
     <h4>&nbsp;&nbsp;&nbsp;&nbsp;Documentation</h4>
     <div class="w3-row-padding w3-center w3-margin-top" id="techdocs">
         <div class="w3-col l2">
-            <div class="w3-card w3-container" style="min-height:150px">
+            <div class="w3-card w3-container" style="min-height:150px" id="ransomware_risk_management">
                 <h6>Ransomware Risk Management</h6>
                 <iframe src="../content/publications/NIST_FrameworkProfile_RansomwareRiskManagement.pdf"
                     width="100%"></iframe>
@@ -357,7 +368,7 @@
             </div>
         </div>
         <div class="w3-col l2">
-            <div class="w3-card w3-container" style="min-height:150px">
+            <div class="w3-card w3-container" style="min-height:150px" id="mitre_attack_mapping">
                 <h6>MITRE ATT&CK Mapping</h6>
                 <iframe src="../content/publications/Best_Practices_MITRE_Mapping.pdf" width="100%"></iframe>
                 <a href="../content/publications/Best_Practices_MITRE_Mapping.pdf" target="_blank"
@@ -365,7 +376,7 @@
             </div>
         </div>
         <div class="w3-col l2">
-            <div class="w3-card w3-container" style="min-height:150px">
+            <div class="w3-card w3-container" style="min-height:150px" id="cisa_ir_playbooks">
                 <h6>CISA IR Playbooks</h6>
                 <iframe src="../content/publications/CISA_IR_Playbooks.pdf" width="100%"></iframe>
                 <a href="../content/publications/CISA_IR_Playbooks.pdf" target="_blank"
@@ -373,7 +384,7 @@
             </div>
         </div>
         <div class="w3-col l2">
-            <div class="w3-card w3-container" style="min-height:150px">
+            <div class="w3-card w3-container" style="min-height:150px" id="ms_ir_playbooks">
                 <h6>MS IR Playbooks</h6>
                 <iframe src="../content/publications/MS_IR_Playbook.pdf" width="100%"></iframe>
                 <a href="../content/publications/MS_IR_Playbook.pdf" target="_blank"
@@ -381,7 +392,7 @@
             </div>
         </div>
         <div class="w3-col l2">
-            <div class="w3-card w3-container" style="min-height:150px">
+            <div class="w3-card w3-container" style="min-height:150px" id="aws_ir_guide">
                 <h6>AWS IR Guide</h6>
                 <iframe src="../content/publications/AWS_IR_Guide.pdf" width="100%"></iframe>
                 <a href="../content/publications/AWS_IR_Guide.pdf" target="_blank"
@@ -389,7 +400,7 @@
             </div>
         </div>
         <div class="w3-col l2">
-            <div class="w3-card w3-container" style="min-height:150px">
+            <div class="w3-card w3-container" style="min-height:150px" id="owasp_testing_guide">
                 <h6>OWASP Testing Guide</h6>
                 <iframe src="../content/publications/OWASP_Testing_Guide_v4.pdf" width="100%"></iframe>
                 <a href="../content/publications/OWASP_Testing_Guide_v4.pdf" target="_blank"
@@ -399,7 +410,7 @@
     </div>
     <div class="w3-row-padding w3-center w3-margin-top" id="techdocs">
         <div class="w3-col l2">
-            <div class="w3-card w3-container" style="min-height:150px">
+            <div class="w3-card w3-container" style="min-height:150px" id="exploring_splunk">
                 <h6>Exploring Splunk</h6>
                 <iframe src="../content/publications/Exploring_Splunk.pdf" width="100%"></iframe>
                 <a href="../content/publications/Exploring_Splunk.pdf" target="_blank"
@@ -415,25 +426,25 @@
     <br><br>
     <h4>&nbsp;&nbsp;&nbsp;&nbsp;White Papers & Reports</h4>
     <div class="w3-row-padding w3-center w3-margin-top" id="reps">
-        <div class="w3-quarter">
+        <div class="w3-quarter" id="apt1_exposing_one_of_china_s_cyber_espionage_units">
             <h6>APT1: Exposing One of China's<br>Cyber Espionage Units</h6>
             <iframe src="../content/publications/MandiantAPT1.pdf" width="100%"></iframe>
             <a href="../content/publications/MandiantAPT1.pdf" target="_blank"
                 class="w3-button w3-theme">Download&nbsp;<i class="fa fa-external-link"></i></a>
         </div>
-        <div class="w3-quarter">
+        <div class="w3-quarter" id="ten_strategies_of_a_world_class_csoc">
             <h6>Ten Strategies of a<br>World-Class CSOC</h6>
             <iframe src="../content/publications/MITRE_10StrategiesCyberOpsCenter.pdf" width="100%"></iframe>
             <a href="../content/publications/MITRE_10StrategiesCyberOpsCenter.pdf" target="_blank"
                 class="w3-button w3-theme">Download&nbsp;<i class="fa fa-external-link"></i></a>
         </div>
-        <div class="w3-quarter">
+        <div class="w3-quarter" id="exploiting_web_analytics_to_ensnare_victims">
             <h6>Exploiting Web Analytics<br>to Ensnare Victims</h6>
             <iframe src="../content/publications/Witchcoven.pdf" width="100%"></iframe>
             <a href="../content/publications/Witchcoven.pdf" target="_blank" class="w3-button w3-theme">Download&nbsp;<i
                     class="fa fa-external-link"></i></a>
         </div>
-        <div class="w3-quarter">
+        <div class="w3-quarter" id="growing_threat_of_human_operated_ransomware">
             <h6>Growing Threat of Human<br>Operated Ransomware</h6>
             <iframe src="../content/publications/Responding_To_HORansomware.pdf" width="100%"></iframe>
             <a href="../content/publications/Responding_To_HORansomware.pdf" target="_blank"
@@ -441,25 +452,25 @@
         </div>
     </div>
     <div class="w3-row-padding w3-center w3-margin-top">
-        <div class="w3-col l2">
+        <div class="w3-col l2" id="demystifying_threat_hunting">
             <h6>Demystifying Threat Hunting</h6>
             <iframe src="../content/publications/DemystifyingThreatHunting.pdf" width="100%"></iframe>
             <a href="../content/publications/DemystifyingThreatHunting.pdf" target="_blank"
                 class="w3-button w3-theme">Download&nbsp;<i class="fa fa-external-link"></i></a>
         </div>
-        <div class="w3-col l2">
+        <div class="w3-col l2" id="iocs_v_ioas">
             <h6>IoCs v. IoAs</h6>
             <iframe src="../content/publications/IOCs_v_IOCs.pdf" width="100%"></iframe>
             <a href="../content/publications/IOCs_v_IOCs.pdf" target="_blank"
                 class="w3-button w3-theme">Download&nbsp;<i class="fa fa-external-link"></i></a>
         </div>
-        <div class="w3-col l2">
+        <div class="w3-col l2" id="ir_analyst_report">
             <h6>IR Analyst Report</h6>
             <iframe src="../content/publications/IR_Analyst_Report.pdf" width="100%"></iframe>
             <a href="../content/publications/IR_Analyst_Report.pdf" target="_blank"
                 class="w3-button w3-theme">Download&nbsp;<i class="fa fa-external-link"></i></a>
         </div>
-        <div class="w3-col l2">
+        <div class="w3-col l2" id="osint">
             <h6>OSINT</h6>
             <iframe src="../content/publications/osint.pdf" width="100%"></iframe>
             <a href="../content/publications/osint.pdf" target="_blank" class="w3-button w3-theme">Download&nbsp;<i
@@ -474,37 +485,37 @@
     <br><br>
     <h4>&nbsp;&nbsp;&nbsp;&nbsp;Slide Decks</h4>
     <div class="w3-row-padding w3-center w3-margin-top" id="slides">
-        <div class="w3-col l2">
+        <div class="w3-col l2" id="ir_field_guide">
             <h6>IR Field Guide</h6>
             <iframe src="../content/publications/IRFieldGuide.pdf" width="100%"></iframe>
             <a href="../content/publications/IRFieldGuide.pdf" target="_blank"
                 class="w3-button w3-theme">Download&nbsp;<i class="fa fa-external-link"></i></a>
         </div>
-        <div class="w3-col l2">
+        <div class="w3-col l2" id="data_science_for_dfir">
             <h6>Data Science for DFIR</h6>
             <iframe src="../content/publications/DataScienceForDFIR.pdf" width="100%"></iframe>
             <a href="../content/publications/DataScienceForDFIR.pdf" target="_blank"
                 class="w3-button w3-theme">Download&nbsp;<i class="fa fa-external-link"></i></a>
         </div>
-        <div class="w3-col l2">
+        <div class="w3-col l2" id="building_a_better_soc">
             <h6>Building A Better SOC</h6>
             <iframe src="../content/publications/BuildingABetterSOC.pdf" width="100%"></iframe>
             <a href="../content/publications/BuildingABetterSOC.pdf" target="_blank"
                 class="w3-button w3-theme">Download&nbsp;<i class="fa fa-external-link"></i></a>
         </div>
-        <div class="w3-col l2">
+        <div class="w3-col l2" id="linux_forensics">
             <h6>Linux Forensics</h6>
             <iframe src="../content/publications/LinuxForensics.pdf" width="100%"></iframe>
             <a href="../content/publications/LinuxForensics.pdf" target="_blank"
                 class="w3-button w3-theme">Download&nbsp;<i class="fa fa-external-link"></i></a>
         </div>
-        <div class="w3-col l2">
+        <div class="w3-col l2" id="application_logging">
             <h6>Application Logging</h6>
             <iframe src="../content/publications/ApplicationLogging.pdf" width="100%"></iframe>
             <a href="../content/publications/ApplicationLogging.pdf" target="_blank"
                 class="w3-button w3-theme">Download&nbsp;<i class="fa fa-external-link"></i></a>
         </div>
-        <div class="w3-col l2">
+        <div class="w3-col l2" id="hunting_cobalt_strike">
             <h6>Hunting Cobalt Strike</h6>
             <iframe src="../content/publications/HuntingCobaltStrike.pdf" width="100%"></iframe>
             <a href="../content/publications/HuntingCobaltStrike.pdf" target="_blank"
@@ -512,13 +523,13 @@
         </div>
     </div>
     <div class="w3-row-padding w3-center w3-margin-top">
-        <div class="w3-col l2">
+        <div class="w3-col l2" id="linux_kernel_tracing">
             <h6>Linux Kernel Tracing</h6>
             <iframe src="../content/publications/Linux_Kernel_Tracing.pdf" width="100%"></iframe>
             <a href="../content/publications/Linux_Kernel_Tracing.pdf" target="_blank"
                 class="w3-button w3-theme">Download&nbsp;<i class="fa fa-external-link"></i></a>
         </div>
-        <div class="w3-col l2">
+        <div class="w3-col l2" id="top_osint_resources">
             <h6>Top OSINT Resources</h6>
             <iframe src="../content/publications/Top_OSINT_Infosec_Resources.pdf" width="100%"></iframe>
             <a href="../content/publications/Top_OSINT_Infosec_Resources.pdf" target="_blank"
@@ -526,37 +537,37 @@
         </div>
     </div>
     <div class="w3-row-padding w3-center w3-margin-top">
-        <div class="w3-col l2">
+        <div class="w3-col l2" id="avoiding_threat_hunting_mistakes">
             <h6>Avoiding Threat<br>Hunting Mistakes</h6>
             <iframe src="../content/publications/AvoidingThreatHuntingMistakes.pdf" width="100%"></iframe>
             <a href="../content/publications/AvoidingThreatHuntingMistakes.pdf" target="_blank"
                 class="w3-button w3-theme">Download&nbsp;<i class="fa fa-external-link"></i></a>
         </div>
-        <div class="w3-col l2">
+        <div class="w3-col l2" id="powershell_light_side_of_the_force">
             <h6>PowerShell: Light Side of<br>the Force</h6>
             <iframe src="../content/publications/LightSideOfTheForce.pdf" width="100%"></iframe>
             <a href="../content/publications/LightSideOfTheForce.pdf" target="_blank"
                 class="w3-button w3-theme">Download&nbsp;<i class="fa fa-external-link"></i></a>
         </div>
-        <div class="w3-col l2">
+        <div class="w3-col l2" id="kansa_for_enterprise_scale_threat_hunting">
             <h6>Kansa for Enterprise Scale<br>Threat Hunting</h6>
             <iframe src="../content/publications/KansaForEnterpriseScaleThreatHunting.pdf" width="100%"></iframe>
             <a href="../content/publications/KansaForEnterpriseScaleThreatHunting.pdf" target="_blank"
                 class="w3-button w3-theme">Download&nbsp;<i class="fa fa-external-link"></i></a>
         </div>
-        <div class="w3-col l2">
+        <div class="w3-col l2" id="identifying_search_order_hijacking">
             <h6>Identifying Search Order<br>Hijacking</h6>
             <iframe src="../content/publications/IdentifyingSOH.pdf" width="100%"></iframe>
             <a href="../content/publications/IdentifyingSOH.pdf" target="_blank"
                 class="w3-button w3-theme">Download&nbsp;<i class="fa fa-external-link"></i></a>
         </div>
-        <div class="w3-col l2">
+        <div class="w3-col l2" id="running_processes_and_modules">
             <h6>Running Processes and<br>Modules</h6>
             <iframe src="../content/publications/RunningProcessesAndModules.pdf" width="100%"></iframe>
             <a href="../content/publications/RunningProcessesAndModules.pdf" target="_blank"
                 class="w3-button w3-theme">Download&nbsp;<i class="fa fa-external-link"></i></a>
         </div>
-        <div class="w3-col l2">
+        <div class="w3-col l2" id="understanding_actions_and_artefacts">
             <h6>Understanding Actions<br>and Artefacts</h6>
             <iframe src="../content/publications/UnderstandingActionsAndArtifacts.pdf" width="100%"></iframe>
             <a href="../content/publications/UnderstandingActionsAndArtifacts.pdf" target="_blank"
@@ -572,7 +583,7 @@
     <h4>&nbsp;&nbsp;&nbsp;&nbsp;Blogs</h4>
     <div class="w3-row-padding w3-center w3-margin-top" id="blogs">
         <div class="w3-col l2">
-            <div class="w3-card w3-container" style="min-height:150px">
+            <div class="w3-card w3-container" style="min-height:150px" id="sans_cyber_security">
                 <h6>SANS Cyber Security</h6><br>
                 <a href="https://www.sans.org/blog/" target="_blank">
                     <i class="fa fa-pencil w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
@@ -580,7 +591,7 @@
             </div>
         </div>
         <div class="w3-col l2">
-            <div class="w3-card w3-container" style="min-height:150px">
+            <div class="w3-card w3-container" style="min-height:150px" id="stuxnet">
                 <h6>Stuxnet</h6><br>
                 <a href="https://www.wired.com/2014/11/countdown-to-zero-day-stuxnet/" target="_blank">
                     <i class="fa fa-pencil w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
@@ -588,7 +599,7 @@
             </div>
         </div>
         <div class="w3-col l2">
-            <div class="w3-card w3-container" style="min-height:150px">
+            <div class="w3-card w3-container" style="min-height:150px" id="schneier_on_security">
                 <h6>Schneier on Security</h6><br>
                 <a href="https://www.schneier.com/" target="_blank">
                     <i class="fa fa-pencil w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
@@ -596,7 +607,7 @@
             </div>
         </div>
         <div class="w3-col l2">
-            <div class="w3-card w3-container" style="min-height:150px">
+            <div class="w3-card w3-container" style="min-height:150px" id="krebs_on_security">
                 <h6>Krebs on Security</h6><br>
                 <a href="https://krebsonsecurity.com/" target="_blank">
                     <i class="fa fa-pencil w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
@@ -604,7 +615,7 @@
             </div>
         </div>
         <div class="w3-col l2">
-            <div class="w3-card w3-container" style="min-height:150px">
+            <div class="w3-card w3-container" style="min-height:150px" id="n00py">
                 <h6>n00py</h6><br>
                 <a href="https://www.n00py.io/" target="_blank">
                     <i class="fa fa-pencil w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
@@ -612,7 +623,7 @@
             </div>
         </div>
         <div class="w3-col l2">
-            <div class="w3-card w3-container" style="min-height:150px">
+            <div class="w3-card w3-container" style="min-height:150px" id="the_grey_corner">
                 <h6>The Grey Corner</h6><br>
                 <a href="./http://thegreycorner.com/" target="_blank">
                     <i class="fa fa-pencil w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
@@ -622,7 +633,7 @@
     </div>
     <div class="w3-row-padding w3-center w3-margin-top">
         <div class="w3-col l2">
-            <div class="w3-card w3-container w3-blue" style="min-height:150px">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="sans_isc">
                 <h6>SANS ISC</h6><br>
                 <a href="https://isc.sans.edu/" target="_blank">
                     <i class="fa fa-pencil w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
@@ -630,7 +641,7 @@
             </div>
         </div>
         <div class="w3-col l2">
-            <div class="w3-card w3-container w3-blue" style="min-height:150px">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="the_dfir_report">
                 <h6>The DFIR Report</h6><br>
                 <a href="https://thedfirreport.com/" target="_blank">
                     <i class="fa fa-pencil w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
@@ -638,7 +649,7 @@
             </div>
         </div>
         <div class="w3-col l2">
-            <div class="w3-card w3-container w3-blue" style="min-height:150px">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="operation_decode">
                 <h6>Operation Decode</h6><br>
                 <a href="https://www.operationdecode.com/" target="_blank">
                     <i class="fa fa-pencil w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
@@ -646,7 +657,7 @@
             </div>
         </div>
         <div class="w3-col l2">
-            <div class="w3-card w3-container w3-blue" style="min-height:150px">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="cyber_triage">
                 <h6>Cyber Triage</h6><br>
                 <a href="https://www.cybertriage.com/blog/" target="_blank">
                     <i class="fa fa-pencil w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
@@ -654,7 +665,7 @@
             </div>
         </div>
         <div class="w3-col l2">
-            <div class="w3-card w3-container w3-blue" style="min-height:150px">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="red_canary">
                 <h6>Red Canary</h6><br>
                 <a href="https://redcanary.com/resources/" target="_blank">
                     <i class="fa fa-pencil w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
@@ -664,7 +675,7 @@
     </div>
     <div class="w3-row-padding w3-center w3-margin-top">
         <div class="w3-col l2">
-            <div class="w3-card w3-container w3-blue" style="min-height:150px">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="didier_stevens">
                 <h6>Didier Stevens</h6><br>
                 <a href="https://blog.didierstevens.com/" target="_blank">
                     <i class="fa fa-pencil w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
@@ -672,7 +683,7 @@
             </div>
         </div>
         <div class="w3-col l2">
-            <div class="w3-card w3-container w3-blue" style="min-height:150px">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="lenny_zelster">
                 <h6>Lenny Zelster</h6><br>
                 <a href="https://zeltser.com/blog/" target="_blank">
                     <i class="fa fa-pencil w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
@@ -682,7 +693,7 @@
     </div>
     <div class="w3-row-padding w3-center w3-margin-top">
         <div class="w3-col l2">
-            <div class="w3-card w3-container w3-red" style="min-height:150px">
+            <div class="w3-card w3-container w3-red" style="min-height:150px" id="active_directory_security">
                 <h6>Active Directory Security</h6><br>
                 <a href="https://adsecurity.org/" target="_blank">
                     <i class="fa fa-pencil w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
@@ -690,7 +701,7 @@
             </div>
         </div>
         <div class="w3-col l2">
-            <div class="w3-card w3-container w3-red" style="min-height:150px">
+            <div class="w3-card w3-container w3-red" style="min-height:150px" id="pentest_lab">
                 <h6>PENTEST LAB</h6><br>
                 <a href="https://pentestlab.blog/" target="_blank">
                     <i class="fa fa-pencil w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
@@ -698,7 +709,7 @@
             </div>
         </div>
         <div class="w3-col l2">
-            <div class="w3-card w3-container w3-red" style="min-height:150px">
+            <div class="w3-card w3-container w3-red" style="min-height:150px" id="ins1gn1a">
                 <h6>ins1gn1a</h6><br>
                 <a href="https://www.ins1gn1a.com/" target="_blank">
                     <i class="fa fa-pencil w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
@@ -706,7 +717,7 @@
             </div>
         </div>
         <div class="w3-col l2">
-            <div class="w3-card w3-container w3-red" style="min-height:150px">
+            <div class="w3-card w3-container w3-red" style="min-height:150px" id="harmj0y">
                 <h6>harmj0y</h6><br>
                 <a href="./http://blog.harmj0y.net/" target="_blank">
                     <i class="fa fa-pencil w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
@@ -714,7 +725,7 @@
             </div>
         </div>
         <div class="w3-col l2">
-            <div class="w3-card w3-container w3-red" style="min-height:150px">
+            <div class="w3-card w3-container w3-red" style="min-height:150px" id="secjuice">
                 <h6>secjuice</h6><br>
                 <a href="https://www.secjuice.com/" target="_blank">
                     <i class="fa fa-pencil w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
@@ -722,7 +733,7 @@
             </div>
         </div>
         <div class="w3-col l2">
-            <div class="w3-card w3-container w3-red" style="min-height:150px">
+            <div class="w3-card w3-container w3-red" style="min-height:150px" id="offensive_osint">
                 <h6>Offensive OSINT</h6><br>
                 <a href="https://www.offensiveosint.io/" target="_blank">
                     <i class="fa fa-pencil w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
@@ -732,7 +743,7 @@
     </div>
     <div class="w3-row-padding w3-center w3-margin-top">
         <div class="w3-col l2">
-            <div class="w3-card w3-container w3-yellow" style="min-height:150px">
+            <div class="w3-card w3-container w3-yellow" style="min-height:150px" id="hatless1der">
                 <h6>hatless1der</h6><br>
                 <a href="./http://hatless1der.com/" target="_blank">
                     <i class="fa fa-pencil w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
@@ -740,7 +751,7 @@
             </div>
         </div>
         <div class="w3-col l2">
-            <div class="w3-card w3-container w3-yellow" style="min-height:150px">
+            <div class="w3-card w3-container w3-yellow" style="min-height:150px" id="lorandbodo">
                 <h6>lorandbodo</h6><br>
                 <a href="https://lorandbodo.com/" target="_blank">
                     <i class="fa fa-pencil w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
@@ -748,7 +759,7 @@
             </div>
         </div>
         <div class="w3-col l2">
-            <div class="w3-card w3-container w3-yellow" style="min-height:150px">
+            <div class="w3-card w3-container w3-yellow" style="min-height:150px" id="osint_techniques">
                 <h6>OSINT Techniques</h6><br>
                 <a href="https://www.osinttechniques.com/" target="_blank">
                     <i class="fa fa-pencil w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
@@ -756,7 +767,7 @@
             </div>
         </div>
         <div class="w3-col l2">
-            <div class="w3-card w3-container w3-yellow" style="min-height:150px">
+            <div class="w3-card w3-container w3-yellow" style="min-height:150px" id="sector035">
                 <h6>Sector035</h6><br>
                 <a href="https://sector035.nl/" target="_blank">
                     <i class="fa fa-pencil w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
@@ -764,7 +775,7 @@
             </div>
         </div>
         <div class="w3-col l2">
-            <div class="w3-card w3-container w3-yellow" style="min-height:150px">
+            <div class="w3-card w3-container w3-yellow" style="min-height:150px" id="wondersmith_rae">
                 <h6>wondersmith_rae</h6><br>
                 <a href="https://wondersmithrae.medium.com/" target="_blank">
                     <i class="fa fa-pencil w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
@@ -781,7 +792,7 @@
     <h4>&nbsp;&nbsp;&nbsp;&nbsp;Guides & Tutorials</h4>
     <div class="w3-row-padding w3-center w3-margin-top" id="guides">
         <div class="w3-col l2">
-            <div class="w3-card w3-container w3-blue" style="min-height:150px">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="using_ooda_loop_in_ir">
                 <h6>Using OODA Loop in IR</h6><br>
                 <a href="https://www.cybertriage.com/2019/how-to-use-ooda-loop-in-your-incident-response-process/"
                     target="_blank">
@@ -790,7 +801,7 @@
             </div>
         </div>
         <div class="w3-col l2">
-            <div class="w3-card w3-container w3-blue" style="min-height:150px">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="ransomware_response">
                 <h6>Ransomware Response</h6><br>
                 <a href="https://www.ransomwareresponse.org/" target="_blank">
                     <i class="fa fa-bookmark w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
@@ -798,7 +809,7 @@
             </div>
         </div>
         <div class="w3-col l2">
-            <div class="w3-card w3-container w3-blue" style="min-height:150px">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="home_network_design">
                 <h6>Home Network Design</h6><br>
                 <a href="https://www.blackhillsinfosec.com/home-network-design-part-1/" target="_blank">
                     <i class="fa fa-bookmark w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
@@ -806,7 +817,7 @@
             </div>
         </div>
         <div class="w3-col l2">
-            <div class="w3-card w3-container w3-blue" style="min-height:150px">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="home_lab_advice">
                 <h6>Home Lab Advice</h6><br>
                 <a href="https://itandsecuritystuffs.wordpress.com/2014/03/14/install-cuckoobox-for-malware-and-virus-analysis/"
                     target="_blank">
@@ -815,7 +826,7 @@
             </div>
         </div>
         <div class="w3-col l2">
-            <div class="w3-card w3-container w3-blue" style="min-height:150px">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="learn_malware_analysis">
                 <h6>Learn Malware Analysis</h6><br>
                 <a href="https://www.sans.org/blog/how-you-can-start-learning-malware-analysis/" target="_blank">
                     <i class="fa fa-bookmark w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
@@ -823,7 +834,7 @@
             </div>
         </div>
         <div class="w3-col l2">
-            <div class="w3-card w3-container w3-blue" style="min-height:150px">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="learn_reverse_engineering">
                 <h6>Learn Reverse Engineering</h6><br>
                 <a href="https://www.intezer.com/blog/malware-analysis/malware-reverse-engineering-beginners/"
                     target="_blank">
@@ -834,82 +845,82 @@
     </div>
     <div class="w3-row-padding w3-center w3-margin-top">
         <div class="w3-col l2">
-            <div class="w3-card w3-container w3-blue" style="min-height:150px">
-                <h6>DFIR Hierarchy of<br>Security Controls</h6><br>
-                <a href="https://holisticinfosec.blogspot.com/2016/12/the-dfir-hierarchy-of-needs-critical.html"
-                    target="_blank">
-                    <i class="fa fa-bookmark w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
-                </a>
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="dfir_hierarchy_of_security_controls">
+                <h6>DFIR Hierarchy of<br>Security Controls<br>
+                    <a href="https://holisticinfosec.blogspot.com/2016/12/the-dfir-hierarchy-of-needs-critical.html"
+                        target="_blank">
+                        <i class="fa fa-bookmark w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                    </a>
             </div>
         </div>
         <div class="w3-col l2">
-            <div class="w3-card w3-container w3-blue" style="min-height:150px">
-                <h6>Threat Hunting<br>Maturity Model</h6><br>
-                <a href="https://team-cymru.com/blog/2021/09/02/team-cymrus-threat-hunting-maturity-model-explained-2/"
-                    target="_blank">
-                    <i class="fa fa-bookmark w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
-                </a>
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="threat_hunting_maturity_model">
+                <h6>Threat Hunting<br>Maturity Model<br>
+                    <a href="https://team-cymru.com/blog/2021/09/02/team-cymrus-threat-hunting-maturity-model-explained-2/"
+                        target="_blank">
+                        <i class="fa fa-bookmark w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                    </a>
             </div>
         </div>
         <div class="w3-col l2">
-            <div class="w3-card w3-container w3-blue" style="min-height:150px">
-                <h6>Threat Hunting with<br>Web Proxy Logs</h6><br>
-                <a href="https://posts.bluraven.io/threat-hunting-and-detection-with-web-proxy-logs-58094cae3537"
-                    target="_blank">
-                    <i class="fa fa-bookmark w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
-                </a>
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="threat_hunting_with_web_proxy_logs">
+                <h6>Threat Hunting with<br>Web Proxy Logs<br>
+                    <a href="https://posts.bluraven.io/threat-hunting-and-detection-with-web-proxy-logs-58094cae3537"
+                        target="_blank">
+                        <i class="fa fa-bookmark w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                    </a>
             </div>
         </div>
         <div class="w3-col l2">
-            <div class="w3-card w3-container w3-blue" style="min-height:150px">
-                <h6>Threat Hunting with<br>Sysmon</h6><br>
-                <a href="https://leo-m-falcon.medium.com/hunting-evil-with-sysmon-events-and-jupyter-notebooks-part-1-aaf83e2e27f1"
-                    target="_blank">
-                    <i class="fa fa-bookmark w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
-                </a>
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="threat_hunting_with_sysmon">
+                <h6>Threat Hunting with<br>Sysmon<br>
+                    <a href="https://leo-m-falcon.medium.com/hunting-evil-with-sysmon-events-and-jupyter-notebooks-part-1-aaf83e2e27f1"
+                        target="_blank">
+                        <i class="fa fa-bookmark w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                    </a>
             </div>
         </div>
         <div class="w3-col l2">
-            <div class="w3-card w3-container w3-blue" style="min-height:150px">
-                <h6>Threat Hunting with<br>ELK</h6><br>
-                <a href="https://www.hackingarticles.in/threat-hunting-log-monitoring-lab-setup-with-elk/"
-                    target="_blank">
-                    <i class="fa fa-bookmark w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
-                </a>
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="threat_hunting_with_elk">
+                <h6>Threat Hunting with<br>ELK<br>
+                    <a href="https://www.hackingarticles.in/threat-hunting-log-monitoring-lab-setup-with-elk/"
+                        target="_blank">
+                        <i class="fa fa-bookmark w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                    </a>
             </div>
         </div>
         <div class="w3-col l2">
-            <div class="w3-card w3-container w3-blue" style="min-height:150px">
-                <h6>Building a Malware<br>Analysis Toolkit</h6><br>
-                <a href="https://zeltser.com/build-malware-analysis-toolkit/" target="_blank">
-                    <i class="fa fa-bookmark w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
-                </a>
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="building_a_malware_analysis_toolkit">
+                <h6>Building a Malware<br>Analysis Toolkit<br>
+                    <a href="https://zeltser.com/build-malware-analysis-toolkit/" target="_blank">
+                        <i class="fa fa-bookmark w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                    </a>
             </div>
         </div>
     </div>
     <div class="w3-row-padding w3-center w3-margin-top">
         <div class="w3-col l2">
-            <div class="w3-card w3-container w3-blue" style="min-height:150px">
-                <h6>Create macOS<br>Disk Image</h6><br>
-                <a href="https://osxdaily.com/2012/05/23/create-disk-image-of-mac-hard-drive/" target="_blank">
-                    <i class="fa fa-bookmark w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
-                </a>
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="create_macos_disk_image">
+                <h6>Create macOS<br>Disk Image<br>
+                    <a href="https://osxdaily.com/2012/05/23/create-disk-image-of-mac-hard-drive/" target="_blank">
+                        <i class="fa fa-bookmark w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                    </a>
             </div>
         </div>
         <div class="w3-col l2">
-            <div class="w3-card w3-container w3-blue" style="min-height:150px">
-                <h6>Linux Memory<br>Acquisition</h6><br>
-                <a href="https://markuta.com/live-memory-acquisition-on-linux-systems/" target="_blank">
-                    <i class="fa fa-bookmark w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
-                </a>
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="linux_memory_acquisition">
+                <h6>Linux Memory<br>Acquisition<br>
+                    <a href="https://markuta.com/live-memory-acquisition-on-linux-systems/" target="_blank">
+                        <i class="fa fa-bookmark w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                    </a>
             </div>
         </div>
         <div class="w3-col l2">
-            <div class="w3-card w3-container w3-blue" style="min-height:150px">
-                <h6>Defining CobaltStrike<br>Components</h6><br>
-                <a href="https://www.mandiant.com/resources/defining-cobalt-strike-components" target="_blank">
-                    <i class="fa fa-bookmark w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
-                </a>
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="defining_cobaltstrike_components">
+                <h6>Defining CobaltStrike<br>Components<br>
+                    <a href="https://www.mandiant.com/resources/defining-cobalt-strike-components" target="_blank">
+                        <i class="fa fa-bookmark w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                    </a>
             </div>
         </div>
         <div class="w3-col l2">
@@ -931,18 +942,18 @@
             </div>
         </div>
         <div class="w3-col l2">
-            <div class="w3-card w3-container w3-blue" style="min-height:150px">
-                <h6>Reversing a Binary<br>using GDB</h6><br>
-                <a href="https://cybersecurity.att.com/blogs/security-essentials/reversing-a-binary-using-gdb-tutorial-for-reverse-engineers"
-                    target="_blank">
-                    <i class="fa fa-bookmark w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
-                </a>
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="reversing_a_binary_using_gdb">
+                <h6>Reversing a Binary<br>using GDB<br>
+                    <a href="https://cybersecurity.att.com/blogs/security-essentials/reversing-a-binary-using-gdb-tutorial-for-reverse-engineers"
+                        target="_blank">
+                        <i class="fa fa-bookmark w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                    </a>
             </div>
         </div>
     </div>
     <div class="w3-row-padding w3-center w3-margin-top">
         <div class="w3-col l2">
-            <div class="w3-card w3-container w3-blue" style="min-height:150px">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="how_to_detect_pth_attacks">
                 <h6>How to Detect PtH Attacks</h6><br>
                 <a href="https://stealthbits.com/blog/how-to-detect-pass-the-hash-attacks/" target="_blank">
                     <i class="fa fa-bookmark w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
@@ -950,7 +961,7 @@
             </div>
         </div>
         <div class="w3-col l2">
-            <div class="w3-card w3-container w3-blue" style="min-height:150px">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="decrypt_tls_streams">
                 <h6>Decrypt TLS Streams</h6><br>
                 <a href="https://blog.didierstevens.com/2020/12/14/decrypting-tls-streams-with-wireshark-part-1/amp/"
                     target="_blank">
@@ -959,7 +970,7 @@
             </div>
         </div>
         <div class="w3-col l2">
-            <div class="w3-card w3-container w3-blue" style="min-height:150px">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="install_cuckoo">
                 <h6>Install Cuckoo</h6><br>
                 <a href="https://itandsecuritystuffs.wordpress.com/2014/03/14/install-cuckoobox-for-malware-and-virus-analysis/"
                     target="_blank">
@@ -968,7 +979,7 @@
             </div>
         </div>
         <div class="w3-col l2">
-            <div class="w3-card w3-container w3-blue" style="min-height:150px">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="install_sift_remnux">
                 <h6>Install SIFT & REMnux</h6><br>
                 <a href="https://www.sans.org/blog/how-to-install-sift-workstation-and-remnux-on-the-same-forensics-system/"
                     target="_blank">
@@ -977,7 +988,7 @@
             </div>
         </div>
         <div class="w3-col l2">
-            <div class="w3-card w3-container w3-blue" style="min-height:150px">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="11_malware_analysis_tools">
                 <h6>11 Malware Analysis Tools</h6><br>
                 <a href="https://www.varonis.com/blog/malware-analysis-tools/" target="_blank">
                     <i class="fa fa-bookmark w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
@@ -985,7 +996,7 @@
             </div>
         </div>
         <div class="w3-col l2">
-            <div class="w3-card w3-container w3-blue" style="min-height:150px">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="pmat_labs_walkthroughs">
                 <h6>PMAT Labs Walkthroughs</h6><br>
                 <a href="https://github.com/deFr0ggy/PMAT-Labs-Walkthroughs" target="_blank">
                     <i class="fa fa-bookmark w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
@@ -994,7 +1005,7 @@
         </div>
     </div>
     <div class="w3-row-padding w3-center w3-margin-top">
-        <div class="w3-col l2">
+        <div class="w3-col l2" id="build_your_own_sandbox">
             <h6>Build Your Own Sandbox</h6>
             <iframe src="../content/publications/Build_Your_Own_Sandbox.pdf" width="100%"></iframe>
             <a href="../content/publications/Build_Your_Own_Sandbox.pdf" target="_blank"
@@ -1017,53 +1028,56 @@
             </div>
         </div>
         <div class="w3-col l2">
-            <div class="w3-card w3-container w3-red" style="min-height:150px">
-                <h6>GCP Offensive Swiss<br>Army Knife</h6><br>
-                <a href="https://desi-jarvis.medium.com/gcphound-a-swiss-army-knife-offensive-toolkit-for-google-cloud-platform-gcp-fb9e18b959b4"
-                    target="_blank">
-                    <i class="fa fa-bookmark w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
-                </a>
+            <div class="w3-card w3-container w3-red" style="min-height:150px" id="gcp_offensive_swiss_army_knife">
+                <h6>GCP Offensive Swiss<br>Army Knife<br>
+                    <a href="https://desi-jarvis.medium.com/gcphound-a-swiss-army-knife-offensive-toolkit-for-google-cloud-platform-gcp-fb9e18b959b4"
+                        target="_blank">
+                        <i class="fa fa-bookmark w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                    </a>
             </div>
         </div>
         <div class="w3-col l2">
-            <div class="w3-card w3-container w3-red" style="min-height:150px">
-                <h6>Learning to Write<br>Custom Keylogger</h6><br>
-                <a href="https://www.varonis.com/blog/malware-coding-lessons-people-part-learning-write-custom-fud-fully-undetected-malware/"
-                    target="_blank">
-                    <i class="fa fa-bookmark w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
-                </a>
+            <div class="w3-card w3-container w3-red" style="min-height:150px" id="learning_to_write_custom_keylogger">
+                <h6>Learning to Write<br>Custom Keylogger<br>
+                    <a href="https://www.varonis.com/blog/malware-coding-lessons-people-part-learning-write-custom-fud-fully-undetected-malware/"
+                        target="_blank">
+                        <i class="fa fa-bookmark w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                    </a>
             </div>
         </div>
         <div class="w3-col l2">
-            <div class="w3-card w3-container w3-red" style="min-height:150px">
-                <h6>Compromising IPv4<br>networks via IPv6</h6><br>
-                <a href="https://blog.fox-it.com/2018/01/11/mitm6-compromising-ipv4-networks-via-ipv6/" target="_blank">
-                    <i class="fa fa-bookmark w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
-                </a>
+            <div class="w3-card w3-container w3-red" style="min-height:150px" id="compromising_ipv4_networks_via_ipv6">
+                <h6>Compromising IPv4<br>networks via IPv6<br>
+                    <a href="https://blog.fox-it.com/2018/01/11/mitm6-compromising-ipv4-networks-via-ipv6/"
+                        target="_blank">
+                        <i class="fa fa-bookmark w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                    </a>
             </div>
         </div>
         <div class="w3-col l2">
-            <div class="w3-card w3-container w3-red" style="min-height:150px">
-                <h6>NTLM Relaying and<br>Kerberos delegation</h6><br>
-                <a href="https://dirkjanm.io/worst-of-both-worlds-ntlm-relaying-and-kerberos-delegation/"
-                    target="_blank">
-                    <i class="fa fa-bookmark w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
-                </a>
+            <div class="w3-card w3-container w3-red" style="min-height:150px"
+                id="ntlm_relaying_and_kerberos_delegation">
+                <h6>NTLM Relaying and<br>Kerberos delegation<br>
+                    <a href="https://dirkjanm.io/worst-of-both-worlds-ntlm-relaying-and-kerberos-delegation/"
+                        target="_blank">
+                        <i class="fa fa-bookmark w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                    </a>
             </div>
         </div>
         <div class="w3-col l2">
-            <div class="w3-card w3-container w3-red" style="min-height:150px">
-                <h6>5 Ways I Got Domain<br>Admin Before Lunch</h6><br>
-                <a href="https://adam-toscher.medium.com/top-five-ways-i-got-domain-admin-on-your-internal-network-before-lunch-2018-edition-82259ab73aaa"
-                    target="_blank">
-                    <i class="fa fa-bookmark w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
-                </a>
+            <div class="w3-card w3-container w3-red" style="min-height:150px"
+                id="5_ways_i_got_domain_admin_before_lunch">
+                <h6>5 Ways I Got Domain<br>Admin Before Lunch<br>
+                    <a href="https://adam-toscher.medium.com/top-five-ways-i-got-domain-admin-on-your-internal-network-before-lunch-2018-edition-82259ab73aaa"
+                        target="_blank">
+                        <i class="fa fa-bookmark w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                    </a>
             </div>
         </div>
     </div>
     <div class="w3-row-padding w3-center w3-margin-top">
         <div class="w3-col l2">
-            <div class="w3-card w3-container w3-red" style="min-height:150px">
+            <div class="w3-card w3-container w3-red" style="min-height:150px" id="inetsim_burpsuite_lab">
                 <h6>INetSim & Burpsuite Lab</h6><br>
                 <a href="https://infosecaddicts.com/set-up-a-malware-analysis-lab-with-inetsim-and-burpsuite/"
                     target="_blank">
@@ -1072,7 +1086,7 @@
             </div>
         </div>
         <div class="w3-col l2">
-            <div class="w3-card w3-container w3-red" style="min-height:150px">
+            <div class="w3-card w3-container w3-red" style="min-height:150px" id="building_ad_lab_in_azure">
                 <h6>Building AD Lab in Azure</h6><br>
                 <a href="https://kamran-bilgrami.medium.com/ethical-hacking-lessons-building-free-active-directory-lab-in-azure-6c67a7eddd7f"
                     target="_blank">
@@ -1081,7 +1095,7 @@
             </div>
         </div>
         <div class="w3-col l2">
-            <div class="w3-card w3-container w3-red" style="min-height:150px">
+            <div class="w3-card w3-container w3-red" style="min-height:150px" id="pass_back_attack">
                 <h6>Pass-Back Attack</h6><br>
                 <a href="https://www.mindpointgroup.com/blog/how-to-hack-through-a-pass-back-attack" target="_blank">
                     <i class="fa fa-bookmark w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
@@ -1089,7 +1103,7 @@
             </div>
         </div>
         <div class="w3-col l2">
-            <div class="w3-card w3-container w3-red" style="min-height:150px">
+            <div class="w3-card w3-container w3-red" style="min-height:150px" id="group_policy_pwnage">
                 <h6>Group Policy Pwnage</h6><br>
                 <a href="https://www.rapid7.com/blog/post/2016/07/27/pentesting-in-the-real-world-group-policy-pwnage/"
                     target="_blank">
@@ -1105,7 +1119,7 @@
     </div>
     <div class="w3-row-padding w3-center w3-margin-top">
         <div class="w3-col l2">
-            <div class="w3-card w3-container w3-yellow" style="min-height:150px">
+            <div class="w3-card w3-container w3-yellow" style="min-height:150px" id="extracting_value_from_cti">
                 <h6>Extracting Value from CTI</h6><br>
                 <a href="https://www.digitalshadows.com/blog-and-research/sans-dfir-cyber-threat-intelligence-summit-2019-extracting-more-value-from-your-cti-program/"
                     target="_blank">
@@ -1114,7 +1128,7 @@
             </div>
         </div>
         <div class="w3-col l2">
-            <div class="w3-card w3-container w3-yellow" style="min-height:150px">
+            <div class="w3-card w3-container w3-yellow" style="min-height:150px" id="osint_mistakes">
                 <h6>OSINT Mistakes</h6><br>
                 <a href="https://www.sans.org/blog/the-5-biggest-mistakes-made-during-an-osint-investigation/"
                     target="_blank">
@@ -1131,13 +1145,13 @@
     <br><br>
     <h4>&nbsp;&nbsp;&nbsp;&nbsp;Templates</h4>
     <div class="w3-row-padding w3-center w3-margin-top" id="templates">
-        <div class="w3-col l2">
+        <div class="w3-col l2" id="security_assessment_findings_report">
             <h6>Security Assessment<br>Findings Report</h6>
             <iframe src="../content/publications/TCMS-Security-Assessment-Findings-Report.pdf" width="100%"></iframe>
             <a href="../content/publications/TCMS-Security-Assessment-Findings-Report.pdf" target="_blank"
                 class="w3-button w3-theme">Download&nbsp;<i class="fa fa-external-link"></i></a>
         </div>
-        <div class="w3-col l2">
+        <div class="w3-col l2" id="security_assessment_findings_report">
             <h6>Security Assessment<br>Findings Report</h6>
             <iframe src="../content/publications/TCMS-Security-Assessment-Findings-Report.docx" width="100%"></iframe>
             <a href="../content/publications/TCMS-Security-Assessment-Findings-Report.docx" target="_blank"
