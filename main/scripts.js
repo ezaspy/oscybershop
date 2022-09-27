@@ -1723,4 +1723,3 @@ function search_site() {
         result.innerHTML = "";
     }
 }
-// '([^>]+)<ul><li><a href="https://oscybershop.herokuapp.com/main/pages/[^\.]+\.html#[^"]+" target="_blank">&quot;[^&]+&quot;</a></li></ul><br>
