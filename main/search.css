@@ -15,15 +15,3 @@ input[type=text] {
     text-align: left;
     list-style-position: inside;
 }
-
-.tab1 {
-    tab-size: 2;
-}
-
-.tab2 {
-    tab-size: 4;
-}
-
-.tab3 {
-    tab-size: 8;
-}
