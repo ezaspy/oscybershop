@@ -1723,6 +1723,3 @@ function search_site() {
         result.innerHTML = "";
     }
 }
-
-
-// (')([^<]+)(<ul><li><a href="https://oscybershop.herokuapp.com/main/pages/[^\.]+.html#[^"]+" target="_blank">[^<]+</a></li><li><a href="https://oscybershop.herokuapp.com/main/pages/[^\.]+.html#[^"]+" target="_blank">[^<]+</a></li></ul><br>)\2(<ul><li><a href="https://oscybershop.herokuapp.com/main/pages/[^\.]+.html#[^"]+" target="_blank">[^<]+</a></li></ul><br>)\2(<ul><li><a href="https://oscybershop.herokuapp.com/main/pages/[^\.]+.html#[^"]+" target="_blank">[^<]+</a></li></ul><br>)\2(<ul><li><a href="https://oscybershop.herokuapp.com/main/pages/[^\.]+.html#[^"]+" target="_blank">[^<]+</a></li></ul><br>)\2(<ul><li><a href="https://oscybershop.herokuapp.com/main/pages/[^\.]+.html#[^"]+" target="_blank">[^<]+</a></li></ul><br>)\2
