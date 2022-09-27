@@ -580,19 +580,19 @@ function search_site() {
         result.innerHTML = '<ul><li> <a href="https://oscybershop.herokuapp.com/main/pages/red.html#greenshot" target="_blank">Offensive Cyber (Red Team) - &quot;Greenshot&quot;</a> </li></ul>';
     }
     else if (input.includes("greynoise")) {
-        result.innerHTML = '<ul><li> <a href="https://oscybershop.herokuapp.com/main/pages/int.html#greynoise" target="_blank">Threat Intelligence - &quot;Greynoise&quot;</a> </li></ul>';
+        result.innerHTML = 'Threat Intelligence<ul><li> <a href="https://oscybershop.herokuapp.com/main/pages/int.html#greynoise" target="_blank">&quot;Greynoise&quot;</a> </li></ul>';
     }
     else if (input.includes("group") || input.includes("policy") || input.includes("pwnage") || input.includes("group policy") || input.includes("gpo") || input.includes("gpo pwnage") || input.includes("group policy pwnage")) {
-        result.innerHTML = '<ul><li> <a href="https://oscybershop.herokuapp.com/main/pages/publications.html#group_policy_pwnage" target="_blank">Publications - &quot;Group Policy Pwnage&quot;</a> </li></ul>';
+        result.innerHTML = 'Publications<ul><li> <a href="https://oscybershop.herokuapp.com/main/pages/publications.html#group_policy_pwnage" target="_blank">&quot;Group Policy Pwnage&quot;</a> </li></ul>';
     }
     else if (input.includes("growing") || input.includes("human") || input.includes("operated")) {
-        result.innerHTML = '<ul><li> <a href="https://oscybershop.herokuapp.com/main/pages/publications.html#growing_threat_of_human_operated_ransomware" target="_blank">Publications - &quot;Growing Threat of Human Operated Ransomware&quot;</a> </li></ul>';
+        result.innerHTML = 'Publications<ul><li> <a href="https://oscybershop.herokuapp.com/main/pages/publications.html#growing_threat_of_human_operated_ransomware" target="_blank">&quot;Growing Threat of Human Operated Ransomware&quot;</a> </li></ul>';
     }
     else if (input.includes("grr")) {
-        result.innerHTML = '<ul><li> <a href="https://oscybershop.herokuapp.com/main/pages/blue.html#grr" target="_blank">Cyber Defence (Blue Team) - &quot;grr&quot;</a> </li></ul>';
+        result.innerHTML = 'Cyber Defence (Blue Team)<ul><li> <a href="https://oscybershop.herokuapp.com/main/pages/blue.html#grr" target="_blank">&quot;grr&quot;</a> </li></ul>';
     }
     else if (input.includes("guru")) {
-        result.innerHTML = '<ul><li> <a href="https://oscybershop.herokuapp.com/main/pages/blue.html#crontab_guru" target="_blank">Cyber Defence (Blue Team) - &quot;Crontab Guru&quot;</a> </li></ul>';
+        result.innerHTML = 'Cyber Defence (Blue Team)<ul><li> <a href="https://oscybershop.herokuapp.com/main/pages/blue.html#crontab_guru" target="_blank">&quot;Crontab Guru&quot;</a> </li></ul>';
     }
     else if (input.includes("hack")) {
         result.innerHTML = 'Cheatsheets<ul><li> <a href="https://oscybershop.herokuapp.com/main/pages/cheatsheets.html#google_hacking_int" target="_blank">&quot;Google Hacking&quot; (Intelligence)</a> </li><li> <a href="https://oscybershop.herokuapp.com/main/pages/cheatsheets.html#google_hacking_recon" target="_blank">&quot;Google Hacking&quot; (Reconnaissance)</a> </li></ul><br>Media &amp; Socials<ul><li> <a href="https://oscybershop.herokuapp.com/main/pages/media.html#become_an_ethical_hacker_for_0" target="_blank">&quot;Become an Ethical Hacker for $0&quot;</a> </li><li> <a href="https://oscybershop.herokuapp.com/main/pages/media.html#hackers_physical_pentest_toolkit" target="_blank">&quot;Hacker\'s Physical Pentest Toolkit&quot;</a> </li><li> <a href="https://oscybershop.herokuapp.com/main/pages/media.html#hackersploit" target="_blank">&quot;Hackersploit&quot;</a> </li><li> <a href="https://oscybershop.herokuapp.com/main/pages/media.html#shehackspurple" target="_blank">&quot;Shehackspurple&quot;</a> </li><li> <a href="https://oscybershop.herokuapp.com/main/pages/media.html#how_russia_hacked_the_us_election" target="_blank">&quot;How Russia Hacked the US Election&quot;</a> </li><li> <a href="https://oscybershop.herokuapp.com/main/pages/media.html#all_your_devices_can_be_hacked" target="_blank">&quot;All Your Devices can be Hacked&quot;</a> </li><li> <a href="https://oscybershop.herokuapp.com/main/pages/media.html#hackthebox" target="_blank">&quot;Hackthebox&quot;</a> </li><li> <a href="https://oscybershop.herokuapp.com/main/pages/media.html#TryHackMe" target="_blank"&quot;TryHackMe&quot;</a> </li></ul>';
