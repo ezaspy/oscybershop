@@ -18,6 +18,9 @@ function search_site() {
     if (input.includes("abnormal")) {
         result.innerHTML = 'Posters<ul><li><a href="https://oscybershop.herokuapp.com/main/pages/posters.html#know_abnormal_find_evil" target="_blank">Know Abnormal Find Evil</a></li></ul>';
     }
+    else if (input.includes("note taking") || input.includes("check lists") || input.includes("check list") || input.includes("checklists") || input.includes("checklist") || input.includes("text editor") || input.includes("text editors") || input.includes("case management") || input.includes("incident management")) {
+        result.innerHTML = 'Cyber Defence (Blue Team)<ul><li><a href="https://oscybershop.herokuapp.com/main/pages/blue.html#notes" target="_blank">Note Taking &amp; Checklists</a></li></ul><br>Offensive Cyber (Red Team)<ul><li><a href="https://oscybershop.herokuapp.com/main/pages/red.html#notes" target="_blank">Note Taking &amp; Checklists</a></li></ul>';
+    }
     else if (input.includes("abuse")) {
         result.innerHTML = 'Tooling<ul><li><a href="https://oscybershop.herokuapp.com/main/pages/tooling.html#abuse_ch" target="_blank">abuse.ch</a></li></ul>';
     }
@@ -1703,9 +1706,6 @@ function search_site() {
     }
     else if (input.includes("repository") || input.includes("repositories") || input.includes("malware repository") || input.includes("malware repositories")) {
         result.innerHTML = 'Tooling<ul><li><a href="https://oscybershop.herokuapp.com/main/pages/tooling.html#malware_repos" target="_blank">Malware Repositories</a></li></ul><br>Cyber Defence (Blue Team)<ul><li><a href="https://oscybershop.herokuapp.com/main/pages/blue.html#malware_repos" target="_blank">Malware Repositories</a></li></ul>';
-    }
-    else if (input.includes("note taking") || input.includes("check lists") || input.includes("check list") || input.includes("checklists") || input.includes("checklist") || input.includes("text editor") || input.includes("text editors") || input.includes("case management") || input.includes("incident management")) {
-        result.innerHTML = 'Cyber Defence (Blue Team)<ul><li><a href="https://oscybershop.herokuapp.com/main/pages/blue.html#notes" target="_blank">Note Taking &amp; Checklists</a></li></ul><br>Offensive Cyber (Red Team)<ul><li><a href="https://oscybershop.herokuapp.com/main/pages/red.html#notes" target="_blank">Note Taking &amp; Checklists</a></li></ul>';
     }
     else if (input.includes("network enumeration")) {
         result.innerHTML = 'Cheat Sheets<ul><li><a href="https://oscybershop.herokuapp.com/main/pages/cheatsheets.html#enum" target="_blank">Network Interception/Enumeration</a></li></ul><br>Tooling<ul><li><a href="https://oscybershop.herokuapp.com/main/pages/tooling.html#enum" target="_blank">Network Emuneration</a></li><li><a href="https://oscybershop.herokuapp.com/main/pages/tooling.html#subdomain_enumeration" target="_blank">Subdomain Enumeration</a></li></ul><br>Offensive Cyber (Red Team)<ul><li><a href="https://oscybershop.herokuapp.com/main/pages/red.html#enum" target="_blank">Network Enumeration</a></li></ul>';
