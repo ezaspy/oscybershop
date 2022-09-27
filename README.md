@@ -1,7 +1,7 @@
 <!-- PROJECT LOGO -->
 <p align="center">
   <a href="https://github.com/ezaspy/oscybershop">
-    <img src="main/logo.png" alt="Logo" width="400" height="400">
+    <img src="main/content/logo.png" alt="Logo" width="400" height="400">
   </a>
   <p align="center">
     A simple collection of free and affordable cyber security resources...
