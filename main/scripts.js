@@ -12,9 +12,9 @@ function w3_close() {
 // search code
 function search_site() {
     let input = document.getElementById('searchbar').value
-    let result = document.getElementById("output");
     input = input.toLowerCase();
     spacer = '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'
+    let result = document.getElementById("output");
 
     if (input.includes("abnormal")) {
         result.innerHTML = spacer + '<a href="https://oscybershop.herokuapp.com/main/pages/posters.html#know_abnormal_find_evil" target="_blank">Posters - &quot;Know Abnormal Find Evil&quot;</a>';
