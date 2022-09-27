@@ -1,12 +1,12 @@
 //sidebar code
 function w3_open() {
-    var x = document.getElementById("mySidebar");
+    var x = document.getElementById("osSidebar");
     x.style.width = "100%";
     x.style.fontSize = "20px";
     x.style.display = "block";
 }
 function w3_close() {
-    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("osSidebar").style.display = "none";
 }
 
 // search code
@@ -91,7 +91,7 @@ function search_site() {
         result.innerHTML = '<a href="https://oscybershop.herokuapp.com/main/pages/tooling.html#aws_arsenal" target="_blank">Tooling - &quot;AWS Arsenal&quot;</a>';
     }
     else if (input.includes("atomic")) {
-        result.innerHTML = '<a href="https://oscybershop.herokuapp.com/main/pages/projects.html#atomic_red_team" target="_blank">Projects - &quot;Atomic Red Team&quot;</a>';
+        result.innerHTML = '<a href="https://oscybershop.herokuapp.com/main/pages/projects.html#atomic_red_team" target="_blank">Frameworks &amp; Projects - &quot;Atomic Red Team&quot;</a>';
     }
     else if (input.includes("attackdefence")) {
         result.innerHTML = '<a href="https://oscybershop.herokuapp.com/main/pages/blue.html#attackdefence" target="_blank">Cyber Defence (Blue Team) - &quot;AttackDefence&quot;</a>';
@@ -124,7 +124,7 @@ function search_site() {
         result.innerHTML = '<a href="https://oscybershop.herokuapp.com/main/pages/blue.html#dfir_beginner_to_expert" target="_blank">Cyber Defence (Blue Team) - &quot;DFIR Beginner to Expert&quot;</a>';
     }
     else if (input.includes("benchmarks")) {
-        result.innerHTML = '<a href="https://oscybershop.herokuapp.com/main/pages/projects.html#cis_benchmarks" target="_blank">Projects - &quot;CIS Benchmarks&quot;</a>';
+        result.innerHTML = '<a href="https://oscybershop.herokuapp.com/main/pages/projects.html#cis_benchmarks" target="_blank">Frameworks &amp; Projects - &quot;CIS Benchmarks&quot;</a>';
     }
     else if (input.includes("betrayed") || input.includes("trust")) {
         result.innerHTML = '<a href="https://oscybershop.herokuapp.com/main/pages/media.html#nsa_betrayed_the_worlds_trust" target="_blank">Media &amp; Socials - &quot;NSA Betrayed the World\'s Trust&quot;</a>';
@@ -144,9 +144,6 @@ function search_site() {
     else if (input.includes("bless")) {
         result.innerHTML = '<a href="https://oscybershop.herokuapp.com/main/pages/blue.html#bless" target="_blank">Cyber Defence (Blue Team) - &quot;Bless&quot;</a>';
     }
-    else if (input.includes("blogs")) {
-        result.innerHTML = '<a href="https://oscybershop.herokuapp.com/main/pages/publications.html#blogs" target="_blank">Publications - &quot;Blogs&quot;</a>';
-    }
     else if (input.includes("bloodhound")) {
         result.innerHTML = '<a href="https://oscybershop.herokuapp.com/main/pages/cheatsheets.html#bloodhound" target="_blank">Cheat Sheets - &quot;Bloodhound&quot;</a>';
     }
@@ -154,7 +151,7 @@ function search_site() {
         result.innerHTML = '<a href="https://oscybershop.herokuapp.com/main/pages/media.html#blueprint" target="_blank">Media &amp; Socials - &quot;Blueprint&quot;</a><br><a href="https://oscybershop.herokuapp.com/main/pages/posters.html#pen_testing_blueprints" target="_blank">Posters - Pen Testing Blueprints</a>';
     }
     else if (input.includes("bookstack")) {
-        result.innerHTML = '<a href="https://oscybershop.herokuapp.com/main/pages/projects.html#bookstack" target="_blank">Projects - &quot;Bookstack&quot;</a>';
+        result.innerHTML = '<a href="https://oscybershop.herokuapp.com/main/pages/projects.html#bookstack" target="_blank">Frameworks &amp; Projects - &quot;Bookstack&quot;</a>';
     }
     else if (input.includes("bounty")) {
         result.innerHTML = '<a href="https://oscybershop.herokuapp.com/main/pages/media.html#bug_bounty_basics" target="_blank">Media &amp; Socials - &quot;Bug Bounty Basics&quot;</a>';
@@ -190,7 +187,7 @@ function search_site() {
         result.innerHTML = '<a href="https://oscybershop.herokuapp.com/main/pages/blue.html#caine" target="_blank">Cyber Defence (Blue Team) - &quot;Caine&quot;</a>';
     }
     else if (input.includes("caldera")) {
-        result.innerHTML = '<a href="https://oscybershop.herokuapp.com/main/pages/projects.html#caldera" target="_blank">Projects - &quot;Caldera&quot;</a>';
+        result.innerHTML = '<a href="https://oscybershop.herokuapp.com/main/pages/projects.html#caldera" target="_blank">Frameworks &amp; Projects - &quot;Caldera&quot;</a>';
     }
     else if (input.includes("camouflage")) {
         result.innerHTML = '<a href="https://oscybershop.herokuapp.com/main/pages/blue.html#camouflage" target="_blank">Cyber Defence (Blue Team) - &quot;Camouflage&quot;</a>';
@@ -208,10 +205,10 @@ function search_site() {
         result.innerHTML = '<a href="https://oscybershop.herokuapp.com/main/pages/int.html#censys" target="_blank">Threat Intelligence - &quot;Censys&quot;</a>';
     }
     else if (input.includes("cfreds")) {
-        result.innerHTML = '<a href="https://oscybershop.herokuapp.com/main/pages/projects.html#cfreds" target="_blank">Projects - &quot;CFREDS&quot;</a>';
+        result.innerHTML = '<a href="https://oscybershop.herokuapp.com/main/pages/projects.html#cfreds" target="_blank">Frameworks &amp; Projects - &quot;CFREDS&quot;</a>';
     }
     else if (input.includes("challenge")) {
-        result.innerHTML = '<a href="https://oscybershop.herokuapp.com/main/pages/media.html#dr_cole_challenge" target="_blank">Media &amp; Socials - &quot;Dr Cole Challenge&quot;</a>';
+        result.innerHTML = '<a href="https://oscybershop.herokuapp.com/main/pages/media.html#dr_cole_challenge" target="_blank">Media &amp; Socials - &quot;Dr Cole Challenge&quot;</a><br><a href="https://oscybershop.herokuapp.com/main/pages/blue.html#swiss_hacking_challenge" target="_blank">Cyber Defence (Blue Team) - &quot;Swiss Hacking Challenge&quot;</a><br><a href="https://oscybershop.herokuapp.com/main/pages/blue.html#counter_hack_challenges" target="_blank">Cyber Defence (Blue Team) - &quot;Counter Hack Challenges&quot;</a>';
     }
     else if (input.includes("cherrytree") || input.includes("cherry")) {
         result.innerHTML = '<a href="https://oscybershop.herokuapp.com/main/pages/red.html#cherrytree" target="_blank">Offensive Cyber (Red Team) - &quot;Cherrytree&quot;</a>';
@@ -241,7 +238,7 @@ function search_site() {
         result.innerHTML = '<a href="https://oscybershop.herokuapp.com/main/pages/media.html#windows_command_line_obfuscation" target="_blank">Media &amp; Socials - &quot;Windows Command Line Obfuscation&quot;</a><br><a href="https://oscybershop.herokuapp.com/main/pages/posters.html#cmd_line_kungfu" target="_blank">Posters - &quot;CMD Line Kungfu&quot;</a>';
     }
     else if (input.includes("cobalt") || input.includes("strike") || input.includes("cobaltstrike") || input.includes("cobalt strike")) {
-        result.innerHTML = '<a href="https://oscybershop.herokuapp.com/main/pages/media.html#hunting_cobalt_strike" target="_blank">Media &amp; Socials - &quot;Hunting Cobalt Strike&quot;</a><br><a href="https://oscybershop.herokuapp.com/main/pages/projects.html#cobaltstrike_defence" target="_blank">Projects - CobaltStrike Defence</a>';
+        result.innerHTML = '<a href="https://oscybershop.herokuapp.com/main/pages/media.html#hunting_cobalt_strike" target="_blank">Media &amp; Socials - &quot;Hunting Cobalt Strike&quot;</a><br><a href="https://oscybershop.herokuapp.com/main/pages/projects.html#cobaltstrike_defence" target="_blank">Frameworks &amp; Projects - CobaltStrike Defence</a>';
     }
     else if (input.includes("coderpad")) {
         result.innerHTML = '<a href="https://oscybershop.herokuapp.com/main/pages/int.html#coderpad" target="_blank">Threat Intelligence - &quot;Coderpad&quot;</a>';
@@ -316,13 +313,13 @@ function search_site() {
         result.innerHTML = '<a href="https://oscybershop.herokuapp.com/main/pages/blue.html#cutter" target="_blank">Cyber Defence (Blue Team) - &quot;Cutter&quot;</a>';
     }
     else if (input.includes("cyber")) {
-        result.innerHTML = '<a href="https://oscybershop.herokuapp.com/main/pages/media.html#how_cyberattacks_threaten_real_world" target="_blank">Media &amp; Socials - &quot;How Cyberattacks Threaten Real World&quot;</a><br><a href="https://oscybershop.herokuapp.com/main/pages/projects.html#cyberbattlesim" target="_blank">Projects - &quot;Cyberbattlesim&quot;</a><br><a href="https://oscybershop.herokuapp.com/main/pages/blue.html#cyberchef" target="_blank">Cyber Defence (Blue Team) - &quot;Cyberchef&quot;</a><br><a href="https://oscybershop.herokuapp.com/main/pages/media.html#what_is_cybercrime?" target="_blank">Media &amp; Socials - &quot;What is Cybercrime?&quot;</a><br><a href="https://oscybershop.herokuapp.com/main/pages/media.html#everyday_cybercrime_and_what_you_can_do_about_it" target="_blank">Media &amp; Socials - &quot;Everyday Cybercrime and what you can do about it&quot;</a><br><a href="https://oscybershop.herokuapp.com/main/pages/blue.html#cyberdefenders" target="_blank">Cyber Defence (Blue Team) - &quot;Cyberdefenders&quot;</a><br><a href="https://oscybershop.herokuapp.com/main/pages/media.html#defining_cyberwarfare" target="_blank">Media &amp; Socials - &quot;Defining Cyberwarfare&quot;</a>';
+        result.innerHTML = '<a href="https://oscybershop.herokuapp.com/main/pages/media.html#how_cyberattacks_threaten_real_world" target="_blank">Media &amp; Socials - &quot;How Cyberattacks Threaten Real World&quot;</a><br><a href="https://oscybershop.herokuapp.com/main/pages/projects.html#cyberbattlesim" target="_blank">Frameworks &amp; Projects - &quot;Cyberbattlesim&quot;</a><br><a href="https://oscybershop.herokuapp.com/main/pages/blue.html#cyberchef" target="_blank">Cyber Defence (Blue Team) - &quot;Cyberchef&quot;</a><br><a href="https://oscybershop.herokuapp.com/main/pages/media.html#what_is_cybercrime?" target="_blank">Media &amp; Socials - &quot;What is Cybercrime?&quot;</a><br><a href="https://oscybershop.herokuapp.com/main/pages/media.html#everyday_cybercrime_and_what_you_can_do_about_it" target="_blank">Media &amp; Socials - &quot;Everyday Cybercrime and what you can do about it&quot;</a><br><a href="https://oscybershop.herokuapp.com/main/pages/blue.html#cyberdefenders" target="_blank">Cyber Defence (Blue Team) - &quot;Cyberdefenders&quot;</a><br><a href="https://oscybershop.herokuapp.com/main/pages/media.html#defining_cyberwarfare" target="_blank">Media &amp; Socials - &quot;Defining Cyberwarfare&quot;</a>';
     }
     else if (input.includes("cyberattacks") || input.includes("threaten") || input.includes("cyberattacks threaten") || input.includes("real world") || input.includes("threaten real world")) {
         result.innerHTML = '<a href="https://oscybershop.herokuapp.com/main/pages/media.html#how_cyberattacks_threaten_real_world" target="_blank">Media &amp; Socials - &quot;How Cyberattacks Threaten Real World&quot;</a>';
     }
     else if (input.includes("cyberbattlesim")) {
-        result.innerHTML = '<a href="https://oscybershop.herokuapp.com/main/pages/projects.html#cyberbattlesim" target="_blank">Projects - &quot;Cyberbattlesim&quot;</a>';
+        result.innerHTML = '<a href="https://oscybershop.herokuapp.com/main/pages/projects.html#cyberbattlesim" target="_blank">Frameworks &amp; Projects - &quot;Cyberbattlesim&quot;</a>';
     }
     else if (input.includes("cyberchef")) {
         result.innerHTML = '<a href="https://oscybershop.herokuapp.com/main/pages/blue.html#cyberchef" target="_blank">Cyber Defence (Blue Team) - &quot;Cyberchef&quot;</a>';
@@ -343,7 +340,7 @@ function search_site() {
         result.innerHTML = '<a href="https://oscybershop.herokuapp.com/main/pages/blue.html#cybrary" target="_blank">Cyber Defence (Blue Team) - &quot;Cybrary&quot;</a>';
     }
     else if (input.includes("d3fend")) {
-        result.innerHTML = '<a href="https://oscybershop.herokuapp.com/main/pages/projects.html#d3fend" target="_blank">Projects - &quot;D3fend&quot;</a>';
+        result.innerHTML = '<a href="https://oscybershop.herokuapp.com/main/pages/projects.html#d3fend" target="_blank">Frameworks &amp; Projects - &quot;D3fend&quot;</a>';
     }
     else if (input.includes("darknet diaries") || input.includes("darknet") || input.includes("diaries")) {
         result.innerHTML = '<a href="https://oscybershop.herokuapp.com/main/pages/media.html#darknet_diaries" target="_blank">Media &amp; Socials - &quot;Darknet Diaries&quot;</a>';
@@ -354,8 +351,8 @@ function search_site() {
     else if (input.includes("database")) {
         result.innerHTML = '<a href="https://oscybershop.herokuapp.com/main/pages/blue.html#urlhaus_database" target="_blank">Cyber Defence (Blue Team) - &quot;Urlhaus Database&quot;</a>';
     }
-    else if (input.includes("datasets")) {
-        result.innerHTML = '<a href="https://oscybershop.herokuapp.com/main/pages/projects.html#security_datasets" target="_blank">Projects - &quot;Security Datasets&quot;</a>';
+    else if (input.includes("datasets") || input.includes("dataset") || input.includes("projects")) {
+        result.innerHTML = '<a href="https://oscybershop.herokuapp.com/main/pages/projects.html#pd" target="_blank">Frameworks &amp; Projects - &quot;Projects &amp; Datasets&quot;</a><br><a href="https://oscybershop.herokuapp.com/main/pages/projects.html#security_datasets" target="_blank">Frameworks &amp; Projects - &quot;Security Datasets&quot;</a>';
     }
     else if (input.includes("deception")) {
         result.innerHTML = '<a href="https://oscybershop.herokuapp.com/main/pages/media.html#cyber_deception" target="_blank">Media &amp; Socials - &quot;Cyber Deception&quot;</a>';
@@ -394,13 +391,13 @@ function search_site() {
         result.innerHTML = '<a href="https://oscybershop.herokuapp.com/main/pages/media.html#all_your_devices_can_be_hacked" target="_blank">Media &amp; Socials - &quot;All Your Devices can be Hacked&quot;</a>';
     }
     else if (input.includes("dfir")) {
-        result.innerHTML = '<a href="https://oscybershop.herokuapp.com/main/pages/cheatsheets.html#dfir" target="_blank">Cheat Sheets - &quot;DFIR&quot;</a><br><a href="https://oscybershop.herokuapp.com/main/pages/blue.html#dfirlogbook" _blank">Cyber Defence (Blue Team) - &quot;DFIRlogbook&quot;</a><br><a href="https://oscybershop.herokuapp.com/main/pages/projects.html#dfirmindmaps" _blank">Projects - &quot;DFIRmindmaps&quot;</a><br><a href="https://oscybershop.herokuapp.com/main/pages/blue.html#dfirtrack" _blank">Cyber Defence (Blue Team) - &quot;DFIRtrack&quot;</a><br><a href="https://oscybershop.herokuapp.com/main/pages/blue.html#dfir_beginner_to_expert" target="_blank">Cyber Defence (Blue Team) - &quot;DFIR Beginner to Expert&quot;</a>';
+        result.innerHTML = '<a href="https://oscybershop.herokuapp.com/main/pages/cheatsheets.html#dfir" target="_blank">Cheat Sheets - &quot;DFIR&quot;</a><br><a href="https://oscybershop.herokuapp.com/main/pages/blue.html#dfirlogbook" _blank">Cyber Defence (Blue Team) - &quot;DFIRlogbook&quot;</a><br><a href="https://oscybershop.herokuapp.com/main/pages/projects.html#dfirmindmaps" _blank">Frameworks &amp; Projects - &quot;DFIRmindmaps&quot;</a><br><a href="https://oscybershop.herokuapp.com/main/pages/blue.html#dfirtrack" _blank">Cyber Defence (Blue Team) - &quot;DFIRtrack&quot;</a><br><a href="https://oscybershop.herokuapp.com/main/pages/blue.html#dfir_beginner_to_expert" target="_blank">Cyber Defence (Blue Team) - &quot;DFIR Beginner to Expert&quot;</a>';
     }
     else if (input.includes("dfirlogbook")) {
         result.innerHTML = '<a href="https://oscybershop.herokuapp.com/main/pages/blue.html#dfirlogbook" target="_blank">Cyber Defence (Blue Team) - &quot;DFIRlogbook&quot;</a>';
     }
     else if (input.includes("dfirmindmaps")) {
-        result.innerHTML = '<a href="https://oscybershop.herokuapp.com/main/pages/projects.html#dfirmindmaps" target="_blank">Projects - &quot;DFIRmindmaps&quot;</a>';
+        result.innerHTML = '<a href="https://oscybershop.herokuapp.com/main/pages/projects.html#dfirmindmaps" target="_blank">Frameworks &amp; Projects - &quot;DFIRmindmaps&quot;</a>';
     }
     else if (input.includes("dfirtrack")) {
         result.innerHTML = '<a href="https://oscybershop.herokuapp.com/main/pages/blue.html#dfirtrack" target="_blank">Cyber Defence (Blue Team) - &quot;DFIRtrack&quot;</a>';
@@ -451,7 +448,7 @@ function search_site() {
         result.innerHTML = '<a href="https://oscybershop.herokuapp.com/main/pages/publications.html#the_cuckoos_egg" target="_blank">Publications - &quot;The Cuckoos Egg&quot;</a>';
     }
     else if (input.includes("eiab") || input.includes("ncsc") || input.includes("exercise") || input.includes("exercise in a box") || input.includes("ttx") || input.includes("table top") || input.includes("table top exercise") || input.includes("tabletop") || input.includes("tabletop exercise") || input.includes("national cyber security centre")) {
-        result.innerHTML = '<a href="https://oscybershop.herokuapp.com/main/pages/projects.html#ncsc_eiab" target="_blank">Projects - &quot;NCSC EIAB&quot;</a>';
+        result.innerHTML = '<a href="https://oscybershop.herokuapp.com/main/pages/projects.html#ncsc_eiab" target="_blank">Frameworks &amp; Projects - &quot;NCSC EIAB&quot;</a>';
     }
     else if (input.includes("elastic")) {
         result.innerHTML = '<a href="https://oscybershop.herokuapp.com/main/pages/blue.html#elastic" target="_blank">Cyber Defence (Blue Team) - &quot;Elastic&quot;</a>';
@@ -466,7 +463,7 @@ function search_site() {
         result.innerHTML = '<a href="https://oscybershop.herokuapp.com/main/pages/media.html#endpoint_security_measures" target="_blank">Media &amp; Socials - &quot;Endpoint Security Measures&quot;</a>';
     }
     else if (input.includes("engage")) {
-        result.innerHTML = '<a href="https://oscybershop.herokuapp.com/main/pages/projects.html#engage" target="_blank">Projects - &quot;Engage&quot;</a>';
+        result.innerHTML = '<a href="https://oscybershop.herokuapp.com/main/pages/projects.html#engage" target="_blank">Frameworks &amp; Projects - &quot;Engage&quot;</a>';
     }
     else if (input.includes("enisa")) {
         result.innerHTML = '<a href="https://oscybershop.herokuapp.com/main/pages/int.html#enisa" target="_blank">Threat Intelligence - &quot;Enisa&quot;</a>';
@@ -594,12 +591,6 @@ function search_site() {
     else if (input.includes("grr")) {
         result.innerHTML = '<a href="https://oscybershop.herokuapp.com/main/pages/blue.html#grr" target="_blank">Cyber Defence (Blue Team) - &quot;grr&quot;</a>';
     }
-    else if (input.includes("guide")) {
-        result.innerHTML = '<a href="https://oscybershop.herokuapp.com/main/pages/publications.html#aws_ir_guide" target="_blank">Publications - &quot;AWS IR Guide&quot;</a><br><a href="https://oscybershop.herokuapp.com/main/pages/publications.html#owasp_testing_guide" target="_blank">Publications - &quot;OWASP Testing Guide&quot;</a><br><a href="https://oscybershop.herokuapp.com/main/pages/publications.html#ir_field_guide" target="_blank">Publications - &quot;IR Field Guide&quot;</a><br><a href="https://oscybershop.herokuapp.com/main/pages/publications.html#guides" target="_blank">Publications - &quot;Guides&quot;</a>';
-    }
-    else if (input.includes("guides")) {
-        result.innerHTML = '<a href="https://oscybershop.herokuapp.com/main/pages/publications.html#guides" target="_blank">Publications - &quot;Guides&quot;</a>';
-    }
     else if (input.includes("guru")) {
         result.innerHTML = '<a href="https://oscybershop.herokuapp.com/main/pages/blue.html#crontab_guru" target="_blank">Cyber Defence (Blue Team) - &quot;Crontab Guru&quot;</a>';
     }
@@ -664,7 +655,7 @@ function search_site() {
         result.innerHTML = '<a href="https://oscybershop.herokuapp.com/main/pages/red.html#httprobe" target="_blank">Offensive Cyber (Red Team) - &quot;Httprobe&quot;</a>';
     }
     else if (input.includes("hunt")) {
-        result.innerHTML = '<a href="https://oscybershop.herokuapp.com/main/pages/projects.html#threathunting_project" target="_blank">Projects - &quot;Threathunting Project&quot;</a><br><a href="https://oscybershop.herokuapp.com/main/pages/cheatsheets.html#dfir" target="_blank">Cheatsheets - &quot;DFIR & Threat Hunting&quot;</a><br><a href="https://oscybershop.herokuapp.com/main/pages/blue.html#acm_threat_hunting" target="_blank">Cyber Defence (Blue Team) - &quot;ACM Threat Hunting&quot;</a><br><a href="https://oscybershop.herokuapp.com/main/pages/blue.html#apt_hunter" target="_blank">Cyber Defence (Blue Team) - &quot;APT Hunter&quot;</a><br><a href="https://oscybershop.herokuapp.com/main/pages/blue.html#azurehunter" target="_blank">Cyber Defence (Blue Team) - &quot;Azurehunter&quot;</a><br><a href="https://oscybershop.herokuapp.com/main/pages/publications.html#demystifying_threat_hunting" target="_blank">Publications - &quot;Demystifying Threat Hunting&quot;</a><br><a href="https://oscybershop.herokuapp.com/main/pages/publications.html#kansa_for_enterprise_scale_threat_hunting" target="_blank">Publications - &quot;Kansa for Enterprise Scale Threat Hunting&quot;</a><br><a href="https://oscybershop.herokuapp.com/main/pages/posters.html#know_normal_hunt_evil" target="_blank">Posters - &quot;Know Normal Hunt Evil&quot;</a><br><a href="https://oscybershop.herokuapp.com/main/pages/posters.html#know_abnormal_find_evil" target="_blank">Posters - &quot;Know Abnormal Find Evil&quot;</a><br><a href="https://oscybershop.herokuapp.com/main/pages/int.html#fullhunt" target="_blank">Threat Intelligence - &quot;Fullhunt&quot;</a><br><a href="https://oscybershop.herokuapp.com/main/pages/media.html#hunting_cobalt_strike" target="_blank">Media &amp; Socials - &quot;Hunting Cobalt Strike&quot;</a><br><a href="https://oscybershop.herokuapp.com/main/pages/media.html#threat_hunting_via_sysmon" target="_blank">Media &amp; Socials - &quot;Threat Hunting via Sysmon&quot;</a><br><a href="https://oscybershop.herokuapp.com/main/pages/media.html#threat_hunting_via_dns" target="_blank">Media &amp; Socials - &quot;Threat Hunting via DNS&quot;</a><br><a href="https://oscybershop.herokuapp.com/main/pages/media.html#post_exploitation_hunting" target="_blank">Media &amp; Socials - &quot;Post Exploitation Hunting&quot;</a><br><a href="https://oscybershop.herokuapp.com/main/pages/media.html#bug_hunters_methodology" target="_blank">Media &amp; Socials - &quot;Bug Hunters Methodology&quot;</a><br><a href="https://oscybershop.herokuapp.com/main/pages/cheatsheets.html#dfir" target="_blank">Cheatsheets - &quot;DFIR & Threat Hunting&quot;</a>';
+        result.innerHTML = '<a href="https://oscybershop.herokuapp.com/main/pages/projects.html#threathunting_project" target="_blank">Frameworks &amp; Projects - &quot;Threathunting Project&quot;</a><br><a href="https://oscybershop.herokuapp.com/main/pages/cheatsheets.html#dfir" target="_blank">Cheatsheets - &quot;DFIR & Threat Hunting&quot;</a><br><a href="https://oscybershop.herokuapp.com/main/pages/blue.html#acm_threat_hunting" target="_blank">Cyber Defence (Blue Team) - &quot;ACM Threat Hunting&quot;</a><br><a href="https://oscybershop.herokuapp.com/main/pages/blue.html#apt_hunter" target="_blank">Cyber Defence (Blue Team) - &quot;APT Hunter&quot;</a><br><a href="https://oscybershop.herokuapp.com/main/pages/blue.html#azurehunter" target="_blank">Cyber Defence (Blue Team) - &quot;Azurehunter&quot;</a><br><a href="https://oscybershop.herokuapp.com/main/pages/publications.html#demystifying_threat_hunting" target="_blank">Publications - &quot;Demystifying Threat Hunting&quot;</a><br><a href="https://oscybershop.herokuapp.com/main/pages/publications.html#kansa_for_enterprise_scale_threat_hunting" target="_blank">Publications - &quot;Kansa for Enterprise Scale Threat Hunting&quot;</a><br><a href="https://oscybershop.herokuapp.com/main/pages/posters.html#know_normal_hunt_evil" target="_blank">Posters - &quot;Know Normal Hunt Evil&quot;</a><br><a href="https://oscybershop.herokuapp.com/main/pages/posters.html#know_abnormal_find_evil" target="_blank">Posters - &quot;Know Abnormal Find Evil&quot;</a><br><a href="https://oscybershop.herokuapp.com/main/pages/int.html#fullhunt" target="_blank">Threat Intelligence - &quot;Fullhunt&quot;</a><br><a href="https://oscybershop.herokuapp.com/main/pages/media.html#hunting_cobalt_strike" target="_blank">Media &amp; Socials - &quot;Hunting Cobalt Strike&quot;</a><br><a href="https://oscybershop.herokuapp.com/main/pages/media.html#threat_hunting_via_sysmon" target="_blank">Media &amp; Socials - &quot;Threat Hunting via Sysmon&quot;</a><br><a href="https://oscybershop.herokuapp.com/main/pages/media.html#threat_hunting_via_dns" target="_blank">Media &amp; Socials - &quot;Threat Hunting via DNS&quot;</a><br><a href="https://oscybershop.herokuapp.com/main/pages/media.html#post_exploitation_hunting" target="_blank">Media &amp; Socials - &quot;Post Exploitation Hunting&quot;</a><br><a href="https://oscybershop.herokuapp.com/main/pages/media.html#bug_hunters_methodology" target="_blank">Media &amp; Socials - &quot;Bug Hunters Methodology&quot;</a><br><a href="https://oscybershop.herokuapp.com/main/pages/cheatsheets.html#dfir" target="_blank">Cheatsheets - &quot;DFIR & Threat Hunting&quot;</a>';
     }
     else if (input.includes("hunters")) {
         result.innerHTML = '<a href="https://oscybershop.herokuapp.com/main/pages/media.html#bug_hunters_methodology" target="_blank">Media &amp; Socials - &quot;Bug Hunters Methodology&quot;</a>';
@@ -736,7 +727,7 @@ function search_site() {
         result.innerHTML = '<a href="https://oscybershop.herokuapp.com/main/pages/publications.html#iocs_v_ioas" target="_blank">Publications - &quot;IOCs V IOAs&quot;</a>';
     }
     else if (input.includes("ios")) {
-        result.innerHTML = '<a href="https://oscybershop.herokuapp.com/main/pages/projects.html#ios_macOS_images" target="_blank">Projects - &quot;iOS/macOS Images&quot;</a>';
+        result.innerHTML = '<a href="https://oscybershop.herokuapp.com/main/pages/projects.html#ios_macOS_images" target="_blank">Frameworks &amp; Projects - &quot;iOS/macOS Images&quot;</a>';
     }
     else if (input.includes("ippsec")) {
         result.innerHTML = '<a href="https://oscybershop.herokuapp.com/main/pages/int.html#ippsec" target="_blank">Threat Intelligence - &quot;Ippsec&quot;</a>';
@@ -789,9 +780,6 @@ function search_site() {
     else if (input.includes("kevin") || input.includes("mitnick") || input.includes("kevin mitnick")) {
         result.innerHTML = '<a href="https://oscybershop.herokuapp.com/main/pages/media.html#kevin_mitnick" target="_blank">Media &amp; Socials - &quot;Kevin Mitnick&quot;</a>';
     }
-    else if (input.includes("keynotes")) {
-        result.innerHTML = '<a href="https://oscybershop.herokuapp.com/main/pages/media.html#keynotes" target="_blank">Media &amp; Socials - &quot;Keynotes&quot;</a>';
-    }
     else if (input.includes("kioptrix")) {
         result.innerHTML = '<a href="https://oscybershop.herokuapp.com/main/pages/vms.html#kioptrix" target="_blank">Virtual Machines - &quot;Kioptrix&quot;</a>';
     }
@@ -841,13 +829,13 @@ function search_site() {
         result.innerHTML = '<a href="https://oscybershop.herokuapp.com/main/pages/media.html#how_to_get_a_scammers_location" target="_blank">Media &amp; Socials - &quot;How to get a Scammer\'s Location&quot;</a>';
     }
     else if (input.includes("log")) {
-        result.innerHTML = '<a href="https://oscybershop.herokuapp.com/main/pages/cheatsheets.html#event_log_analysis" target="_blank">Cheat Sheets - &quot;Event Log Analysis&quot;</a><br><a href="https://oscybershop.herokuapp.com/main/pages/cheatsheets.html#critical_log_review" target="_blank">Cheat Sheets - &quot;Critical Log Review&quot;</a><br><a href="https://oscybershop.herokuapp.com/main/pages/blue.html#dfirlogbook" target="_blank">Cyber Defence (Blue Team) - &quot;DFIRlogbook&quot;</a><br><a href="https://oscybershop.herokuapp.com/main/pages/projects.html#what2log" target="_blank">Projects - &quot;What2Log&quot;</a><br><a href="https://oscybershop.herokuapp.com/main/pages/media.html#unconventional_logging" target="_blank">Media &amp; Socials - &quot;Unconventional Logging&quot;</a>';
+        result.innerHTML = '<a href="https://oscybershop.herokuapp.com/main/pages/cheatsheets.html#event_log_analysis" target="_blank">Cheat Sheets - &quot;Event Log Analysis&quot;</a><br><a href="https://oscybershop.herokuapp.com/main/pages/cheatsheets.html#critical_log_review" target="_blank">Cheat Sheets - &quot;Critical Log Review&quot;</a><br><a href="https://oscybershop.herokuapp.com/main/pages/blue.html#dfirlogbook" target="_blank">Cyber Defence (Blue Team) - &quot;DFIRlogbook&quot;</a><br><a href="https://oscybershop.herokuapp.com/main/pages/projects.html#what2log" target="_blank">Frameworks &amp; Projects - &quot;What2Log&quot;</a><br><a href="https://oscybershop.herokuapp.com/main/pages/media.html#unconventional_logging" target="_blank">Media &amp; Socials - &quot;Unconventional Logging&quot;</a>';
     }
     else if (input.includes("logging") || input.includes("unconventional") || input.includes("conventional")) {
         result.innerHTML = '<a href="https://oscybershop.herokuapp.com/main/pages/media.html#unconventional_logging" target="_blank">Media &amp; Socials - &quot;Unconventional Logging&quot;</a>';
     }
     else if (input.includes("lolbas")) {
-        result.innerHTML = '<a href="https://oscybershop.herokuapp.com/main/pages/projects.html#lolbas" target="_blank">Projects - &quot;LOLBAS&quot;</a>';
+        result.innerHTML = '<a href="https://oscybershop.herokuapp.com/main/pages/projects.html#lolbas" target="_blank">Frameworks &amp; Projects - &quot;LOLBAS&quot;</a>';
     }
     else if (input.includes("lorandbodo")) {
         result.innerHTML = '<a href="https://oscybershop.herokuapp.com/main/pages/publications.html#lorandbodo" target="_blank">Publications - &quot;lorandbodo&quot;</a>';
@@ -862,9 +850,9 @@ function search_site() {
         result.innerHTML = '<a href="https://oscybershop.herokuapp.com/main/pages/red.html#macro_pack" target="_blank">Offensive Cyber (Red Team) - &quot;Macro Pack&quot;</a><br><a href="https://oscybershop.herokuapp.com/main/pages/blue.html#xlmmacrodeobfuscator" target="_blank">Cyber Defence (Blue Team) - &quot;XLMMacroDeobfuscator&quot;</a>';
     }
     else if (input.includes("malapi")) {
-        result.innerHTML = '<a href="https://oscybershop.herokuapp.com/main/pages/projects.html#malapi" target="_blank">Projects - &quot;Malapi&quot;</a>';
+        result.innerHTML = '<a href="https://oscybershop.herokuapp.com/main/pages/projects.html#malapi" target="_blank">Frameworks &amp; Projects - &quot;Malapi&quot;</a>';
     }
-    else if (input.includes("malicious") || input.includes("documents") || input.includes("malicious documents")) {
+    else if (input.includes("malicious") || input.includes("malicious documents")) {
         result.innerHTML = '<a href="https://oscybershop.herokuapp.com/main/pages/cheatsheets.html#malicious_documents" target="_blank">Cheat Sheets - &quot;Malicious Documents&quot;</a>';
     }
     else if (input.includes("malshare")) {
@@ -940,7 +928,7 @@ function search_site() {
         result.innerHTML = '<a href="https://oscybershop.herokuapp.com/main/pages/red.html#mitm6" target="_blank">Offensive Cyber (Red Team) - &quot;mitm6&quot;</a>';
     }
     else if (input.includes("mitre")) {
-        result.innerHTML = '<a href="https://oscybershop.herokuapp.com/main/pages/blue.html#attack_framework" target="_blank">Cyber Defence (Blue Team) - &quot;ATT&CK Framework&quot;</a><br><a href="https://oscybershop.herokuapp.com/main/pages/blue.html#attack_navigator" target="_blank">Cyber Defence (Blue Team) - &quot;ATT&CK Navigator&quot;</a><br><a href="https://oscybershop.herokuapp.com/main/pages/blue.html#d3fend" target="_blank">Cyber Defence (Blue Team) - &quot;D3FEND&quot;</a><br><a href="https://oscybershop.herokuapp.com/main/pages/blue.html#engage" target="_blank">Cyber Defence (Blue Team) - &quot;Engage&quot;</a><br><a href="https://oscybershop.herokuapp.com/main/pages/publications.html#ten_strategies_of_a_world_class_csoc" target="_blank">Publications - &quot;Ten Strategies of a World-Class CSOC&quot;</a><br><a href="https://oscybershop.herokuapp.com/main/pages/publications.html#mitre_attack_mapping" target="_blank">Publications - &quot;MITRE ATT&CK Mapping&quot;</a><br><a href="https://oscybershop.herokuapp.com/main/pages/projects.html#attack_framework" target="_blank">Projects - &quot;ATT&CK Framework&quot;</a><br><a href="https://oscybershop.herokuapp.com/main/pages/projects.html#attack_navigator" target="_blank">Projects - &quot;ATT&CK Navigator&quot;</a><br><a href="https://oscybershop.herokuapp.com/main/pages/projects.html#d3fend" target="_blank">Projects - &quot;D3FEND&quot;</a><br><a href="https://oscybershop.herokuapp.com/main/pages/projects.html#engage" target="_blank">Projects - &quot;Engage&quot;</a><br><a href="https://oscybershop.herokuapp.com/main/pages/projects.html#caldera" target="_blank">Projects - &quot;Caldera&quot;</a><br><a href="https://oscybershop.herokuapp.com/main/pages/red.html#caldera" target="_blank">Offensive Cyber (Red Team) - &quot;Caldera&quot;</a><br><a href="https://oscybershop.herokuapp.com/main/pages/training.html#cybrary" target="_blank">Training - &quot;Cybrary&quot;</a>';
+        result.innerHTML = '<a href="https://oscybershop.herokuapp.com/main/pages/blue.html#attack_framework" target="_blank">Cyber Defence (Blue Team) - &quot;ATT&CK Framework&quot;</a><br><a href="https://oscybershop.herokuapp.com/main/pages/blue.html#attack_navigator" target="_blank">Cyber Defence (Blue Team) - &quot;ATT&CK Navigator&quot;</a><br><a href="https://oscybershop.herokuapp.com/main/pages/blue.html#d3fend" target="_blank">Cyber Defence (Blue Team) - &quot;D3FEND&quot;</a><br><a href="https://oscybershop.herokuapp.com/main/pages/blue.html#engage" target="_blank">Cyber Defence (Blue Team) - &quot;Engage&quot;</a><br><a href="https://oscybershop.herokuapp.com/main/pages/publications.html#ten_strategies_of_a_world_class_csoc" target="_blank">Publications - &quot;Ten Strategies of a World-Class CSOC&quot;</a><br><a href="https://oscybershop.herokuapp.com/main/pages/publications.html#mitre_attack_mapping" target="_blank">Publications - &quot;MITRE ATT&CK Mapping&quot;</a><br><a href="https://oscybershop.herokuapp.com/main/pages/projects.html#attack_framework" target="_blank">Frameworks &amp; Projects - &quot;ATT&CK Framework&quot;</a><br><a href="https://oscybershop.herokuapp.com/main/pages/projects.html#attack_navigator" target="_blank">Frameworks &amp; Projects - &quot;ATT&CK Navigator&quot;</a><br><a href="https://oscybershop.herokuapp.com/main/pages/projects.html#d3fend" target="_blank">Frameworks &amp; Projects - &quot;D3FEND&quot;</a><br><a href="https://oscybershop.herokuapp.com/main/pages/projects.html#engage" target="_blank">Frameworks &amp; Projects - &quot;Engage&quot;</a><br><a href="https://oscybershop.herokuapp.com/main/pages/projects.html#caldera" target="_blank">Frameworks &amp; Projects - &quot;Caldera&quot;</a><br><a href="https://oscybershop.herokuapp.com/main/pages/red.html#caldera" target="_blank">Offensive Cyber (Red Team) - &quot;Caldera&quot;</a><br><a href="https://oscybershop.herokuapp.com/main/pages/training.html#cybrary" target="_blank">Training - &quot;Cybrary&quot;</a>';
     }
     else if (input.includes("module")) {
         result.innerHTML = '<a href="https://oscybershop.herokuapp.com/main/pages/publications.html#running_processes_and_modules" target="_blank">Publications - &quot;Running Processes and Modules&quot;</a>';
@@ -961,7 +949,7 @@ function search_site() {
         result.innerHTML = '<a href="https://oscybershop.herokuapp.com/main/pages/cheatsheets.html#nano" target="_blank">Cheat Sheets - &quot;Nano&quot;</a>';
     }
     else if (input.includes("navigator")) {
-        result.innerHTML = '<a href="https://oscybershop.herokuapp.com/main/pages/projects.html#attack_navigator" target="_blank">Projects - &quot;ATT&CK Navigator&quot;</a>';
+        result.innerHTML = '<a href="https://oscybershop.herokuapp.com/main/pages/projects.html#attack_navigator" target="_blank">Frameworks &amp; Projects - &quot;ATT&CK Navigator&quot;</a>';
     }
     else if (input.includes("necrobrowser")) {
         result.innerHTML = '<a href="https://oscybershop.herokuapp.com/main/pages/red.html#necrobrowser" target="_blank">Offensive Cyber (Red Team) - &quot;Necrobrowser&quot;</a>';
@@ -1030,13 +1018,13 @@ function search_site() {
         result.innerHTML = '<a href="https://oscybershop.herokuapp.com/main/pages/int.html#infosec_osint_show" target="_blank">Threat Intelligence - &quot;Infosec OSINT Show&quot;</a><br><a href="https://oscybershop.herokuapp.com/main/pages/int.html#osint_bunker" target="_blank">Threat Intelligence - &quot;OSINT Bunker&quot;</a><br><a href="https://oscybershop.herokuapp.com/main/pages/int.html#osint_curious" target="_blank">Threat Intelligence - &quot;OSINT Curious&quot;</a>';
     }
     else if (input.includes("ossem")) {
-        result.innerHTML = '<a href="https://oscybershop.herokuapp.com/main/pages/projects.html#ossem" target="_blank">Projects - &quot;ossem&quot;</a>';
+        result.innerHTML = '<a href="https://oscybershop.herokuapp.com/main/pages/projects.html#ossem" target="_blank">Frameworks &amp; Projects - &quot;ossem&quot;</a>';
     }
     else if (input.includes("osxpmem")) {
         result.innerHTML = '<a href="https://oscybershop.herokuapp.com/main/pages/blue.html#osxpmem" target="_blank">Cyber Defence (Blue Team) - &quot;osxpmem&quot;</a>';
     }
     else if (input.includes("owasp")) {
-        result.innerHTML = '<a href="https://oscybershop.herokuapp.com/main/pages/projects.html#owasp" target="_blank">Projects - &quot;OWASP&quot;</a><br><a href="https://oscybershop.herokuapp.com/main/pages/publications.html#owasp_testing_guide" target="_blank">Publications - &quot;OWASP Testing Guide&quot;</a>';
+        result.innerHTML = '<a href="https://oscybershop.herokuapp.com/main/pages/projects.html#owasp" target="_blank">Frameworks &amp; Projects - &quot;OWASP&quot;</a><br><a href="https://oscybershop.herokuapp.com/main/pages/publications.html#owasp_testing_guide" target="_blank">Publications - &quot;OWASP Testing Guide&quot;</a>';
     }
     else if (input.includes("packettotal")) {
         result.innerHTML = '<a href="https://oscybershop.herokuapp.com/main/pages/blue.html#packettotal" target="_blank">Cyber Defence (Blue Team) - &quot;PacketTotal&quot;</a>';
@@ -1116,11 +1104,8 @@ function search_site() {
     else if (input.includes("ports")) {
         result.innerHTML = '<a href="https://oscybershop.herokuapp.com/main/pages/cheatsheets.html#common_ports" target="_blank">Cheat Sheets - &quot;Common Ports&quot;</a>';
     }
-    else if (input.includes("post exploitation")) {
+    else if (input.includes("post exploitation") || input.includes("post")) {
         result.innerHTML = '<a href="https://oscybershop.herokuapp.com/main/pages/cheatsheets.html#post" target="_blank">Cheat Sheets - &quot;Post&quot;</a>';
-    }
-    else if (input.includes("posters")) {
-        result.innerHTML = '<a href="https://oscybershop.herokuapp.com/main/pages/int.html#posters" target="_blank">Threat Intelligence - &quot;Posters&quot;</a>';
     }
     else if (input.includes("power") || input.includes("power") || input.includes("powershell") || input.includes("power shell")) {
         result.innerHTML = '<a href="https://oscybershop.herokuapp.com/main/pages/blue.html#powershell_core" target="_blank">Cyber Defence (Blue Team) - &quot;Powershell Core&quot;</a><br><a href="https://oscybershop.herokuapp.com/main/pages/blue.html#blue_team_powershell" target="_blank">Cyber Defence (Blue Team) - &quot;Blue Team Powershell&quot;</a><br><a href="https://oscybershop.herokuapp.com/main/pages/blue.html#powerforensics" target="_blank">Cyber Defence (Blue Team) - &quot;PowerForensics&quot;</a><br><a href="https://oscybershop.herokuapp.com/main/pages/blue.html#powerforensics" target="_blank">Cyber Defence (Blue Team) - &quot;PowerForensics&quot;</a><br><a href="https://oscybershop.herokuapp.com/main/pages/red.html#empire" target="_blank">Offensive Cyber (Red Team) - &quot;PowerShell Empire&quot;</a><br><a href="https://oscybershop.herokuapp.com/main/pages/red.html#powershell_wmic" target="_blank">Offensive Cyber (Red Team) - &quot;PowerShell &amp; WMIC&quot;</a>';
@@ -1159,7 +1144,7 @@ function search_site() {
         result.innerHTML = '<a href="https://oscybershop.herokuapp.com/main/pages/int.html#rangeforce" target="_blank">Threat Intelligence - &quot;Rangeforce&quot;</a>';
     }
     else if (input.includes("ransom") || input.includes("ransomware")) {
-        result.innerHTML = '<a href="https://oscybershop.herokuapp.com/main/pages/projects.html#no_more_ransom" target="_blank">Projects - &quot;No More Ransom&quot;</a><br><a href="https://oscybershop.herokuapp.com/main/pages/publications.html#ransomware_risk_management" target="_blank">Publications - &quot;Ransomware Risk Management&quot;</a><br><a href="https://oscybershop.herokuapp.com/main/pages/publications.html#growing_threat_of_human_operated_ransomware" target="_blank">Publications - &quot;Growing Threat of Human Operated Ransomware&quot;</a><br><a href="https://oscybershop.herokuapp.com/main/pages/publications.html#ransomware_response" target="_blank">Publications - &quot;Ransomware Response&quot;</a>';
+        result.innerHTML = '<a href="https://oscybershop.herokuapp.com/main/pages/projects.html#no_more_ransom" target="_blank">Frameworks &amp; Projects - &quot;No More Ransom&quot;</a><br><a href="https://oscybershop.herokuapp.com/main/pages/publications.html#ransomware_risk_management" target="_blank">Publications - &quot;Ransomware Risk Management&quot;</a><br><a href="https://oscybershop.herokuapp.com/main/pages/publications.html#growing_threat_of_human_operated_ransomware" target="_blank">Publications - &quot;Growing Threat of Human Operated Ransomware&quot;</a><br><a href="https://oscybershop.herokuapp.com/main/pages/publications.html#ransomware_response" target="_blank">Publications - &quot;Ransomware Response&quot;</a>';
     }
     else if (input.includes("rebels")) {
         result.innerHTML = '<a href="https://oscybershop.herokuapp.com/main/pages/media.html#what_rebels_want" target="_blank">Media &amp; Socials - &quot;What Rebels Want&quot;</a>';
@@ -1224,7 +1209,7 @@ function search_site() {
     else if (input.includes("russia") || input.includes("us election")) {
         result.innerHTML = '<a href="https://oscybershop.herokuapp.com/main/pages/media.html#how_russia_hacked_the_us_election" target="_blank">Media &amp; Socials - &quot;How Russia Hacked the US Election&quot;</a>';
     }
-    else if (input.includes("sample") || input.includes("report")) {
+    else if (input.includes("sample")) {
         result.innerHTML = '<a href="https://oscybershop.herokuapp.com/main/pages/red.html#sample_pen_test_report" target="_blank">Offensive Cyber (Red Team) - &quot;Sample Pen Test Report&quot;</a>';
     }
     else if (input.includes("sandworm")) {
@@ -1311,9 +1296,6 @@ function search_site() {
     else if (input.includes("sleuth")) {
         result.innerHTML = '<a href="https://oscybershop.herokuapp.com/main/pages/blue.html#the_sleuth_kit" target="_blank">Cyber Defence (Blue Team) - &quot;The Sleuth Kit&quot;</a>';
     }
-    else if (input.includes("slide")) {
-        result.innerHTML = '<a href="https://oscybershop.herokuapp.com/main/pages/publications.html#slides" target="_blank">Publications - &quot;Slides&quot;</a>';
-    }
     else if (input.includes("slingshot")) {
         result.innerHTML = '<a href="https://oscybershop.herokuapp.com/main/pages/vms.html#slingshot" target="_blank">Virtual Machines - &quot;Slingshot&quot;</a>';
     }
@@ -1368,7 +1350,7 @@ function search_site() {
     else if (input.includes("subbrute")) {
         result.innerHTML = '<a href="https://oscybershop.herokuapp.com/main/pages/red.html#subbrute" target="_blank">Offensive Cyber (Red Team) - &quot;Subbrute&quot;</a>';
     }
-    else if (input.includes("subdomain")) {
+    else if (input.includes("subdomain") || input.includes("enumeration")) {
         result.innerHTML = '<a href="https://oscybershop.herokuapp.com/main/pages/red.html#subdomain_enumeration" target="_blank">Offensive Cyber (Red Team) - &quot;Subdomain Enumeration&quot;</a>';
     }
     else if (input.includes("suite")) {
@@ -1407,9 +1389,6 @@ function search_site() {
     else if (input.includes("technology")) {
         result.innerHTML = '<a href="https://oscybershop.herokuapp.com/main/pages/blue.html#basis_technology" target="_blank">Cyber Defence (Blue Team) - &quot;Basis Technology&quot;</a>';
     }
-    else if (input.includes("templates")) {
-        result.innerHTML = '<a href="https://oscybershop.herokuapp.com/main/pages/publications.html#templates" target="_blank">Publications - &quot;Templates&quot;</a>';
-    }
     else if (input.includes("theharvester")) {
         result.innerHTML = '<a href="https://oscybershop.herokuapp.com/main/pages/red.html#theharvester" target="_blank">Offensive Cyber (Red Team) - &quot;TheHarvester&quot;</a>';
     }
@@ -1423,7 +1402,7 @@ function search_site() {
         result.innerHTML = '<a href="https://oscybershop.herokuapp.com/main/pages/blue.html#thezoo" target="_blank">Cyber Defence (Blue Team) - &quot;TheZoo&quot;</a>';
     }
     else if (input.includes("threat") || input.includes("threats")) {
-        result.innerHTML = '<a href="https://oscybershop.herokuapp.com/main/pages/int.html#threatcrowd" target="_blank">Threat Intelligence - &quot;ThreatCrowd&quot;</a><br><a href="https://oscybershop.herokuapp.com/main/pages/int.html#threatfeeds_io" target="_blank">Threat Intelligence - &quot;Threatfeeds IO&quot;</a><br><a href="https://oscybershop.herokuapp.com/main/pages/projects.html#threathunting_project" target="_blank">Projects - &quot;Threathunting Project&quot;</a><br><a href="https://oscybershop.herokuapp.com/main/pages/int.html#threatpursuit" target="_blank">Threat Intelligence - &quot;Threatpursuit&quot;</a>';
+        result.innerHTML = '<a href="https://oscybershop.herokuapp.com/main/pages/int.html#threatcrowd" target="_blank">Threat Intelligence - &quot;ThreatCrowd&quot;</a><br><a href="https://oscybershop.herokuapp.com/main/pages/int.html#threatfeeds_io" target="_blank">Threat Intelligence - &quot;Threatfeeds IO&quot;</a><br><a href="https://oscybershop.herokuapp.com/main/pages/projects.html#threathunting_project" target="_blank">Frameworks &amp; Projects - &quot;Threathunting Project&quot;</a><br><a href="https://oscybershop.herokuapp.com/main/pages/int.html#threatpursuit" target="_blank">Threat Intelligence - &quot;Threatpursuit&quot;</a>';
     }
     else if (input.includes("threatcrowd")) {
         result.innerHTML = '<a href="https://oscybershop.herokuapp.com/main/pages/int.html#threatcrowd" target="_blank">Threat Intelligence - &quot;ThreatCrowd&quot;</a>';
@@ -1432,7 +1411,7 @@ function search_site() {
         result.innerHTML = '<a href="https://oscybershop.herokuapp.com/main/pages/int.html#threatfeeds_io" target="_blank">Threat Intelligence - &quot;Threatfeeds IO&quot;</a>';
     }
     else if (input.includes("threathunting")) {
-        result.innerHTML = '<a href="https://oscybershop.herokuapp.com/main/pages/projects.html#threathunting_project" target="_blank">Projects - &quot;Threathunting Project&quot;</a>';
+        result.innerHTML = '<a href="https://oscybershop.herokuapp.com/main/pages/projects.html#threathunting_project" target="_blank">Frameworks &amp; Projects - &quot;Threathunting Project&quot;</a>';
     }
     else if (input.includes("threatpursuit")) {
         result.innerHTML = '<a href="https://oscybershop.herokuapp.com/main/pages/int.html#threatpursuit" target="_blank">Threat Intelligence - &quot;Threatpursuit&quot;</a>';
@@ -1489,13 +1468,13 @@ function search_site() {
         result.innerHTML = '<a href="https://oscybershop.herokuapp.com/main/pages/cheatsheets.html#sort_uniq" target="_blank">Cheat Sheets - &quot;Sort/Uniq&quot;</a>';
     }
     else if (input.includes("unit")) {
-        result.innerHTML = '<a href="https://oscybershop.herokuapp.com/main/pages/projects.html#unit42_playbook_viewer" target="_blank">Projects - &quot;Unit42 Playbook Viewer&quot;</a><br><a href="https://oscybershop.herokuapp.com/main/pages/publications.html#apt1:_exposing_one_of_china_s_cyber_espionage_units" target="_blank">Publications - &quot;APT1: Exposing One of China\'s Cyber Espionage Units&quot;</a>';
+        result.innerHTML = '<a href="https://oscybershop.herokuapp.com/main/pages/projects.html#unit42_playbook_viewer" target="_blank">Frameworks &amp; Projects - &quot;Unit42 Playbook Viewer&quot;</a><br><a href="https://oscybershop.herokuapp.com/main/pages/publications.html#apt1:_exposing_one_of_china_s_cyber_espionage_units" target="_blank">Publications - &quot;APT1: Exposing One of China\'s Cyber Espionage Units&quot;</a>';
     }
     else if (input.includes("unit42") || input.includes("playbook") || input.includes("viewer") || input.includes("playbook viewer")) {
-        result.innerHTML = '<a href="https://oscybershop.herokuapp.com/main/pages/projects.html#unit42_playbook_viewer" target="_blank">Projects - &quot;Unit42 Playbook Viewer&quot;</a><br><a href="https://oscybershop.herokuapp.com/main/pages/blue.html#unit42_playbook_viewer" target="_blank">Cyber Defence (Blue Team) - &quot;Unit42 Playbook Viewer&quot;</a>';
+        result.innerHTML = '<a href="https://oscybershop.herokuapp.com/main/pages/projects.html#unit42_playbook_viewer" target="_blank">Frameworks &amp; Projects - &quot;Unit42 Playbook Viewer&quot;</a><br><a href="https://oscybershop.herokuapp.com/main/pages/blue.html#unit42_playbook_viewer" target="_blank">Cyber Defence (Blue Team) - &quot;Unit42 Playbook Viewer&quot;</a>';
     }
     else if (input.includes("unprotect")) {
-        result.innerHTML = '<a href="https://oscybershop.herokuapp.com/main/pages/projects.html#unprotect" target="_blank">Projects - &quot;Unprotect&quot;</a>';
+        result.innerHTML = '<a href="https://oscybershop.herokuapp.com/main/pages/projects.html#unprotect" target="_blank">Frameworks &amp; Projects - &quot;Unprotect&quot;</a>';
     }
     else if (input.includes("url")) {
         result.innerHTML = '<a href="https://oscybershop.herokuapp.com/main/pages/int.html#urlhaus" target="_blank">Threat Intelligence - &quot;urlhaus&quot;</a><br><a href="https://oscybershop.herokuapp.com/main/pages/int.html#urlscan" target="_blank">Threat Intelligence - &quot;urlscan&quot;</a>';
@@ -1546,7 +1525,7 @@ function search_site() {
         result.innerHTML = '<a href="https://oscybershop.herokuapp.com/main/pages/blue.html#wela" target="_blank">Cyber Defence (Blue Team) - &quot;WELA&quot;</a>';
     }
     else if (input.includes("what2log")) {
-        result.innerHTML = '<a href="https://oscybershop.herokuapp.com/main/pages/projects.html#what2log" target="_blank">Projects - &quot;What2Log&quot;</a>';
+        result.innerHTML = '<a href="https://oscybershop.herokuapp.com/main/pages/projects.html#what2log" target="_blank">Frameworks &amp; Projects - &quot;What2Log&quot;</a>';
     }
     else if (input.includes("whatsmyname")) {
         result.innerHTML = '<a href="https://oscybershop.herokuapp.com/main/pages/int.html#whatsmyname" target="_blank">Threat Intelligence - &quot;WhatsMyName&quot;</a>';
@@ -1615,7 +1594,7 @@ function search_site() {
         result.innerHTML = '<a href="https://oscybershop.herokuapp.com/main/pages/int.html#zoomeye" target="_blank">Threat Intelligence - &quot;Zoomeye&quot;</a>';
     }
     else if (input.includes("api")) {
-        result.innerHTML = '<a href="https://oscybershop.herokuapp.com/main/pages/projects.html#malapi" target="_blank">Projects - &quot;Malapi&quot;</a><br><a href="https://oscybershop.herokuapp.com/main/pages/blue.html#api_monitor" target="_blank">Cyber Defence (Blue Team) - &quot;API Monitor&quot;</a>';
+        result.innerHTML = '<a href="https://oscybershop.herokuapp.com/main/pages/projects.html#malapi" target="_blank">Frameworks &amp; Projects - &quot;Malapi&quot;</a><br><a href="https://oscybershop.herokuapp.com/main/pages/blue.html#api_monitor" target="_blank">Cyber Defence (Blue Team) - &quot;API Monitor&quot;</a>';
     }
     else if (input.includes("assessment")) {
         result.innerHTML = '<a href="https://oscybershop.herokuapp.com/main/pages/publications.html#security_assessment_findings_report" target="_blank">Publications - &quot;Security Assessment Findings Report&quot;</a>';
@@ -1635,7 +1614,7 @@ function search_site() {
     else if (input.includes("mail")) {
         result.innerHTML = '<a href="https://oscybershop.herokuapp.com/main/pages/int.html#protonmail" target="_blank">Threat Intelligence - &quot;Protonmail&quot;</a>';
     }
-    else if (input.includes("sandbox")) {
+    else if (input.includes("sandbox") || input.includes("sandboxes") || input.includes("sand box") || input.includes("sand boxes")) {
         result.innerHTML = '<a href="https://oscybershop.herokuapp.com/main/pages/blue.html#joe_sandbox" target="_blank">Cyber Defence (Blue Team) - &quot;Joe Sandbox&quot;</a><br><a href="https://oscybershop.herokuapp.com/main/pages/blue.html#any_run" target="_blank">Cyber Defence (Blue Team) - &quot;Any Run&quot;</a>';
     }
     else if (input.includes("scan") || input.includes("scanner") || input.includes("scanners")) {
@@ -1651,13 +1630,94 @@ function search_site() {
         result.innerHTML = '<a href="https://oscybershop.herokuapp.com/main/pages/posters.html#pen_testing_blueprints" target="_blank">Posters - Pen Testing Blueprints</a><br><a href="https://oscybershop.herokuapp.com/main/pages/publications.html#owasp_testing_guide" target="_blank">Publications - &quot;OWASP Testing Guide&quot;</a><br><a href="https://oscybershop.herokuapp.com/main/pages/posters.html#penetration_testing" target="_blank">Posters - &quot;Penetration Testing&quot;</a><br><a href="https://oscybershop.herokuapp.com/main/pages/posters.html#secure_web_app_testing" target="_blank">Posters - &quot;Secure Web App Testing&quot;</a>';
     }
     else if (input.includes("threat")) {
-        result.innerHTML = '<a href="https://oscybershop.herokuapp.com/main/pages/media.html#how_cyberattacks_threaten_real_world" target="_blank">Media &amp; Socials - &quot;How Cyberattacks Threaten Real World&quot;</a><br><a href="https://oscybershop.herokuapp.com/main/pages/projects.html#threathunting_project" target="_blank">Projects - &quot;Threathunting Project&quot;</a><br><a href="https://oscybershop.herokuapp.com/main/pages/cheatsheets.html#dfir" target="_blank">Cheatsheets - &quot;DFIR & Threat Hunting&quot;</a><br><a href="https://oscybershop.herokuapp.com/main/pages/blue.html#acm_threat_hunting" target="_blank">Cyber Defence (Blue Team) - &quot;ACM Threat Hunting&quot;</a><br><a href="https://oscybershop.herokuapp.com/main/pages/publications.html#demystifying_threat_hunting" target="_blank">Publications - &quot;Demystifying Threat Hunting&quot;</a><br><a href="https://oscybershop.herokuapp.com/main/pages/publications.html#kansa_for_enterprise_scale_threat_hunting" target="_blank">Publications - &quot;Kansa for Enterprise Scale Threat Hunting&quot;</a><br><a href="https://oscybershop.herokuapp.com/main/pages/media.html#threat_hunting_via_sysmon" target="_blank">Media &amp; Socials - &quot;Threat Hunting via Sysmon&quot;</a><br><a href="https://oscybershop.herokuapp.com/main/pages/media.html#threat_hunting_via_dns" target="_blank">Media &amp; Socials - &quot;Threat Hunting via DNS&quot;</a><br><a href="https://oscybershop.herokuapp.com/main/pages/cheatsheets.html#dfir" target="_blank">Cheatsheets - &quot;DFIR & Threat Hunting&quot;</a><br><a href="https://oscybershop.herokuapp.com/main/pages/publications.html#growing_threat_of_human_operated_ransomware" target="_blank">Publications - &quot;Growing Threat of Human Operated Ransomware&quot;</a><br><a href="https://oscybershop.herokuapp.com/main/pages/publications.html#ransomware_response" target="_blank">Publications - &quot;Ransomware Response&quot;</a><br><a href="https://oscybershop.herokuapp.com/main/pages/int.html#threatcrowd" target="_blank">Threat Intelligence - &quot;ThreatCrowd&quot;</a><br><a href="https://oscybershop.herokuapp.com/main/pages/int.html#threatfeeds_io" target="_blank">Threat Intelligence - &quot;Threatfeeds IO&quot;</a><br><a href="https://oscybershop.herokuapp.com/main/pages/int.html#threatpursuit" target="_blank">Threat Intelligence - &quot;Threatpursuit&quot;</a>';
+        result.innerHTML = '<a href="https://oscybershop.herokuapp.com/main/pages/media.html#how_cyberattacks_threaten_real_world" target="_blank">Media &amp; Socials - &quot;How Cyberattacks Threaten Real World&quot;</a><br><a href="https://oscybershop.herokuapp.com/main/pages/projects.html#threathunting_project" target="_blank">Frameworks &amp; Projects - &quot;Threathunting Project&quot;</a><br><a href="https://oscybershop.herokuapp.com/main/pages/cheatsheets.html#dfir" target="_blank">Cheatsheets - &quot;DFIR & Threat Hunting&quot;</a><br><a href="https://oscybershop.herokuapp.com/main/pages/blue.html#acm_threat_hunting" target="_blank">Cyber Defence (Blue Team) - &quot;ACM Threat Hunting&quot;</a><br><a href="https://oscybershop.herokuapp.com/main/pages/publications.html#demystifying_threat_hunting" target="_blank">Publications - &quot;Demystifying Threat Hunting&quot;</a><br><a href="https://oscybershop.herokuapp.com/main/pages/publications.html#kansa_for_enterprise_scale_threat_hunting" target="_blank">Publications - &quot;Kansa for Enterprise Scale Threat Hunting&quot;</a><br><a href="https://oscybershop.herokuapp.com/main/pages/media.html#threat_hunting_via_sysmon" target="_blank">Media &amp; Socials - &quot;Threat Hunting via Sysmon&quot;</a><br><a href="https://oscybershop.herokuapp.com/main/pages/media.html#threat_hunting_via_dns" target="_blank">Media &amp; Socials - &quot;Threat Hunting via DNS&quot;</a><br><a href="https://oscybershop.herokuapp.com/main/pages/cheatsheets.html#dfir" target="_blank">Cheatsheets - &quot;DFIR & Threat Hunting&quot;</a><br><a href="https://oscybershop.herokuapp.com/main/pages/publications.html#growing_threat_of_human_operated_ransomware" target="_blank">Publications - &quot;Growing Threat of Human Operated Ransomware&quot;</a><br><a href="https://oscybershop.herokuapp.com/main/pages/publications.html#ransomware_response" target="_blank">Publications - &quot;Ransomware Response&quot;</a><br><a href="https://oscybershop.herokuapp.com/main/pages/int.html#threatcrowd" target="_blank">Threat Intelligence - &quot;ThreatCrowd&quot;</a><br><a href="https://oscybershop.herokuapp.com/main/pages/int.html#threatfeeds_io" target="_blank">Threat Intelligence - &quot;Threatfeeds IO&quot;</a><br><a href="https://oscybershop.herokuapp.com/main/pages/int.html#threatpursuit" target="_blank">Threat Intelligence - &quot;Threatpursuit&quot;</a>';
     }
     else if (input.includes("world")) {
         result.innerHTML = '<a href="https://oscybershop.herokuapp.com/main/pages/media.html#nsa_betrayed_the_worlds_trust" target="_blank">Media &amp; Socials - &quot;NSA Betrayed the World\'s Trust&quot;</a><br><a href="https://oscybershop.herokuapp.com/main/pages/publications.html#ten_strategies_of_a_world_class_csoc" target="_blank">Publications - &quot;Ten Strategies of a World Class CSOC&quot;</a><br><a href="https://oscybershop.herokuapp.com/main/pages/media.html#how_cyberattacks_threaten_real_world" target="_blank">Media &amp; Socials - &quot;How Cyberattacks Threaten Real World&quot;</a>';
     }
     else if (input.includes("tor")) {
         result.innerHTML = '<a href="https://oscybershop.herokuapp.com/main/pages/int.html#megator" target="_blank">Threat Intelligence - &quot;Megator&quot;</a><br><a href="https://oscybershop.herokuapp.com/main/pages/int.html#weaponizing_the_deep_web" target="_blank">Threat Intelligence - &quot;Weaponizing the Deep Web&quot;</a>';
+    }
+    else if (input.includes("posters")) {
+        result.innerHTML = '<a href="https://oscybershop.herokuapp.com/main/pages/int.html#posters" target="_blank">Threat Intelligence - &quot;Posters&quot;</a>';
+    }
+    else if (input.includes("slide") || input.includes("slides") || input.includes("slide deck") || input.includes("slide decks")) {
+        result.innerHTML = '<a href="https://oscybershop.herokuapp.com/main/pages/publications.html#slides" target="_blank">Publications - &quot;Slides&quot;</a>';
+    }
+    else if (input.includes("blogs")) {
+        result.innerHTML = '<a href="https://oscybershop.herokuapp.com/main/pages/publications.html#blogs" target="_blank">Publications - &quot;Blogs&quot;</a>';
+    }
+    else if (input.includes("guide") || input.includes("guides")) {
+        result.innerHTML = '<a href="https://oscybershop.herokuapp.com/main/pages/publications.html#aws_ir_guide" target="_blank">Publications - &quot;AWS IR Guide&quot;</a><br><a href="https://oscybershop.herokuapp.com/main/pages/publications.html#owasp_testing_guide" target="_blank">Publications - &quot;OWASP Testing Guide&quot;</a><br><a href="https://oscybershop.herokuapp.com/main/pages/publications.html#ir_field_guide" target="_blank">Publications - &quot;IR Field Guide&quot;</a><br><a href="https://oscybershop.herokuapp.com/main/pages/publications.html#guides" target="_blank">Publications - &quot;Guides&quot;</a>';
+    }
+    else if (input.includes("templates") || input.includes("template")) {
+        result.innerHTML = '<a href="https://oscybershop.herokuapp.com/main/pages/publications.html#templates" target="_blank">Publications - &quot;Templates&quot;</a>';
+    }
+    else if (input.includes("keynote") || input.includes("keynotes") || input.includes("speech") || input.includes("speeches")) {
+        result.innerHTML = '<a href="https://oscybershop.herokuapp.com/main/pages/media.html#keynotes" target="_blank">Media &amp; Socials - &quot;Keynotes&quot;</a>';
+    }
+    else if (input.includes("steganography")) {
+        result.innerHTML = '<a href="https://oscybershop.herokuapp.com/main/pages/blue.html#steghide" target="_blank">Cyber Defence (Blue Team) - &quot;Steghide&quot;</a><br><a href="https://oscybershop.herokuapp.com/main/pages/blue.html#xiao_steganography" target="_blank">Cyber Defence (Blue Team) - &quot;Xiao Steganography&quot;</a>';
+    }
+    else if (input.includes("white papers") || input.includes("papers") || input.includes("reports") || input.includes("report")) {
+        result.innerHTML = '<a href="https://oscybershop.herokuapp.com/main/pages/publications.html#reps" target="_blank">Publications - &quot;Reports&quot;</a>';
+    }
+    else if (input.includes("book") || input.includes("books")) {
+        result.innerHTML = '<a href="https://oscybershop.herokuapp.com/main/pages/publications.html#books" target="_blank">Publications - &quot;Books&quot;</a>';
+    }
+    else if (input.includes("documentation") || input.includes("documents")) {
+        result.innerHTML = '<a href="https://oscybershop.herokuapp.com/main/pages/publications.html#techdocs" target="_blank">Publications - &quot;Documentation&quot;</a>';
+    }
+    else if (input.includes("tutorials") || input.includes("tutorial")) {
+        result.innerHTML = '<a href="https://oscybershop.herokuapp.com/main/pages/publications.html#guides" target="_blank">Publications - &quot;Guides&quot;</a><br><a href="https://oscybershop.herokuapp.com/main/pages/media.html#vids" target="_blank">Media &amp; Socials - &quot;Videos &amp; Tutorials&quot;</a>';
+    }
+    else if (input.includes("tooling")) {
+        result.innerHTML = '<a href="https://oscybershop.herokuapp.com/main/pages/blue.html#tools" target="_blank">Cyber Defence (Blue Team) - &quot;Tooling&quot;</a><br><a href="https://oscybershop.herokuapp.com/main/pages/red.html#tools" target="_blank">Offensive Cyber (Red Team) - &quot;Tooling&quot;</a><br><a href="https://oscybershop.herokuapp.com/main/pages/int.html#tools" target="_blank">Threat Intelligence - &quot;Tooling&quot;</a>';
+    }
+    else if (input.includes("frameworks")) {
+        result.innerHTML = '<a href="https://oscybershop.herokuapp.com/main/pages/projects.html#fw" target="_blank">Frameworks &amp; Projects - &quot;Frameworks&quot;</a>';
+    }
+    else if (input.includes("ctf") || input.includes("challenges")) {
+        result.innerHTML = '<a href="https://oscybershop.herokuapp.com/main/pages/blue.html#ctfs" target="_blank">Cyber Defence (Blue Team) - &quot;CTFs &amp; Ranges&quot;</a><br><a href="https://oscybershop.herokuapp.com/main/pages/red.html#ctfs" target="_blank">Offensive Cyber (Red Team) - &quot;CTFs &amp; Ranges&quot;</a><br><a href="https://oscybershop.herokuapp.com/main/pages/int.html#ctfs" target="_blank">Threat Intelligence - &quot;CTFs &amp; Ranges&quot;</a>';
+    }
+    else if (input.includes("code") || input.includes("coding") || input.includes("scripting")) {
+        result.innerHTML = '<a href="https://oscybershop.herokuapp.com/main/pages/blue.html#code" target="_blank">Cyber Defence (Blue Team) - &quot;Coding Environments&quot;</a><br><a href="https://oscybershop.herokuapp.com/main/pages/red.html#code" target="_blank">Offensive Cyber (Red Team) - &quot;Coding Environments&quot;</a><br><a href="https://oscybershop.herokuapp.com/main/pages/int.html#code" target="_blank">Threat Intelligence - &quot;Coding Environments&quot;</a>';
+    }
+    else if (input.includes("management")) {
+        result.innerHTML = '<a href="https://oscybershop.herokuapp.com/main/pages/posters.html#mgmt" target="_blank">Posters - Management</a><br><a href="https://oscybershop.herokuapp.com/main/pages/publications.html#ransomware_risk_management" target="_blank">Publications - &quot;Ransomware Risk Management&quot;</a>';
+    }
+    else if (input.includes("video" || input.includes("videos"))) {
+        result.innerHTML = '<a href="https://oscybershop.herokuapp.com/main/pages/media.html#vids" target="_blank">Media &amp; Socials - &quot;Videos &amp; Tutorials&quot;</a>';
+    }
+    else if (input.includes("channel") || input.includes("channels") || input.includes("playlist") || input.includes("playlists")) {
+        result.innerHTML = '<a href="https://oscybershop.herokuapp.com/main/pages/media.html#lists" target="_blank">Media &amp; Socials - &quot;Channels &amp; Playlists&quot;</a>';
+    }
+    else if (input.includes("webcast") || input.includes("webcasts") || input.includes("podcast") || input.includes("podcasts")) {
+        result.innerHTML = '<a href="https://oscybershop.herokuapp.com/main/pages/media.html#casts" target="_blank">Media &amp; Socials - &quot;Webcasts &amp; Podcasts&quot;</a>';
+    }
+    else if (input.includes("image") || input.includes("images") || input.includes("diagram") || input.includes("diagrams") || input.includes("picture") || input.includes("pictures")) {
+        result.innerHTML = '<a href="https://oscybershop.herokuapp.com/main/pages/media.html#imgs" target="_blank">Media &amp; Socials - &quot;Images &amp; Diagrams&quot;</a>';
+    }
+    else if (input.includes("disassembler") || input.includes("disassemblers") || input.includes("debugger") || input.includes("debuggers")) {
+        result.innerHTML = '<a href="https://oscybershop.herokuapp.com/main/pages/blue.html#static" target="_blank">Cyber Defence (Blue Team) - &quot;Disassemblers/Debuggers&quot;</a><br><a href="https://oscybershop.herokuapp.com/main/pages/tooling.html#static" target="_blank">Tooling - &quot;Disassemblers/Debuggers&quot;</a>';
+    }
+    else if (input.includes("repository") || input.includes("repositories") || input.includes("malware repository") || input.includes("malware repositories")) {
+        result.innerHTML = '<a href="https://oscybershop.herokuapp.com/main/pages/blue.html#malware_repos" target="_blank">Cyber Defence (Blue Team) - &quot;Malware Repositories&quot;</a><br><a href="https://oscybershop.herokuapp.com/main/pages/tooling.html#malware_repos" target="_blank">Tooling - &quot;Malware Repositories&quot;</a>';
+    }
+    else if (input.includes("note taking") || input.includes("check lists") || input.includes("check list") || input.includes("checklists") || input.includes("checklist") || input.includes("text editor") || input.includes("text editors")) {
+        result.innerHTML = '<a href="https://oscybershop.herokuapp.com/main/pages/blue.html#notes" target="_blank">Cyber Defence (Blue Team) - &quot;Note Taking &amp; Checklists&quot;</a><br><a href="https://oscybershop.herokuapp.com/main/pages/red.html#notes" target="_blank">Offensive Cyber (Red Team) - &quot;Note Taking &amp; Checklists&quot;</a>';
+    }
+    else if (input.includes("network enumeration")) {
+        result.innerHTML = '<a href="https://oscybershop.herokuapp.com/main/pages/red.html#enum" target="_blank">Offensive Cyber (Red Team) - &quot;Network Enumeration&quot;</a><br><a href="https://oscybershop.herokuapp.com/main/pages/cheatsheets.html#enum" target="_blank">Cheatsheets - &quot;Network Interception/Enumeration&quot;</a><br><a href="https://oscybershop.herokuapp.com/main/pages/tooling.html#enum" target="_blank">Tooling - &quot;Network Emuneration&quot;</a><br><a href="https://oscybershop.herokuapp.com/main/pages/tooling.html#subdomain_enumeration" target="_blank">Tooling - &quot;Subdomain Enumeration&quot;</a>';
+    }
+    else if (input.includes("exploitation")) {
+        result.innerHTML = '<a href="https://oscybershop.herokuapp.com/main/pages/red.html#post" target="_blank">Offensive Cyber (Red Team) - &quot;Post Exploitation&quot;</a><br><a href="https://oscybershop.herokuapp.com/main/pages/cheatsheets.html#post" target="_blank">Cheatsheets - &quot;Post Exploitation&quot;</a><br><a href="https://oscybershop.herokuapp.com/main/pages/tooling.html#post" target="_blank">Tooling - &quot;Post Exploitation&quot;</a><br><a href="https://oscybershop.herokuapp.com/main/pages/blue.html#post_exploitation_hunting" target="_blank">Cyber Defence (Blue Team - &quot;Post Exploitation Hunting&quot;</a><br><a href="https://oscybershop.herokuapp.com/main/pages/media.html#post_exploitation_hunting" target="_blank">Media &amp; Socials - &quot;Post Exploitation Hunting&quot;</a><br><a href="https://oscybershop.herokuapp.com/main/pages/publications.html#hacking_the_art_of_exploitation" target="_blank">Publications - &quot;Hacking: The Art of Exploitation&quot;</a>';
+    }
+    else if (input.includes("credential harvesting") || input.includes("cred harvesting")) {
+        result.innerHTML = '<a href="https://oscybershop.herokuapp.com/main/pages/red.html#creds" target="_blank">Offensive Cyber (Red Team) - &quot;Credential Harvesting&quot;</a><br><a href="https://oscybershop.herokuapp.com/main/pages/cheatsheets.html#creds" target="_blank">Cheatsheets - &quot;Credential Harvesting&quot;</a><br><a href="https://oscybershop.herokuapp.com/main/pages/tooling.html#creds" target="_blank">Tooling - &quot;Credential Harvesting&quot;</a>';
+    }
+    else if (input.includes("c2") || input.includes("cnc") || input.includes("command and control") || input.includes("command & control")) {
+        result.innerHTML = '<a href="https://oscybershop.herokuapp.com/main/pages/red.html#c2" target="_blank">Offensive Cyber (Red Team) - &quot;Command &amp; Control&quot;</a><br><a href="https://oscybershop.herokuapp.com/main/pages/cheatsheets.html#c2" target="_blank">Cheatsheets - &quot;Command &amp; Control&quot;</a><br><a href="https://oscybershop.herokuapp.com/main/pages/tooling.html#c2" target="_blank">Tooling - &quot;Command &amp; Control&quot;</a>';
     }
     else {
         result.innerHTML = "";
