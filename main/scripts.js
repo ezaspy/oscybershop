@@ -33,6 +33,9 @@ function search_site() {
     else if (input.includes("active")) {
         result.innerHTML = 'Publications<ul><li><a href="https://oscybershop.herokuapp.com/main/pages/publications.html#active_directory_security" target="_blank">Active Directory Security</a></li></ul><br>Cyber Defence (Blue Team)<ul><li><a href="https://oscybershop.herokuapp.com/main/pages/blue.html#adhd" target="_blank">ADHD</a></li></ul>';
     }
+    else if (input.includes("industrial") || input.includes("systems") || input.includes("industrial control") || input.includes("control systems") || input.includes("industrial control systems") || input.includes("ics") || input.includes("scada") || input.includes("supervisory control and data acquisition")) {
+        result.innerHTML = 'Posters<ul><li><a href="https://oscybershop.herokuapp.com/main/pages/posters.html#industrial_control_systems" target="_blank">Industrial Control Systems</a></li></ul><br>Cyber Defence (Blue Team)<ul><li><a href="https://oscybershop.herokuapp.com/main/pages/blue.html#ics" target="_blank">ICS</a></li></ul><br>Offensive Cyber (Red Team)<ul><li><a href="https://oscybershop.herokuapp.com/main/pages/red.html#ics" target="_blank">ICS</a></li></ul>';
+    }
     else if (input.includes("active directory") || input.includes("ad")) {
         result.innerHTML = 'Publications<ul><li><a href="https://oscybershop.herokuapp.com/main/pages/publications.html#active_directory_security" target="_blank">Active Directory Security</a></li></ul>';
     }
@@ -686,9 +689,6 @@ function search_site() {
     }
     else if (input.includes("incident") || input.includes("response") || input.includes("incident response") || input.includes("ir")) {
         result.innerHTML = 'Cheat Sheets<ul><li><a href="https://oscybershop.herokuapp.com/main/pages/cheatsheets.html#ddos_incident_response" target="_blank">DDOS Incident Response</a></li><li><a href="https://oscybershop.herokuapp.com/main/pages/cheatsheets.html#dfir" target="_blank">DFIR & Threat Hunting</a></li><li><a href="https://oscybershop.herokuapp.com/main/pages/cheatsheets.html#ir_lifecycle" target="_blank">IR Lifecycle</a></li></ul><br>Publications<ul><li><a href="https://oscybershop.herokuapp.com/main/pages/publications.html#aws_ir_guide" target="_blank">AWS IR Guide</a></li><li><a href="https://oscybershop.herokuapp.com/main/pages/publications.html#ir_field_guide" target="_blank">IR Field Guide</a></li></ul><br>Media &amp; Socials<ul><li><a href="https://oscybershop.herokuapp.com/main/pages/media.html#nist_ir_framework" target="_blank">NIST IR Framework</a></li><li><a href="https://oscybershop.herokuapp.com/main/pages/media.html#ir_playbooks" target="_blank">IR Playbooks</a></li></ul>';
-    }
-    else if (input.includes("industrial") || input.includes("systems") || input.includes("industrial control") || input.includes("control systems") || input.includes("industrial control systems") || input.includes("ics") || input.includes("scada") || input.includes("supervisory control and data acquisition")) {
-        result.innerHTML = 'Posters<ul><li><a href="https://oscybershop.herokuapp.com/main/pages/posters.html#industrial_control_systems" target="_blank">Industrial Control Systems</a></li></ul><br>Cyber Defence (Blue Team)<ul><li><a href="https://oscybershop.herokuapp.com/main/pages/blue.html#ics" target="_blank">ICS</a></li></ul><br>Offensive Cyber (Red Team)<ul><li><a href="https://oscybershop.herokuapp.com/main/pages/red.html#ics" target="_blank">ICS</a></li></ul>';
     }
     else if (input.includes("inet") || input.includes("inetsim")) {
         result.innerHTML = 'Cyber Defence (Blue Team)<ul><li><a href="https://oscybershop.herokuapp.com/main/pages/blue.html#inetsim" target="_blank">Inetsim</a></li></ul>';
