@@ -1255,7 +1255,7 @@ function search_site() {
         result.innerHTML = 'Cyber Defence (Blue Team)<ul><li><a href="https://oscybershop.herokuapp.com/main/pages/blue.html#sentinel_att_ck" target="_blank">Sentinel ATT&CK</a></li></ul>';
     }
     else if (input.includes("sharphound")) {
-        result.innerHTML = 'Cheat Sheets<ul><li><a href="https://oscybershop.herokuapp.com/main/pages/cheatsheets.html#sharphound" target="_blank">Sharphound</a></li></ul>';
+        result.innerHTML = 'Cheat Sheets<ul><li><a href="https://oscybershop.herokuapp.com/main/pages/cheatsheets.html#sharphound" target="_blank">sharphound.</a></li></ul>';
     }
     else if (input.includes("shehackspurple")) {
         result.innerHTML = 'Media &amp; Socials<ul><li><a href="https://oscybershop.herokuapp.com/main/pages/media.html#shehackspurple" target="_blank">Shehackspurple</a></li></ul>';
@@ -1612,7 +1612,7 @@ function search_site() {
         result.innerHTML = 'Cyber Defence (Blue Team)<ul><li><a href="https://oscybershop.herokuapp.com/main/pages/blue.html#fakedns" target="_blank">FakeDNS</a></li></ul><br>Media &amp; Socials<ul><li><a href="https://oscybershop.herokuapp.com/main/pages/media.html#threat_hunting_via_dns" target="_blank">Threat Hunting via DNS</a></li></ul><br>Offensive Cyber (Red Team)<ul><li><a href="https://oscybershop.herokuapp.com/main/pages/red.html#massdns" target="_blank">Massdns</a></li></ul><br>Threat Intelligence<ul><li><a href="https://oscybershop.herokuapp.com/main/pages/int.html#dnstwist" target="_blank">DNStwist</a></li><li><a href="https://oscybershop.herokuapp.com/main/pages/int.html#dns_dumpster" target="_blank">DNS Dumpster</a></li></ul>';
     }
     else if (input.includes("hound")) {
-        result.innerHTML = 'Cheat Sheets<ul><li><a href="https://oscybershop.herokuapp.com/main/pages/cheatsheets.html#bloodhound" target="_blank">Bloodhound</a></li><li><a href="https://oscybershop.herokuapp.com/main/pages/cheatsheets.html#sharphound" target="_blank">Sharphound</a></li></ul>';
+        result.innerHTML = 'Cheat Sheets<ul><li><a href="https://oscybershop.herokuapp.com/main/pages/cheatsheets.html#bloodhound" target="_blank">Bloodhound</a></li><li><a href="https://oscybershop.herokuapp.com/main/pages/cheatsheets.html#sharphound" target="_blank">sharphound.</a></li></ul>';
     }
     else if (input.includes("mail")) {
         result.innerHTML = 'Threat Intelligence<ul><li><a href="https://oscybershop.herokuapp.com/main/pages/int.html#protonmail" target="_blank">Protonmail</a></li></ul>';
