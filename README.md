@@ -17,7 +17,6 @@
     <a href="https://github.com/ezaspy/oscybershop/stargazers">
       <img src="https://img.shields.io/github/stars/ezaspy/oscybershop" alt="Stars">
     </a>
-    </a>
       <img src="https://img.shields.io/github/last-commit/ezaspy/oscybershop" alt="Last Commit">
     </a>
     <a href="https://github.com/psf/black">
