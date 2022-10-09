@@ -9,6 +9,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
 <script src="https://kit.fontawesome.com/fb0ae32c1e.js" crossorigin="anonymous"></script>
 <script src="../scripts.js"></script>
+<script src="../search.js"></script>
 
 <body>
     <!-- Side Navigation -->
@@ -53,21 +54,22 @@
     </header>
     <div class="w3-container w3-blue">
         <a href="#posters" class="w3-bar-item w3-button">Posters</a>&nbsp;|
-        <a href="#media" class="w3-bar-item w3-button">Media</a>&nbsp;|
-        <a href="#training" class="w3-bar-item w3-button">Training</a>&nbsp;|
-        <a href="#ctfs" class="w3-bar-item w3-button">CTFs & Ranges</a>&nbsp;|
-        <a href="#vms" class="w3-bar-item w3-button">Virtual Machines</a>&nbsp;|
-        <a href="#tools" class="w3-bar-item w3-button">Tooling</a>&nbsp;|
         <a href="#cheat" class="w3-bar-item w3-button">Cheat Sheets</a>&nbsp;|
-        <a href="#proj" class="w3-bar-item w3-button">Frameworks & Projects</a>
+        <a href="#publications" class="w3-bar-item w3-button">Publications</a>&nbsp;|
+        <a href="#media" class="w3-bar-item w3-button">Media</a>&nbsp;|
+        <a href="#tools" class="w3-bar-item w3-button">Tooling</a>&nbsp;|
+        <a href="#training" class="w3-bar-item w3-button">Training</a>&nbsp;|
+        <a href="#proj" class="w3-bar-item w3-button">Frameworks & Projects</a>&nbsp;|
+        <a href="#vms" class="w3-bar-item w3-button">Virtual Machines</a>
     </div>
     <div class="w3-container">
         <hr>
         <div class="w3-center">
         </div>
     </div>
+    <br><br>
     <h4>&nbsp;&nbsp;&nbsp;&nbsp;Posters</h4>
-    <div class="w3-row-padding w3-center w3-margin-top" id="posters">
+    <div class="w3-row-padding w3-center w3-margin-top" id="blue">
         <div class="w3-col l2" id="know_normal_hunt_evil">
             <h6>Know Normal; Hunt Evil</h6>
             <iframe src="https://oscybershop.herokuapp.com/main/content/posters/know_normal_hunt_evil.pdf"
@@ -117,18 +119,18 @@
             <a href="https://oscybershop.herokuapp.com/main/content/posters/memory_forensics.pdf" target="_blank"
                 class="w3-button w3-theme">Download&nbsp;<i class="fa fa-external-link"></i></a>
         </div>
-        <div class="w3-col l2" id="threat_intelligence">
-            <h6>Threat Intelligence</h6>
-            <iframe src="https://oscybershop.herokuapp.com/main/content/posters/threat_intelligence.pdf"
-                width="100%"></iframe>
-            <a href="https://oscybershop.herokuapp.com/main/content/posters/threat_intelligence.pdf" target="_blank"
-                class="w3-button w3-theme">Download&nbsp;<i class="fa fa-external-link"></i></a>
-        </div>
         <div class="w3-col l2" id="network_forensics">
             <h6>Network Forensics</h6>
             <iframe src="https://oscybershop.herokuapp.com/main/content/posters/network_forensics.pdf"
                 width="100%"></iframe>
             <a href="https://oscybershop.herokuapp.com/main/content/posters/network_forensics.pdf" target="_blank"
+                class="w3-button w3-theme">Download&nbsp;<i class="fa fa-external-link"></i></a>
+        </div>
+        <div class="w3-col l2" id="cloud_forensics">
+            <h6>Cloud Forensics</h6>
+            <iframe src="https://oscybershop.herokuapp.com/main/content/posters/cloud_forensics.pdf"
+                width="100%"></iframe>
+            <a href="https://oscybershop.herokuapp.com/main/content/posters/cloud_forensics.pdf" target="_blank"
                 class="w3-button w3-theme">Download&nbsp;<i class="fa fa-external-link"></i></a>
         </div>
         <div class="w3-col l2" id="log_lifecycle">
@@ -158,96 +160,918 @@
         </div>
     </div>
     <br><br>
+    <h4>&nbsp;&nbsp;&nbsp;&nbsp;Cheat Sheets</h4>
+    <h5>&nbsp;&nbsp;&nbsp;&nbsp;Scripting</h5>
+    <div class="w3-row-padding w3-center w3-margin-top" id="cheat">
+        <div class="w3-col l2" id="windows_cli">
+            <h6>Windows CLI</h6>
+            <iframe src="https://oscybershop.herokuapp.com/main/content/cheatsheets/windows-cli.pdf"
+                width="100%"></iframe>
+            <a href="https://oscybershop.herokuapp.com/main/content/cheatsheets/windows-cli.pdf" target="_blank"
+                class="w3-button w3-theme">Download&nbsp;<i class="fa fa-external-link"></i></a>
+        </div>
+        <div class="w3-col l2" id="windows-linux_cli">
+            <h6>Windows & Linux CLI</h6>
+            <iframe src="https://oscybershop.herokuapp.com/main/content/cheatsheets/windows-linux_cli.pdf"
+                width="100%"></iframe>
+            <a href="https://oscybershop.herokuapp.com/main/content/cheatsheets/windows-linux_cli.pdf" target="_blank"
+                class="w3-button w3-theme">Download&nbsp;<i class="fa fa-external-link"></i></a>
+        </div>
+        <div class="w3-col l2" id="linux_commands">
+            <h6>Linux Commands</h6>
+            <iframe src="https://oscybershop.herokuapp.com/main/content/cheatsheets/linux_commands.pdf"
+                width="100%"></iframe>
+            <a href="https://oscybershop.herokuapp.com/main/content/cheatsheets/linux_commands.pdf" target="_blank"
+                class="w3-button w3-theme">Download&nbsp;<i class="fa fa-external-link"></i></a>
+        </div>
+        <div class="w3-col l2" id="linux_cli_fundamentals">
+            <h6>Linux CLI Fundamentals</h6>
+            <iframe src="https://oscybershop.herokuapp.com/main/content/cheatsheets/linux_cli_101.pdf"
+                width="100%"></iframe>
+            <a href="https://oscybershop.herokuapp.com/main/content/cheatsheets/linux_cli_101.pdf" target="_blank"
+                class="w3-button w3-theme">Download&nbsp;<i class="fa fa-external-link"></i></a>
+        </div>
+        <div class="w3-col l2" id="linux_cli">
+            <h6>Linux CLI</h6>
+            <iframe src="https://oscybershop.herokuapp.com/main/content/cheatsheets/linux_cli.pdf"
+                width="100%"></iframe>
+            <a href="https://oscybershop.herokuapp.com/main/content/cheatsheets/linux_cli.pdf" target="_blank"
+                class="w3-button w3-theme">Download&nbsp;<i class="fa fa-external-link"></i></a>
+        </div>
+        <div class="w3-col l2" id="linux_shell">
+            <h6>Linux Shell</h6>
+            <iframe src="https://oscybershop.herokuapp.com/main/content/cheatsheets/linux_shell.pdf"
+                width="100%"></iframe>
+            <a href="https://oscybershop.herokuapp.com/main/content/cheatsheets/linux_shell.pdf" target="_blank"
+                class="w3-button w3-theme">Download&nbsp;<i class="fa fa-external-link"></i></a>
+        </div>
+    </div>
+    <div class="w3-row-padding w3-center w3-margin-top">
+        <div class="w3-col l2" id="vim">
+            <h6>Vim</h6>
+            <iframe src="https://oscybershop.herokuapp.com/main/content/cheatsheets/vim.jpeg" width="100%"></iframe>
+            <a href="https://oscybershop.herokuapp.com/main/content/cheatsheets/vim.jpeg" target="_blank"
+                class="w3-button w3-theme">Download&nbsp;<i class="fa fa-external-link"></i></a>
+        </div>
+        <div class="w3-col l2" id="vi">
+            <h6>Vi</h6>
+            <iframe src="https://oscybershop.herokuapp.com/main/content/cheatsheets/vi.pdf" width="100%"></iframe>
+            <a href="https://oscybershop.herokuapp.com/main/content/cheatsheets/vi.pdf" target="_blank"
+                class="w3-button w3-theme">Download&nbsp;<i class="fa fa-external-link"></i></a>
+        </div>
+        <div class="w3-col l2" id="nano">
+            <h6>Nano</h6>
+            <iframe src="https://oscybershop.herokuapp.com/main/content/cheatsheets/nano.pdf" width="100%"></iframe>
+            <a href="https://oscybershop.herokuapp.com/main/content/cheatsheets/nano.pdf" target="_blank"
+                class="w3-button w3-theme">Download&nbsp;<i class="fa fa-external-link"></i></a>
+        </div>
+    </div>
+    <br>
+    <h5>&nbsp;&nbsp;&nbsp;&nbsp;Cloud Platforms</h5>
+    <div class="w3-row-padding w3-center w3-margin-top">
+        <div class="w3-col l2" id="aws">
+            <h6>AWS</h6>
+            <iframe src="https://oscybershop.herokuapp.com/main/content/cheatsheets/aws_cli.pdf" width="100%"></iframe>
+            <a href="https://oscybershop.herokuapp.com/main/content/cheatsheets/aws_cli.pdf" target="_blank"
+                class="w3-button w3-theme">Download&nbsp;<i class="fa fa-external-link"></i></a>
+        </div>
+        <div class="w3-col l2" id="gcp">
+            <h6>GCP</h6>
+            <iframe src="https://oscybershop.herokuapp.com/main/content/cheatsheets/g-cloud.pdf" width="100%"></iframe>
+            <a href="https://oscybershop.herokuapp.com/main/content/cheatsheets/g-cloud.pdf" target="_blank"
+                class="w3-button w3-theme">Download&nbsp;<i class="fa fa-external-link"></i></a>
+        </div>
+        <div class="w3-col l2" id="multi_cloud_cli">
+            <h6>Multi-Cloud CLI</h6>
+            <iframe src="https://oscybershop.herokuapp.com/main/content/cheatsheets/multi_cloud-cli.pdf"
+                width="100%"></iframe>
+            <a href="https://oscybershop.herokuapp.com/main/content/cheatsheets/multi_cloud-cli.pdf" target="_blank"
+                class="w3-button w3-theme">Download&nbsp;<i class="fa fa-external-link"></i></a>
+        </div>
+        <div class="w3-col l2" id="cloud_security_devops">
+            <h6>Cloud Security DevOps</h6>
+            <iframe src="https://oscybershop.herokuapp.com/main/content/cheatsheets/cloud-security_devops.pdf"
+                width="100%"></iframe>
+            <a href="https://oscybershop.herokuapp.com/main/content/cheatsheets/cloud-security_devops.pdf"
+                target="_blank" class="w3-button w3-theme">Download&nbsp;<i class="fa fa-external-link"></i></a>
+        </div>
+    </div>
+    <br>
+    <h5>&nbsp;&nbsp;&nbsp;&nbsp;PowerShell & WMIC</h5>
+    <div class="w3-row-padding w3-center w3-margin-top" id="powershell_wmic">
+        <div class="w3-col l2">
+            <iframe src="https://oscybershop.herokuapp.com/main/content/cheatsheets/powershell-v4.0.pdf"
+                width="100%"></iframe>
+            <a href="https://oscybershop.herokuapp.com/main/content/cheatsheets/powershell-v4.0.pdf" target="_blank"
+                class="w3-button w3-theme">Download&nbsp;<i class="fa fa-external-link"></i></a>
+        </div>
+        <div class="w3-col l2">
+            <iframe src="https://oscybershop.herokuapp.com/main/content/cheatsheets/powershell.pdf"
+                width="100%"></iframe>
+            <a href="https://oscybershop.herokuapp.com/main/content/cheatsheets/powershell.pdf" target="_blank"
+                class="w3-button w3-theme">Download&nbsp;<i class="fa fa-external-link"></i></a>
+        </div>
+        <div class="w3-col l2">
+            <iframe src="https://oscybershop.herokuapp.com/main/content/cheatsheets/get-win_event.pdf"
+                width="100%"></iframe>
+            <a href="https://oscybershop.herokuapp.com/main/content/cheatsheets/get-win_event.pdf" target="_blank"
+                class="w3-button w3-theme">Download&nbsp;<i class="fa fa-external-link"></i></a>
+        </div>
+        <div class="w3-col l2">
+            <iframe src="https://oscybershop.herokuapp.com/main/content/cheatsheets/wmi.pdf" width="100%"></iframe>
+            <a href="https://oscybershop.herokuapp.com/main/content/cheatsheets/wmi.pdf" target="_blank"
+                class="w3-button w3-theme">Download&nbsp;<i class="fa fa-external-link"></i></a>
+        </div>
+        <div class="w3-col l2">
+            <iframe src="https://oscybershop.herokuapp.com/main/content/cheatsheets/wmic.pdf" width="100%"></iframe>
+            <a href="https://oscybershop.herokuapp.com/main/content/cheatsheets/wmic.pdf" target="_blank"
+                class="w3-button w3-theme">Download&nbsp;<i class="fa fa-external-link"></i></a>
+        </div>
+    </div>
+    <br>
+    <h5>&nbsp;&nbsp;&nbsp;&nbsp;Python</h5>
+    <div class="w3-row-padding w3-center w3-margin-top">
+        <div class="w3-col l2">
+            <iframe src="https://oscybershop.herokuapp.com/main/content/cheatsheets/python-v3.pdf"
+                width="100%"></iframe>
+            <a href="https://oscybershop.herokuapp.com/main/content/cheatsheets/python-v3.pdf" target="_blank"
+                class="w3-button w3-theme">Download&nbsp;<i class="fa fa-external-link"></i></a>
+        </div>
+        <div class="w3-col l2">
+            <iframe src="https://oscybershop.herokuapp.com/main/content/cheatsheets/python-v2.pdf"
+                width="100%"></iframe>
+            <a href="https://oscybershop.herokuapp.com/main/content/cheatsheets/python-v2.pdf" target="_blank"
+                class="w3-button w3-theme">Download&nbsp;<i class="fa fa-external-link"></i></a>
+        </div>
+    </div>
+    <br>
+    <h5>&nbsp;&nbsp;&nbsp;&nbsp;Structures & Schemas</h5>
+    <div class="w3-row-padding w3-center w3-margin-top">
+        <div class="w3-col l2" id="hex_regex">
+            <h6>HEX & Regex</h6>
+            <iframe src="https://oscybershop.herokuapp.com/main/content/cheatsheets/hex_regex.pdf"
+                width="100%"></iframe>
+            <a href="https://oscybershop.herokuapp.com/main/content/cheatsheets/hex_regex.pdf" target="_blank"
+                class="w3-button w3-theme">Download&nbsp;<i class="fa fa-external-link"></i></a>
+        </div>
+        <div class="w3-col l2" id="regex">
+            <h6>RegEx</h6>
+            <iframe src="https://oscybershop.herokuapp.com/main/content/cheatsheets/regex.pdf" width="100%"></iframe>
+            <a href="https://oscybershop.herokuapp.com/main/content/cheatsheets/regex.pdf" target="_blank"
+                class="w3-button w3-theme">Download&nbsp;<i class="fa fa-external-link"></i></a>
+        </div>
+        <div class="w3-col l2" id="Sort/Uniq">
+            <h6>sort & uniq</h6>
+            <iframe src="https://oscybershop.herokuapp.com/main/content/cheatsheets/sort_uniq.jpeg"
+                width="100%"></iframe>
+            <a href="https://oscybershop.herokuapp.com/main/content/cheatsheets/sort_uniq.jpeg" target="_blank"
+                class="w3-button w3-theme">Download&nbsp;<i class="fa fa-external-link"></i></a>
+        </div>
+        <div class="w3-col l2" id="json_jq">
+            <h6>JSON & jq</h6>
+            <iframe src="https://oscybershop.herokuapp.com/main/content/cheatsheets/json_jq.pdf" width="100%"></iframe>
+            <a href="https://oscybershop.herokuapp.com/main/content/cheatsheets/json_jq.pdf" target="_blank"
+                class="w3-button w3-theme">Download&nbsp;<i class="fa fa-external-link"></i></a>
+        </div>
+    </div>
+    <br>
+    <h5>&nbsp;&nbsp;&nbsp;&nbsp;Query Languages</h5>
+    <div class="w3-row-padding w3-center w3-margin-top">
+        <div class="w3-col l2" id="log_parsing">
+            <h6>Log Parsing</h6>
+            <iframe src="https://oscybershop.herokuapp.com/main/content/cheatsheets/log_parsing.jpeg"
+                width="100%"></iframe>
+            <a href="https://oscybershop.herokuapp.com/main/content/cheatsheets/log_parsing.jpeg" target="_blank"
+                class="w3-button w3-theme">Download&nbsp;<i class="fa fa-external-link"></i></a>
+        </div>
+        <div class="w3-col l2" id="sqlite">
+            <h6>SQLite</h6>
+            <iframe src="https://oscybershop.herokuapp.com/main/content/cheatsheets/sqlite.pdf" width="100%"></iframe>
+            <a href="https://oscybershop.herokuapp.com/main/content/cheatsheets/sqlite.pdf" target="_blank"
+                class="w3-button w3-theme">Download&nbsp;<i class="fa fa-external-link"></i></a>
+        </div>
+        <div class="w3-col l2" id="sql">
+            <h6>SQL</h6>
+            <iframe src="https://oscybershop.herokuapp.com/main/content/cheatsheets/sql.pdf" width="100%"></iframe>
+            <a href="https://oscybershop.herokuapp.com/main/content/cheatsheets/sql.pdf" target="_blank"
+                class="w3-button w3-theme">Download&nbsp;<i class="fa fa-external-link"></i></a>
+        </div>
+        <div class="w3-col l2" id="kql">
+            <h6>KQL</h6>
+            <iframe src="https://oscybershop.herokuapp.com/main/content/cheatsheets/kql_light.pdf"
+                width="100%"></iframe>
+            <a href="https://oscybershop.herokuapp.com/main/content/cheatsheets/kql_light.pdf" target="_blank"
+                class="w3-button w3-theme">Download&nbsp;<i class="fa fa-external-link"></i></a>
+        </div>
+        <div class="w3-col l2" id="spl_splunk">
+            <h6>SPL (Splunk)</h6>
+            <iframe src="https://oscybershop.herokuapp.com/main/content/cheatsheets/splunk.pdf" width="100%"></iframe>
+            <a href="https://oscybershop.herokuapp.com/main/content/cheatsheets/splunk.pdf" target="_blank"
+                class="w3-button w3-theme">Download&nbsp;<i class="fa fa-external-link"></i></a>
+        </div>
+        <div class="w3-col l2" id="vt_file_search_modifiers">
+            <h6>VT File Search Modifiers</h6>
+            <div class="w3-card w3-container w3-blue" style="min-height:150px">
+                <a href="https://support.virustotal.com/hc/en-us/articles/360001385897-File-search-modifiers"
+                    target="_blank">
+                    <br><br>
+                    <i class="fa fa-file-code-o w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="w3-container">
+        <hr>
+        <div class="w3-center">
+        </div>
+    </div>
+    <br><br>
+    <h4>&nbsp;&nbsp;&nbsp;&nbsp;Cheat Sheets (Blue Team)</h4>
+    <h5>&nbsp;&nbsp;&nbsp;&nbsp;Preperation</h5>
+    <div class="w3-row-padding w3-center w3-margin-top" id="prep">
+        <div class="w3-col l2" id="ir_lifecycle">
+            <h6>IR Lifecycle</h6>
+            <iframe src="https://oscybershop.herokuapp.com/main/content/cheatsheets/irlc.pdf" width="100%"></iframe>
+            <a href="https://oscybershop.herokuapp.com/main/content/cheatsheets/irlc.pdf" target="_blank"
+                class="w3-button w3-theme">Download&nbsp;<i class="fa fa-external-link"></i></a>
+        </div>
+        <div class="w3-col l2" id="critical_log_review">
+            <h6>Critical Log Review</h6>
+            <iframe src="https://oscybershop.herokuapp.com/main/content/cheatsheets/critical_log_review.pdf"
+                width="100%"></iframe>
+            <a href="https://oscybershop.herokuapp.com/main/content/cheatsheets/critical_log_review.pdf" target="_blank"
+                class="w3-button w3-theme">Download&nbsp;<i class="fa fa-external-link"></i></a>
+        </div>
+        <div class="w3-col l2" id="ddos_incident_response">
+            <h6>DDoS Incident Response</h6>
+            <iframe src="https://oscybershop.herokuapp.com/main/content/cheatsheets/ddos_ir.pdf" width="100%"></iframe>
+            <a href="https://oscybershop.herokuapp.com/main/content/cheatsheets/ddos_ir.pdf" target="_blank"
+                class="w3-button w3-theme">Download&nbsp;<i class="fa fa-external-link"></i></a>
+        </div>
+        <div class="w3-col l2" id="security_architecture">
+            <h6>Security Architecture</h6>
+            <iframe src="https://oscybershop.herokuapp.com/main/content/cheatsheets/security_architecture.pdf"
+                width="100%"></iframe>
+            <a href="https://oscybershop.herokuapp.com/main/content/cheatsheets/security_architecture.pdf"
+                target="_blank" class="w3-button w3-theme">Download&nbsp;<i class="fa fa-external-link"></i></a>
+        </div>
+        <div class="w3-col l2" id="writing_tips">
+            <h6>Writing Tips</h6>
+            <iframe src="https://oscybershop.herokuapp.com/main/content/cheatsheets/writing_tips_it-professionals.pdf"
+                width="100%"></iframe>
+            <a href="https://oscybershop.herokuapp.com/main/content/cheatsheets/writing_tips_it-professionals.pdf"
+                target="_blank" class="w3-button w3-theme">Download&nbsp;<i class="fa fa-external-link"></i></a>
+        </div>
+    </div>
+    <br>
+    <h5>&nbsp;&nbsp;&nbsp;&nbsp;Intrusion Detection</h5>
+    <div class="w3-row-padding w3-center w3-margin-top" id="ids">
+        <div class="w3-col l2" id="windows">
+            <h6>Windows</h6>
+            <iframe src="https://oscybershop.herokuapp.com/main/content/cheatsheets/intrusion_discovery_windows.pdf"
+                width="100%"></iframe>
+            <a href="https://oscybershop.herokuapp.com/main/content/cheatsheets/intrusion_discovery_windows.pdf"
+                target="_blank" class="w3-button w3-theme">Download&nbsp;<i class="fa fa-external-link"></i></a>
+        </div>
+        <div class="w3-col l2" id="windows_2k">
+            <h6>Windows 2K</h6>
+            <iframe src="https://oscybershop.herokuapp.com/main/content/cheatsheets/intrusion_detection_win2k.pdf"
+                width="100%"></iframe>
+            <a href="https://oscybershop.herokuapp.com/main/content/cheatsheets/intrusion_detection_win2k.pdf"
+                target="_blank" class="w3-button w3-theme">Download&nbsp;<i class="fa fa-external-link"></i></a>
+        </div>
+        <div class="w3-col l2" id="linux">
+            <h6>Linux</h6>
+            <iframe src="https://oscybershop.herokuapp.com/main/content/cheatsheets/intrusion_discovery_linux.pdf"
+                width="100%"></iframe>
+            <a href="https://oscybershop.herokuapp.com/main/content/cheatsheets/intrusion_discovery_linux.pdf"
+                target="_blank" class="w3-button w3-theme">Download&nbsp;<i class="fa fa-external-link"></i></a>
+        </div>
+        <div class="w3-col l2" id="evidence_collection">
+            <h6>Evidence Collection</h6>
+            <iframe src="https://oscybershop.herokuapp.com/main/content/cheatsheets/evidence_collection.pdf"
+                width="100%"></iframe>
+            <a href="https://oscybershop.herokuapp.com/main/content/cheatsheets/evidence_collection.pdf" target="_blank"
+                class="w3-button w3-theme">Download&nbsp;<i class="fa fa-external-link"></i></a>
+        </div>
+    </div>
+    <br>
+    <h5>&nbsp;&nbsp;&nbsp;&nbsp;DFIR & Threat Hunting</h5>
+    <div class="w3-row-padding w3-center w3-margin-top" id="dfir">
+        <div class="w3-col l2" id="sift">
+            <h6>SIFT</h6>
+            <iframe src="https://oscybershop.herokuapp.com/main/content/cheatsheets/sift_workstation.pdf"
+                width="100%"></iframe>
+            <a href="https://oscybershop.herokuapp.com/main/content/cheatsheets/sift_workstation.pdf" target="_blank"
+                class="w3-button w3-theme">Download&nbsp;<i class="fa fa-external-link"></i></a>
+        </div>
+        <div class="w3-col l2" id="remnux">
+            <h6>REMnux</h6>
+            <iframe src="https://oscybershop.herokuapp.com/main/content/cheatsheets/remnux.pdf" width="100%"></iframe>
+            <a href="https://oscybershop.herokuapp.com/main/content/cheatsheets/remnux.pdf" target="_blank"
+                class="w3-button w3-theme">Download&nbsp;<i class="fa fa-external-link"></i></a>
+        </div>
+        <div class="w3-col l2" id="macos_forensics">
+            <h6>macOS Forensics</h6>
+            <iframe src="https://oscybershop.herokuapp.com/main/content/cheatsheets/macos_forensics.pdf"
+                width="100%"></iframe>
+            <a href="https://oscybershop.herokuapp.com/main/content/cheatsheets/macos_forensics.pdf" target="_blank"
+                class="w3-button w3-theme">Download&nbsp;<i class="fa fa-external-link"></i></a>
+        </div>
+        <div class="w3-col l2" id="memory_forensics">
+            <h6>Memory Forensics</h6>
+            <iframe src="https://oscybershop.herokuapp.com/main/content/cheatsheets/memory_forensics.pdf"
+                width="100%"></iframe>
+            <a href="https://oscybershop.herokuapp.com/main/content/cheatsheets/memory_forensics.pdf" target="_blank"
+                class="w3-button w3-theme">Download&nbsp;<i class="fa fa-external-link"></i></a>
+        </div>
+        <div class="w3-col l2" id="volatility">
+            <h6>Volatility</h6>
+            <iframe src="https://oscybershop.herokuapp.com/main/content/cheatsheets/volatility.pdf"
+                width="100%"></iframe>
+            <a href="https://oscybershop.herokuapp.com/main/content/cheatsheets/volatility.pdf" target="_blank"
+                class="w3-button w3-theme">Download&nbsp;<i class="fa fa-external-link"></i></a>
+        </div>
+        <div class="w3-col l2" id="plaso">
+            <h6>plaso</h6>
+            <iframe src="https://oscybershop.herokuapp.com/main/content/cheatsheets/plaso.pdf" width="100%"></iframe>
+            <a href="https://oscybershop.herokuapp.com/main/content/cheatsheets/plaso.pdf" target="_blank"
+                class="w3-button w3-theme">Download&nbsp;<i class="fa fa-external-link"></i></a>
+        </div>
+    </div>
+    <div class="w3-row-padding w3-center w3-margin-top">
+        <div class="w3-col l2" id="eric_zimmerman_tools">
+            <h6>Eric Zimmerman Tools</h6>
+            <iframe src="https://oscybershop.herokuapp.com/main/content/cheatsheets/eric-zimmerman_tools.pdf"
+                width="100%"></iframe>
+            <a href="https://oscybershop.herokuapp.com/main/content/cheatsheets/eric-zimmerman_tools.pdf"
+                target="_blank" class="w3-button w3-theme">Download&nbsp;<i class="fa fa-external-link"></i></a>
+        </div>
+        <div class="w3-col l2" id="oledump">
+            <h6>oledump</h6>
+            <iframe src="https://oscybershop.herokuapp.com/main/content/cheatsheets/oledump.pdf" width="100%"></iframe>
+            <a href="https://oscybershop.herokuapp.com/main/content/cheatsheets/oledump.pdf" target="_blank"
+                class="w3-button w3-theme">Download&nbsp;<i class="fa fa-external-link"></i></a>
+        </div>
+        <div class="w3-col l2" id="tzworks">
+            <h6>TZWorks</h6>
+            <iframe src="https://oscybershop.herokuapp.com/main/content/cheatsheets/tzworks.pdf" width="100%"></iframe>
+            <a href="https://oscybershop.herokuapp.com/main/content/cheatsheets/tzworks.pdf" target="_blank"
+                class="w3-button w3-theme">Download&nbsp;<i class="fa fa-external-link"></i></a>
+        </div>
+    </div>
+    <div class="w3-row-padding w3-center w3-margin-top">
+        <div class="w3-col l2" id="windows_processes">
+            <h6>Windows Processes</h6>
+            <iframe src="https://oscybershop.herokuapp.com/main/content/cheatsheets/default_windows_processes.pdf"
+                width="100%"></iframe>
+            <a href="https://oscybershop.herokuapp.com/main/content/cheatsheets/default_windows_processes.pdf"
+                target="_blank" class="w3-button w3-theme">Download&nbsp;<i class="fa fa-external-link"></i></a>
+        </div>
+        <div class="w3-col l2" id="event_log_analysis">
+            <h6>Event Log Analysis</h6>
+            <iframe src="https://oscybershop.herokuapp.com/main/content/cheatsheets/event_log_analysis.pdf"
+                width="100%"></iframe>
+            <a href="https://oscybershop.herokuapp.com/main/content/cheatsheets/event_log_analysis.pdf" target="_blank"
+                class="w3-button w3-theme">Download&nbsp;<i class="fa fa-external-link"></i></a>
+        </div>
+        <div class="w3-col l2" id="awesome_event_ids">
+            <h6>Awesome Event IDs</h6>
+            <div class="w3-card w3-container w3-blue" style="min-height:150px">
+                <a href="https://github.com/stuhli/awesome-event-ids" target="_blank">
+                    <br><br>
+                    <i class="fa fa-file-code-o w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2" id="sysmon">
+            <h6>Sysmon</h6>
+            <iframe src="https://oscybershop.herokuapp.com/main/content/cheatsheets/sysmon.pdf" width="100%"></iframe>
+            <a href="https://oscybershop.herokuapp.com/main/content/cheatsheets/sysmon.pdf" target="_blank"
+                class="w3-button w3-theme">Download&nbsp;<i class="fa fa-external-link"></i></a>
+        </div>
+    </div>
+    <br><br>
+    <h5>&nbsp;&nbsp;&nbsp;&nbsp;Network Forensics</h5>
+    <div class="w3-row-padding w3-center w3-margin-top" id="logs">
+        <div class="w3-col l2" id="lateral_movement_analysis">
+            <h6>Lateral Movement Analysis</h6>
+            <iframe src="https://oscybershop.herokuapp.com/main/content/cheatsheets/lateral_movement_analysis.pdf"
+                width="100%"></iframe>
+            <a href="https://oscybershop.herokuapp.com/main/content/cheatsheets/lateral_movement_analysis.pdf"
+                target="_blank" class="w3-button w3-theme">Download&nbsp;<i class="fa fa-external-link"></i></a>
+        </div>
+        <div class="w3-col l2" id="common_ports">
+            <h6>Common Ports</h6>
+            <iframe src="https://oscybershop.herokuapp.com/main/content/cheatsheets/packet_life.pdf"
+                width="100%"></iframe>
+            <a href="https://oscybershop.herokuapp.com/main/content/cheatsheets/packet_life.pdf" target="_blank"
+                class="w3-button w3-theme">Download&nbsp;<i class="fa fa-external-link"></i></a>
+        </div>
+        <div class="w3-col l2" id="web_proxy_event_analysis">
+            <h6>Web Proxy Event Analysis</h6>
+            <iframe src="https://oscybershop.herokuapp.com/main/content/cheatsheets/web_proxy_event_analysis.pdf"
+                width="100%"></iframe>
+            <a href="https://oscybershop.herokuapp.com/main/content/cheatsheets/web_proxy_event_analysis.pdf"
+                target="_blank" class="w3-button w3-theme">Download&nbsp;<i class="fa fa-external-link"></i></a>
+        </div>
+        <div class="w3-col l2" id="tcp_ip_tcpdump">
+            <h6>TCP/IP & tcpdump</h6>
+            <iframe src="https://oscybershop.herokuapp.com/main/content/cheatsheets/tcpip_tcpdump.pdf"
+                width="100%"></iframe>
+            <a href="https://oscybershop.herokuapp.com/main/content/cheatsheets/tcpip_tcpdump.pdf" target="_blank"
+                class="w3-button w3-theme">Download&nbsp;<i class="fa fa-external-link"></i></a>
+        </div>
+        <div class="w3-col l2" id="smb_access_from_linux">
+            <h6>SMB Access from Linux</h6>
+            <iframe src="https://oscybershop.herokuapp.com/main/content/cheatsheets/smb_access_linux.pdf"
+                width="100%"></iframe>
+            <a href="https://oscybershop.herokuapp.com/main/content/cheatsheets/smb_access_linux.pdf" target="_blank"
+                class="w3-button w3-theme">Download&nbsp;<i class="fa fa-external-link"></i></a>
+        </div>
+    </div>
+    <br>
+    <h5>&nbsp;&nbsp;&nbsp;&nbsp;Malware Analysis & Reverse Engineering</h5>
+    <div class="w3-row-padding w3-center w3-margin-top" id="rem">
+        <div class="w3-col l2" id="malware_analysis">
+            <h6>Malware Analysis</h6>
+            <iframe src="https://oscybershop.herokuapp.com/main/content/cheatsheets/malware_analysis.pdf"
+                width="100%"></iframe>
+            <a href="https://oscybershop.herokuapp.com/main/content/cheatsheets/malware_analysis.pdf" target="_blank"
+                class="w3-button w3-theme">Download&nbsp;<i class="fa fa-external-link"></i></a>
+        </div>
+        <div class="w3-col l2" id="malicious_documents">
+            <h6>Malicious Documents</h6>
+            <iframe src="https://oscybershop.herokuapp.com/main/content/cheatsheets/malicious_doc_analysis.pdf"
+                width="100%"></iframe>
+            <a href="https://oscybershop.herokuapp.com/main/content/cheatsheets/malicious_doc_analysis.pdf"
+                target="_blank" class="w3-button w3-theme">Download&nbsp;<i class="fa fa-external-link"></i></a>
+        </div>
+        <div class="w3-col l2" id="reverse_engineering">
+            <h6>Reverse Engineering</h6>
+            <iframe src="https://oscybershop.herokuapp.com/main/content/cheatsheets/malicious-code_rem.pdf"
+                width="100%"></iframe>
+            <a href="https://oscybershop.herokuapp.com/main/content/cheatsheets/malicious-code_rem.pdf" target="_blank"
+                class="w3-button w3-theme">Download&nbsp;<i class="fa fa-external-link"></i></a>
+        </div>
+        <div class="w3-col l2" id="reverse_engineering">
+            <h6>Reverse Engineering</h6>
+            <iframe src="https://oscybershop.herokuapp.com/main/content/cheatsheets/rem.png" width="100%"></iframe>
+            <a href="https://oscybershop.herokuapp.com/main/content/cheatsheets/rem.png" target="_blank"
+                class="w3-button w3-theme">Download&nbsp;<i class="fa fa-external-link"></i></a>
+        </div>
+        <div class="w3-col l2" id="anti_virus_event_analysis">
+            <h6>Anti-virus Event Analysis</h6>
+            <iframe src="https://oscybershop.herokuapp.com/main/content/cheatsheets/av_events.jpeg"
+                width="100%"></iframe>
+            <a href="https://oscybershop.herokuapp.com/main/content/cheatsheets/av_events.jpeg" target="_blank"
+                class="w3-button w3-theme">Download&nbsp;<i class="fa fa-external-link"></i></a>
+        </div>
+        <div class="w3-col l2" id="ida_pro">
+            <h6>IDA Pro</h6>
+            <iframe src="https://oscybershop.herokuapp.com/main/content/cheatsheets/ida-pro.pdf" width="100%"></iframe>
+            <a href="https://oscybershop.herokuapp.com/main/content/cheatsheets/ida-pro.pdf" target="_blank"
+                class="w3-button w3-theme">Download&nbsp;<i class="fa fa-external-link"></i></a>
+        </div>
+    </div>
+    <br>
+    <h5>&nbsp;&nbsp;&nbsp;&nbsp;Steganography</h5>
+    <div class="w3-row-padding w3-center w3-margin-top" id="steg">
+    </div>
+    <div class="w3-container">
+        <hr>
+        <div class="w3-center">
+        </div>
+    </div>
+    <br><br>
+    <h4>&nbsp;&nbsp;&nbsp;&nbsp;Publications</h4>
+    <h5>&nbsp;&nbsp;&nbsp;&nbsp;Books</h5>
+    <div class="w3-row-padding w3-center w3-margin-top" id="publications">
+        <div class="w3-col l2" id="books">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="cybersecurity_blue_team_toolkit">
+                <h6>Cybersecurity Blue<br>Team Toolkit</h6><br>
+                <a href="https://www.amazon.co.uk/Cybersecurity-Blue-Toolkit-Nadean-Tanner/dp/1119552931"
+                    target="_blank">
+                    <i class="fa fa-book w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="blue_team_field_manual">
+                <h6>Blue Team<br>Field Manual</h6><br>
+                <a href="https://www.amazon.co.uk/Blue-Team-Field-Manual-BTFM/dp/154101636X" target="_blank">
+                    <i class="fa fa-book w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px"
+                id="incident_response_computer_forensics">
+                <h6>Incident Response<br>Computer Forensics</h6><br>
+                <a href="https://www.amazon.co.uk/Incident-Response-Computer-Forensics-Third/dp/0071798684"
+                    target="_blank">
+                    <i class="fa fa-book w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="malware_analysts_cookbook">
+                <h6>Malware Analysts<br>Cookbook</h6><br>
+                <a href="https://www.amazon.co.uk/Malware-Analysts-Cookbook-DVD-Techniques/dp/0470613033"
+                    target="_blank">
+                    <i class="fa fa-book w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="practical_malware_analysis">
+                <h6>Practical Malware<br>Analysis</h6><br>
+                <a href="https://www.amazon.co.uk/Practical-Malware-Analysis-Hands-Dissecting/dp/1593272901"
+                    target="_blank">
+                    <i class="fa fa-book w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="malware_forensics_field_guide">
+                <h6>Malware Forensics<br>Field Guide</h6><br>
+                <a href="https://www.amazon.co.uk/Malware-Forensics-Field-Windows-Systems/dp/1597494720"
+                    target="_blank">
+                    <i class="fa fa-book w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="w3-row-padding w3-center w3-margin-top">
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px"
+                id="hacking_exposed_malware_and_rootkits">
+                <h6>Hacking Exposed<br>Malware and Rootkits</h6><br>
+                <a href="https://www.amazon.co.uk/HACKING-EXPOSED-MALWARE-ROOTKITS-Solutions/dp/0071591184"
+                    target="_blank">
+                    <i class="fa fa-book w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="file_system_forensic_analysis">
+                <h6>File System<br>Forensic Analysis</h6><br>
+                <a href="https://www.amazon.co.uk/System-Forensic-Analysis-Brian-Carrier/dp/0321268172" target="_blank">
+                    <i class="fa fa-book w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="the_art_of_mac_malware">
+                <h6>The Art of Mac Malware</h6><br>
+                <a href="https://taomm.org" target="_blank">
+                    <i class="fa fa-book w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <br>
+    <h5>&nbsp;&nbsp;&nbsp;&nbsp;Blogs</h5>
+    <div class="w3-row-padding w3-center w3-margin-top" id="blogs">
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="sans_isc">
+                <h6>SANS ISC</h6><br>
+                <a href="https://isc.sans.edu/" target="_blank">
+                    <i class="fa fa-pencil w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="the_dfir_report">
+                <h6>The DFIR Report</h6><br>
+                <a href="https://thedfirreport.com/" target="_blank">
+                    <i class="fa fa-pencil w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="operation_decode">
+                <h6>Operation Decode</h6><br>
+                <a href="https://www.operationdecode.com/" target="_blank">
+                    <i class="fa fa-pencil w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="cyber_triage">
+                <h6>Cyber Triage</h6><br>
+                <a href="https://www.cybertriage.com/blog/" target="_blank">
+                    <i class="fa fa-pencil w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="red_canary">
+                <h6>Red Canary</h6><br>
+                <a href="https://redcanary.com/resources/" target="_blank">
+                    <i class="fa fa-pencil w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="w3-row-padding w3-center w3-margin-top">
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="didier_stevens">
+                <h6>Didier Stevens</h6><br>
+                <a href="https://blog.didierstevens.com/" target="_blank">
+                    <i class="fa fa-pencil w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="lenny_zelster">
+                <h6>Lenny Zelster</h6><br>
+                <a href="https://zeltser.com/blog/" target="_blank">
+                    <i class="fa fa-pencil w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <br>
+    <h5>&nbsp;&nbsp;&nbsp;&nbsp;Guides & Tutorials</h5>
+    <div class="w3-row-padding w3-center w3-margin-top" id="guides">
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="using_ooda_loop_in_ir">
+                <h6>Using OODA Loop in IR</h6><br>
+                <a href="https://www.cybertriage.com/2019/how-to-use-ooda-loop-in-your-incident-response-process/"
+                    target="_blank">
+                    <i class="fa fa-bookmark w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="ransomware_response">
+                <h6>Ransomware Response</h6><br>
+                <a href="https://www.ransomwareresponse.org/" target="_blank">
+                    <i class="fa fa-bookmark w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="home_network_design">
+                <h6>Home Network Design</h6><br>
+                <a href="https://www.blackhillsinfosec.com/home-network-design-part-1/" target="_blank">
+                    <i class="fa fa-bookmark w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="home_lab_advice">
+                <h6>Home Lab Advice</h6><br>
+                <a href="https://itandsecuritystuffs.wordpress.com/2014/03/14/install-cuckoobox-for-malware-and-virus-analysis/"
+                    target="_blank">
+                    <i class="fa fa-bookmark w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="learn_malware_analysis">
+                <h6>Learn Malware Analysis</h6><br>
+                <a href="https://www.sans.org/blog/how-you-can-start-learning-malware-analysis/" target="_blank">
+                    <i class="fa fa-bookmark w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="learn_reverse_engineering">
+                <h6>Learn Reverse Engineering</h6><br>
+                <a href="https://www.intezer.com/blog/malware-analysis/malware-reverse-engineering-beginners/"
+                    target="_blank">
+                    <i class="fa fa-bookmark w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="w3-row-padding w3-center w3-margin-top">
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="dfir_hierarchy_of_security_controls">
+                <h6>DFIR Hierarchy of<br>Security Controls</h6><br>
+                <a href="https://holisticinfosec.blogspot.com/2016/12/the-dfir-hierarchy-of-needs-critical.html"
+                    target="_blank">
+                    <i class="fa fa-bookmark w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="threat_hunting_maturity_model">
+                <h6>Threat Hunting<br>Maturity Model</h6><br>
+                <a href="https://team-cymru.com/blog/2021/09/02/team-cymrus-threat-hunting-maturity-model-explained-2/"
+                    target="_blank">
+                    <i class="fa fa-bookmark w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="threat_hunting_with_web_proxy_logs">
+                <h6>Threat Hunting with<br>Web Proxy Logs</h6><br>
+                <a href="https://posts.bluraven.io/threat-hunting-and-detection-with-web-proxy-logs-58094cae3537"
+                    target="_blank">
+                    <i class="fa fa-bookmark w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="threat_hunting_with_sysmon">
+                <h6>Threat Hunting with<br>Sysmon</h6><br>
+                <a href="https://leo-m-falcon.medium.com/hunting-evil-with-sysmon-events-and-jupyter-notebooks-part-1-aaf83e2e27f1"
+                    target="_blank">
+                    <i class="fa fa-bookmark w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="threat_hunting_with_elk">
+                <h6>Threat Hunting with<br>ELK</h6><br>
+                <a href="https://www.hackingarticles.in/threat-hunting-log-monitoring-lab-setup-with-elk/"
+                    target="_blank">
+                    <i class="fa fa-bookmark w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="building_a_malware_analysis_toolkit">
+                <h6>Building a Malware<br>Analysis Toolkit</h6><br>
+                <a href="https://zeltser.com/build-malware-analysis-toolkit/" target="_blank">
+                    <i class="fa fa-bookmark w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="w3-row-padding w3-center w3-margin-top">
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="create_macos_disk_image">
+                <h6>Create macOS<br>Disk Image</h6><br>
+                <a href="https://osxdaily.com/2012/05/23/create-disk-image-of-mac-hard-drive/" target="_blank">
+                    <i class="fa fa-bookmark w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="linux_memory_acquisition">
+                <h6>Linux Memory<br>Acquisition</h6><br>
+                <a href="https://markuta.com/live-memory-acquisition-on-linux-systems/" target="_blank">
+                    <i class="fa fa-bookmark w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="defining_cobaltstrike_components">
+                <h6>Defining CobaltStrike<br>Components</h6><br>
+                <a href="https://www.mandiant.com/resources/defining-cobalt-strike-components" target="_blank">
+                    <i class="fa fa-bookmark w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px">
+                <h6>CONTI/CobaltStrike<br>Lateral Movement</h6><br>
+                <a href="https://www.unh4ck.com/detection-engineering-and-threat-hunting/lateral-movement/detecting-conti-cobaltstrike-lateral-movement-techniques-part-1"
+                    target="_blank">
+                    <i class="fa fa-bookmark w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px">
+                <h6>Decrypting Cobalt Strike<br>Traffic w/ Private Keys</h6><br>
+                <a href="https://blog.nviso.eu/2021/10/21/cobalt-strike-using-known-private-keys-to-decrypt-traffic-part-1/?amp"
+                    target="_blank">
+                    <i class="fa fa-bookmark w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="reversing_a_binary_using_gdb">
+                <h6>Reversing a Binary<br>using GDB</h6><br>
+                <a href="https://cybersecurity.att.com/blogs/security-essentials/reversing-a-binary-using-gdb-tutorial-for-reverse-engineers"
+                    target="_blank">
+                    <i class="fa fa-bookmark w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="w3-row-padding w3-center w3-margin-top">
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="how_to_detect_pth_attacks">
+                <h6>How to Detect PtH Attacks</h6><br>
+                <a href="https://stealthbits.com/blog/how-to-detect-pass-the-hash-attacks/" target="_blank">
+                    <i class="fa fa-bookmark w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="decrypt_tls_streams">
+                <h6>Decrypt TLS Streams</h6><br>
+                <a href="https://blog.didierstevens.com/2020/12/14/decrypting-tls-streams-with-wireshark-part-1/amp/"
+                    target="_blank">
+                    <i class="fa fa-bookmark w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="install_cuckoo">
+                <h6>Install Cuckoo</h6><br>
+                <a href="https://itandsecuritystuffs.wordpress.com/2014/03/14/install-cuckoobox-for-malware-and-virus-analysis/"
+                    target="_blank">
+                    <i class="fa fa-bookmark w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="install_sift_remnux">
+                <h6>Install SIFT & REMnux</h6><br>
+                <a href="https://www.sans.org/blog/how-to-install-sift-workstation-and-remnux-on-the-same-forensics-system/"
+                    target="_blank">
+                    <i class="fa fa-bookmark w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="11_malware_analysis_tools">
+                <h6>11 Malware Analysis Tools</h6><br>
+                <a href="https://www.varonis.com/blog/malware-analysis-tools/" target="_blank">
+                    <i class="fa fa-bookmark w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="pmat_labs_walkthroughs">
+                <h6>PMAT Labs Walkthroughs</h6><br>
+                <a href="https://github.com/deFr0ggy/PMAT-Labs-Walkthroughs" target="_blank">
+                    <i class="fa fa-bookmark w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="w3-row-padding w3-center w3-margin-top">
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="analysis_of_golang_malware">
+                <h6>Analysis of GoLang Malware</h6><br>
+                <a href="https://unit42.paloaltonetworks.com/the-gopher-in-the-room-analysis-of-golang-malware-in-the-wild/"
+                    target="_blank">
+                    <i class="fa fa-bookmark w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="atomic_red_team_hands-on">
+                <h6>Atomic Red Team:<br>Hands-On</h6><br>
+                <a href="https://onedrive.live.com/view.aspx?resid=5EFC811CDEC9D7F0!6215&ithint=file%2cdocx&authkey=!ACVO3y1Jyhq0mfY"
+                    target="_blank">
+                    <i class="fa fa-bookmark w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="blue_team-system_live_analysis">
+                <h6>Blue Team-System<br>Live Analysis</h6><br>
+                <a href="https://cybermeisam.medium.com/blue-team-system-live-analysis-part-11-windows-user-account-forensics-ntuser-dat-495ab41393db"
+                    target="_blank">
+                    <i class="fa fa-bookmark w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="reverse_engineering_wannacry">
+                <h6>Reverse Engineering<br>Wannacry</h6><br>
+                <a href="https://www.ghidra.ninja/posts/03-wannacry-1/" target="_blank">
+                    <i class="fa fa-bookmark w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="wmic_for_incident_response">
+                <h6>WMIC for<br>Incident Response</h6><br>
+                <a href="https://digitalinvestigator.blogspot.com/2022/04/wmic-for-incident-response.html"
+                    target="_blank">
+                    <i class="fa fa-bookmark w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="w3-row-padding w3-center w3-margin-top">
+        <div class="w3-col l2" id="build_your_own_sandbox">
+            <h6>Build Your Own Sandbox</h6>
+            <iframe src="https://oscybershop.herokuapp.com/main/content/publications/build_your_own_sandbox.pdf"
+                width="100%"></iframe>
+            <a href="https://oscybershop.herokuapp.com/main/content/publications/build_your_own_sandbox.pdf"
+                target="_blank" class="w3-button w3-theme">Download&nbsp;<i class="fa fa-external-link"></i></a>
+        </div>
+    </div>
+    <div class="w3-container">
+        <hr>
+        <div class="w3-center">
+        </div>
+    </div>
+    </div>
     <h4>&nbsp;&nbsp;&nbsp;&nbsp;Media</h4>
-    <div class="w3-row-padding w3-center w3-margin-top" id="media">
-        <div class="w3-col l2" id="put_your_soc_to_the_test">
-            <h6>Put your SOC to the Test</h6>
-            <iframe width="100%" src="https://youtube.com/embed/18-H3EuqY-4" frameborder="0" allowfullscreen></iframe>
-        </div>
-        <div class="w3-col l2" id="dfir_101">
-            <h6>DFIR 101</h6>
-            <iframe width="100%" src="https://youtube.com/embed/eftOgRsHK4A" frameborder="0" allowfullscreen></iframe>
-        </div>
-        <div class="w3-col l2" id="ir_playbooks">
-            <h6>IR Playbooks</h6>
-            <iframe width="100%" src="https://youtube.com/embed/52HA_Y8A1Zs" frameborder="0" allowfullscreen></iframe>
-        </div>
-        <div class="w3-col l2" id="eztools_kape">
-            <h6>EZTools/KAPE</h6>
-            <iframe width="100%" src="https://youtube.com/embed/mIb1GQP3ciE" frameborder="0" allowfullscreen></iframe>
-        </div>
-        <div class="w3-col l2" id="hunting_cobalt_strike">
-            <h6>Hunting Cobalt Strike</h6>
-            <iframe width="100%" src="https://youtube.com/embed/borfuQGrB8g" frameborder="0" allowfullscreen></iframe>
-        </div>
-        <div class="w3-col l2" id="investigating_wmi_attacks">
-            <h6>Investigating WMI Attacks</h6>
-            <iframe width="100%" src="https://youtube.com/embed/aBQ1vEjK6v4" frameborder="0" allowfullscreen></iframe>
-        </div>
-    </div>
-    <div class="w3-row-padding w3-center w3-margin-top">
-        <div class="w3-col l2" id="the_state_of_incident_response">
-            <h6>The State of<br>Incident Response</h6>
-            <iframe width="100%" src="https://youtube.com/embed/u54Radu2bF0" frameborder="0" allowfullscreen></iframe>
-        </div>
-        <div class="w3-col l2" id="windows_cred_attacks_mitigations">
-            <h6>Windows Cred. Attacks<br>& Mitigations</h6>
-            <iframe width="100%" src="https://youtube.com/embed/nDKhzD3ccXA" frameborder="0" allowfullscreen></iframe>
-        </div>
-        <div class="w3-col l2" id="windows_command_line_obfuscation">
-            <h6>Windows Command Line<br>Obfuscation</h6>
-            <iframe width="100%" src="https://youtube.com/embed/o1g5oiCMkcI" frameborder="0" allowfullscreen></iframe>
-        </div>
-        <div class="w3-col l2" id="making_memories_faster_response">
-            <h6>Making Memories:<br>Faster Response</h6>
-            <iframe width="100%" src="https://youtube.com/embed/QzPk1oyzMzc" frameborder="0" allowfullscreen></iframe>
-        </div>
-        <div class="w3-col l2" id="installing_zeek_from_scratch">
-            <h6>Installing Zeek<br>from Scratch</h6>
-            <iframe width="100%" src="https://youtube.com/embed/2lZ0q9frybs" frameborder="0" allowfullscreen></iframe>
-        </div>
-        <div class="w3-col l2" id="building_a_malware_lab">
-            <h6>Building a<br>Malware Lab</h6>
-            <iframe width="100%" src="https://youtube.com/embed/GE_aSVq8ZnQ" frameborder="0" allowfullscreen></iframe>
-        </div>
-    </div>
-    <div class="w3-row-padding w3-center w3-margin-top">
-        <div class="w3-col l2" id="needles_in_needlestacks">
-            <h6>Needles in Needlestacks</h6>
-            <iframe width="100%" src="https://youtube.com/embed/q7ai6P-cHaQ" frameborder="0" allowfullscreen></iframe>
-        </div>
-        <div class="w3-col l2" id="threat_hunting_via_sysmon">
-            <h6>Threat Hunting via Sysmon</h6>
-            <iframe width="100%" src="https://youtube.com/embed/7dEfKn70HCI" frameborder="0" allowfullscreen></iframe>
-        </div>
-        <div class="w3-col l2" id="threat_hunting_via_dns">
-            <h6>Threat Hunting via DNS</h6>
-            <iframe width="100%" src="https://youtube.com/embed/RdcCjDS0s6s" frameborder="0" allowfullscreen></iframe>
-        </div>
-        <div class="w3-col l2" id="post_exploitation_hunting">
-            <h6>Post Exploitation Hunting</h6>
-            <iframe width="100%" src="https://youtube.com/embed/PdCQChYrxXg" frameborder="0" allowfullscreen></iframe>
-        </div>
-        <div class="w3-col l2" id="unconventional_logging">
-            <h6>Unconventional Logging</h6>
-            <iframe width="100%" src="https://youtube.com/embed/qXYG3uf3b8s" frameborder="0" allowfullscreen></iframe>
-        </div>
-        <div class="w3-col l2" id="cyber_deception">
-            <h6>Cyber Deception</h6>
-            <iframe width="100%" src="https://youtube.com/embed/7LXfBSuaFFE" frameborder="0" allowfullscreen></iframe>
-        </div>
-    </div>
-    <div class="w3-row-padding w3-center w3-margin-top">
-        <div class="w3-col l2" id="open_soc">
-            <h6>Open SOC</h6>
-            <iframe width="100%" src="https://youtube.com/embed/t6PqjLIVgdA" frameborder="0" allowfullscreen></iframe>
-        </div>
-        <div class="w3-col l2" id="soar_with_shuffle">
-            <h6>SOAR with Shuffle</h6>
-            <iframe width="100%" src="https://youtube.com/embed/Nb9_ahZMC5U" frameborder="0" allowfullscreen></iframe>
-        </div>
-    </div>
-    <div class="w3-row-padding w3-center w3-margin-top">
+    <h5>&nbsp;&nbsp;&nbsp;&nbsp;Channels & Playlists</h5>
+    <div class="w3-row-padding w3-center w3-margin-top" id="lists">
         <div class="w3-col l2">
             <div class="w3-card w3-container w3-blue" style="min-height:150px" id="sans_cyber_defense">
                 <h6>SANS Cyber Defense</h6><br>
@@ -288,440 +1112,17 @@
                 </a>
             </div>
         </div>
-    </div>
-    <div class="w3-row-padding w3-center w3-margin-top">
         <div class="w3-col l2">
-            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="sans">
-                <h6>SANS</h6><br>
-                <a href="https://www.sans.org/webcasts/" target="_blank">
-                    <i class="fa fa-users w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
-                </a>
-            </div>
-        </div>
-        <div class="w3-col l2">
-            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="bhis">
-                <h6>BHIS</h6><br>
-                <a href="https://www.blackhillsinfosec.com/blog/webcasts/" target="_blank">
-                    <i class="fa fa-users w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
-                </a>
-            </div>
-        </div>
-        <div class="w3-col l2">
-            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="blueprint">
-                <h6>Blueprint</h6><br>
-                <a href="https://www.sans.org/podcasts/blueprint/?msc=blue-team-lp" target="_blank">
-                    <i class="fa fa-microphone w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="chris_greer">
+                <h6>Chris Greer</h6><br>
+                <a href="https://www.youtube.com/channel/UCHN1aYRP473xX6Z13H_mxMQ" target="_blank">
+                    <i class="fa fa-youtube-play w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
                 </a>
             </div>
         </div>
     </div>
-    <div class="w3-container">
-        <hr>
-        <div class="w3-center">
-        </div>
-    </div>
-    <br><br>
-    <h4>&nbsp;&nbsp;&nbsp;&nbsp;Training, CTFs & Ranges</h4>
-    <h5>&nbsp;&nbsp;&nbsp;&nbsp;Formal Training</h5>
-    <div class="w3-row-padding w3-center w3-margin-top" id="training">
-        <div class="w3-col l2">
-            <div class="w3-card w3-container" style="min-height:150px" id="enisa">
-                <h6>ENISA</h6><br>
-                <a href="https://www.enisa.europa.eu/topics/trainings-for-cybersecurity-specialists/online-training-material/technical-operational"
-                    target="_blank">
-                    <i class="fa fa-university w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
-                </a>
-            </div>
-        </div>
-        <div class="w3-col l2">
-            <div class="w3-card w3-container" style="min-height:150px" id="rangeforce">
-                <h6>RangeForce</h6><br>
-                <a href="https://go.rangeforce.com/community-edition-registration" target="_blank">
-                    <i class="fa fa-university w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
-                </a>
-            </div>
-        </div>
-        <div class="w3-col l2">
-            <div class="w3-card w3-container" style="min-height:150px" id="dfir_diva">
-                <h6>DFIR Diva</h6><br>
-                <a href="https://training.dfirdiva.com/" target="_blank">
-                    <i class="fa fa-university w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
-                </a>
-            </div>
-        </div>
-        <div class="w3-col l2">
-            <div class="w3-card w3-container" style="min-height:150px" id="ine">
-                <h6>INE</h6><br>
-                <a href="https://my.ine.com/area/3e1aa06f-2e9f-4789-b50d-aa027ad8dcfa" target="_blank">
-                    <i class="fa fa-university w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
-                </a>
-            </div>
-        </div>
-        <div class="w3-col l2">
-            <div class="w3-card w3-container" style="min-height:150px" id="soc_investigation">
-                <h6>SOC Investigation</h6><br>
-                <a href="https://www.socinvestigation.com/" target="_blank">
-                    <i class="fa fa-university w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
-                </a>
-            </div>
-        </div>
-        <div class="w3-col l2">
-            <div class="w3-card w3-container" style="min-height:150px" id="antisyphon">
-                <h6>Antisyphon</h6><br>
-                <a href="https://www.antisyphontraining.com/pay-what-you-can/" target="_blank">
-                    <i class="fa fa-university w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
-                </a>
-            </div>
-        </div>
-    </div>
-    <div class="w3-row-padding w3-center w3-margin-top">
-        <div class="w3-col l2">
-            <div class="w3-card w3-container" style="min-height:150px" id="udemy">
-                <h6>Udemy</h6><br>
-                <a href="https://www.udemy.com/courses/it-and-software/network-and-security/" target="_blank">
-                    <i class="fa fa-university w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
-                </a>
-            </div>
-        </div>
-        <div class="w3-col l2">
-            <div class="w3-card w3-container" style="min-height:150px" id="ics">
-                <h6>(ICS)²</h6><br>
-                <a href="https://www.isc2.org/" target="_blank">
-                    <i class="fa fa-university w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
-                </a>
-            </div>
-        </div>
-        <div class="w3-col l2">
-            <div class="w3-card w3-container" style="min-height:150px" id="comptia">
-                <h6>CompTIA</h6><br>
-                <a href="https://www.comptia.org/training" target="_blank">
-                    <i class="fa fa-university w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
-                </a>
-            </div>
-        </div>
-        <div class="w3-col l2">
-            <div class="w3-card w3-container" style="min-height:150px" id="7safe">
-                <h6>7safe</h6><br>
-                <a href="https://www.7safe.com/our-courses" target="_blank">
-                    <i class="fa fa-university w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
-                </a>
-            </div>
-        </div>
-        <div class="w3-col l2">
-            <div class="w3-card w3-container" style="min-height:150px" id="sans_institute">
-                <h6>SANS Institute</h6><br>
-                <a href="https://www.sans.org/cyber-security-courses/?msc=main-nav" target="_blank">
-                    <i class="fa fa-university w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
-                </a>
-            </div>
-        </div>
-        <div class="w3-col l2">
-            <div class="w3-card w3-container" style="min-height:150px" id="ippsec">
-                <h6>IppSec</h6><br>
-                <a href="https://ippsec.rocks/?#" target="_blank">
-                    <i class="fas fa-search w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
-                </a>
-            </div>
-        </div>
-    </div>
-    <div class="w3-row-padding w3-center w3-margin-top">
-        <div class="w3-col l2">
-            <div class="w3-card w3-container" style="min-height:150px" id="az_900_azure_fundamentals">
-                <h6>AZ-900 Azure Fundamentals</h6><br>
-                <a href="https://github.com/johnthebrit/AZ900CertCourse" target="_blank">
-                    <i class="fas fa-chalkboard-teacher w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
-                </a>
-            </div>
-        </div>
-    </div>
-    <div class="w3-row-padding w3-center w3-margin-top">
-        <div class="w3-col l2">
-            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="applied_network_defense">
-                <h6>Applied Network Defense</h6><br>
-                <a href="https://www.networkdefense.co/courses/" target="_blank">
-                    <i class="fa fa-university w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
-                </a>
-            </div>
-        </div>
-        <div class="w3-col l2">
-            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="cybrary">
-                <h6>Cybrary</h6><br>
-                <a href="https://www.cybrary.it/info/mitre-attack-defender/" target="_blank">
-                    <i class="fa fa-university w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
-                </a>
-            </div>
-        </div>
-        <div class="w3-col l2">
-            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="basis_technology">
-                <h6>Basis Technology</h6><br>
-                <a href="https://dfir-training.basistech.com/users/sign_in" target="_blank">
-                    <i class="fa fa-university w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
-                </a>
-            </div>
-        </div>
-        <div class="w3-col l2">
-            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="cyberdefenders">
-                <h6>CyberDefenders</h6><br>
-                <a href="https://bluedemy.cyberdefenders.org/" target="_blank">
-                    <i class="fa fa-university w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
-                </a>
-            </div>
-        </div>
-        <div class="w3-col l2">
-            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="security_blue_team">
-                <h6>Security Blue Team</h6><br>
-                <a href="https://securityblue.team/" target="_blank">
-                    <i class="fa fa-university w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
-                </a>
-            </div>
-        </div>
-    </div>
-    <div class="w3-row-padding w3-center w3-margin-top">
-        <div class="w3-col l2">
-            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="soc_core_skills">
-                <h6>SOC Core Skills</h6><br>
-                <a href="https://wildwesthackinfest.com/antisyphon//soc-core-skills-instructions/" target="_blank">
-                    <i class="fas fa-chalkboard-teacher w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
-                </a>
-            </div>
-        </div>
-        <div class="w3-col l2">
-            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="acm_threat_hunting">
-                <h6>ACM Threat Hunting</h6><br>
-                <a href="https://www.activecountermeasures.com/cyber-threat-hunting-training-course/" target="_blank">
-                    <i class="fas fa-chalkboard-teacher w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
-                </a>
-            </div>
-        </div>
-        <div class="w3-col l2">
-            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="dfir_beginner_to_expert">
-                <h6>DFIR Beginner to Expert</h6><br>
-                <a href="https://classroom.google.com/u/0/w/NDQ0MTUzMjU5NzE0/t/all" target="_blank">
-                    <i class="fas fa-chalkboard-teacher w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
-                </a>
-            </div>
-        </div>
-    </div>
-    <div class="w3-container">
-        <hr>
-        <div class="w3-center">
-        </div>
-    </div>
-    <br><br>
-    <h5>&nbsp;&nbsp;&nbsp;&nbsp;CTFs & Ranges</h5>
-    <div class="w3-row-padding w3-center w3-margin-top" id="ctfs">
-        <div class="w3-col l2">
-            <div class="w3-card w3-container" style="min-height:150px" id="sans_holiday_hacks">
-                <h6>SANS Holiday Hacks</h6><br>
-                <a href="https://holidayhackchallenge.com/2020/" target="_blank">
-                    <i class="fa fa-flag w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
-                </a>
-            </div>
-        </div>
-        <div class="w3-col l2">
-            <div class="w3-card w3-container" style="min-height:150px" id="picoctf">
-                <h6>picoCTF</h6><br>
-                <a href="https://www.picoctf.org/get_started" target="_blank">
-                    <i class="fa fa-flag w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
-                </a>
-            </div>
-        </div>
-        <div class="w3-col l2">
-            <div class="w3-card w3-container" style="min-height:150px" id="counter_hack_challenges">
-                <h6>Counter Hack Challenges</h6><br>
-                <a href="https://www.counterhackchallenges.com/" target="_blank">
-                    <i class="fa fa-flag w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
-                </a>
-            </div>
-        </div>
-        <div class="w3-col l2">
-            <div class="w3-card w3-container" style="min-height:150px" id="we_chall">
-                <h6>We Chall</h6><br>
-                <a href="https://www.wechall.net/challs" target="_blank">
-                    <i class="fa fa-flag w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
-                </a>
-            </div>
-        </div>
-        <div class="w3-col l2">
-            <div class="w3-card w3-container" style="min-height:150px" id="swiss_hacking_challenge">
-                <h6>Swiss Hacking Challenge</h6><br>
-                <a href="https://www.swiss-hacking-challenge.ch/" target="_blank">
-                    <i class="fa fa-flag w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
-                </a>
-            </div>
-        </div>
-        <div class="w3-col l2">
-            <div class="w3-card w3-container" style="min-height:150px" id="attackdefence">
-                <h6>AttackDefence</h6><br>
-                <a href="https://attackdefense.com/" target="_blank">
-                    <i class="fa fa-gamepad w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
-                </a>
-            </div>
-        </div>
-    </div>
-    <div class="w3-container">
-        <hr>
-        <div class="w3-center">
-        </div>
-    </div>
-    <div class="w3-row-padding w3-center w3-margin-top">
-        <div class="w3-col l2">
-            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="awesome_ctf">
-                <h6>awesome-ctf</h6><br>
-                <a href="https://c4pr1c3.github.io/awesome-ctf/" target="_blank">
-                    <i class="fa fa-flag w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
-                </a>
-            </div>
-        </div>
-        <div class="w3-col l2">
-            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="flare_on">
-                <h6>Flare-On</h6><br>
-                <a href="http://www.flare-on.com/" target="_blank">
-                    <i class="fa fa-gamepad w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
-                </a>
-            </div>
-        </div>
-        <div class="w3-col l2">
-            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="malwaretrafficanalysis">
-                <h6>MalwareTrafficAnalysis</h6><br>
-                <a href="https://malware-traffic-analysis.net/" target="_blank">
-                    <i class="fa fa-gamepad w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
-                </a>
-            </div>
-        </div>
-        <div class="w3-col l2">
-            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="blue_team_labs_online">
-                <h6>Blue Team Labs Online</h6><br>
-                <a href="./hhttps://blueteamlabs.online/" target="_blank">
-                    <i class="fa fa-gamepad w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
-                </a>
-            </div>
-        </div>
-        <div class="w3-col l2">
-            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="antisyphon_cyber_range">
-                <h6>Antisyphon Cyber Range</h6><br>
-                <a href="https://www.activecountermeasures.com/cyber-range/" target="_blank">
-                    <i class="fa fa-cloud-upload w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
-                </a>
-            </div>
-        </div>
-        <div class="w3-col l2">
-            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="soc_prime">
-                <h6>SOC Prime</h6><br>
-                <a href="https://tdm.socprime.com/login/" target="_blank">
-                    <i class="fa fa-cloud-upload w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
-                </a>
-            </div>
-        </div>
-    </div>
-    <div class="w3-container">
-        <hr>
-        <div class="w3-center">
-        </div>
-    </div>
-    <br><br>
-    <h4>&nbsp;&nbsp;&nbsp;&nbsp;Virtual Machines</h4>
-    <div class="w3-row-padding w3-center w3-margin-top" id="vms">
-        <div class="w3-col l2">
-            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="sift">
-                <h6>SIFT</h6><br>
-                <a href="https://www.sans.org/tooling/sift-workstation/" target="_blank">
-                    <i class="fa fa-desktop w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
-                </a>
-            </div>
-        </div>
-        <div class="w3-col l2">
-            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="remnux">
-                <h6>REMnux</h6><br>
-                <a href="https://www.sans.org/tooling/remnux/" target="_blank">
-                    <i class="fa fa-desktop w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
-                </a>
-            </div>
-        </div>
-        <div class="w3-col l2">
-            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="csi_linux">
-                <h6>CSI Linux</h6><br>
-                <a href="https://csilinux.com/" target="_blank">
-                    <i class="fa fa-desktop w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
-                </a>
-            </div>
-        </div>
-        <div class="w3-col l2">
-            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="tsurugi">
-                <h6>Tsurugi</h6><br>
-                <a href="https://tsurugi-linux.org/" target="_blank">
-                    <i class="fa fa-desktop w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
-                </a>
-            </div>
-        </div>
-        <div class="w3-col l2">
-            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="paladin">
-                <h6>Paladin</h6><br>
-                <a href="https://sumuri.com/software/paladin/" target="_blank">
-                    <i class="fa fa-desktop w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
-                </a>
-            </div>
-        </div>
-        <div class="w3-col l2">
-            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="caine">
-                <h6>CAINE</h6><br>
-                <a href="https://www.caine-live.net/" target="_blank">
-                    <i class="fa fa-desktop w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
-                </a>
-            </div>
-        </div>
-    </div>
-    <div class="w3-row-padding w3-center w3-margin-top">
-        <div class="w3-col l2">
-            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="adhd">
-                <h6>ADHD</h6><br>
-                <a href="https://www.activecountermeasures.com/free-tools/adhd/" target="_blank">
-                    <i class="fa fa-desktop w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
-                </a>
-            </div>
-        </div>
-        <div class="w3-col l2">
-            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="sof_elk">
-                <h6>SOF-ELK</h6><br>
-                <a href="https://github.com/philhagen/sof-elk" target="_blank">
-                    <i class="fab fa-github w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
-                </a>
-            </div>
-        </div>
-        <div class="w3-col l2">
-            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="security_onion">
-                <h6>Security Onion</h6><br>
-                <a href="https://github.com/Security-Onion-Solutions/securityonion/blob/master/VERIFY_ISO.md"
-                    target="_blank">
-                    <i class="fab fa-github w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
-                </a>
-            </div>
-        </div>
-        <div class="w3-col l2">
-            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="redhunt_os">
-                <h6>RedHunt OS</h6><br>
-                <a href="https://github.com/redhuntlabs/RedHunt-OS" target="_blank">
-                    <i class="fab fa-github w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
-                </a>
-            </div>
-        </div>
-        <div class="w3-col l2">
-            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="flare">
-                <h6>FLARE</h6><br>
-                <a href="https://github.com/mandiant/flare-vm" target="_blank">
-                    <i class="fab fa-github w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
-                </a>
-            </div>
-        </div>
-    </div>
-    <div class="w3-container">
-        <hr>
-        <div class="w3-center">
-        </div>
-    </div>
-    <br><br>
-    <h4>&nbsp;&nbsp;&nbsp;&nbsp;Tooling</h4>
-    <div class="w3-row-padding w3-center w3-margin-top" id="tools">
+    <h4>&nbsp;&nbsp;&nbsp;&nbsp;Cyber Defence (Blue Team)</h4>
+    <div class="w3-row-padding w3-center w3-margin-top" id="blue">
         <div class="w3-col l2">
             <div class="w3-card w3-container w3-blue" style="min-height:150px" id="awesome_ir">
                 <h6>Awesome IR</h6><br>
@@ -746,8 +1147,17 @@
                 </a>
             </div>
         </div>
+        <div class="w3-col l2" id="ssa_security_awareness_planning_kit">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="sans_dfir">
+                <h6>Security Awareness Planning</h6><br>
+                <a href="https://oscybershop.herokuapp.com/main/content/tooling/ssa_security_awareness_planning_kit.zip"
+                    target="_blank">
+                    <i class="fa fa-file-zipper w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
     </div>
-    <div class="w3-row-padding w3-center w3-margin-top" id="notes">
+    <div class="w3-row-padding w3-center w3-margin-top">
         <div class="w3-col l2">
             <div class="w3-card w3-container w3-blue" style="min-height:150px" id="thehive">
                 <h6>TheHive</h6><br>
@@ -781,12 +1191,7 @@
             </div>
         </div>
     </div>
-    <div class="w3-container">
-        <hr>
-        <div class="w3-center">
-        </div>
-    </div>
-    <br><br>
+    <br>
     <h5>&nbsp;&nbsp;&nbsp;&nbsp;Scripting</h5>
     <div class="w3-row-padding w3-center w3-margin-top" id="scripts">
         <div class="w3-col l2" id="cli">
@@ -864,17 +1269,17 @@
             </div>
         </div>
         <div class="w3-col l2">
-            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="python_iocextract">
-                <h6>python-iocextract</h6><br>
-                <a href="https://github.com/InQuest/python-iocextract" target="_blank">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="sooty">
+                <h6>Sooty</h6><br>
+                <a href="https://github.com/TheresAFewConors/Sooty" target="_blank">
                     <i class="fab fa-github w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
                 </a>
             </div>
         </div>
         <div class="w3-col l2">
-            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="python_stix">
-                <h6>python-stix</h6><br>
-                <a href="https://github.com/STIXProject/python-stix" target="_blank">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="wtfis">
+                <h6>wtfis</h6><br>
+                <a href="https://github.com/pirxthepilot/wtfis" target="_blank">
                     <i class="fab fa-github w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
                 </a>
             </div>
@@ -888,19 +1293,39 @@
             </div>
         </div>
     </div>
-    <div class="w3-container">
-        <hr>
-        <div class="w3-center">
+    <div class="w3-row-padding w3-center w3-margin-top" id="vulns">
+        <div class="w3-col l2"><br><br>
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="python_iocextract">
+                <h6>python-iocextract</h6><br>
+                <a href="https://github.com/InQuest/python-iocextract" target="_blank">
+                    <i class="fab fa-github w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2"><br><br>
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="python_stix">
+                <h6>python-stix</h6><br>
+                <a href="https://github.com/STIXProject/python-stix" target="_blank">
+                    <i class="fab fa-github w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2" id="python_tools">
+            <h6>Python Tools</h6>
+            <iframe src="https://oscybershop.herokuapp.com/main/content/tooling/python_tools.jpeg"
+                width="100%"></iframe>
+            <a href="https://oscybershop.herokuapp.com/main/content/tooling/python_tools.jpeg" target="_blank"
+                class="w3-button w3-theme">Download&nbsp;<i class="fa fa-external-link"></i></a>
         </div>
     </div>
-    <br><br>
+    <br>
     <h5>&nbsp;&nbsp;&nbsp;&nbsp;Vulnerability Assessment</h5>
     <div class="w3-row-padding w3-center w3-margin-top" id="vulns">
         <div class="w3-col l2">
             <div class="w3-card w3-container w3-blue" style="min-height:150px" id="nessus">
                 <h6>Nessus</h6><br>
                 <a href="https://docs.tenable.com/Nessus.htm" target="_blank">
-                    <i class="fa fa-exchange w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                    <i class="fas fa-tools w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
                 </a>
             </div>
         </div>
@@ -908,7 +1333,7 @@
             <div class="w3-card w3-container w3-blue" style="min-height:150px" id="burpsuite">
                 <h6>BurpSuite</h6><br>
                 <a href="https://portswigger.net/burp" target="_blank">
-                    <i class="fa fa-exchange w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                    <i class="fas fa-tools w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
                 </a>
             </div>
         </div>
@@ -999,6 +1424,14 @@
             </div>
         </div>
         <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="netresec">
+                <h6>NetreseC</h6><br>
+                <a href="https://www.netresec.com/?page=PcapFiles" target="_blank">
+                    <i class="fab fa-watchman-monitoring w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
             <div class="w3-card w3-container w3-blue" style="min-height:150px" id="sigma">
                 <h6>SIGMA</h6><br>
                 <a href="https://github.com/SigmaHQ/sigma" target="_blank">
@@ -1023,12 +1456,7 @@
             </div>
         </div>
     </div>
-    <div class="w3-container">
-        <hr>
-        <div class="w3-center">
-        </div>
-    </div>
-    <br><br>
+    <br>
     <h5>&nbsp;&nbsp;&nbsp;&nbsp;DFIR & Threat Hunting</h5>
     <div class="w3-row-padding w3-center w3-margin-top" id="dfir">
         <div class="w3-col l2">
@@ -1419,7 +1847,7 @@
     </div>
     <br><br>
     <h5>&nbsp;&nbsp;&nbsp;&nbsp;Identifiers & Hex Viewers</h5>
-    <div class="w3-row-padding w3-center w3-margin-top" id="hex_editors">
+    <div class="w3-row-padding w3-center w3-margin-top">
         <div class="w3-col l2">
             <div class="w3-card w3-container w3-blue" style="min-height:150px" id="exiftool">
                 <h6>ExifTool</h6><br>
@@ -1768,12 +2196,7 @@
             </div>
         </div>
     </div>
-    <div class="w3-container">
-        <hr>
-        <div class="w3-center">
-        </div>
-    </div>
-    <br><br>
+    <br>
     <h5>&nbsp;&nbsp;&nbsp;&nbsp;Sandboxes</h5>
     <div class="w3-row-padding w3-center w3-margin-top" id="sandbox">
         <div class="w3-col l2">
@@ -1827,6 +2250,14 @@
     </div>
     <div class="w3-row-padding w3-center w3-margin-top">
         <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="filescanio">
+                <h6>filescan.io</h6><br>
+                <a href="https://www.filescan.io/scan" target="_blank">
+                    <i class="fa fa-cube w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
             <div class="w3-card w3-container w3-blue" style="min-height:150px" id="cuckoo">
                 <h6>Cuckoo</h6><br>
                 <a href="https://cuckoosandbox.org/" target="_blank">
@@ -1861,7 +2292,7 @@
     <div style="color:darkblue;font-size:14px;">
         <p>&nbsp;&nbsp;&nbsp;&nbsp;Please take extra precautions when analysing and playing with malware.</p>
     </div>
-    <div class="w3-row-padding w3-center w3-margin-top" id="malware_repos">
+    <div class="w3-row-padding w3-center w3-margin-top">
         <div class="w3-col l2">
             <div class="w3-card w3-container w3-blue-grey" style="min-height:150px" id="malshare">
                 <h6>Malshare</h6><br>
@@ -1953,12 +2384,7 @@
             </div>
         </div>
     </div>
-    <div class="w3-container">
-        <hr>
-        <div class="w3-center">
-        </div>
-    </div>
-    <br><br>
+    <br>
     <h5>&nbsp;&nbsp;&nbsp;&nbsp;Steganography</h5>
     <div class="w3-row-padding w3-center w3-margin-top" id="steg">
         <div class="w3-col l2">
@@ -2016,506 +2442,134 @@
         </div>
     </div>
     <br><br>
-    <h4>&nbsp;&nbsp;&nbsp;&nbsp;Cheat Sheets</h4>
-    <h5>&nbsp;&nbsp;&nbsp;&nbsp;Operating System CLI</h5>
-    <div class="w3-row-padding w3-center w3-margin-top" id="cheat">
-        <div class="w3-col l2" id="windows_cli">
-            <h6>Windows CLI</h6>
-            <iframe src="https://oscybershop.herokuapp.com/main/content/cheatsheets/windows-cli.pdf"
-                width="100%"></iframe>
-            <a href="https://oscybershop.herokuapp.com/main/content/cheatsheets/windows-cli.pdf" target="_blank"
-                class="w3-button w3-theme">Download&nbsp;<i class="fa fa-external-link"></i></a>
-        </div>
-        <div class="w3-col l2" id="windows-linux_cli">
-            <h6>Windows & Linux CLI</h6>
-            <iframe src="https://oscybershop.herokuapp.com/main/content/cheatsheets/windows_linux_cli.pdf"
-                width="100%"></iframe>
-            <a href="https://oscybershop.herokuapp.com/main/content/cheatsheets/windows-linux_cli.pdf" target="_blank"
-                class="w3-button w3-theme">Download&nbsp;<i class="fa fa-external-link"></i></a>
-        </div>
-        <div class="w3-col l2" id="linux_commands">
-            <h6>Linux Commands</h6>
-            <iframe src="https://oscybershop.herokuapp.com/main/content/cheatsheets/linux_commands.pdf"
-                width="100%"></iframe>
-            <a href="https://oscybershop.herokuapp.com/main/content/cheatsheets/linux_commands.pdf" target="_blank"
-                class="w3-button w3-theme">Download&nbsp;<i class="fa fa-external-link"></i></a>
-        </div>
-        <div class="w3-col l2" id="linux_cli_fundamentals">
-            <h6>Linux CLI Fundamentals</h6>
-            <iframe src="https://oscybershop.herokuapp.com/main/content/cheatsheets/linux_cli_101.pdf"
-                width="100%"></iframe>
-            <a href="https://oscybershop.herokuapp.com/main/content/cheatsheets/linux_cli_101.pdf" target="_blank"
-                class="w3-button w3-theme">Download&nbsp;<i class="fa fa-external-link"></i></a>
-        </div>
-        <div class="w3-col l2" id="linux_cli">
-            <h6>Linux CLI</h6>
-            <iframe src="https://oscybershop.herokuapp.com/main/content/cheatsheets/linux_cli.pdf"
-                width="100%"></iframe>
-            <a href="https://oscybershop.herokuapp.com/main/content/cheatsheets/linux_cli.pdf" target="_blank"
-                class="w3-button w3-theme">Download&nbsp;<i class="fa fa-external-link"></i></a>
-        </div>
-        <div class="w3-col l2" id="linux_shell">
-            <h6>Linux Shell</h6>
-            <iframe src="https://oscybershop.herokuapp.com/main/content/cheatsheets/linux_shell.pdf"
-                width="100%"></iframe>
-            <a href="https://oscybershop.herokuapp.com/main/content/cheatsheets/linux_shell.pdf" target="_blank"
-                class="w3-button w3-theme">Download&nbsp;<i class="fa fa-external-link"></i></a>
-        </div>
-    </div>
-    <div class="w3-row-padding w3-center w3-margin-top">
-        <div class="w3-col l2" id="vim">
-            <h6>Vim</h6>
-            <iframe src="https://oscybershop.herokuapp.com/main/content/cheatsheets/vim.jpeg" width="100%"></iframe>
-            <a href="https://oscybershop.herokuapp.com/main/content/cheatsheets/vim.jpeg" target="_blank"
-                class="w3-button w3-theme">Download&nbsp;<i class="fa fa-external-link"></i></a>
-        </div>
-        <div class="w3-col l2" id="vi">
-            <h6>Vi</h6>
-            <iframe src="https://oscybershop.herokuapp.com/main/content/cheatsheets/vi.pdf" width="100%"></iframe>
-            <a href="https://oscybershop.herokuapp.com/main/content/cheatsheets/vi.pdf" target="_blank"
-                class="w3-button w3-theme">Download&nbsp;<i class="fa fa-external-link"></i></a>
-        </div>
-        <div class="w3-col l2" id="nano">
-            <h6>Nano</h6>
-            <iframe src="https://oscybershop.herokuapp.com/main/content/cheatsheets/nano.pdf" width="100%"></iframe>
-            <a href="https://oscybershop.herokuapp.com/main/content/cheatsheets/nano.pdf" target="_blank"
-                class="w3-button w3-theme">Download&nbsp;<i class="fa fa-external-link"></i></a>
-        </div>
-    </div>
-    <br><br>
-    <h5>&nbsp;&nbsp;&nbsp;&nbsp;Cloud CLI</h5>
-    <div class="w3-row-padding w3-center w3-margin-top">
-        <div class="w3-col l2" id="aws">
-            <h6>AWS</h6>
-            <iframe src="https://oscybershop.herokuapp.com/main/content/cheatsheets/aws_cli.pdf" width="100%"></iframe>
-            <a href="https://oscybershop.herokuapp.com/main/content/cheatsheets/aws_cli.pdf" target="_blank"
-                class="w3-button w3-theme">Download&nbsp;<i class="fa fa-external-link"></i></a>
-        </div>
-        <div class="w3-col l2" id="gcp">
-            <h6>GCP</h6>
-            <iframe src="https://oscybershop.herokuapp.com/main/content/cheatsheets/g-cloud.pdf" width="100%"></iframe>
-            <a href="https://oscybershop.herokuapp.com/main/content/cheatsheets/g-cloud.pdf" target="_blank"
-                class="w3-button w3-theme">Download&nbsp;<i class="fa fa-external-link"></i></a>
-        </div>
-        <div class="w3-col l2" id="multi_cloud_cli">
-            <h6>Multi-Cloud CLI</h6>
-            <iframe src="https://oscybershop.herokuapp.com/main/content/cheatsheets/multi_cloud-cli.pdf"
-                width="100%"></iframe>
-            <a href="https://oscybershop.herokuapp.com/main/content/cheatsheets/multi_cloud-cli.pdf" target="_blank"
-                class="w3-button w3-theme">Download&nbsp;<i class="fa fa-external-link"></i></a>
-        </div>
-        <div class="w3-col l2" id="cloud_security_devops">
-            <h6>Cloud Security DevOps</h6>
-            <iframe src="https://oscybershop.herokuapp.com/main/content/cheatsheets/cloud-security_devops.pdf"
-                width="100%"></iframe>
-            <a href="https://oscybershop.herokuapp.com/main/content/cheatsheets/cloud-security_devops.pdf"
-                target="_blank" class="w3-button w3-theme">Download&nbsp;<i class="fa fa-external-link"></i></a>
-        </div>
-    </div>
-    <div class="w3-container">
-        <hr>
-        <div class="w3-center">
-        </div>
-    </div>
-    <br><br>
-    <h5>&nbsp;&nbsp;&nbsp;&nbsp;PowerShell & WMIC</h5>
-    <div class="w3-row-padding w3-center w3-margin-top" id="powershell_wmic">
+    <h4>&nbsp;&nbsp;&nbsp;&nbsp;Training</h4>
+    <h4>&nbsp;&nbsp;&nbsp;&nbsp;Formal Training</h4>
+    <div class="w3-row-padding w3-center w3-margin-top" id="bluetrain">
         <div class="w3-col l2">
-            <iframe src="https://oscybershop.herokuapp.com/main/content/cheatsheets/powershell-v4.0.pdf"
-                width="100%"></iframe>
-            <a href="https://oscybershop.herokuapp.com/main/content/cheatsheets/powershell-v4.0.pdf" target="_blank"
-                class="w3-button w3-theme">Download&nbsp;<i class="fa fa-external-link"></i></a>
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="applied_network_defense">
+                <h6>Applied Network Defense</h6><br>
+                <a href="https://www.networkdefense.co/courses/" target="_blank">
+                    <i class="fa fa-university w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
         </div>
         <div class="w3-col l2">
-            <iframe src="https://oscybershop.herokuapp.com/main/content/cheatsheets/powershell.pdf"
-                width="100%"></iframe>
-            <a href="https://oscybershop.herokuapp.com/main/content/cheatsheets/powershell.pdf" target="_blank"
-                class="w3-button w3-theme">Download&nbsp;<i class="fa fa-external-link"></i></a>
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="cybrary">
+                <h6>Cybrary</h6><br>
+                <a href="https://www.cybrary.it/info/mitre-attack-defender/" target="_blank">
+                    <i class="fa fa-university w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
         </div>
         <div class="w3-col l2">
-            <iframe src="https://oscybershop.herokuapp.com/main/content/cheatsheets/get-win_event.pdf"
-                width="100%"></iframe>
-            <a href="https://oscybershop.herokuapp.com/main/content/cheatsheets/get-win_event.pdf" target="_blank"
-                class="w3-button w3-theme">Download&nbsp;<i class="fa fa-external-link"></i></a>
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="basis_technology">
+                <h6>Basis Technology</h6><br>
+                <a href="https://dfir-training.basistech.com/users/sign_in" target="_blank">
+                    <i class="fa fa-university w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
         </div>
         <div class="w3-col l2">
-            <iframe src="https://oscybershop.herokuapp.com/main/content/cheatsheets/wmi.pdf" width="100%"></iframe>
-            <a href="https://oscybershop.herokuapp.com/main/content/cheatsheets/wmi.pdf" target="_blank"
-                class="w3-button w3-theme">Download&nbsp;<i class="fa fa-external-link"></i></a>
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="cyberdefenders">
+                <h6>CyberDefenders</h6><br>
+                <a href="https://bluedemy.cyberdefenders.org/" target="_blank">
+                    <i class="fa fa-university w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
         </div>
         <div class="w3-col l2">
-            <iframe src="https://oscybershop.herokuapp.com/main/content/cheatsheets/wmic.pdf" width="100%"></iframe>
-            <a href="https://oscybershop.herokuapp.com/main/content/cheatsheets/wmic.pdf" target="_blank"
-                class="w3-button w3-theme">Download&nbsp;<i class="fa fa-external-link"></i></a>
-        </div>
-        <div class="w3-col l2">
-            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="wql_sql_for_wmi)">
-                <h6>WQL (SQL for WMI)</h6><br>
-                <a href="https://docs.microsoft.com/en-us/windows/win32/wmisdk/wql-sql-for-wmi" target="_blank">
-                    <i class="fa fa-file-code-o w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="security_blue_team">
+                <h6>Security Blue Team</h6><br>
+                <a href="https://securityblue.team/" target="_blank">
+                    <i class="fa fa-university w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
                 </a>
             </div>
         </div>
     </div>
-    <br><br>
-    <h5>&nbsp;&nbsp;&nbsp;&nbsp;Python</h5>
     <div class="w3-row-padding w3-center w3-margin-top">
         <div class="w3-col l2">
-            <iframe src="https://oscybershop.herokuapp.com/main/content/cheatsheets/python-v3.pdf"
-                width="100%"></iframe>
-            <a href="https://oscybershop.herokuapp.com/main/content/cheatsheets/python-v3.pdf" target="_blank"
-                class="w3-button w3-theme">Download&nbsp;<i class="fa fa-external-link"></i></a>
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="soc_core_skills">
+                <h6>SOC Core Skills</h6><br>
+                <a href="https://wildwesthackinfest.com/antisyphon//soc-core-skills-instructions/" target="_blank">
+                    <i class="fas fa-chalkboard-teacher w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
         </div>
         <div class="w3-col l2">
-            <iframe src="https://oscybershop.herokuapp.com/main/content/cheatsheets/python-v2.pdf"
-                width="100%"></iframe>
-            <a href="https://oscybershop.herokuapp.com/main/content/cheatsheets/python-v2.pdf" target="_blank"
-                class="w3-button w3-theme">Download&nbsp;<i class="fa fa-external-link"></i></a>
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="acm_threat_hunting">
+                <h6>ACM Threat Hunting</h6><br>
+                <a href="https://www.activecountermeasures.com/cyber-threat-hunting-training-course/" target="_blank">
+                    <i class="fas fa-chalkboard-teacher w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
         </div>
-    </div>
-    <div class="w3-container">
-        <hr>
-        <div class="w3-center">
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="dfir_beginner_to_expert">
+                <h6>DFIR Beginner to Expert</h6><br>
+                <a href="https://classroom.google.com/u/0/w/NDQ0MTUzMjU5NzE0/t/all" target="_blank">
+                    <i class="fas fa-chalkboard-teacher w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
         </div>
-    </div>
-    <br><br>
-    <h5>&nbsp;&nbsp;&nbsp;&nbsp;Structures & Schemas</h5>
-    <div class="w3-row-padding w3-center w3-margin-top">
-        <div class="w3-col l2" id="hex_regex">
-            <h6>HEX & Regex</h6>
-            <iframe src="https://oscybershop.herokuapp.com/main/content/cheatsheets/hex_regex.pdf"
-                width="100%"></iframe>
-            <a href="https://oscybershop.herokuapp.com/main/content/cheatsheets/hex_regex.pdf" target="_blank"
-                class="w3-button w3-theme">Download&nbsp;<i class="fa fa-external-link"></i></a>
-        </div>
-        <div class="w3-col l2" id="regex">
-            <h6>RegEx</h6>
-            <iframe src="https://oscybershop.herokuapp.com/main/content/cheatsheets/regex.pdf" width="100%"></iframe>
-            <a href="https://oscybershop.herokuapp.com/main/content/cheatsheets/regex.pdf" target="_blank"
-                class="w3-button w3-theme">Download&nbsp;<i class="fa fa-external-link"></i></a>
-        </div>
-        <div class="w3-col l2" id="Sort/Uniq">
-            <h6>sort & uniq</h6>
-            <iframe src="https://oscybershop.herokuapp.com/main/content/cheatsheets/sort_uniq.jpeg"
-                width="100%"></iframe>
-            <a href="https://oscybershop.herokuapp.com/main/content/cheatsheets/sort_uniq.jpeg" target="_blank"
-                class="w3-button w3-theme">Download&nbsp;<i class="fa fa-external-link"></i></a>
-        </div>
-        <div class="w3-col l2" id="json_jq">
-            <h6>JSON & jq</h6>
-            <iframe src="https://oscybershop.herokuapp.com/main/content/cheatsheets/json_jq.pdf" width="100%"></iframe>
-            <a href="https://oscybershop.herokuapp.com/main/content/cheatsheets/json_jq.pdf" target="_blank"
-                class="w3-button w3-theme">Download&nbsp;<i class="fa fa-external-link"></i></a>
-        </div>
-    </div>
-    <div class="w3-container">
-        <hr>
-        <div class="w3-center">
-        </div>
-    </div>
-    <br><br>
-    <h5>&nbsp;&nbsp;&nbsp;&nbsp;Query Languages</h5>
-    <div class="w3-row-padding w3-center w3-margin-top">
-        <div class="w3-col l2" id="log_parsing">
-            <h6>Log Parsing</h6>
-            <iframe src="https://oscybershop.herokuapp.com/main/content/cheatsheets/log_parsing.jpeg"
-                width="100%"></iframe>
-            <a href="https://oscybershop.herokuapp.com/main/content/cheatsheets/log_parsing.jpeg" target="_blank"
-                class="w3-button w3-theme">Download&nbsp;<i class="fa fa-external-link"></i></a>
-        </div>
-        <div class="w3-col l2" id="sqlite">
-            <h6>SQLite</h6>
-            <iframe src="https://oscybershop.herokuapp.com/main/content/cheatsheets/sqlite.pdf" width="100%"></iframe>
-            <a href="https://oscybershop.herokuapp.com/main/content/cheatsheets/sqlite.pdf" target="_blank"
-                class="w3-button w3-theme">Download&nbsp;<i class="fa fa-external-link"></i></a>
-        </div>
-        <div class="w3-col l2" id="sql">
-            <h6>SQL</h6>
-            <iframe src="https://oscybershop.herokuapp.com/main/content/cheatsheets/sql.pdf" width="100%"></iframe>
-            <a href="https://oscybershop.herokuapp.com/main/content/cheatsheets/sql.pdf" target="_blank"
-                class="w3-button w3-theme">Download&nbsp;<i class="fa fa-external-link"></i></a>
-        </div>
-        <div class="w3-col l2" id="kql">
-            <h6>KQL</h6>
-            <iframe src="https://oscybershop.herokuapp.com/main/content/cheatsheets/kql_light.pdf"
-                width="100%"></iframe>
-            <a href="https://oscybershop.herokuapp.com/main/content/cheatsheets/kql_light.pdf" target="_blank"
-                class="w3-button w3-theme">Download&nbsp;<i class="fa fa-external-link"></i></a>
-        </div>
-        <div class="w3-col l2" id="spl_splunk)">
-            <h6>SPL (Splunk)</h6>
-            <iframe src="https://oscybershop.herokuapp.com/main/content/cheatsheets/splunk.pdf" width="100%"></iframe>
-            <a href="https://oscybershop.herokuapp.com/main/content/cheatsheets/splunk.pdf" target="_blank"
-                class="w3-button w3-theme">Download&nbsp;<i class="fa fa-external-link"></i></a>
-        </div>
-        <div class="w3-col l2" id="vt_file_search_modifiers">
-            <h6>VT File Search Modifiers</h6>
-            <div class="w3-card w3-container w3-blue" style="min-height:150px">
-                <a href="https://support.virustotal.com/hc/en-us/articles/360001385897-File-search-modifiers"
-                    target="_blank">
-                    <br><br>
-                    <i class="fa fa-file-code-o w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="sam's_class">
+                <h6>Sam's Class</h6><br>
+                <a href="https://samsclass.info" target="_blank">
+                    <i class="fas fa-chalkboard-teacher w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
                 </a>
             </div>
         </div>
     </div>
-    <div class="w3-container">
-        <hr>
-        <div class="w3-center">
-        </div>
-    </div>
-    <br><br>
-    <h5>&nbsp;&nbsp;&nbsp;&nbsp;Incident Preperation</h5>
-    <div class="w3-row-padding w3-center w3-margin-top">
-        <div class="w3-col l2" id="ir_lifecycle">
-            <h6>IR Lifecycle</h6>
-            <iframe src="https://oscybershop.herokuapp.com/main/content/cheatsheets/irlc.pdf" width="100%"></iframe>
-            <a href="https://oscybershop.herokuapp.com/main/content/cheatsheets/irlc.pdf" target="_blank"
-                class="w3-button w3-theme">Download&nbsp;<i class="fa fa-external-link"></i></a>
-        </div>
-        <div class="w3-col l2" id="critical_log_review">
-            <h6>Critical Log Review</h6>
-            <iframe src="https://oscybershop.herokuapp.com/main/content/cheatsheets/critical_log_review.pdf"
-                width="100%"></iframe>
-            <a href="https://oscybershop.herokuapp.com/main/content/cheatsheets/critical_log_review.pdf" target="_blank"
-                class="w3-button w3-theme">Download&nbsp;<i class="fa fa-external-link"></i></a>
-        </div>
-        <div class="w3-col l2" id="ddos_incident_response">
-            <h6>DDoS Incident Response</h6>
-            <iframe src="https://oscybershop.herokuapp.com/main/content/cheatsheets/ddos_ir.pdf" width="100%"></iframe>
-            <a href="https://oscybershop.herokuapp.com/main/content/cheatsheets/ddos_ir.pdf" target="_blank"
-                class="w3-button w3-theme">Download&nbsp;<i class="fa fa-external-link"></i></a>
-        </div>
-        <div class="w3-col l2" id="security_architecture">
-            <h6>Security Architecture</h6>
-            <iframe src="https://oscybershop.herokuapp.com/main/content/cheatsheets/security_architecture.pdf"
-                width="100%"></iframe>
-            <a href="https://oscybershop.herokuapp.com/main/content/cheatsheets/security_architecture.pdf"
-                target="_blank" class="w3-button w3-theme">Download&nbsp;<i class="fa fa-external-link"></i></a>
-        </div>
-        <div class="w3-col l2" id="writing_tips">
-            <h6>Writing Tips</h6>
-            <iframe src="https://oscybershop.herokuapp.com/main/content/cheatsheets/writing_tips_it-professionals.pdf"
-                width="100%"></iframe>
-            <a href="https://oscybershop.herokuapp.com/main/content/cheatsheets/writing_tips_it-professionals.pdf"
-                target="_blank" class="w3-button w3-theme">Download&nbsp;<i class="fa fa-external-link"></i></a>
-        </div>
-    </div>
-    <div class="w3-container">
-        <hr>
-        <div class="w3-center">
-        </div>
-    </div>
-    <br><br>
-    <h5>&nbsp;&nbsp;&nbsp;&nbsp;Intrusion Detection</h5>
-    <div class="w3-row-padding w3-center w3-margin-top">
-        <div class="w3-col l2" id="windows">
-            <h6>Windows</h6>
-            <iframe src="https://oscybershop.herokuapp.com/main/content/cheatsheets/intrusion_discovery_windows.pdf"
-                width="100%"></iframe>
-            <a href="https://oscybershop.herokuapp.com/main/content/cheatsheets/intrusion_discovery_windows.pdf"
-                target="_blank" class="w3-button w3-theme">Download&nbsp;<i class="fa fa-external-link"></i></a>
-        </div>
-        <div class="w3-col l2" id="windows_2k">
-            <h6>Windows 2K</h6>
-            <iframe src="https://oscybershop.herokuapp.com/main/content/cheatsheets/intrusion_detection_win2k.pdf"
-                width="100%"></iframe>
-            <a href="https://oscybershop.herokuapp.com/main/content/cheatsheets/intrusion_detection_win2k.pdf"
-                target="_blank" class="w3-button w3-theme">Download&nbsp;<i class="fa fa-external-link"></i></a>
-        </div>
-        <div class="w3-col l2" id="linux">
-            <h6>Linux</h6>
-            <iframe src="https://oscybershop.herokuapp.com/main/content/cheatsheets/intrusion_discovery_linux.pdf"
-                width="100%"></iframe>
-            <a href="https://oscybershop.herokuapp.com/main/content/cheatsheets/intrusion_discovery_linux.pdf"
-                target="_blank" class="w3-button w3-theme">Download&nbsp;<i class="fa fa-external-link"></i></a>
-        </div>
-        <div class="w3-col l2" id="evidence_collection">
-            <h6>Evidence Collection</h6>
-            <iframe src="https://oscybershop.herokuapp.com/main/content/cheatsheets/evidence_collection.pdf"
-                width="100%"></iframe>
-            <a href="https://oscybershop.herokuapp.com/main/content/cheatsheets/evidence_collection.pdf" target="_blank"
-                class="w3-button w3-theme">Download&nbsp;<i class="fa fa-external-link"></i></a>
-        </div>
-    </div>
-    <div class="w3-container">
-        <hr>
-        <div class="w3-center">
-        </div>
-    </div>
-    <br><br>
-    <h5>&nbsp;&nbsp;&nbsp;&nbsp;DFIR & Threat Hunting</h5>
-    <div class="w3-row-padding w3-center w3-margin-top">
-        <div class="w3-col l2" id="windows_processes">
-            <h6>Windows Processes</h6>
-            <iframe src="https://oscybershop.herokuapp.com/main/content/cheatsheets/default_windows_processes.pdf"
-                width="100%"></iframe>
-            <a href="https://oscybershop.herokuapp.com/main/content/cheatsheets/default_windows_processes.pdf"
-                target="_blank" class="w3-button w3-theme">Download&nbsp;<i class="fa fa-external-link"></i></a>
-        </div>
-        <div class="w3-col l2" id="event_log_analysis">
-            <h6>Event Log Analysis</h6>
-            <iframe src="https://oscybershop.herokuapp.com/main/content/cheatsheets/event_log_analysis.pdf"
-                width="100%"></iframe>
-            <a href="https://oscybershop.herokuapp.com/main/content/cheatsheets/event_log_analysis.pdf" target="_blank"
-                class="w3-button w3-theme">Download&nbsp;<i class="fa fa-external-link"></i></a>
-        </div>
-        <div class="w3-col l2" id="awesome_event_ids">
-            <h6>Awesome Event IDs</h6>
-            <div class="w3-card w3-container w3-blue" style="min-height:150px">
-                <a href="https://github.com/stuhli/awesome-event-ids" target="_blank">
-                    <br><br>
-                    <i class="fa fa-file-code-o w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+    <br>
+    <h5>&nbsp;&nbsp;&nbsp;&nbsp;CTFs & Ranges</h5>
+    <div class="w3-row-padding w3-center w3-margin-top" id="bluectfs">
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="awesome_ctf">
+                <h6>awesome-ctf</h6><br>
+                <a href="https://c4pr1c3.github.io/awesome-ctf/" target="_blank">
+                    <i class="fa fa-flag w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
                 </a>
             </div>
         </div>
-        <div class="w3-col l2" id="macos_forensics">
-            <h6>macOS Forensics</h6>
-            <iframe src="https://oscybershop.herokuapp.com/main/content/cheatsheets/macos_forensics.pdf"
-                width="100%"></iframe>
-            <a href="https://oscybershop.herokuapp.com/main/content/cheatsheets/macos_forensics.pdf" target="_blank"
-                class="w3-button w3-theme">Download&nbsp;<i class="fa fa-external-link"></i></a>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="flare_on">
+                <h6>Flare-On</h6><br>
+                <a href="http://www.flare-on.com/" target="_blank">
+                    <i class="fa fa-gamepad w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
         </div>
-        <div class="w3-col l2" id="sift">
-            <h6>SIFT</h6>
-            <iframe src="https://oscybershop.herokuapp.com/main/content/cheatsheets/sift_workstation.pdf"
-                width="100%"></iframe>
-            <a href="https://oscybershop.herokuapp.com/main/content/cheatsheets/sift_workstation.pdf" target="_blank"
-                class="w3-button w3-theme">Download&nbsp;<i class="fa fa-external-link"></i></a>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="malwaretrafficanalysis">
+                <h6>MalwareTrafficAnalysis</h6><br>
+                <a href="https://malware-traffic-analysis.net/" target="_blank">
+                    <i class="fa fa-gamepad w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
         </div>
-        <div class="w3-col l2" id="remnux">
-            <h6>REMnux</h6>
-            <iframe src="https://oscybershop.herokuapp.com/main/content/cheatsheets/remnux.pdf" width="100%"></iframe>
-            <a href="https://oscybershop.herokuapp.com/main/content/cheatsheets/remnux.pdf" target="_blank"
-                class="w3-button w3-theme">Download&nbsp;<i class="fa fa-external-link"></i></a>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="blue_team_labs_online">
+                <h6>Blue Team Labs Online</h6><br>
+                <a href="./hhttps://blueteamlabs.online/" target="_blank">
+                    <i class="fa fa-gamepad w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
         </div>
-    </div>
-    <div class="w3-row-padding w3-center w3-margin-top">
-        <div class="w3-col l2" id="eric_zimmerman_tools">
-            <h6>Eric Zimmerman Tools</h6>
-            <iframe src="https://oscybershop.herokuapp.com/main/content/cheatsheets/eric-zimmerman_tools.pdf"
-                width="100%"></iframe>
-            <a href="https://oscybershop.herokuapp.com/main/content/cheatsheets/eric-zimmerman_tools.pdf"
-                target="_blank" class="w3-button w3-theme">Download&nbsp;<i class="fa fa-external-link"></i></a>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="antisyphon_cyber_range">
+                <h6>Antisyphon Cyber Range</h6><br>
+                <a href="https://www.activecountermeasures.com/cyber-range/" target="_blank">
+                    <i class="fa fa-cloud-upload w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
         </div>
-        <div class="w3-col l2" id="tzworks">
-            <h6>TZWorks</h6>
-            <iframe src="https://oscybershop.herokuapp.com/main/content/cheatsheets/tzworks.pdf" width="100%"></iframe>
-            <a href="https://oscybershop.herokuapp.com/main/content/cheatsheets/tzworks.pdf" target="_blank"
-                class="w3-button w3-theme">Download&nbsp;<i class="fa fa-external-link"></i></a>
-        </div>
-        <div class="w3-col l2" id="oledump">
-            <h6>oledump</h6>
-            <iframe src="https://oscybershop.herokuapp.com/main/content/cheatsheets/oledump.pdf" width="100%"></iframe>
-            <a href="https://oscybershop.herokuapp.com/main/content/cheatsheets/oledump.pdf" target="_blank"
-                class="w3-button w3-theme">Download&nbsp;<i class="fa fa-external-link"></i></a>
-        </div>
-        <div class="w3-col l2" id="memory_forensics">
-            <h6>Memory Forensics</h6>
-            <iframe src="https://oscybershop.herokuapp.com/main/content/cheatsheets/memory_forensics.pdf"
-                width="100%"></iframe>
-            <a href="https://oscybershop.herokuapp.com/main/content/cheatsheets/memory_forensics.pdf" target="_blank"
-                class="w3-button w3-theme">Download&nbsp;<i class="fa fa-external-link"></i></a>
-        </div>
-        <div class="w3-col l2" id="plaso">
-            <h6>plaso</h6>
-            <iframe src="https://oscybershop.herokuapp.com/main/content/cheatsheets/plaso.pdf" width="100%"></iframe>
-            <a href="https://oscybershop.herokuapp.com/main/content/cheatsheets/plaso.pdf" target="_blank"
-                class="w3-button w3-theme">Download&nbsp;<i class="fa fa-external-link"></i></a>
-        </div>
-        <div class="w3-col l2" id="sysmon">
-            <h6>Sysmon</h6>
-            <iframe src="https://oscybershop.herokuapp.com/main/content/cheatsheets/sysmon.pdf" width="100%"></iframe>
-            <a href="https://oscybershop.herokuapp.com/main/content/cheatsheets/sysmon.pdf" target="_blank"
-                class="w3-button w3-theme">Download&nbsp;<i class="fa fa-external-link"></i></a>
-        </div>
-    </div>
-    <br><br>
-    <h5>&nbsp;&nbsp;&nbsp;&nbsp;Network Forensics</h5>
-    <div class="w3-row-padding w3-center w3-margin-top">
-        <div class="w3-col l2" id="lateral_movement_analysis">
-            <h6>Lateral Movement Analysis</h6>
-            <iframe src="https://oscybershop.herokuapp.com/main/content/cheatsheets/lateral_movement_analysis.pdf"
-                width="100%"></iframe>
-            <a href="https://oscybershop.herokuapp.com/main/content/cheatsheets/lateral_movement_analysis.pdf"
-                target="_blank" class="w3-button w3-theme">Download&nbsp;<i class="fa fa-external-link"></i></a>
-        </div>
-        <div class="w3-col l2" id="common_ports">
-            <h6>Common Ports</h6>
-            <iframe src="https://oscybershop.herokuapp.com/main/content/cheatsheets/packet_life.pdf"
-                width="100%"></iframe>
-            <a href="https://oscybershop.herokuapp.com/main/content/cheatsheets/packet_life.pdf" target="_blank"
-                class="w3-button w3-theme">Download&nbsp;<i class="fa fa-external-link"></i></a>
-        </div>
-        <div class="w3-col l2" id="web_proxy_event_analysis">
-            <h6>Web Proxy Event Analysis</h6>
-            <iframe src="https://oscybershop.herokuapp.com/main/content/cheatsheets/web_proxy_event_analysis.pdf"
-                width="100%"></iframe>
-            <a href="https://oscybershop.herokuapp.com/main/content/cheatsheets/web_proxy_event_analysis.pdf"
-                target="_blank" class="w3-button w3-theme">Download&nbsp;<i class="fa fa-external-link"></i></a>
-        </div>
-        <div class="w3-col l2" id="tcp_ip_tcpdump">
-            <h6>TCP/IP & tcpdump</h6>
-            <iframe src="https://oscybershop.herokuapp.com/main/content/cheatsheets/tcpip_tcpdump.pdf"
-                width="100%"></iframe>
-            <a href="https://oscybershop.herokuapp.com/main/content/cheatsheets/tcpip_tcpdump.pdf" target="_blank"
-                class="w3-button w3-theme">Download&nbsp;<i class="fa fa-external-link"></i></a>
-        </div>
-        <div class="w3-col l2" id="smb_access_from_linux">
-            <h6>SMB Access from Linux</h6>
-            <iframe src="https://oscybershop.herokuapp.com/main/content/cheatsheets/smb_access_linux.pdf"
-                width="100%"></iframe>
-            <a href="https://oscybershop.herokuapp.com/main/content/cheatsheets/smb_access_linux.pdf" target="_blank"
-                class="w3-button w3-theme">Download&nbsp;<i class="fa fa-external-link"></i></a>
-        </div>
-    </div>
-    <div class="w3-container">
-        <hr>
-        <div class="w3-center">
-        </div>
-    </div>
-    <br><br>
-    <h5>&nbsp;&nbsp;&nbsp;&nbsp;Malware Analysis & Reverse Engineering</h5>
-    <div class="w3-row-padding w3-center w3-margin-top">
-        <div class="w3-col l2" id="malware_analysis">
-            <h6>Malware Analysis</h6>
-            <iframe src="https://oscybershop.herokuapp.com/main/content/cheatsheets/malware_analysis.pdf"
-                width="100%"></iframe>
-            <a href="https://oscybershop.herokuapp.com/main/content/cheatsheets/malware_analysis.pdf" target="_blank"
-                class="w3-button w3-theme">Download&nbsp;<i class="fa fa-external-link"></i></a>
-        </div>
-        <div class="w3-col l2" id="malicious_documents">
-            <h6>Malicious Documents</h6>
-            <iframe src="https://oscybershop.herokuapp.com/main/content/cheatsheets/malicious_doc_analysis.pdf"
-                width="100%"></iframe>
-            <a href="https://oscybershop.herokuapp.com/main/content/cheatsheets/malicious_doc_analysis.pdf"
-                target="_blank" class="w3-button w3-theme">Download&nbsp;<i class="fa fa-external-link"></i></a>
-        </div>
-        <div class="w3-col l2" id="reverse_engineering">
-            <h6>Reverse Engineering</h6>
-            <iframe src="https://oscybershop.herokuapp.com/main/content/cheatsheets/malicious-code_rem.pdf"
-                width="100%"></iframe>
-            <a href="https://oscybershop.herokuapp.com/main/content/cheatsheets/malicious-code_rem.pdf" target="_blank"
-                class="w3-button w3-theme">Download&nbsp;<i class="fa fa-external-link"></i></a>
-        </div>
-        <div class="w3-col l2" id="reverse_engineering">
-            <h6>Reverse Engineering</h6>
-            <iframe src="https://oscybershop.herokuapp.com/main/content/cheatsheets/rem.png" width="100%"></iframe>
-            <a href="https://oscybershop.herokuapp.com/main/content/cheatsheets/rem.png" target="_blank"
-                class="w3-button w3-theme">Download&nbsp;<i class="fa fa-external-link"></i></a>
-        </div>
-        <div class="w3-col l2" id="anti_virus_event_analysis">
-            <h6>Anti-virus Event Analysis</h6>
-            <iframe src="https://oscybershop.herokuapp.com/main/content/cheatsheets/av_events.jpeg"
-                width="100%"></iframe>
-            <a href="https://oscybershop.herokuapp.com/main/content/cheatsheets/av_events.jpeg" target="_blank"
-                class="w3-button w3-theme">Download&nbsp;<i class="fa fa-external-link"></i></a>
-        </div>
-        <div class="w3-col l2" id="ida_pro">
-            <h6>IDA Pro</h6>
-            <iframe src="https://oscybershop.herokuapp.com/main/content/cheatsheets/ida-pro.pdf" width="100%"></iframe>
-            <a href="https://oscybershop.herokuapp.com/main/content/cheatsheets/ida-pro.pdf" target="_blank"
-                class="w3-button w3-theme">Download&nbsp;<i class="fa fa-external-link"></i></a>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="soc_prime">
+                <h6>SOC Prime</h6><br>
+                <a href="https://tdm.socprime.com/login/" target="_blank">
+                    <i class="fa fa-cloud-upload w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
         </div>
     </div>
     <div class="w3-container">
@@ -2526,15 +2580,7 @@
     <br><br>
     <h4>&nbsp;&nbsp;&nbsp;&nbsp;Frameworks & Projects</h4>
     <h5>&nbsp;&nbsp;&nbsp;&nbsp;Frameworks</h5>
-    <div class="w3-row-padding w3-center w3-margin-top" id="proj">
-        <div class="w3-col l2">
-            <div class="w3-card w3-container" style="min-height:150px" id="bookstack">
-                <h6>BookStack</h6><br>
-                <a href="https://www.bookstackapp.com/" target="_blank">
-                    <i class="fa fa-book w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
-                </a>
-            </div>
-        </div>
+    <div class="w3-row-padding w3-center w3-margin-top" id="fw">
         <div class="w3-col l2">
             <div class="w3-card w3-container w3-blue" style="min-height:150px" id="attack_framework">
                 <h6>ATT&CK Framework</h6><br>
@@ -2576,13 +2622,58 @@
             </div>
         </div>
     </div>
-    <div class="w3-container">
-        <hr>
-        <div class="w3-center">
+    <br>
+    <h5>&nbsp;&nbsp;&nbsp;&nbsp;Projects & Datasets</h5>
+    <div class="w3-row-padding w3-center w3-margin-top" id="pd">
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="no_more_ransom">
+                <h6>No More Ransom</h6><br>
+                <a href="https://www.nomoreransom.org/en/index.html" target="_blank">
+                    <i class="fa fa-bookmark w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="lots">
+                <h6>LOTS</h6><br>
+                <a href="https://lots-project.com/" target="_blank">
+                    <i class="fa fa-bookmark w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="owasp">
+                <h6>OWASP</h6><br>
+                <a href="https://owasp.org/#" target="_blank">
+                    <i class="fa fa-bookmark w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="what2log">
+                <h6>What2Log</h6><br>
+                <a href="https://what2log.com/" target="_blank">
+                    <i class="fa fa-bookmark w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="cfreds">
+                <h6>CFReDS</h6><br>
+                <a href="https://cfreds.nist.gov/" target="_blank">
+                    <i class="fa fa-database w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="ios_macos_images">
+                <h6>iOS & macOS Images</h6><br>
+                <a href="https://thebinaryhick.blog/2021/02/20/ios-14-macos-big-sur-lots-of-images/" target="_blank">
+                    <i class="fa fa-database w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
         </div>
     </div>
-    <br><br>
-    <h4>&nbsp;&nbsp;&nbsp;&nbsp;Projects & Datasets</h4>
     <div class="w3-row-padding w3-center w3-margin-top">
         <div class="w3-col l2">
             <div class="w3-card w3-container w3-blue" style="min-height:150px" id="attack_navigator">
@@ -2609,15 +2700,6 @@
             </div>
         </div>
         <div class="w3-col l2">
-            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="dfirmindmaps">
-                <h6>DFIRMindMaps</h6><br>
-                <a href="https://github.com/AndrewRathbun/DFIRMindMaps/tree/main/OSArtifacts/Windows/Cobalt%20Strike%20Lateral%20Movement%20Artifact%20-%20Based%20on%20CONTI%20Leak"
-                    target="_blank">
-                    <i class="fa fa-flask w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
-                </a>
-            </div>
-        </div>
-        <div class="w3-col l2">
             <div class="w3-card w3-container w3-blue" style="min-height:150px" id="unit42_playbook_viewer">
                 <h6>UNIT42 Playbook Viewer</h6><br>
                 <a href="https://pan-unit42.github.io/playbook_viewer/?pb=darkhydrus" target="_blank">
@@ -2633,8 +2715,6 @@
                 </a>
             </div>
         </div>
-    </div>
-    <div class="w3-row-padding w3-center w3-margin-top">
         <div class="w3-col l2">
             <div class="w3-card w3-container w3-blue" style="min-height:150px" id="malapi">
                 <h6>MalAPI</h6><br>
@@ -2643,19 +2723,14 @@
                 </a>
             </div>
         </div>
+    </div>
+    <div class="w3-row-padding w3-center w3-margin-top">
         <div class="w3-col l2">
-            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="cfreds">
-                <h6>CFReDS</h6><br>
-                <a href="https://cfreds.nist.gov/" target="_blank">
-                    <i class="fa fa-database w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
-                </a>
-            </div>
-        </div>
-        <div class="w3-col l2">
-            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="ios_macos_images">
-                <h6>iOS & macOS Images</h6><br>
-                <a href="https://thebinaryhick.blog/2021/02/20/ios-14-macos-big-sur-lots-of-images/" target="_blank">
-                    <i class="fa fa-database w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="dfirmindmaps">
+                <h6>DFIRMindMaps</h6><br>
+                <a href="https://github.com/AndrewRathbun/DFIRMindMaps/tree/main/OSArtifacts/Windows/Cobalt%20Strike%20Lateral%20Movement%20Artifact%20-%20Based%20on%20CONTI%20Leak"
+                    target="_blank">
+                    <i class="fab fa-github w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
                 </a>
             </div>
         </div>
@@ -2683,32 +2758,6 @@
                 </a>
             </div>
         </div>
-    </div>
-    <div class="w3-row-padding w3-center w3-margin-top">
-        <div class="w3-col l2">
-            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="lots">
-                <h6>LOTS</h6><br>
-                <a href="https://lots-project.com/" target="_blank">
-                    <i class="fa fa-bookmark w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
-                </a>
-            </div>
-        </div>
-        <div class="w3-col l2">
-            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="owasp">
-                <h6>OWASP</h6><br>
-                <a href="https://owasp.org/#" target="_blank">
-                    <i class="fa fa-bookmark w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
-                </a>
-            </div>
-        </div>
-        <div class="w3-col l2">
-            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="what2log">
-                <h6>What2Log</h6><br>
-                <a href="https://what2log.com/" target="_blank">
-                    <i class="fa fa-bookmark w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
-                </a>
-            </div>
-        </div>
         <div class="w3-col l2">
             <div class="w3-card w3-container w3-blue" style="min-height:150px" id="playbooks">
                 <h6>Playbooks</h6><br>
@@ -2725,6 +2774,8 @@
                 </a>
             </div>
         </div>
+    </div>
+    <div class="w3-row-padding w3-center w3-margin-top">
         <div class="w3-col l2">
             <div class="w3-card w3-container w3-blue" style="min-height:150px" id="cobaltstrike_defence">
                 <h6>CobaltStrike Defence</h6><br>
@@ -2733,12 +2784,18 @@
                 </a>
             </div>
         </div>
-    </div>
-    <div class="w3-row-padding w3-center w3-margin-top">
         <div class="w3-col l2">
             <div class="w3-card w3-container w3-blue" style="min-height:150px" id="cyberbattlesim">
                 <h6>CyberBattleSim</h6><br>
                 <a href="https://github.com/microsoft/CyberBattleSim" target="_blank">
+                    <i class="fab fa-github w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="pcap-attack">
+                <h6>PCAP-ATTACK</h6><br>
+                <a href="https://github.com/sbousseaden/PCAP-ATTACK" target="_blank">
                     <i class="fab fa-github w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
                 </a>
             </div>
@@ -2750,54 +2807,107 @@
         </div>
     </div>
     <br><br>
-    <h5>&nbsp;&nbsp;&nbsp;&nbsp;Coding Environments</h5>
-    <div class="w3-row-padding w3-center w3-margin-top" id="code">
+    <h4>&nbsp;&nbsp;&nbsp;&nbsp;Virtual Machines</h4>
+    <div class="w3-row-padding w3-center w3-margin-top" id="blue">
         <div class="w3-col l2">
-            <div class="w3-card w3-container" style="min-height:150px" id="vscode">
-                <h6>VSCode</h6><br>
-                <a href="https://vscode.dev/" target="_blank">
-                    <i class="fa fa-terminal w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="sift">
+                <h6>SIFT</h6><br>
+                <a href="https://www.sans.org/tooling/sift-workstation/" target="_blank">
+                    <i class="fa fa-desktop w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
                 </a>
             </div>
         </div>
         <div class="w3-col l2">
-            <div class="w3-card w3-container" style="min-height:150px" id="colab">
-                <h6>COLAB</h6><br>
-                <a href="https://colab.research.google.com/notebooks/intro.ipynb#scrollTo=5fCEDCU_qrC0" target="_blank">
-                    <i class="fa fa-flask w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="remnux">
+                <h6>REMnux</h6><br>
+                <a href="https://www.sans.org/tooling/remnux/" target="_blank">
+                    <i class="fa fa-desktop w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
                 </a>
             </div>
         </div>
         <div class="w3-col l2">
-            <div class="w3-card w3-container" style="min-height:150px" id="coderpad">
-                <h6>CoderPad</h6><br>
-                <a href="https://app.coderpad.io/login" target="_blank">
-                    <i class="fa fa-flask w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="csi_linux">
+                <h6>CSI Linux</h6><br>
+                <a href="https://csilinux.com/" target="_blank">
+                    <i class="fa fa-desktop w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
                 </a>
             </div>
         </div>
         <div class="w3-col l2">
-            <div class="w3-card w3-container" style="min-height:150px" id="flare_emu">
-                <h6>FLARE EMU</h6><br>
-                <a href="https://github.com/mandiant/flare-emu" target="_blank">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="tsurugi">
+                <h6>Tsurugi</h6><br>
+                <a href="https://tsurugi-linux.org/" target="_blank">
+                    <i class="fa fa-desktop w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="paladin">
+                <h6>Paladin</h6><br>
+                <a href="https://sumuri.com/software/paladin/" target="_blank">
+                    <i class="fa fa-desktop w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="caine">
+                <h6>CAINE</h6><br>
+                <a href="https://www.caine-live.net/" target="_blank">
+                    <i class="fa fa-desktop w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="w3-row-padding w3-center w3-margin-top">
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="adhd">
+                <h6>ADHD</h6><br>
+                <a href="https://www.activecountermeasures.com/free-tools/adhd/" target="_blank">
+                    <i class="fa fa-desktop w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="sof_elk">
+                <h6>SOF-ELK</h6><br>
+                <a href="https://github.com/philhagen/sof-elk" target="_blank">
                     <i class="fab fa-github w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
                 </a>
             </div>
         </div>
         <div class="w3-col l2">
-            <div class="w3-card w3-container" style="min-height:150px" id="node_red">
-                <h6>Node-RED</h6><br>
-                <a href="https://github.com/node-red/node-red" target="_blank">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="security_onion">
+                <h6>Security Onion</h6><br>
+                <a href="https://github.com/Security-Onion-Solutions/securityonion/blob/master/VERIFY_ISO.md"
+                    target="_blank">
+                    <i class="fab fa-github w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="redhunt_os">
+                <h6>RedHunt OS</h6><br>
+                <a href="https://github.com/redhuntlabs/RedHunt-OS" target="_blank">
+                    <i class="fab fa-github w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="flare">
+                <h6>FLARE</h6><br>
+                <a href="https://github.com/mandiant/flare-vm" target="_blank">
                     <i class="fab fa-github w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
                 </a>
             </div>
         </div>
     </div>
+    <br><br>
     <div class="w3-container">
         <hr>
         <div class="w3-center">
         </div>
     </div>
+    <br><br>
     <div style="color:maroon;font-size:12px;">
         <p>&nbsp;&nbsp;With great power, comes great responsibility; this material has been collated to
             encourage learning and development, and not to be leveraged for unethical and/or illegal
@@ -2805,7 +2915,8 @@
     </div>
     <div style="color:black;font-size:12px;">
         <p>&nbsp;&nbsp;I would like to thank all of the authors, instructors, publishers, developers (and
-            others) - both individuals and teams - for the content collated on this site. I must stress that none of the
+            others) - both individuals and teams - for the content collated on this site. I must stress that
+            none of the
             content referenced/linked on this site is my own.<br>&nbsp;&nbsp;If you have any suggestions
             and/or content you feel is missing or would like
             included, please email me at oscybershop [at] gmail [dot] com</p>

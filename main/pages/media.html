@@ -9,6 +9,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
 <script src="https://kit.fontawesome.com/fb0ae32c1e.js" crossorigin="anonymous"></script>
 <script src="../scripts.js"></script>
+<script src="../search.js"></script>
 
 <body>
     <!-- Side Navigation -->
@@ -64,15 +65,9 @@
         <div class="w3-center">
         </div>
     </div>
-    <h4>&nbsp;&nbsp;&nbsp;&nbsp;Videos & Tutorials</h4>
-    <div class="w3-row-padding w3-center w3-margin-top" id="vids">
-        <div class="w3-col l2" id="build_a_home_lab">
-            <h6>Build a Home Lab</h6>
-            <iframe width="100%" src="https://youtube.com/embed/_Ih_wjHafrM" frameborder="0" allowfullscreen></iframe>
-        </div>
-    </div>
     <br><br>
-    <h4>&nbsp;&nbsp;&nbsp;&nbsp;Cyber Defence (Blue Team) Videos</h4>
+    <h4>&nbsp;&nbsp;&nbsp;&nbsp;Videos & Tutorials</h4>
+    <h5>&nbsp;&nbsp;&nbsp;&nbsp;Cyber Defence (Blue Team) Videos</h5>
     <div class="w3-row-padding w3-center w3-margin-top" id="blue">
         <div class="w3-col l2" id="put_your_soc_to_the_test">
             <h6>Put your SOC to the Test</h6>
@@ -152,6 +147,27 @@
         </div>
     </div>
     <div class="w3-row-padding w3-center w3-margin-top">
+        <div class="w3-col l2" id="atomic_red_team_hands-on">
+            <h6>Atomic Red Team:<br>Hands-On</h6>
+            <iframe width="100%" src="https://www.youtube.com/watch?v=O6w0oFcCAnI" frameborder="0"
+                allowfullscreen></iframe>
+        </div>
+        <div class="w3-col l2" id="how_to_investigate_phishing_campaigns">
+            <h6>How to Investigate<br>Phishing Campaigns</h6>
+            <iframe width="100%" src="https://www.youtube.com/watch?v=0mmsShIqMIk" frameborder="0"
+                allowfullscreen></iframe>
+        </div>
+        <div class="w3-col l2" id="investigating_malware_using_memory_forensics">
+            <h6>Investigating Malware<br>Using Memory Forensics</h6>
+            <iframe width="100%" src="https://www.youtube.com/watch?v=BMFCdAGxVN4" frameborder="0"
+                allowfullscreen></iframe>
+        </div>
+    </div>
+    <div class="w3-row-padding w3-center w3-margin-top">
+        <div class="w3-col l2" id="build_a_home_lab">
+            <h6>Build a Home Lab</h6>
+            <iframe width="100%" src="https://youtube.com/embed/_Ih_wjHafrM" frameborder="0" allowfullscreen></iframe>
+        </div>
         <div class="w3-col l2" id="open_soc">
             <h6>Open SOC</h6>
             <iframe width="100%" src="https://youtube.com/embed/t6PqjLIVgdA" frameborder="0" allowfullscreen></iframe>
@@ -167,7 +183,7 @@
         </div>
     </div>
     <br><br>
-    <h4>&nbsp;&nbsp;&nbsp;&nbsp;Offensive Cyber (Red Team) Videos</h4>
+    <h5>&nbsp;&nbsp;&nbsp;&nbsp;Offensive Cyber (Red Team)</h5>
     <div class="w3-row-padding w3-center w3-margin-top" id="red">
         <div class="w3-col l2" id="become_an_ethical_hacker_for_0">
             <h6>Become an Ethical Hacker for $0</h6>
@@ -196,7 +212,7 @@
         </div>
     </div>
     <br><br>
-    <h4>&nbsp;&nbsp;&nbsp;&nbsp;Threat Intelligence Videos</h4>
+    <h5>&nbsp;&nbsp;&nbsp;&nbsp;Threat Intelligence</h5>
     <div class="w3-row-padding w3-center w3-margin-top" id="int">
         <div class="w3-col l2" id="diving_into_the_dark_web">
             <h6>Diving into The Dark Web</h6>
@@ -259,8 +275,33 @@
                 </a>
             </div>
         </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="chris_greer">
+                <h6>Chris Greer</h6><br>
+                <a href="https://www.youtube.com/channel/UCHN1aYRP473xX6Z13H_mxMQ" target="_blank">
+                    <i class="fa fa-youtube-play w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
     </div>
     <div class="w3-row-padding w3-center w3-margin-top">
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-red" style="min-height:150px" id="offensive_security">
+                <h6>Offensive Security</h6><br>
+                <a href="https://www.youtube.com/c/OffensiveSecurityTraining?app=desktop&utm_source=linkedin&utm_medium&utm_campaign=7fb630b8-af34-4d74-8ec3-40d65f5f072d"
+                    target="_blank">
+                    <i class="fa fa-youtube-play w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-red" style="min-height:150px" id="joe_helle">
+                <h6>Joe Helle</h6><br>
+                <a href="https://www.youtube.com/channel/UC5J6JvH5F29FllbLjwmA5ZA" target="_blank">
+                    <i class="fa fa-youtube-play w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
         <div class="w3-col l2">
             <div class="w3-card w3-container w3-red" style="min-height:150px" id="hackersploit">
                 <h6>HackerSploit</h6><br>
@@ -295,6 +336,409 @@
     <h4>&nbsp;&nbsp;&nbsp;&nbsp;Webcasts & Podcasts</h4>
     <div class="w3-row-padding w3-center w3-margin-top" id="casts">
         <div class="w3-col l2">
+            <div class="w3-card w3-container" style="min-height:150px" id="2_cyber_chicks">
+                <h6>2 Cyber Chicks</h6><br>
+                <a href="https://2cyberchicks.simplecast.com" target="_blank">
+                    <i class="fas fa-microphone w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container" style="min-height:150px" id="401_access_denied">
+                <h6>401 Access Denied</h6><br>
+                <a href="https://www.cybrary.it/podcasts/401-access-denied/" target="_blank">
+                    <i class="fas fa-microphone w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container" style="min-height:150px" id="8th_layer_insights">
+                <h6>8th Layer Insights</h6><br>
+                <a href="https://thecyberwire.com/podcasts/8th-layer-insights" target="_blank">
+                    <i class="fas fa-microphone w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container" style="min-height:150px" id="absolute_appsec">
+                <h6>Absolute AppSec</h6><br>
+                <a href="https://absoluteappsec.com" target="_blank">
+                    <i class="fas fa-microphone w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container" style="min-height:150px" id="adopting_zero_trust">
+                <h6>Adopting Zero Trust</h6><br>
+                <a href="https://www.adoptingzerotrust.com" target="_blank">
+                    <i class="fas fa-microphone w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container" style="min-height:150px" id="breach">
+                <h6>Breach</h6><br>
+                <a href="https://www.carbonite.com/podcasts/breach/" target="_blank">
+                    <i class="fas fa-microphone w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="w3-row-padding w3-center w3-margin-top">
+        <div class="w3-col l2">
+            <div class="w3-card w3-container" style="min-height:150px" id="click_here">
+                <h6>Click Here</h6><br>
+                <a href="https://therecord.media/podcast/" target="_blank">
+                    <i class="fas fa-microphone w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container" style="min-height:150px" id="crypto-gram_security">
+                <h6>Crypto-Gram Security</h6><br>
+                <a href="https://crypto-gram.libsyn.com" target="_blank">
+                    <i class="fas fa-microphone w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container" style="min-height:150px" id="cyber_security_sauna">
+                <h6>Cyber Security Sauna</h6><br>
+                <a href="https://cybersecuritysauna.libsyn.com" target="_blank">
+                    <i class="fas fa-microphone w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container" style="min-height:150px" id="cyberside_chats">
+                <h6>Cyberside Chats</h6><br>
+                <a href="https://www.epiqglobal.com/en-gb/resource-center/cyberside-chats" target="_blank">
+                    <i class="fas fa-microphone w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container" style="min-height:150px" id="cyberwire_daily">
+                <h6>CyberWire Daily</h6><br>
+                <a href="https://thecyberwire.com/podcasts/daily-podcast" target="_blank">
+                    <i class="fas fa-microphone w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container" style="min-height:150px" id="cyber_work">
+                <h6>Cyber Work</h6><br>
+                <a href="https://www.infosecinstitute.com/podcast/" target="_blank">
+                    <i class="fas fa-microphone w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="w3-row-padding w3-center w3-margin-top">
+        <div class="w3-col l2">
+            <div class="w3-card w3-container" style="min-height:150px" id="cyber_security_headlines_by_the_ciso_series">
+                <h6>Cyber Security<br>Headlines</h6><br>
+                <a href="https://cisoseries.com/category/podcast/cyber-security-headlines/" target="_blank">
+                    <i class="fas fa-microphone w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container" style="min-height:150px" id="cybersecurity_today_by_itwc">
+                <h6>Cybersecurity Today<br>by ITWC</h6><br>
+                <a href="https://www.itworldcanada.com/article/cyber-security-today-september-30-2022-a-new-ransomware-gang-discovered-attacks-on-virtual-servers-and-more/505681"
+                    target="_blank">
+                    <i class="fas fa-microphone w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container" style="min-height:150px" id="humans_of_infosec">
+                <h6>Humans of<br>InfoSec</h6><br>
+                <a href="https://resource.cobalt.io/humans-of-infosec" target="_blank">
+                    <i class="fas fa-microphone w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container" style="min-height:150px" id="identity_at_the_center">
+                <h6>Identity at<br>the Center</h6><br>
+                <a href="https://www.identityatthecenter.com/listen" target="_blank">
+                    <i class="fas fa-microphone w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container" style="min-height:150px" id="open_source_security">
+                <h6>Open Source<br>Security</h6><br>
+                <a href="https://opensourcesecuritypodcast.libsyn.com" target="_blank">
+                    <i class="fas fa-microphone w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container" style="min-height:150px" id="purple_squad_security">
+                <h6>Purple Squad<br>Security</h6><br>
+                <a href="https://purplesquadsec.com" target="_blank">
+                    <i class="fas fa-microphone w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="w3-row-padding w3-center w3-margin-top">
+        <div class="w3-col l2">
+            <div class="w3-card w3-container" style="min-height:150px" id="defrag_this">
+                <h6>Defrag This</h6><br>
+                <a href="https://defragthis.libsyn.com" target="_blank">
+                    <i class="fas fa-microphone w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container" style="min-height:150px" id="h4unt3d_hacker">
+                <h6>H4unt3d Hacker</h6><br>
+                <a href="https://thehauntedhacker.com/podcasts" target="_blank">
+                    <i class="fas fa-microphone w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container" style="min-height:150px" id="life_of_a_ciso">
+                <h6>Life of a CISO</h6><br>
+                <a href="https://podcasts.apple.com/us/podcast/life-of-a-ciso-with-dr-eric-cole/id1458386656"
+                    target="_blank">
+                    <i class="fas fa-microphone w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container" style="min-height:150px" id="malicious_life">
+                <h6>Malicious Life</h6><br>
+                <a href="https://malicious.life" target="_blank">
+                    <i class="fas fa-microphone w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container" style="min-height:150px" id="naked_security">
+                <h6>Naked Security</h6><br>
+                <a href="https://nakedsecurity.sophos.com/podcast/" target="_blank">
+                    <i class="fas fa-microphone w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container" style="min-height:150px" id="hacker_valley_studio">
+                <h6>Hacker Valley Studio</h6><br>
+                <a href="https://hackervalley.com/show/hackervalley/" target="_blank">
+                    <i class="fas fa-microphone w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="w3-row-padding w3-center w3-margin-top">
+        <div class="w3-col l2">
+            <div class="w3-card w3-container" style="min-height:150px" id="hacking_humans">
+                <h6>Hacking Humans</h6><br>
+                <a href="https://thecyberwire.com/podcasts/hacking-humans" target="_blank">
+                    <i class="fas fa-microphone w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container" style="min-height:150px" id="monica_talks_cyber">
+                <h6>Monica Talks Cyber</h6><br>
+                <a href="https://monicatalkscyber.com/podcasts" target="_blank">
+                    <i class="fas fa-microphone w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container" style="min-height:150px" id="owasp">
+                <h6>OWASP</h6><br>
+                <a href="https://soundcloud.com/owasp-podcast" target="_blank">
+                    <i class="fas fa-microphone w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container" style="min-height:150px" id="privacy_advisor">
+                <h6>Privacy Advisor</h6><br>
+                <a href="https://iapp.org/news/privacy-advisor-podcast/" target="_blank">
+                    <i class="fas fa-microphone w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container" style="min-height:150px" id="privacy">
+                <h6>Privacy</h6><br>
+                <a href="https://www.inteltechniques.com/podcast.html" target="_blank">
+                    <i class="fas fa-microphone w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container" style="min-height:150px" id="risky_business">
+                <h6>Risky Business</h6><br>
+                <a href="https://risky.biz/netcasts/risky-business/" target="_blank">
+                    <i class="fas fa-microphone w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="w3-row-padding w3-center w3-margin-top">
+        <div class="w3-col l2">
+            <div class="w3-card w3-container" style="min-height:150px" id="security_in_five">
+                <h6>Security in Five</h6><br>
+                <a href="https://securityinfive.libsyn.com" target="_blank">
+                    <i class="fas fa-microphone w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container" style="min-height:150px" id="security_now">
+                <h6>Security Now</h6><br>
+                <a href="https://twit.tv/shows/security-now" target="_blank">
+                    <i class="fas fa-microphone w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container" style="min-height:150px" id="security_weekly">
+                <h6>Security Weekly</h6><br>
+                <a href="https://securityweekly.com/category-shows/podcast/" target="_blank">
+                    <i class="fas fa-microphone w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container" style="min-height:150px" id="simply_cyber">
+                <h6>Simply Cyber</h6><br>
+                <a href="https://www.simplycyber.io/podcast" target="_blank">
+                    <i class="fas fa-microphone w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container" style="min-height:150px" id="smashing_security">
+                <h6>Smashing Security</h6><br>
+                <a href="https://www.smashingsecurity.com" target="_blank">
+                    <i class="fas fa-microphone w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container" style="min-height:150px" id="the_cyberlaw">
+                <h6>The Cyberlaw</h6><br>
+                <a href="https://podcasts.apple.com/gb/podcast/the-cyberlaw-podcast/id830593115" target="_blank">
+                    <i class="fas fa-microphone w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="w3-row-padding w3-center w3-margin-top">
+        <div class="w3-col l2">
+            <div class="w3-card w3-container" style="min-height:150px" id="sans_internet_stormcenter_daily_cyber">
+                <h6>SANS Internet<br>Stormcenter Daily</h6><br>
+                <a href="https://isc.sans.edu/podcast.html" target="_blank">
+                    <i class="fas fa-microphone w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container" style="min-height:150px" id="task_force_7_cyber_security_radio">
+                <h6>Task Force 7<br>Cyber Security Radio</h6><br>
+                <a href="https://www.tf7radio.com" target="_blank">
+                    <i class="fas fa-microphone w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container" style="min-height:150px" id="the_443_security_simplified">
+                <h6>The 443 Security<br>Simplified</h6><br>
+                <a href="https://www.secplicity.org/category/the-443/" target="_blank">
+                    <i class="fas fa-microphone w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container" style="min-height:150px" id="the_cyber_tap_(cybertap)">
+                <h6>The Cyber Tap<br>(cyberTAP)</h6><br>
+                <a href="https://cyber.tap.purdue.edu/cybertap-podcast" target="_blank">
+                    <i class="fas fa-microphone w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container" style="min-height:150px" id="the_shared_security_show">
+                <h6>The Shared<br>Security Show</h6><br>
+                <a href="https://podtail.com/podcast/the-shared-security-podcast/" target="_blank">
+                    <i class="fas fa-microphone w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container" style="min-height:150px" id="the_virtual_ciso_moment">
+                <h6>The Virtual<br>CISO Moment</h6><br>
+                <a href="https://virtual-ciso.us" target="_blank">
+                    <i class="fas fa-microphone w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="w3-row-padding w3-center w3-margin-top">
+        <div class="w3-col l2">
+            <div class="w3-card w3-container" style="min-height:150px" id="the_secure_developer">
+                <h6>The Secure Developer</h6><br>
+                <a href="https://www.devseccon.com/the-secure-developer-podcast/" target="_blank">
+                    <i class="fas fa-microphone w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container" style="min-height:150px" id="the_shellsharks">
+                <h6>The Shellsharks</h6><br>
+                <a href="https://shellsharks.com/podcast" target="_blank">
+                    <i class="fas fa-microphone w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container" style="min-height:150px" id="the_social-engineer">
+                <h6>The Social-Engineer</h6><br>
+                <a href="https://www.social-engineer.org/podcasts/" target="_blank">
+                    <i class="fas fa-microphone w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container" style="min-height:150px" id="troy_hunt">
+                <h6>Troy Hunt</h6><br>
+                <a href="https://www.troyhunt.com/my-weekly-updates-are-now-available-as-an-audio-podcast/"
+                    target="_blank">
+                    <i class="fas fa-microphone w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container" style="min-height:150px" id="unsupervised_learning">
+                <h6>Unsupervised Learning</h6><br>
+                <a href="https://unsupervisedlearning.libsyn.com" target="_blank">
+                    <i class="fas fa-microphone w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container" style="min-height:150px" id="the_unfair_fight">
+                <h6>The Unfair Fight</h6><br>
+                <a href="https://podcasts.apple.com/gb/podcast/the-unfair-fight/id1615121702" target="_blank">
+                    <i class="fas fa-microphone w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="w3-row-padding w3-center w3-margin-top">
+        <div class="w3-col l2">
             <div class="w3-card w3-container w3-blue" style="min-height:150px" id="sans">
                 <h6>SANS</h6><br>
                 <a href="https://www.sans.org/webcasts/" target="_blank">
@@ -318,6 +762,31 @@
                 </a>
             </div>
         </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="brakeing_down_security">
+                <h6>Brakeing Down<br>Security</h6><br>
+                <a href="https://podcasts.apple.com/us/podcast/brakeing-down-security-podcast/id799131292"
+                    target="_blank">
+                    <i class="fas fa-microphone w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="defensive_security">
+                <h6>Defensive Security</h6><br>
+                <a href="https://defensivesecurity.org" target="_blank">
+                    <i class="fas fa-microphone w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="ubuntu_security">
+                <h6>Ubuntu Security</h6><br>
+                <a href="https://ubuntusecuritypodcast.org" target="_blank">
+                    <i class="fas fa-microphone w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
     </div>
     <div class="w3-row-padding w3-center w3-margin-top">
         <div class="w3-col l2">
@@ -332,6 +801,48 @@
             <div class="w3-card w3-container w3-red" style="min-height:150px" id="darknet_diaries">
                 <h6>Darknet Diaries</h6><br>
                 <a href="https://darknetdiaries.com/" target="_blank">
+                    <i class="fas fa-microphone w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-red" style="min-height:150px" id="7_minute_security">
+                <h6>7 Minute Security</h6><br>
+                <a href="https://7minsec.com/projects/podcast" target="_blank">
+                    <i class="fas fa-microphone w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-red" style="min-height:150px" id="adventures_of_alice_and_bob">
+                <h6>Adventures of Alice and Bob</h6><br>
+                <a href="https://www.beyondtrust.com/podcast" target="_blank">
+                    <i class="fas fa-microphone w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-red" style="min-height:150px" id="the_hacker_chronicles">
+                <h6>The Hacker Chronicles</h6><br>
+                <a href="https://www.tenable.com/podcast/hacker-chronicles" target="_blank">
+                    <i class="fas fa-microphone w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-red" style="min-height:150px" id="the_hacker_mind">
+                <h6>The Hacker Mind</h6><br>
+                <a href="https://thehackermind.com" target="_blank">
+                    <i class="fas fa-microphone w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="w3-row-padding w3-center w3-margin-top">
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-red" style="min-height:150px" id="what_the_shell?">
+                <h6>What The Shell?</h6><br>
+                <a href="https://whattheshellpod.com" target="_blank">
                     <i class="fas fa-microphone w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
                 </a>
             </div>
@@ -379,8 +890,6 @@
                 </a>
             </div>
         </div>
-    </div>
-    <div class="w3-row-padding w3-center w3-margin-top">
         <div class="w3-col l2">
             <div class="w3-card w3-container w3-yellow" style="min-height:150px" id="inteltechniques">
                 <h6>IntelTechniques</h6><br>
@@ -389,6 +898,8 @@
                 </a>
             </div>
         </div>
+    </div>
+    <div class="w3-row-padding w3-center w3-margin-top">
         <div class="w3-col l2">
             <div class="w3-card w3-container w3-yellow" style="min-height:150px" id="janes">
                 <h6>Janes</h6><br>
@@ -866,6 +1377,7 @@
         <div class="w3-center">
         </div>
     </div>
+    <br><br>
     <div style="color:maroon;font-size:12px;">
         <p>&nbsp;&nbsp;With great power, comes great responsibility; this material has been collated to
             encourage learning and development, and not to be leveraged for unethical and/or illegal
@@ -873,7 +1385,8 @@
     </div>
     <div style="color:black;font-size:12px;">
         <p>&nbsp;&nbsp;I would like to thank all of the authors, instructors, publishers, developers (and
-            others) - both individuals and teams - for the content collated on this site. I must stress that none of the
+            others) - both individuals and teams - for the content collated on this site. I must stress that none of
+            the
             content referenced/linked on this site is my own.<br>&nbsp;&nbsp;If you have any suggestions
             and/or content you feel is missing or would like
             included, please email me at oscybershop [at] gmail [dot] com</p>
