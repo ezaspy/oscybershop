@@ -4,7 +4,7 @@
     <img src="main/content/logo.png" alt="Logo" width="400" height="400">
   </a>
   <p align="center">
-    A simple collection of free and affordable cyber security resources...
+    A simple collection of free and affordable cyber security resources...<br>
     <a href="https://oscybershop.herokuapp.com/main/index.html">onestopcybershop</a>
     <br><br>
     <a href="https://mit-license.org">
