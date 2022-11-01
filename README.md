@@ -5,6 +5,7 @@
   </a>
   <p align="center">
     A simple collection of free and affordable cyber security resources...
+    <a href="https://oscybershop.herokuapp.com/main/index.html">onestopcybershop</a>
     <br><br>
     <a href="https://mit-license.org">
       <img src="https://img.shields.io/github/license/ezaspy/oscybershop" alt="License: MIT">
@@ -25,10 +26,6 @@
     <br><br>
   </p>
 </p>
-
-<br>
-[oscybershop](https://oscybershop.herokuapp.com/main/index.html)
-<br>
 
 <!-- TABLE OF CONTENTS -->
 ## Table of Contents
