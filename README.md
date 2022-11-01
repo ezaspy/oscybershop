@@ -1,6 +1,6 @@
 <!-- PROJECT LOGO -->
 <p align="center">
-  <a href="https://github.com/ezaspy/oscybershop">
+  <a href="https://oscybershop.herokuapp.com/main/index.html">
     <img src="main/content/logo.png" alt="Logo" width="400" height="400">
   </a>
   <p align="center">
