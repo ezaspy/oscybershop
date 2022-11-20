@@ -1,11 +1,10 @@
 <!-- PROJECT LOGO -->
 <p align="center">
-  <a href="https://oscybershop.herokuapp.com/main/index.html">
+  <a href="https://github.com/ezaspy/oscybershop">
     <img src="main/content/logo.png" alt="Logo" width="400" height="400">
   </a>
   <p align="center">
-    A simple collection of free and affordable cyber security resources...<br>
-    <a href="https://oscybershop.herokuapp.com/main/index.html">onestopcybershop</a>
+    A simple collection of free and affordable cyber security resources...
     <br><br>
     <a href="https://mit-license.org">
       <img src="https://img.shields.io/github/license/ezaspy/oscybershop" alt="License: MIT">
@@ -31,9 +30,6 @@
 ## Table of Contents
 
 * [About the Project](#about-the-project)
-* [Contributing](#contributing)
-* [License](#license)
-* [Contact](#contact)
 * [Acknowledgements](#acknowledgements)
 
 
@@ -43,37 +39,6 @@
 
 A simple collection of free and affordable cyber security resources including Posters, Cheat Sheets, Publications, Media, Socials, Training, CTFs, Tooling, Frameworks, Projects and Virtual Machines.
 <br><br><br>
-
-<!-- CONTRIBUTING -->
-## Contributing
-
-Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-<br><br><br>
-
-
-<!-- LICENSE -->
-## License
-
-Distributed under the MIT License. See [LICENSE](https://github.com/ezaspy/oscybershop/master/LICENSE.txt) for more information.
-<br><br><br>
-
-
-<!-- CONTACT -->
-## Contact
-
-ezaspy - oscybershop (at) gmail (dot) com
-
-Project Link: [https://github.com/ezaspy/oscybershop](https://github.com/ezaspy/oscybershop)
-
-Other Projects: [https://github.com/ezaspy/](https://github.com/ezaspy/)
-<br><br><br>
-
 
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
