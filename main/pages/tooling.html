@@ -1,0 +1,2751 @@
+<!DOCTYPE html>
+<html>
+<title>onestopcybershop</title>
+<link rel="shortcut icon" type="image/x-icon" href="../../favicon.ico" /> <!-- https://gauger.io/fonticon/ -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+<script src="https://kit.fontawesome.com/fb0ae32c1e.js" crossorigin="anonymous"></script>
+<script src="../scripts.js"></script>
+<script src="../search.js"></script>
+
+<body>
+    <!-- Side Navigation -->
+    <nav class="w3-sidebar w3-bar-block w3-card w3-animate-left w3-center" style="display:none" id="osSidebar">
+        <button class="w3-bar-item w3-button" onclick="w3_close()">Close <i class="fa fa-remove"></i></button>
+        <a href="https://oscybershop.netlify.app/index.html" class="w3-bar-item w3-button">Home</a>
+        <a href="./posters.html" class="w3-bar-item w3-button">Posters</a>
+        <a href="./cheatsheets.html" class="w3-bar-item w3-button">Cheat Sheets</a>
+        <a href="./publications.html" class="w3-bar-item w3-button">Publications</a>
+        <a href="./media.html" class="w3-bar-item w3-button">Media & Socials</a>
+        <a href="./training.html" class="w3-bar-item w3-button">Training, CTFs & Challenges</a>
+        <a href="./tooling.html" class="w3-bar-item w3-button">Tooling</a>
+        <a href="./projects.html" class="w3-bar-item w3-button">Frameworks & Projects</a>
+        <a href="./vms.html" class="w3-bar-item w3-button">Virtual Machines</a>
+        <a href="./blue.html" class="w3-bar-item w3-button">Cyber Defence (Blue Team)</a>
+        <a href="./red.html" class="w3-bar-item w3-button">Offensive Cyber (Red Team)</a>
+        <a href="./int.html" class="w3-bar-item w3-button">Threat Intelligence</a>
+    </nav>
+    <!-- Header -->
+    <header class="w3-container w3-theme w3-padding" id="osHeader">
+        <div class="w3-third">
+            <i onclick="w3_open()" class="fa fa-bars w3-xxlarge w3-button w3-theme"></i>
+        </div>
+        <div class="w3-third">
+            <div class="w3-center">
+                <a href="https://oscybershop.netlify.app/index.html" class="w3-button">
+                    <h4><img src="../content/logo.png" alt="logo" height="24">&nbsp;&nbsp;ONESTOPCYBERSHOP
+                    </h4>
+                </a>
+                <h2 class="w3-xxlarge w3-animate-bottom"><i class="fas fa-toolbox"></i>&nbsp;&nbsp;Tooling</h2>
+            </div>
+        </div>
+        <div class="w3-third">
+            <div class="w3-right">
+                <a href="./search.html" target="_blank"><i class="fa fa-search w3-xxlarge w3-button w3-theme"></i></a>
+                <a href="./main/content/oscs_bookmarks.zip" target="_blank"> <i
+                        class="fa fa-firefox w3-xxlarge w3-button w3-theme"></i></a>
+            </div>
+        </div>
+    </header>
+    <div class="w3-container w3-blue">
+        <a href="#scripts" class="w3-bar-item w3-button">Scripting</a>&nbsp;|
+        <a href="#vulns" class="w3-bar-item w3-button">Vulnerability Assessment</a>&nbsp;|
+        <a href="#logs" class="w3-bar-item w3-button">Network Forensics</a>&nbsp;|
+        <a href="#dfir" class="w3-bar-item w3-button">DFIR & Threat Hunting</a>&nbsp;|
+        <a href="#malware" class="w3-bar-item w3-button">Malware Analysis</a>&nbsp;|
+        <a href="#steg" class="w3-bar-item w3-button">Steganography</a>
+    </div>
+    <div class="w3-container w3-red">
+        <a href="#recon" class="w3-bar-item w3-button">Reconnaissance</a>&nbsp;|
+        <a href="#delivery" class="w3-bar-item w3-button">Delivery</a>&nbsp;|
+        <a href="#weapon" class="w3-bar-item w3-button">Weaponization</a>&nbsp;|
+        <a href="#enum" class="w3-bar-item w3-button">Network Enumeration</a>&nbsp;|
+        <a href="#post" class="w3-bar-item w3-button">Post Exploitation</a>&nbsp;|
+        <a href="#creds" class="w3-bar-item w3-button">Credential Harvesting</a>&nbsp;|
+        <a href="#c2" class="w3-bar-item w3-button">Command & Control</a>&nbsp;
+    </div>
+    <div class="w3-container w3-yellow">
+        <a href="#osint" class="w3-bar-item w3-button">OSINT</a>&nbsp;|
+        <a href="#feeds" class="w3-bar-item w3-button">Threat Feeds</a>&nbsp;|
+        <a href="#dark" class="w3-bar-item w3-button">Dark Web</a>&nbsp;
+    </div>
+    <div class="w3-container">
+        <hr>
+        <div class="w3-center">
+        </div>
+    </div>
+    <br><br>
+    <div class="w3-row-padding w3-center w3-margin-top">
+        <div class="w3-col l2">
+            <div class="w3-card w3-container" style="min-height:150px" id="sans_institute">
+                <h6>SANS Institute</h6><br>
+                <a href="https://www.sans.org/img/free-faculty-tools.pdf?msc=sans-free-lp" target="_blank">
+                    <i class="fa fa-file-text w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container" style="min-height:150px" id="active_countermeasures">
+                <h6>Active Countermeasures</h6><br>
+                <a href="https://www.activecountermeasures.com/free-tools/" target="_blank">
+                    <i class="fa fa-list-alt w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container" style="min-height:150px" id="abuse_ch">
+                <h6>abuse.ch</h6><br>
+                <a href="https://abuse.ch/" target="_blank">
+                    <i class="fa fa-list-alt w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container" style="min-height:150px" id="the_dark_source">
+                <h6>The Dark Source</h6><br>
+                <a href="https://thedarksource.com/tooling/" target="_blank">
+                    <i class="fa fa-list-alt w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container" style="min-height:150px" id="infosec_resources4all">
+                <h6>InfoSec-Resources4All</h6><br>
+                <a href="https://github.com/Mimikatz2DA/infosec-resources4all" target="_blank">
+                    <i class="fa fa-list-alt w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container" style="min-height:150px" id="infosec_awesome">
+                <h6>Infosec Awesome</h6><br>
+                <a href="https://github.com/pe3zx/my-infosec-awesome" target="_blank">
+                    <i class="fa fa-list-alt w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="w3-row-padding w3-center w3-margin-top">
+        <div class="w3-col l2">
+            <div class="w3-card w3-container" style="min-height:150px" id="homelabresources">
+                <h6>HomeLabResources</h6><br>
+                <a href="https://github.com/reswob10/HomeLabResources" target="_blank">
+                    <i class="fa fa-list-alt w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container" style="min-height:150px" id="aws_arsenal">
+                <h6>AWS Arsenal</h6><br>
+                <a href="https://github.com/toniblyx/my-arsenal-of-aws-security-tools" target="_blank">
+                    <i class="fa fa-list-alt w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container" style="min-height:150px" id="google_cloud_architecture_diagramming">
+                <h6>GCP Diagramming</h6><br>
+                <a href="https://cloud.google.com/blog/topics/developers-practitioners/introducing-google-cloud-architecture-diagramming-tool"
+                    target="_blank">
+                    <i class="fa fa-bookmark w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="w3-container">
+        <hr>
+        <div class="w3-center">
+        </div>
+    </div>
+    <br><br>
+    <h4>&nbsp;&nbsp;&nbsp;&nbsp;Alternative Mail</h4>
+    <div class="w3-row-padding w3-center w3-margin-top" id="mail">
+        <div class="w3-col l2">
+            <div class="w3-card w3-container" style="min-height:150px" id="10minutemail">
+                <h6>10minutemail</h6><br>
+                <a href="https://10minutemail.com" target="_blank">
+                    <i class="fa fa-envelope w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container" style="min-height:150px" id="maildrop">
+                <h6>maildrop</h6><br>
+                <a href="https://maildrop.cc" target="_blank">
+                    <i class="fa fa-envelope w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container" style="min-height:150px" id="guerrilla_mail">
+                <h6>Guerrilla Mail</h6><br>
+                <a href="https://www.guerrillamail.com" target="_blank">
+                    <i class="fa fa-envelope w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container" style="min-height:150px" id="lavabit">
+                <h6>Lavabit</h6><br>
+                <a href="https://lavabit.com" target="_blank">
+                    <i class="fa fa-envelope w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container" style="min-height:150px" id="riseup">
+                <h6>riseup</h6><br>
+                <a href="https://mail.riseup.net/rc/" target="_blank">
+                    <i class="fa fa-envelope w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container" style="min-height:150px" id="tutanota">
+                <h6>Tutanota</h6><br>
+                <a href="https://mail.tutanota.com/login" target="_blank">
+                    <i class="fa fa-envelope w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="w3-container">
+        <hr>
+        <div class="w3-center">
+        </div>
+    </div>
+    <br><br>
+    <h4>&nbsp;&nbsp;&nbsp;&nbsp;Cyber Defence (Blue Team)</h4>
+    <div class="w3-row-padding w3-center w3-margin-top" id="blue">
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="awesome_ir">
+                <h6>Awesome IR</h6><br>
+                <a href="https://github.com/meirwah/awesome-incident-response" target="_blank">
+                    <i class="fa fa-list-alt w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="awesome_awesomeness">
+                <h6>Awesome Awesomeness</h6><br>
+                <a href="https://github.com/bayandin/awesome-awesomeness" target="_blank">
+                    <i class="fa fa-list-alt w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="sans_dfir">
+                <h6>SANS DFIR</h6><br>
+                <a href="https://www.sans.org/digital-forensics-incident-response/" target="_blank">
+                    <i class="fa fa-list-alt w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2" id="ssa_security_awareness_planning_kit">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="sans_dfir">
+                <h6>Security Awareness Planning</h6><br>
+                <a href="https://oscybershop.netlify.app/main/content/tooling/ssa_security_awareness_planning_kit.zip"
+                    target="_blank">
+                    <i class="fa fa-file-zipper w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="w3-row-padding w3-center w3-margin-top">
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="thehive">
+                <h6>TheHive</h6><br>
+                <a href="https://thehive-project.org/" target="_blank">
+                    <i class="fas fa-list w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="velociraptor">
+                <h6>Velociraptor</h6><br>
+                <a href="https://velociraptor.velocidex.com/" target="_blank">
+                    <i class="fas fa-list w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="dfirtrack">
+                <h6>DFIRTrack</h6><br>
+                <a href="https://github.com/dfirtrack/dfirtrack" target="_blank">
+                    <i class="fas fa-list w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="dfirlogbook">
+                <h6>DFIRlogbook</h6><br>
+                <a href="https://github.com/MattETurner/DFIRlogbook" target="_blank">
+                    <i class="fas fa-list w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="w3-container">
+        <hr>
+        <div class="w3-center">
+        </div>
+    </div>
+    <br><br>
+    <h5>&nbsp;&nbsp;&nbsp;&nbsp;Scripting</h5>
+    <div class="w3-row-padding w3-center w3-margin-top" id="scripts">
+        <div class="w3-col l2" id="cli">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="powershell_core">
+                <h6>PowerShell Core</h6><br>
+                <a href="https://github.com/powershell/powershell" target="_blank">
+                    <i class="fa fa-terminal w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="brew">
+                <h6>Brew</h6><br>
+                <a href="https://brew.sh/" target="_blank">
+                    <i class="fa fa-terminal w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="blue_team_powershell">
+                <h6>Blue Team PowerShell</h6><br>
+                <a href="https://blueteampowershell.com/" target="_blank">
+                    <i class="fa fa-terminal w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="regex101">
+                <h6>regex101</h6><br>
+                <a href="https://regex101.com/" target="_blank">
+                    <i class="fa fa-terminal w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="crontab_guru">
+                <h6>crontab guru</h6><br>
+                <a href="https://crontab.guru/" target="_blank">
+                    <i class="fa fa-terminal w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="cyberchef">
+                <h6>CyberChef</h6><br>
+                <a href="https://gchq.github.io/CyberChef/" target="_blank">
+                    <i class="fa fa-cutlery w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="w3-row-padding w3-center w3-margin-top">
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="deepbluecli">
+                <h6>DeepBlueCLI</h6><br>
+                <a href="https://github.com/sans-blue-team/DeepBlueCLI" target="_blank">
+                    <i class="fab fa-github w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="jq">
+                <h6>jq</h6><br>
+                <a href="https://github.com/stedolan/jq" target="_blank">
+                    <i class="fab fa-github w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="freq">
+                <h6>freq</h6><br>
+                <a href="https://github.com/MarkBaggett/freq" target="_blank">
+                    <i class="fab fa-github w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="sooty">
+                <h6>Sooty</h6><br>
+                <a href="https://github.com/TheresAFewConors/Sooty" target="_blank">
+                    <i class="fab fa-github w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="wtfis">
+                <h6>wtfis</h6><br>
+                <a href="https://github.com/pirxthepilot/wtfis" target="_blank">
+                    <i class="fab fa-github w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="epochconverter">
+                <h6>EpochConverter</h6><br>
+                <a href="https://www.epochconverter.com/" target="_blank">
+                    <i class="fa fa-clock-o w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="w3-row-padding w3-center w3-margin-top" id="vulns">
+        <div class="w3-col l2"><br><br>
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="python_iocextract">
+                <h6>python-iocextract</h6><br>
+                <a href="https://github.com/InQuest/python-iocextract" target="_blank">
+                    <i class="fab fa-github w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2"><br><br>
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="python_stix">
+                <h6>python-stix</h6><br>
+                <a href="https://github.com/STIXProject/python-stix" target="_blank">
+                    <i class="fab fa-github w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2" id="python_tools">
+            <h6>Python Tools</h6>
+            <iframe src="https://oscybershop.netlify.app/main/content/tooling/python_tools.jpeg" width="100%"></iframe>
+            <a href="https://oscybershop.netlify.app/main/content/tooling/python_tools.jpeg" target="_blank"
+                class="w3-button w3-theme">Download&nbsp;<i class="fa fa-external-link"></i></a>
+        </div>
+    </div>
+    <div class="w3-container">
+        <hr>
+        <div class="w3-center">
+        </div>
+    </div>
+    <br><br>
+    <h5>&nbsp;&nbsp;&nbsp;&nbsp;Vulnerability Assessment</h5>
+    <div class="w3-row-padding w3-center w3-margin-top" id="vulns">
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="nessus">
+                <h6>Nessus</h6><br>
+                <a href="https://docs.tenable.com/Nessus.htm" target="_blank">
+                    <i class="fas fa-tools w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="burpsuite">
+                <h6>BurpSuite</h6><br>
+                <a href="https://portswigger.net/burp" target="_blank">
+                    <i class="fas fa-tools w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="openvas">
+                <h6>OpenVAS</h6><br>
+                <a href="https://github.com/greenbone/openvas-scanner" target="_blank">
+                    <i class="fab fa-github w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="interactsh">
+                <h6>interactsh</h6><br>
+                <a href="https://github.com/projectdiscovery/interactsh" target="_blank">
+                    <i class="fab fa-github w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="skyark">
+                <h6>SkyArk</h6><br>
+                <a href="https://github.com/cyberark/SkyArk" target="_blank">
+                    <i class="fab fa-github w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <br><br>
+    <h5>&nbsp;&nbsp;&nbsp;&nbsp;Network Forensics</h5>
+    <div class="w3-row-padding w3-center w3-margin-top" id="logs">
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="splunk">
+                <h6>Splunk</h6><br>
+                <a href="https://www.splunk.com/en_us/download/get-started-with-your-free-trial.html" target="_blank">
+                    <i class="fab fa-watchman-monitoring w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="elastic">
+                <h6>Elastic</h6><br>
+                <a href="https://www.elastic.co/start" target="_blank">
+                    <i class="fab fa-watchman-monitoring w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="nagios">
+                <h6>Nagios</h6><br>
+                <a href="http://log-file-monitoring.com/" target="_blank">
+                    <i class="fab fa-watchman-monitoring w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="snort">
+                <h6>Snort</h6><br>
+                <a href="https://www.snort.org/" target="_blank">
+                    <i class="fab fa-watchman-monitoring w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="zeek">
+                <h6>Zeek</h6><br>
+                <a href="https://zeek.org/" target="_blank">
+                    <i class="fab fa-watchman-monitoring w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="suricata">
+                <h6>Suricata</h6><br>
+                <a href="https://suricata.io/" target="_blank">
+                    <i class="fab fa-watchman-monitoring w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="w3-row-padding w3-center w3-margin-top">
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="silk">
+                <h6>SiLK</h6><br>
+                <a href="https://tools.netsa.cert.org/silk/" target="_blank">
+                    <i class="fab fa-watchman-monitoring w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="netresec">
+                <h6>NetreseC</h6><br>
+                <a href="https://www.netresec.com/?page=PcapFiles" target="_blank">
+                    <i class="fab fa-watchman-monitoring w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="sigma">
+                <h6>SIGMA</h6><br>
+                <a href="https://github.com/SigmaHQ/sigma" target="_blank">
+                    <i class="fab fa-github w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="sigma2splunkalert">
+                <h6>Sigma2SplunkAlert</h6><br>
+                <a href="https://github.com/zeflow/Sigma2SplunkAlert" target="_blank">
+                    <i class="fab fa-github w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="bruteshark">
+                <h6>BruteShark</h6><br>
+                <a href="https://github.com/odedshimon/BruteShark" target="_blank">
+                    <i class="fab fa-github w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="w3-container">
+        <hr>
+        <div class="w3-center">
+        </div>
+    </div>
+    <br><br>
+    <h5>&nbsp;&nbsp;&nbsp;&nbsp;DFIR & Threat Hunting</h5>
+    <div class="w3-row-padding w3-center w3-margin-top" id="dfir">
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="eric_zimmerman_tools">
+                <h6>Eric Zimmerman Tools</h6><br>
+                <a href="https://ericzimmerman.github.io/#!index.md" target="_blank">
+                    <i class="fas fa-toolbox w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="the_sleuth_kit">
+                <h6>The Sleuth Kit</h6><br>
+                <a href="http://wiki.sleuthkit.org/index.php?title=TSK_Tool_Overview" target="_blank">
+                    <i class="fas fa-toolbox w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="tzworks">
+                <h6>TZWorks</h6><br>
+                <a href="https://www.tzworks.com/" target="_blank">
+                    <i class="fas fa-toolbox w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="kape">
+                <h6>KAPE</h6><br>
+                <a href="https://github.com/EricZimmerman/KapeFiles" target="_blank">
+                    <i class="fab fa-github w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="grr">
+                <h6>GRR</h6><br>
+                <a href="https://github.com/google/grr" target="_blank">
+                    <i class="fab fa-github w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="linuxcatscale">
+                <h6>LinuxCatScale</h6><br>
+                <a href="https://github.com/FSecureLABS/LinuxCatScale" target="_blank">
+                    <i class="fab fa-github w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="w3-row-padding w3-center w3-margin-top">
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="ftk_imager">
+                <h6>FTK Imager</h6><br>
+                <a href="https://accessdata.com/product-download/ftk-imager-version-4-5" target="_blank">
+                    <i class="fa fa-bullseye w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="registry_viewer">
+                <h6>Registry Viewer</h6><br>
+                <a href="https://accessdata.com/product-download/registry-viewer-1-8-0-5" target="_blank">
+                    <i class="fa fa-bullseye w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="process_capture">
+                <h6>Process Capture</h6><br>
+                <a href="https://www.magnetforensics.com/resources/magnet-process-capture/" target="_blank">
+                    <i class="fa fa-bullseye w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="sysmon">
+                <h6>Sysmon</h6><br>
+                <a href="https://docs.microsoft.com/en-us/sysinternals/downloads/sysmon" target="_blank">
+                    <i class="fab fa-github w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="powerforensics">
+                <h6>PowerForensics</h6><br>
+                <a href="https://github.com/Invoke-IR/PowerForensics" target="_blank">
+                    <i class="fab fa-github w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="helk">
+                <h6>HELK</h6><br>
+                <a href="https://github.com/Cyb3rWard0g/HELK" target="_blank">
+                    <i class="fab fa-github w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="w3-row-padding w3-center w3-margin-top">
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="analyzemft">
+                <h6>analyzeMFT</h6><br>
+                <a href="https://github.com/dkovar/analyzeMFT" target="_blank">
+                    <i class="fab fa-github w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="regripper">
+                <h6>RegRipper</h6><br>
+                <a href="https://github.com/keydet89/RegRipper3.0" target="_blank">
+                    <i class="fab fa-github w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="evtx_dump">
+                <h6>evtx_dump</h6><br>
+                <a href="https://github.com/williballenthin/python-evtx/blob/master/scripts/evtx_dump.py"
+                    target="_blank">
+                    <i class="fab fa-github w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="wela">
+                <h6>WELA</h6><br>
+                <a href="https://github.com/Yamato-Security/WELA/blob/main/README-English.md" target="_blank">
+                    <i class="fab fa-github w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="shimcacheparser">
+                <h6>ShimCacheParser</h6><br>
+                <a href="https://github.com/mandiant/ShimCacheParser" target="_blank">
+                    <i class="fab fa-github w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="seatbelt">
+                <h6>Seatbelt</h6><br>
+                <a href="https://github.com/GhostPack/Seatbelt" target="_blank">
+                    <i class="fab fa-github w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="w3-row-padding w3-center w3-margin-top">
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="plaso">
+                <h6>plaso</h6><br>
+                <a href="https://github.com/log2timeline/plaso" target="_blank">
+                    <i class="fas fa-hourglass-half w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="timesketch">
+                <h6>Timesketch</h6><br>
+                <a href="https://github.com/google/timesketch" target="_blank">
+                    <i class="fas fa-hourglass-half w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="apt_hunter">
+                <h6>APT-Hunter</h6><br>
+                <a href="https://github.com/ahmedkhlief/APT-Hunter" target="_blank">
+                    <i class="fas fa-search w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="threathunting">
+                <h6>ThreatHunting</h6><br>
+                <a href="https://github.com/ThreatHuntingProject/ThreatHunting" target="_blank">
+                    <i class="fas fa-search w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="sentinel_att_ck">
+                <h6>Sentinel ATT&CK</h6><br>
+                <a href="https://github.com/BlueTeamLabs/sentinel-attack" target="_blank">
+                    <i class="fas fa-search w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="azurehunter">
+                <h6>AzureHunter</h6><br>
+                <a href="https://github.com/darkquasar/AzureHunter" target="_blank">
+                    <i class="fas fa-search w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <br><br>
+    <h5>&nbsp;&nbsp;&nbsp;&nbsp;Memory Analysis</h5>
+    <div class="w3-row-padding w3-center w3-margin-top">
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="redline">
+                <h6>Redline</h6><br>
+                <a href="https://www.fireeye.com/services/freeware/redline.html" target="_blank">
+                    <i class="fa fa-camera-retro w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="volatility">
+                <h6>Volatility</h6><br>
+                <a href="https://www.volatilityfoundation.org/" target="_blank">
+                    <i class="fa fa-camera-retro w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="supermem">
+                <h6>SuperMem</h6><br>
+                <a href="https://www.crowdstrike.com/blog/introducing-supermem-free-incident-response-tool/"
+                    target="_blank">
+                    <i class="fa fa-camera-retro w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="winpmem">
+                <h6>WinPmem</h6><br>
+                <a href="https://winpmem.velocidex.com/" target="_blank">
+                    <i class="fa fa-camera-retro w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="w3-row-padding w3-center w3-margin-top">
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="osxpmem">
+                <h6>osxpmem</h6><br>
+                <a href="https://github.com/google/rekall/releases/tag/v1.5.1" target="_blank">
+                    <i class="fab fa-github w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="linpmem">
+                <h6>linpmem</h6><br>
+                <a href="https://github.com/google/rekall/releases/tag/v1.5.1" target="_blank">
+                    <i class="fab fa-github w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="avml">
+                <h6>AVML</h6><br>
+                <a href="https://github.com/microsoft/avml" target="_blank">
+                    <i class="fab fa-github w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="lime">
+                <h6>LiME</h6><br>
+                <a href="https://github.com/504ensicsLabs/LiME" target="_blank">
+                    <i class="fab fa-github w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="memprocfs">
+                <h6>MemProcFS</h6><br>
+                <a href="https://github.com/ufrisk/MemProcFS" target="_blank">
+                    <i class="fab fa-github w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="w3-container">
+        <hr>
+        <div class="w3-center">
+        </div>
+    </div>
+    <br><br>
+    <h4>&nbsp;&nbsp;&nbsp;&nbsp;Malware Analysis</h4>
+    <div class="w3-row-padding w3-center w3-margin-top" id="malware">
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="file_signatures">
+                <h6>File Signatures</h6><br>
+                <a href="https://www.garykessler.net/library/file_sigs.html" target="_blank">
+                    <i class="fas fa-toolbox w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="sysinternals_suite">
+                <h6>SysInternals Suite</h6><br>
+                <a href="https://docs.microsoft.com/en-us/sysinternals/" target="_blank">
+                    <i class="fas fa-toolbox w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="nirsoft_suite">
+                <h6>Nirsoft Suite</h6><br>
+                <a href="https://www.nirsoft.net/" target="_blank">
+                    <i class="fas fa-toolbox w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="yara">
+                <h6>YARA</h6><br>
+                <a href="https://virustotal.github.io/yara/" target="_blank">
+                    <i class="fa fa-wrench w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="malware_analysis_repo">
+                <h6>Malware Analysis Repo</h6><br>
+                <a href="https://github.com/rshipp/awesome-malware-analysis" target="_blank">
+                    <i class="fab fa-github w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="didierstevens_suite">
+                <h6>DidierStevens Suite</h6><br>
+                <a href="https://github.com/DidierStevens/DidierStevensSuite" target="_blank">
+                    <i class="fab fa-github w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="w3-row-padding w3-center w3-margin-top">
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="wireshark">
+                <h6>Wireshark</h6><br>
+                <a href="https://www.wireshark.org/" target="_blank">
+                    <i class="fa fa-globe w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="inetsim">
+                <h6>INetSim</h6><br>
+                <a href="https://www.inetsim.org/" target="_blank">
+                    <i class="fa fa-globe w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="fakedns">
+                <h6>fakedns</h6><br>
+                <a href="https://github.com/pathes/fakedns" target="_blank">
+                    <i class="fab fa-github w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="phishingkittracker">
+                <h6>PhishingKitTracker</h6><br>
+                <a href="https://github.com/marcoramilli/PhishingKitTracker" target="_blank">
+                    <i class="fab fa-github w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="pehash">
+                <h6>pehash</h6><br>
+                <a href="https://github.com/knowmalware/pehash" target="_blank">
+                    <i class="fab fa-github w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="ssdeep">
+                <h6>ssdeep</h6><br>
+                <a href="https://github.com/ssdeep-project/ssdeep" target="_blank">
+                    <i class="fab fa-github w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <br><br>
+    <h5>&nbsp;&nbsp;&nbsp;&nbsp;Identifiers & Hex Viewers</h5>
+    <div class="w3-row-padding w3-center w3-margin-top">
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="exiftool">
+                <h6>ExifTool</h6><br>
+                <a href="https://exiftool.org/" target="_blank">
+                    <i class="fa fa-bug w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="trid">
+                <h6>TrID</h6><br>
+                <a href="https://mark0.net/soft-trid-e.html" target="_blank">
+                    <i class="fa fa-bug w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="xxd">
+                <h6>xxd</h6><br>
+                <a href="https://www.systutorials.com/docs/linux/man/1-xxd/" target="_blank">
+                    <i class="fa fa-bug w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="bless">
+                <h6>Bless</h6><br>
+                <a href="https://www.hexinator.com/hex-editor-windows/" target="_blank">
+                    <i class="fa fa-bug w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="neo">
+                <h6>Neo</h6><br>
+                <a href="https://www.hhdsoftware.com/free-hex-editor" target="_blank">
+                    <i class="fa fa-bug w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="hexinator">
+                <h6>Hexinator</h6><br>
+                <a href="https://www.hexinator.com/hex-editor-windows/" target="_blank">
+                    <i class="fa fa-bug w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <br><br>
+    <h5>&nbsp;&nbsp;&nbsp;&nbsp;Process & Document Analysis</h5>
+    <div class="w3-row-padding w3-center w3-margin-top">
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="process_hacker">
+                <h6>Process Hacker</h6><br>
+                <a href="https://processhacker.sourceforge.io/" target="_blank">
+                    <i class="fas fa-microchip w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="procdot">
+                <h6>ProcDOT</h6><br>
+                <a href="https://www.procdot.com/" target="_blank">
+                    <i class="fas fa-microchip w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="api_monitor">
+                <h6>API Monitor</h6><br>
+                <a href="http://www.rohitab.com/apimonitor#Download" target="_blank">
+                    <i class="fas fa-microchip w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="regshot">
+                <h6>Regshot</h6><br>
+                <a href="https://github.com/Seabreg/Regshot" target="_blank">
+                    <i class="fab fa-github w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="wmi_explorer">
+                <h6>WMI Explorer</h6><br>
+                <a href="https://github.com/vinaypamnani/wmie2/releases" target="_blank">
+                    <i class="fab fa-github w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="viper">
+                <h6>Viper</h6><br>
+                <a href="https://github.com/viper-framework/viper" target="_blank">
+                    <i class="fab fa-github w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="w3-row-padding w3-center w3-margin-top">
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="cscript">
+                <h6>cscript</h6><br>
+                <a href="https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/cscript"
+                    target="_blank">
+                    <i class="fab fa-windows w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="wscript">
+                <h6>wscript</h6><br>
+                <a href="https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/wscript"
+                    target="_blank">
+                    <i class="fab fa-windows w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="pe_bear">
+                <h6>PE-bear</h6><br>
+                <a href="https://github.com/hasherezade/pe-bear-releases" target="_blank">
+                    <i class="fab fa-github w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="pe_tree">
+                <h6>PE Tree</h6><br>
+                <a href="https://github.com/blackberry/pe_tree" target="_blank">
+                    <i class="fab fa-github w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="peframe">
+                <h6>peframe</h6><br>
+                <a href="https://github.com/guelfoweb/peframe" target="_blank">
+                    <i class="fab fa-github w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="petools">
+                <h6>petools</h6><br>
+                <a href="https://github.com/petoolse/petools" target="_blank">
+                    <i class="fab fa-github w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="w3-row-padding w3-center w3-margin-top">
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="rtfdump">
+                <h6>rtfdump</h6><br>
+                <a href="https://blog.didierstevens.com/2017/02/25/update-rtfdump-py-version-0-0-5/" target="_blank">
+                    <i class="fas fa-file-prescription w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="pdf_parser">
+                <h6>PDF Parser</h6><br>
+                <a href="https://pdfparser.org/" target="_blank">
+                    <i class="fa fa-file-pdf-o w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="peepdf">
+                <h6>peepdf</h6><br>
+                <a href="https://github.com/jesparza/peepdf" target="_blank">
+                    <i class="fab fa-github w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="oletools">
+                <h6>oletools</h6><br>
+                <a href="https://github.com/decalage2/oletools" target="_blank">
+                    <i class="fab fa-github w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="xlmmacrodeobfuscator">
+                <h6>XLMMacroDeobfuscator</h6><br>
+                <a href="https://github.com/DissectMalware/XLMMacroDeobfuscator" target="_blank">
+                    <i class="fab fa-github w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <br><br>
+    <h5>&nbsp;&nbsp;&nbsp;&nbsp;Disassemblers/Debuggers</h5>
+    <div class="w3-row-padding w3-center w3-margin-top" id="static">
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="ida_pro">
+                <h6>IDA Pro</h6><br>
+                <a href="https://hex-rays.com/IDA-pro/" target="_blank">
+                    <i class="fa fa-bug w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="ollydbg">
+                <h6>OllyDBG</h6><br>
+                <a href="https://www.ollydbg.de/" target="_blank">
+                    <i class="fa fa-bug w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="x64dbg">
+                <h6>x64dbg</h6><br>
+                <a href="https://x64dbg.com/#start" target="_blank">
+                    <i class="fa fa-bug w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="windbg">
+                <h6>WinDbg</h6><br>
+                <a href="https://www.microsoft.com/en-gb/p/windbg-preview/9pgjgd53tn86#activetab=pivot:overviewtab"
+                    target="_blank">
+                    <i class="fa fa-bug w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="pestudio">
+                <h6>pestudio</h6><br>
+                <a href="https://www.winitor.com/" target="_blank">
+                    <i class="fa fa-bug w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="ghidra">
+                <h6>Ghidra</h6><br>
+                <a href="https://ghidra-sre.org/" target="_blank">
+                    <i class="fa fa-bug w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="w3-row-padding w3-center w3-margin-top">
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="immunity_debugger">
+                <h6>Immunity Debugger</h6><br>
+                <a href="https://www.immunityinc.com/products/debugger/" target="_blank">
+                    <i class="fa fa-bug w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="cutter">
+                <h6>Cutter</h6><br>
+                <a href="https://www.cutter.re/" target="_blank">
+                    <i class="fa fa-bug w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="binary_ninja">
+                <h6>Binary Ninja</h6><br>
+                <a href="https://binary.ninja/" target="_blank">
+                    <i class="fa fa-bug w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="hopper">
+                <h6>Hopper</h6><br>
+                <a href="https://www.hopperapp.com/" target="_blank">
+                    <i class="fa fa-bug w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="fiddler">
+                <h6>Fiddler</h6><br>
+                <a href="https://www.telerik.com/fiddler" target="_blank">
+                    <i class="fa fa-bug w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="radare2">
+                <h6>Radare2</h6><br>
+                <a href="https://github.com/radareorg/radare2" target="_blank">
+                    <i class="fab fa-github w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="w3-row-padding w3-center w3-margin-top">
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="scylla">
+                <h6>Scylla</h6><br>
+                <a href="https://github.com/NtQuery/Scylla" target="_blank">
+                    <i class="fa fa-bug w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="java_decompiler">
+                <h6>Java Decompiler</h6><br>
+                <a href="http://java-decompiler.github.io/" target="_blank">
+                    <i class="fab fa-java w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="beautifier">
+                <h6>Beautifier</h6><br>
+                <a href="https://beautifier.io/" target="_blank">
+                    <i class="fab fa-js-square w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="js_beautify">
+                <h6>js-beautify</h6><br>
+                <a href="https://github.com/beautify-web/js-beautify" target="_blank">
+                    <i class="fab fa-js-square w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="spidermonkey">
+                <h6>SpiderMonkey</h6><br>
+                <a href="https://spidermonkey.dev/" target="_blank">
+                    <i class="fab fa-js-square w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="pcodedmp">
+                <h6>pcodedmp</h6><br>
+                <a href="https://github.com/bontchev/pcodedmp" target="_blank">
+                    <i class="fab fa-github w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="w3-container">
+        <hr>
+        <div class="w3-center">
+        </div>
+    </div>
+    <br><br>
+    <h5>&nbsp;&nbsp;&nbsp;&nbsp;Sandboxes</h5>
+    <div class="w3-row-padding w3-center w3-margin-top" id="sandbox">
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="hybrid_analysis">
+                <h6>Hybrid Analysis</h6><br>
+                <a href="https://www.hybrid-analysis.com/" target="_blank">
+                    <i class="fa fa-cube w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="any_run">
+                <h6>Any.Run</h6><br>
+                <a href="https://app.any.run/" target="_blank">
+                    <i class="fa fa-cube w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="joe_sandbox">
+                <h6>Joe Sandbox</h6><br>
+                <a href="https://www.joesandbox.com/#windows" target="_blank">
+                    <i class="fa fa-cube w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="malwr">
+                <h6>Malwr</h6><br>
+                <a href="https://malwr.com/" target="_blank">
+                    <i class="fa fa-cube w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="yomi">
+                <h6>Yomi</h6><br>
+                <a href="https://yomi.yoroi.company/upload" target="_blank">
+                    <i class="fa fa-cube w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="malware_jail">
+                <h6>Malware Jail</h6><br>
+                <a href="https://github.com/HynekPetrak/malware-jail" target="_blank">
+                    <i class="fab fa-github w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="w3-row-padding w3-center w3-margin-top">
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="filescanio">
+                <h6>filescan.io</h6><br>
+                <a href="https://www.filescan.io/scan" target="_blank">
+                    <i class="fa fa-cube w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="cuckoo">
+                <h6>Cuckoo</h6><br>
+                <a href="https://cuckoosandbox.org/" target="_blank">
+                    <i class="fa fa-cube w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="cape">
+                <h6>CAPE</h6><br>
+                <a href="https://github.com/kevoreilly/CAPEv2" target="_blank">
+                    <i class="fab fa-github w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="detuxng">
+                <h6>DetuxNG</h6><br>
+                <a href="https://github.com/silascutler/DetuxNG" target="_blank">
+                    <i class="fa fa-cube w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="w3-container">
+        <hr>
+        <div class="w3-center">
+        </div>
+    </div>
+    <br><br>
+    <h4>&nbsp;&nbsp;&nbsp;&nbsp;Malware Repositories</h4>
+    <div style="color:darkblue;font-size:14px;">
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;Please take extra precautions when analysing and playing with malware.</p>
+    </div>
+    <div class="w3-row-padding w3-center w3-margin-top">
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue-grey" style="min-height:150px" id="malshare">
+                <h6>Malshare</h6><br>
+                <a href="https://malshare.com/" target="_blank">
+                    <i class="fa fa-warning w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue-grey" style="min-height:150px" id="malwarebazaar">
+                <h6>MalwareBazaar</h6><br>
+                <a href="https://bazaar.abuse.ch/browse/" target="_blank">
+                    <i class="fa fa-warning w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue-grey" style="min-height:150px" id="urlhaus_database">
+                <h6>URLhaus Database</h6><br>
+                <a href="https://urlhaus.abuse.ch/browse/" target="_blank">
+                    <i class="fa fa-warning w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue-grey" style="min-height:150px" id="thezoo">
+                <h6>theZoo</h6><br>
+                <a href="https://thezoo.morirt.com/" target="_blank">
+                    <i class="fa fa-warning w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue-grey" style="min-height:150px" id="vx_underground">
+                <h6>vx-underground</h6><br>
+                <a href="https://vx-underground.org/samples" target="_blank">
+                    <i class="fa fa-warning w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue-grey" style="min-height:150px" id="dasmalwerk_eu">
+                <h6>DasMalwerk.eu</h6><br>
+                <a href="https://dasmalwerk.eu/" target="_blank">
+                    <i class="fa fa-warning w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="w3-row-padding w3-center w3-margin-top">
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue-grey" style="min-height:150px" id="mac_malware">
+                <h6>Mac Malware</h6><br>
+                <a href="https://objective-see.com/malware.html" target="_blank">
+                    <i class="fa fa-warning w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue-grey" style="min-height:150px" id="packettotal">
+                <h6>PacketTotal</h6><br>
+                <a href="https://packettotal.com/malware-archive.html" target="_blank">
+                    <i class="fa fa-warning w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue-grey" style="min-height:150px" id="virussign">
+                <h6>VirusSign</h6><br>
+                <a href="https://www.virussign.com/downloads.html" target="_blank">
+                    <i class="fa fa-warning w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue-grey" style="min-height:150px" id="the-malware_repo">
+                <h6>The-MALWARE-Repo</h6><br>
+                <a href="https://github.com/Da2dalus/The-MALWARE-Repo" target="_blank">
+                    <i class="fa fa-warning w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue-grey" style="min-height:150px" id="malware_feed">
+                <h6>Malware Feed</h6><br>
+                <a href="https://github.com/MalwareSamples/Malware-Feed/" target="_blank">
+                    <i class="fa fa-warning w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="w3-container">
+        <hr>
+        <div class="w3-center">
+        </div>
+    </div>
+    <br><br>
+    <h5>&nbsp;&nbsp;&nbsp;&nbsp;Steganography</h5>
+    <div class="w3-row-padding w3-center w3-margin-top" id="steg">
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="xiao_steganography">
+                <h6>Xiao Steganography</h6><br>
+                <a href="https://download.cnet.com/Xiao-Steganography/3000-2092_4-10541494.html" target="_blank">
+                    <i class="fa fa-binoculars w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="steghide">
+                <h6>Steghide</h6><br>
+                <a href="http://steghide.sourceforge.net/download.php" target="_blank">
+                    <i class="fa fa-binoculars w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="s_tools">
+                <h6>S-Tools</h6><br>
+                <a href="https://www.cs.vu.nl/~ast/books/mos2/steg.zip" target="_blank">
+                    <i class="fa fa-binoculars w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="hide'n_send">
+                <h6>Hide'N'Send</h6><br>
+                <a href="https://download.cnet.com/Hide-N-Send/3000-2092_4-75728348.html" target="_blank">
+                    <i class="fa fa-binoculars w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="camouflage">
+                <h6>Camouflage</h6><br>
+                <a href="http://camouflage.unfiction.com/" target="_blank">
+                    <i class="fa fa-binoculars w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-blue" style="min-height:150px" id="invisiblesecrets">
+                <h6>InvisibleSecrets</h6><br>
+                <a href="https://www.east-tec.com/invisiblesecrets/download/" target="_blank">
+                    <i class="fa fa-binoculars w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="w3-container">
+        <hr>
+        <div class="w3-center">
+        </div>
+    </div>
+    <br><br>
+    <h4>&nbsp;&nbsp;&nbsp;&nbsp;Offensive Cyber (Red Team)</h4>
+    <div class="w3-row-padding w3-center w3-margin-top" id="red">
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-red" style="min-height:150px" id="sample_pen_test_report">
+                <h6>Sample Pen Test Report</h6><br>
+                <a href="https://github.com/hmaverickadams/TCM-Security-Sample-Pentest-Report" target="_blank">
+                    <i class="fa fa-file-text w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-red" style="min-height:150px" id="red_team_tool_roundup">
+                <h6>Red Team Tool Roundup</h6><br>
+                <a href="https://www.fireeye.com/blog/threat-research/2016/07/red_team_tool_roundup.html"
+                    target="_blank">
+                    <i class="fas fa-toolbox w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-red" style="min-height:150px" id="100_best_hacking_tools">
+                <h6>100 Best Hacking Tools</h6><br>
+                <a href="https://gbhackers.com/hacking-tools-list/?utm_source=pocket_mylist" target="_blank">
+                    <i class="fas fa-toolbox w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-red" style="min-height:150px" id="yuki_chan">
+                <h6>Yuki Chan</h6><br>
+                <a href="https://gbhackers.com/yuki-chan-automated-penetration-testing/" target="_blank">
+                    <i class="fas fa-toolbox w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-red" style="min-height:150px" id="awesome-browser_exploit">
+                <h6>awesome-browser-exploit</h6><br>
+                <a href="https://github.com/Escapingbug/awesome-browser-exploit" target="_blank">
+                    <i class="fas fa-toolbox w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-red" style="min-height:150px" id="exploit_db">
+                <h6>Exploit DB</h6><br>
+                <a href="https://www.exploit-db.com/" target="_blank">
+                    <i class="fa fa-bug w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="w3-container">
+        <hr>
+        <div class="w3-center">
+        </div>
+    </div>
+    <br><br>
+    <h5>&nbsp;&nbsp;&nbsp;&nbsp;Note Taking & Checklists</h5>
+    <div class="w3-row-padding w3-center w3-margin-top" id="notes">
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-red" style="min-height:150px" id="keepnote">
+                <h6>KeepNote</h6><br>
+                <a href="http://keepnote.org/" target="_blank">
+                    <i class="fas fa-list w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-red" style="min-height:150px" id="cherrytree">
+                <h6>cherrytree</h6><br>
+                <a href="https://www.giuspen.com/cherrytree/" target="_blank">
+                    <i class="fas fa-list w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-red" style="min-height:150px" id="greenshot">
+                <h6>Greenshot</h6><br>
+                <a href="https://getgreenshot.org/downloads/" target="_blank">
+                    <i class="fas fa-list w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-red" style="min-height:150px" id="flameshot">
+                <h6>Flameshot</h6><br>
+                <a href="https://github.com/flameshot-org/flameshot" target="_blank">
+                    <i class="fas fa-list w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-red" style="min-height:150px" id="trilium">
+                <h6>Trilium</h6><br>
+                <a href="https://github.com/zadam/trilium" target="_blank">
+                    <i class="fas fa-list w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-red" style="min-height:150px" id="joplin">
+                <h6>joplin</h6><br>
+                <a href="https://github.com/laurent22/joplin" target="_blank">
+                    <i class="fas fa-list w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="w3-row-padding w3-center w3-margin-top" id="red">
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-red" style="min-height:150px" id="owasp_testing">
+                <h6>OWASP Testing</h6><br>
+                <a href="https://github.com/tanprathan/OWASP-Testing-Checklist" target="_blank">
+                    <i class="fas fa-tasks w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="w3-container">
+        <hr>
+        <div class="w3-center">
+        </div>
+    </div>
+    <br><br>
+    <h5>&nbsp;&nbsp;&nbsp;&nbsp;Reconnaissance</h5>
+    <div class="w3-row-padding w3-center w3-margin-top" id="recon">
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-red" style="min-height:150px" id="gtfobins">
+                <h6>GTFOBins</h6><br>
+                <a href="https://gtfobins.github.io" target="_blank">
+                    <i class="fa fa-empire w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-red" style="min-height:150px" id="haveibeenpwned">
+                <h6>haveibeenpwned</h6><br>
+                <a href="https://haveibeenpwned.com/" target="_blank">
+                    <i class="fa fa-globe w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-red" style="min-height:150px" id="hunter_io">
+                <h6>hunter.io</h6><br>
+                <a href="https://hunter.io/" target="_blank">
+                    <i class="fa fa-globe w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-red" style="min-height:150px" id="amass">
+                <h6>amass</h6><br>
+                <a href="https://danielmiessler.com/study/amass/" target="_blank">
+                    <i class="fa fa-globe w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-red" style="min-height:150px" id="expired_domains">
+                <h6>Expired Domains</h6><br>
+                <a href="https://www.expireddomains.net/" target="_blank">
+                    <i class="fa fa-globe w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-red" style="min-height:150px" id="subdomain_enumeration">
+                <h6>Subdomain Enumeration</h6><br>
+                <a href="https://0xffsec.com/handbook/information-gathering/subdomain-enumeration/" target="_blank">
+                    <i class="fa fa-globe w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-red" style="min-height:150px" id="xnlinkfinder">
+                <h6>xnLinkFinder</h6><br>
+                <a href="https://github.com/xnl-h4ck3r/xnLinkFinder" target="_blank">
+                    <i class="fab fa-github w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="w3-row-padding w3-center w3-margin-top">
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-red" style="min-height:150px" id="crt_sh">
+                <h6>crt.sh</h6><br>
+                <a href="https://crt.sh/" target="_blank">
+                    <i class="fa fa-globe w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-red" style="min-height:150px" id="security_headers">
+                <h6>Security Headers</h6><br>
+                <a href="https://securityheaders.com/" target="_blank">
+                    <i class="fa fa-globe w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="w3-row-padding w3-center w3-margin-top">
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-red" style="min-height:150px" id="theharvester">
+                <h6>theHarvester</h6><br>
+                <a href="https://github.com/laramies/theHarvester" target="_blank">
+                    <i class="fab fa-github w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-red" style="min-height:150px" id="sumrecon">
+                <h6>sumrecon</h6><br>
+                <a href="https://github.com/Gr1mmie/sumrecon" target="_blank">
+                    <i class="fab fa-github w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-red" style="min-height:150px" id="masscan">
+                <h6>MASSCAN</h6><br>
+                <a href="https://github.com/robertdavidgraham/masscan" target="_blank">
+                    <i class="fab fa-github w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-red" style="min-height:150px" id="massdns">
+                <h6>MassDNS</h6><br>
+                <a href="https://github.com/blechschmidt/massdns" target="_blank">
+                    <i class="fab fa-github w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-red" style="min-height:150px" id="httprobe">
+                <h6>httprobe</h6><br>
+                <a href="https://github.com/tomnomnom/httprobe" target="_blank">
+                    <i class="fab fa-github w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-red" style="min-height:150px" id="subbrute">
+                <h6>subbrute</h6><br>
+                <a href="https://github.com/TheRook/subbrute" target="_blank">
+                    <i class="fab fa-github w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="w3-row-padding w3-center w3-margin-top">
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-red" style="min-height:150px" id="nmap">
+                <h6>NMAP</h6><br>
+                <a href="https://nmap.org/" target="_blank">
+                    <i class="fas fa-search-plus w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-red" style="min-height:150px" id="nrich">
+                <h6>nrich</h6><br>
+                <a href="https://gitlab.com/shodan-public/nrich" target="_blank">
+                    <i class="fa fa-gitlab w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-red" style="min-height:150px" id="angry_ip_scanner">
+                <h6>Angry IP Scanner</h6><br>
+                <a href="https://github.com/angryip/ipscan" target="_blank">
+                    <i class="fab fa-github w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="w3-container">
+        <hr>
+        <div class="w3-center">
+        </div>
+    </div>
+    <br><br>
+    <h5>&nbsp;&nbsp;&nbsp;&nbsp;Weaponization</h5>
+    <div class="w3-row-padding w3-center w3-margin-top" id="weapon">
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-red" style="min-height:150px" id="inceptor">
+                <h6>Inceptor</h6><br>
+                <a href="https://github.com/klezVirus/inceptor" target="_blank">
+                    <i class="fab fa-github w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-red" style="min-height:150px" id="macro_pack">
+                <h6>macro_pack</h6><br>
+                <a href="https://github.com/sevagas/macro_pack" target="_blank">
+                    <i class="fab fa-github w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-red" style="min-height:150px" id="dotpack">
+                <h6>Dotpack</h6><br>
+                <a href="https://github.com/daeken/Dotpack/" target="_blank">
+                    <i class="fab fa-github w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-red" style="min-height:150px" id="evilclippy">
+                <h6>EvilClippy</h6><br>
+                <a href="https://github.com/outflanknl/EvilClippy" target="_blank">
+                    <i class="fab fa-github w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-red" style="min-height:150px" id="chimera">
+                <h6>Chimera</h6><br>
+                <a href="https://github.com/tokyoneon/Chimera" target="_blank">
+                    <i class="fab fa-github w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="w3-container">
+        <hr>
+        <div class="w3-center">
+        </div>
+    </div>
+    <br><br>
+    <h5>&nbsp;&nbsp;&nbsp;&nbsp;Delivery</h5>
+    <div class="w3-row-padding w3-center w3-margin-top" id="delivery">
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-red" style="min-height:150px" id="pafish">
+                <h6>Pafish</h6><br>
+                <a href="https://github.com/a0rtega/pafish" target="_blank">
+                    <i class="fab fa-github w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-red" style="min-height:150px" id="thephish">
+                <h6>ThePhish</h6><br>
+                <a href="https://github.com/emalderson/ThePhish" target="_blank">
+                    <i class="fab fa-github w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-red" style="min-height:150px" id="phishtool">
+                <h6>PhishTool</h6><br>
+                <a href="https://app.phishtool.com/sign-up" target="_blank">
+                    <i class="fab fa-github w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-red" style="min-height:150px" id="evilginx2">
+                <h6>Evilginx2</h6><br>
+                <a href="https://github.com/kgretzky/evilginx2" target="_blank">
+                    <i class="fab fa-github w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-red" style="min-height:150px" id="muraena">
+                <h6>Muraena</h6><br>
+                <a href="https://github.com/muraenateam/muraena" target="_blank">
+                    <i class="fab fa-github w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-red" style="min-height:150px" id="necrobrowser">
+                <h6>NecroBrowser</h6><br>
+                <a href="https://github.com/muraenateam/necrobrowser" target="_blank">
+                    <i class="fab fa-github w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="w3-container">
+        <hr>
+        <div class="w3-center">
+        </div>
+    </div>
+    <br><br>
+    <h5>&nbsp;&nbsp;&nbsp;&nbsp;Network Emuneration</h5>
+    <div class="w3-row-padding w3-center w3-margin-top" id="enum">
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-red" style="min-height:150px" id="bloodhound">
+                <h6>BloodHound</h6><br>
+                <a href="https://bloodhound.readthedocs.io/en/latest/data-collection/sharphound.html" target="_blank">
+                    <i class="fab fa-github w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-red" style="min-height:150px" id="impacket">
+                <h6>impacket</h6><br>
+                <a href="https://github.com/SecureAuthCorp/impacket" target="_blank">
+                    <i class="fab fa-github w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-red" style="min-height:150px" id="mitm6">
+                <h6>mitm6</h6><br>
+                <a href="https://github.com/dirkjanm/mitm6" target="_blank">
+                    <i class="fab fa-github w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-red" style="min-height:150px" id="snaffler">
+                <h6>Snaffler</h6><br>
+                <a href="https://github.com/SnaffCon/Snaffler" target="_blank">
+                    <i class="fab fa-github w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-red" style="min-height:150px" id="mfasweep">
+                <h6>MFASweep</h6><br>
+                <a href="https://github.com/dafthack/MFASweep" target="_blank">
+                    <i class="fab fa-github w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="w3-container">
+        <hr>
+        <div class="w3-center">
+        </div>
+    </div>
+    <br><br>
+    <h5>&nbsp;&nbsp;&nbsp;&nbsp;Post Exploitation</h5>
+    <div class="w3-row-padding w3-center w3-margin-top" id="post">
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-red" style="min-height:150px" id="metasploit">
+                <h6>Metasploit</h6><br>
+                <a href="https://www.metasploit.com/" target="_blank">
+                    <i class="fa fa-empire w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-red" style="min-height:150px" id="powersploit">
+                <h6>PowerSploit</h6><br>
+                <a href="https://github.com/PowerShellMafia/PowerSploit" target="_blank">
+                    <i class="fab fa-empire w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-red" style="min-height:150px" id="empire">
+                <h6>Empire</h6><br>
+                <a href="https://www.powershellempire.com/" target="_blank">
+                    <i class="fa fa-empire w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-red" style="min-height:150px" id="cobalt_strike">
+                <h6>Cobalt Strike</h6><br>
+                <a href="https://www.cobaltstrike.com/" target="_blank">
+                    <i class="fa fa-empire w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-red" style="min-height:150px" id="shellter">
+                <h6>Shellter</h6><br>
+                <a href="https://www.shellterproject.com/introducing-shellter/" target="_blank">
+                    <i class="fa fa-empire w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-red" style="min-height:150px" id="merlin">
+                <h6>merlin</h6><br>
+                <a href="https://github.com/Ne0nd0g/merlin" target="_blank">
+                    <i class="fab fa-github w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="w3-row-padding w3-center w3-margin-top">
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-red" style="min-height:150px" id="crackmapexec">
+                <h6>CrackMapExec</h6><br>
+                <a href="https://github.com/byt3bl33d3r/CrackMapExec" target="_blank">
+                    <i class="fab fa-github w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-red" style="min-height:150px" id="adfspoof">
+                <h6>ADFSpoof</h6><br>
+                <a href="https://github.com/mandiant/ADFSpoof" target="_blank">
+                    <i class="fab fa-github w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="w3-container">
+        <hr>
+        <div class="w3-center">
+        </div>
+    </div>
+    <br><br>
+    <h5>&nbsp;&nbsp;&nbsp;&nbsp;Credential Harvesting</h5>
+    <div class="w3-row-padding w3-center w3-margin-top" id="creds">
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-red" style="min-height:150px" id="johntheripper">
+                <h6>JohnTheRipper</h6><br>
+                <a href="https://www.openwall.com/john/" target="_blank">
+                    <i class="fa fa-key w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-red" style="min-height:150px" id="hashcat">
+                <h6>Hashcat</h6><br>
+                <a href="https://hashcat.net/wiki/" target="_blank">
+                    <i class="fa fa-key w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-red" style="min-height:150px" id="l0phtcrack">
+                <h6>L0phtcrack</h6><br>
+                <a href="https://l0phtcrack.gitlab.io/" target="_blank">
+                    <i class="fa fa-key w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-red" style="min-height:150px" id="crackstation">
+                <h6>CrackStation</h6><br>
+                <a href="https://crackstation.net/" target="_blank">
+                    <i class="fa fa-key w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-red" style="min-height:150px" id="mimikatz">
+                <h6>mimikatz</h6><br>
+                <a href="https://github.com/gentilkiwi/mimikatz" target="_blank">
+                    <i class="fab fa-github w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-red" style="min-height:150px" id="breach_parse">
+                <h6>breach-parse</h6><br>
+                <a href="https://github.com/hmaverickadams/breach-parse" target="_blank">
+                    <i class="fab fa-github w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="w3-container">
+        <hr>
+        <div class="w3-center">
+        </div>
+    </div>
+    <br><br>
+    <h5>&nbsp;&nbsp;&nbsp;&nbsp;Command & Control</h5>
+    <div class="w3-row-padding w3-center w3-margin-top" id="c2">
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-red" style="min-height:150px" id="poshc2">
+                <h6>PoshC2</h6><br>
+                <a href="https://github.com/Nettitude/PoshC2" target="_blank">
+                    <i class="fab fa-github w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-red" style="min-height:150px" id="limelighter">
+                <h6>LimeLighter</h6><br>
+                <a href="https://github.com/Tylous/Limelighter" target="_blank">
+                    <i class="fab fa-github w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="w3-container">
+        <hr>
+        <div class="w3-center">
+        </div>
+    </div>
+    <br><br>
+    <h4>&nbsp;&nbsp;&nbsp;&nbsp;Threat Intelligence</h4>
+    <h5>&nbsp;&nbsp;&nbsp;&nbsp;OSINT</h5>
+    <div class="w3-row-padding w3-center w3-margin-top" id="osint">
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-yellow" style="min-height:150px">
+                <h6>SANS' "Must Have"<br>OSINT Tools</h6><br>
+                <a href="https://www.sans.org/blog/-must-have-free-resources-for-open-source-intelligence-osint-/"
+                    target="_blank">
+                    <i class="fa fa-eye w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-yellow" style="min-height:150px">
+                <h6>OSINT Resource<br>Discovery Toolkit</h6><br>
+                <a href="https://rr.reuser.biz/" target="_blank">
+                    <i class="fa fa-eye w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-yellow" style="min-height:150px">
+                <h6>CTI & OSINT<br>Online Resources</h6><br>
+                <a href="https://docs.google.com/spreadsheets/d/1klugQqw6POlBtuzon8S0b18-gpsDwX-5OYRrB7TyNEw/htmlview"
+                    target="_blank">
+                    <i class="fa fa-eye w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-yellow" style="min-height:150px">
+                <h6>start.me<br>OSINT Links</h6><br>
+                <a href="https://start.me/p/q6naJo/osint-links?cid=PostBeyond%01377528" target="_blank">
+                    <i class="fa fa-eye w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <iframe src="https://oscybershop.netlify.app/main/content/tooling/osint.jpeg" width="100%"></iframe>
+            <a href="https://oscybershop.netlify.app/main/content/tooling/osint.jpeg" target="_blank"
+                class="w3-button w3-theme">Download&nbsp;<i class="fa fa-external-link"></i></a>
+        </div>
+    </div>
+    <div class="w3-row-padding w3-center w3-margin-top">
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-yellow" style="min-height:150px" id="misp">
+                <h6>MISP</h6><br>
+                <a href="https://www.misp-project.org/" target="_blank">
+                    <i class="fa fa-eye w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-yellow" style="min-height:150px" id="yeti">
+                <h6>YETI</h6><br>
+                <a href="https://yeti-platform.github.io/" target="_blank">
+                    <i class="fa fa-eye w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-yellow" style="min-height:150px" id="maltego">
+                <h6>Maltego</h6><br>
+                <a href="https://www.maltego.com/downloads/" target="_blank">
+                    <i class="fa fa-eye w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-yellow" style="min-height:150px" id="virustotal">
+                <h6>VirusTotal</h6><br>
+                <a href="https://www.virustotal.com/gui/home" target="_blank">
+                    <i class="fa fa-eye w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-yellow" style="min-height:150px" id="riskiq">
+                <h6>RiskIQ</h6><br>
+                <a href="https://community.riskiq.com/home" target="_blank">
+                    <i class="fa fa-eye w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-yellow" style="min-height:150px" id="urlscan">
+                <h6>URLScan</h6><br>
+                <a href="https://urlscan.io/" target="_blank">
+                    <i class="fa fa-eye w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="w3-row-padding w3-center w3-margin-top">
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-yellow" style="min-height:150px" id="shodan">
+                <h6>Shodan</h6><br>
+                <a href="https://beta.shodan.io/dashboard?language=en" target="_blank">
+                    <i class="fa fa-eye w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-yellow" style="min-height:150px" id="censys">
+                <h6>Censys</h6><br>
+                <a href="https://censys.io/login" target="_blank">
+                    <i class="fa fa-eye w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-yellow" style="min-height:150px" id="spyse">
+                <h6>Spyse</h6><br>
+                <a href="https://spyse.com/" target="_blank">
+                    <i class="fa fa-eye w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-yellow" style="min-height:150px" id="threatcrowd">
+                <h6>ThreatCrowd</h6><br>
+                <a href="https://www.threatcrowd.org/" target="_blank">
+                    <i class="fa fa-eye w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-yellow" style="min-height:150px" id="dns_dumpster">
+                <h6>DNS Dumpster</h6><br>
+                <a href="https://dnsdumpster.com/" target="_blank">
+                    <i class="fa fa-eye w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-yellow" style="min-height:150px" id="pastebin">
+                <h6>PasteBin</h6><br>
+                <a href="https://pastebin.com/u/septembertheobserver" target="_blank">
+                    <i class="fa fa-eye w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="w3-row-padding w3-center w3-margin-top">
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-yellow" style="min-height:150px" id="whatsmyname">
+                <h6>WhatsMyName</h6><br>
+                <a href="https://whatsmyname.app/" target="_blank">
+                    <i class="fa fa-eye w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-yellow" style="min-height:150px" id="zoomeye">
+                <h6>ZoomEye</h6><br>
+                <a href="https://www.zoomeye.org/" target="_blank">
+                    <i class="fa fa-eye w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-yellow" style="min-height:150px" id="wigle">
+                <h6>WiGLE</h6><br>
+                <a href="https://wigle.net/" target="_blank">
+                    <i class="fa fa-eye w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-yellow" style="min-height:150px" id="intelligencex">
+                <h6>IntelligenceX</h6><br>
+                <a href="https://intelx.io/" target="_blank">
+                    <i class="fa fa-eye w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-yellow" style="min-height:150px" id="fullhunt">
+                <h6>FullHunt</h6><br>
+                <a href="https://fullhunt.io/search" target="_blank">
+                    <i class="fa fa-eye w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-yellow" style="min-height:150px" id="greynoise">
+                <h6>GreyNoise</h6><br>
+                <a href="https://www.greynoise.io/viz/" target="_blank">
+                    <i class="fa fa-eye w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="w3-row-padding w3-center w3-margin-top">
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-yellow" style="min-height:150px" id="publicwww">
+                <h6>PublicWWW</h6><br>
+                <a href="https://publicwww.com/" target="_blank">
+                    <i class="fa fa-eye w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-yellow" style="min-height:150px" id="pulsedive">
+                <h6>Pulsedive</h6><br>
+                <a href="https://pulsedive.com/" target="_blank">
+                    <i class="fa fa-eye w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-yellow" style="min-height:150px" id="onyphe">
+                <h6>onyphe</h6><br>
+                <a href="https://www.onyphe.io/" target="_blank">
+                    <i class="fa fa-eye w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-yellow" style="min-height:150px" id="synapsint">
+                <h6>SynapsInt</h6><br>
+                <a href="https://synapsint.com/" target="_blank">
+                    <i class="fa fa-eye w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-yellow" style="min-height:150px" id="appnetlasio">
+                <h6>app.netlas.io</h6><br>
+                <a href="https://app.netlas.io/responses/" target="_blank">
+                    <i class="fa fa-eye w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-yellow" style="min-height:150px" id="binaryedgeio">
+                <h6>binaryedge.io</h6><br>
+                <a href="https://app.binaryedge.io/login" target="_blank">
+                    <i class="fa fa-eye w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="w3-row-padding w3-center w3-margin-top">
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-yellow" style="min-height:150px" id="fofainfo">
+                <h6>fofa.info</h6><br>
+                <a href="https://fofa.info" target="_blank">
+                    <i class="fa fa-eye w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-yellow" style="min-height:150px" id="grepapp">
+                <h6>grep.app</h6><br>
+                <a href="https://grep.app" target="_blank">
+                    <i class="fa fa-eye w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-yellow" style="min-height:150px" id="ivrerocks">
+                <h6>ivre.rocks</h6><br>
+                <a href="https://ivre.rocks" target="_blank">
+                    <i class="fa fa-eye w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-yellow" style="min-height:150px" id="leakixnet">
+                <h6>leakix.net</h6><br>
+                <a href="https://leakix.net" target="_blank">
+                    <i class="fa fa-eye w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="w3-row-padding w3-center w3-margin-top">
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-yellow" style="min-height:150px" id="searchcodecom">
+                <h6>searchcode.com</h6><br>
+                <a href="https://searchcode.com" target="_blank">
+                    <i class="fa fa-eye w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-yellow" style="min-height:150px" id="socradario">
+                <h6>socradar.io</h6><br>
+                <a href="https://socradar.io" target="_blank">
+                    <i class="fa fa-eye w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-yellow" style="min-height:150px" id="threatool">
+                <h6>Threatool</h6><br>
+                <a href="https://threatcops.com" target="_blank">
+                    <i class="fa fa-eye w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-yellow" style="min-height:150px" id="vulnerscom">
+                <h6>vulners.com</h6><br>
+                <a href="https://vulners.com" target="_blank">
+                    <i class="fa fa-eye w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="w3-row-padding w3-center w3-margin-top">
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-yellow" style="min-height:150px" id="myosinttraining">
+                <h6>MyOsint.Training</h6><br>
+                <a href="https://www.myosint.training" target="_blank">
+                    <i class="fa fa-eye w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-yellow" style="min-height:150px" id="osintgames">
+                <h6>OSINT.games</h6><br>
+                <a href="https://www.osint.games" target="_blank">
+                    <i class="fa fa-eye w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-yellow" style="min-height:150px" id="osintme">
+                <h6>osint.me</h6><br>
+                <a href="https://www.osintme.com/index.php/2022/07/31/30-domain-ip-address-osint-resources/"
+                    target="_blank">
+                    <i class="fa fa-eye w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="w3-row-padding w3-center w3-margin-top">
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-yellow" style="min-height:150px" id="karma">
+                <h6>Karma</h6><br>
+                <a href="https://github.com/Dheerajmadhukar/karma_v2" target="_blank">
+                    <i class="fab fa-github w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-yellow" style="min-height:150px" id="dnstwist">
+                <h6>dnstwist</h6><br>
+                <a href="https://github.com/elceef/dnstwist" target="_blank">
+                    <i class="fab fa-github w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-yellow" style="min-height:150px" id="domfind">
+                <h6>domfind</h6><br>
+                <a href="https://github.com/diogo-fernan/domfind" target="_blank">
+                    <i class="fab fa-github w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-yellow" style="min-height:150px" id="sherlock">
+                <h6>sherlock</h6><br>
+                <a href="https://github.com/sherlock-project/sherlock" target="_blank">
+                    <i class="fab fa-github w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-yellow" style="min-height:150px" id="tweetscraper">
+                <h6>TweetScraper</h6><br>
+                <a href="https://github.com/Durhamster/TweetScraper" target="_blank">
+                    <i class="fab fa-github w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="w3-container">
+        <hr>
+        <div class="w3-center">
+        </div>
+    </div>
+    <br><br>
+    <h5>&nbsp;&nbsp;&nbsp;&nbsp;Threat Feeds</h5>
+    <div class="w3-row-padding w3-center w3-margin-top" id="feeds">
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-yellow" style="min-height:150px" id="alienvault">
+                <h6>AlienVault</h6><br>
+                <a href="https://otx.alienvault.com/browse/global/pulses?include_inactive=0&sort=-modified&page=1"
+                    target="_blank">
+                    <i class="fa fa-cloud-download w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-yellow" style="min-height:150px" id="feodo_tracker">
+                <h6>Feodo Tracker</h6><br>
+                <a href="https://feodotracker.abuse.ch/" target="_blank">
+                    <i class="fa fa-cloud-download w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-yellow" style="min-height:150px" id="urlhaus">
+                <h6>URLhaus</h6><br>
+                <a href="https://urlhaus.abuse.ch/" target="_blank">
+                    <i class="fa fa-cloud-download w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-yellow" style="min-height:150px" id="threatfeeds_io">
+                <h6>threatfeeds.io</h6><br>
+                <a href="https://threatfeeds.io/" target="_blank">
+                    <i class="fa fa-cloud-download w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="w3-container">
+        <hr>
+        <div class="w3-center">
+        </div>
+    </div>
+    <br><br>
+    <h5>&nbsp;&nbsp;&nbsp;&nbsp;Dark Web</h5>
+    <div style="color:darkblue;font-size:14px;">
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;Please note, these sites are only accessible thought the TOR browser.</p>
+    </div>
+    <div class="w3-row-padding w3-center w3-margin-top" id="dark">
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-pink" style="min-height:150px" id="ahmia">
+                <h6>Ahmia</h6><br>
+                <a href="http://juhanurmihxlp77nkq76byazcldy2hlmovfu2epvl5ankdibsot4csyd.onion/" target="_blank">
+                    <i class="fas fa-ghost w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-pink" style="min-height:150px" id="haystak">
+                <h6>Haystak</h6><br>
+                <a href="http://haystak5njsmn2hqkewecpaxetahtwhsbsa64jom2k22z5afxhnpxfid.onion/" target="_blank">
+                    <i class="fas fa-ghost w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-pink" style="min-height:150px" id="duckduckgo">
+                <h6>duckduckgo</h6><br>
+                <a href="https://duckduckgogg42xjoc72x3sjasowoarfbgcmvfimaftt6twagswzczad.onion/" target="_blank">
+                    <i class="fas fa-ghost w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-pink" style="min-height:150px" id="torch">
+                <h6>Torch</h6><br>
+                <a href="http://xmh57jrknzkhv6y3ls3ubitzfqnkrwxhopf5aygthi7d6rplyvk3noyd.onion/" target="_blank">
+                    <i class="fas fa-ghost w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-pink" style="min-height:150px" id="wiki">
+                <h6>Wiki</h6><br>
+                <a href="http://zqktlwiuavvvqqt4ybvgvi7tyo4hjl5xgfuvpdf6otjiycgwqbym2qad.onion/wiki/" target="_blank">
+                    <i class="fas fa-ghost w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-pink" style="min-height:150px" id="protonmail">
+                <h6>ProtonMail</h6><br>
+                <a href="https://protonmailrmez3lotccipshtkleegetolb73fuirgj7r4o4vfu7ozyd.onion/" target="_blank">
+                    <i class="fas fa-ghost w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="w3-row-padding w3-center w3-margin-top" id="dark">
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-pink" style="min-height:150px" id="megator">
+                <h6>MEGATor</h6><br>
+                <a href="http://crqkllx7afomrokwx6f2sjcnl2do2i3i77hjjb4eqetlgq3cths3o6ad.onion/" target="_blank">
+                    <i class="fas fa-ghost w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container w3-pink" style="min-height:150px" id="privacytools">
+                <h6>PrivacyTools</h6><br>
+                <a href="./privacy2zbidut4m4jyj3ksdqidzkw3uoip2vhvhbvwxbqux5xy5obyd.onion" target="_blank">
+                    <i class="fas fa-ghost w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="w3-container">
+        <hr>
+        <div class="w3-center">
+        </div>
+    </div>
+    <h5>&nbsp;&nbsp;&nbsp;&nbsp;Coding Environments</h5>
+    <div class="w3-row-padding w3-center w3-margin-top" id="code">
+        <div class="w3-col l2">
+            <div class="w3-card w3-container" style="min-height:150px" id="vscode">
+                <h6>VSCode</h6><br>
+                <a href="https://vscode.dev/" target="_blank">
+                    <i class="fa fa-terminal w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container" style="min-height:150px" id="codepen">
+                <h6>codepen</h6><br>
+                <a href="https://codepen.io/pen/" target="_blank">
+                    <i class="fa fa-terminal w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container" style="min-height:150px" id="jsfiddle">
+                <h6>jsfiddle</h6><br>
+                <a href="https://jsfiddle.net" target="_blank">
+                    <i class="fa fa-terminal w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container" style="min-height:150px" id="colab">
+                <h6>COLAB</h6><br>
+                <a href="https://colab.research.google.com/notebooks/intro.ipynb#scrollTo=5fCEDCU_qrC0" target="_blank">
+                    <i class="fa fa-flask w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container" style="min-height:150px" id="coderpad">
+                <h6>CoderPad</h6><br>
+                <a href="https://app.coderpad.io/login" target="_blank">
+                    <i class="fa fa-flask w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col l2">
+            <div class="w3-card w3-container" style="min-height:150px" id="node_red">
+                <h6>Node-RED</h6><br>
+                <a href="https://github.com/node-red/node-red" target="_blank">
+                    <i class="fab fa-github w3-margin-bottom w3-text-theme" style="font-size:32px"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="w3-container">
+        <hr>
+        <div class="w3-center">
+        </div>
+    </div>
+    <br><br>
+    <div style="color:maroon;font-size:12px;">
+        <p>&nbsp;&nbsp;With great power, comes great responsibility; this material has been collated to
+            encourage learning and development, and not to be leveraged for unethical and/or illegal
+            behaviour.<br>&nbsp;&nbsp;By visiting any of these sites, you are doing so at your own risk.</p>
+    </div>
+    <div style="color:black;font-size:12px;">
+        <p>&nbsp;&nbsp;I would like to thank all of the authors, instructors, publishers, developers (and
+            others) - both individuals and teams - for the content collated on this site. I must stress that none of the
+            content referenced/linked on this site is my own.<br>&nbsp;&nbsp;If you have any suggestions
+            and/or content you feel is missing or would like
+            included, please email me at oscybershop [at] gmail [dot] com</p>
+    </div>
+    <!-- Footer -->
+    <footer class="w3-container w3-theme-dark w3-padding-16">
+        <p>&emsp;<a href="./main/content/oscs_bookmarks.zip" target="_blank"><i class="fa fa-firefox w3-large"></i></a>
+            download
+            bookmarks<br>&emsp;<a href="https://github.com/ezaspy/oscybershop" target="_blank"><i
+                    class="fa-brands fa-github w3-large"></i></a> curated/created by ezaspy<br>&emsp;Powered
+            by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+        <div style="position:relative;bottom:55px;" class="w3-tooltip w3-right">
+            <span class="w3-text w3-theme-light w3-padding">Go To Top</span>
+            <a class="w3-text-white" href="#osHeader"><span class="w3-xlarge">
+                    <i class="fa fa-chevron-circle-up"></i></span></a>
+        </div>
+    </footer>
+</body>
+
+</html>
