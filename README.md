@@ -1,11 +1,11 @@
 <!-- PROJECT LOGO -->
 <p align="center">
-  <a href="https://oscybershop.herokuapp.com/main/index.html">
+  <a href="https://oscybershop.netlify.app/main/index.html">
     <img src="main/content/logo.png" alt="Logo" width="400" height="400">
   </a>
   <p align="center">
     A simple collection of free and affordable cyber security resources...<br>
-    <a href="https://oscybershop.herokuapp.com/main/index.html">onestopcybershop</a>
+    <a href="https://oscybershop.netlify.app/main/index.html">onestopcybershop</a>
     <br><br>
     <a href="https://mit-license.org">
       <img src="https://img.shields.io/github/license/ezaspy/oscybershop" alt="License: MIT">
